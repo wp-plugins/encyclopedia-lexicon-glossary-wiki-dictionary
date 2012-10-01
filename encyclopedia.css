@@ -1,0 +1,50 @@
+/* Default Themes: Remove useless Elements */
+.post-type-archive-encyclopedia .page-title,
+.post-type-archive-encyclopedia .entry-meta,
+.post-type-archive-encyclopedia .comments-link,
+.post-type-archive-encyclopedia .archive-header,
+.tax-encyclopedia-category .page-title,
+.tax-encyclopedia-category .entry-meta,
+.tax-encyclopedia-category .comments-link,
+.tax-encyclopedia-category .archive-header,
+.tax-encyclopedia-tag .page-title,
+.tax-encyclopedia-tag .entry-meta,
+.tax-encyclopedia-tag .comments-link,
+.tax-encyclopedia-tag .archive-header,
+.single-encyclopedia .entry-meta {
+  display: none;
+}
+
+/* Encyclopedia Filter */
+.encyclopedia-filter {
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #d9d9d9;
+}
+.encyclopedia-filter:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.encyclopedia-filter:last-child {
+  margin-bottom: 1em;
+}
+
+.encyclopedia-filter span.filter {}
+.encyclopedia-filter span.current-filter {}
+
+.encyclopedia-filter a.filter-link {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  min-width: 2.846153846%;
+  padding: 8px 0;
+  margin: 0 0.5%;
+  font-size: 1em;
+  text-decoration: none;
+  letter-spacing: -1px;
+  font-size: .9em;
+}
+
+.encyclopedia-filter span.current-filter a.filter-link {
+  font-weight: bold;
+}

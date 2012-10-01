@@ -1,0 +1,12 @@
+div#icon-edit.icon32-posts-encyclopedia,
+body.settings_page_wp_plugin_encyclopedia div#icon-edit.icon32 {
+  background: url(images/icon-32.png) scroll no-repeat center center;
+}
+
+ul#adminmenu li#menu-posts-encyclopedia div.wp-menu-image {
+  background: url(images/icon-16-gray.png) scroll no-repeat 6px 7px;
+}
+ul#adminmenu li#menu-posts-encyclopedia:hover div.wp-menu-image,
+ul#adminmenu li#menu-posts-encyclopedia.wp-has-current-submenu div.wp-menu-image {
+  background-image: url(images/icon-16.png);
+}
