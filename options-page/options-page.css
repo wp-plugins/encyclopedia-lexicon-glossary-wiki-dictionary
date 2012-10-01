@@ -1,0 +1,11 @@
+input.short { width: 60px }
+div.capability-selection span.caption { display: inline-block; width: 275px; }
+div.capability-selection input { margin-left: 15px; }
+.postbox .hndle { cursor: pointer; }
+div.capability-selection.highlight1 { background-color: #eee; }
+div.capability-selection.highlight2 { background-color: #ddd; }
+
+.pro-notice {
+  color: red;
+  font-style: italic;
+}

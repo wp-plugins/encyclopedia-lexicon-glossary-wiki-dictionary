@@ -1,0 +1,1129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Encyclopedia Lite\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-01 09:17+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
+"Language-Team: Dennis Hoppe <Mail@DennisHoppe.de>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: t;t:2c,1\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../wp-plugin-encyclopedia.php:89
+#: ../options-page/options-page.php:3
+msgid "Encyclopedia Options"
+msgstr "Enzyklopädie Einstellungen"
+
+#: ../wp-plugin-encyclopedia.php:90
+msgid "Encyclopedia"
+msgstr "Enzyklopädie"
+
+#: ../wp-plugin-encyclopedia.php:101
+msgid "Taxonomies"
+msgstr "Klassifizierungen"
+
+#: ../wp-plugin-encyclopedia.php:102
+msgid "Archive Page"
+msgstr "Archive-Übersicht"
+
+#: ../wp-plugin-encyclopedia.php:103
+msgid "Single Page"
+msgstr "Einzelansicht"
+
+#: ../wp-plugin-encyclopedia.php:104
+#: ../wp-plugin-encyclopedia.php:290
+msgid "Archive Url"
+msgstr "Archiv Url"
+
+#: ../wp-plugin-encyclopedia.php:201
+msgid "Lexicon"
+msgstr "Lexikon"
+
+#: ../wp-plugin-encyclopedia.php:209
+msgid "Term"
+msgstr "Eintrag"
+
+#: ../wp-plugin-encyclopedia.php:210
+msgid "Add Term"
+msgstr "Eintrag hinzufügen"
+
+#: ../wp-plugin-encyclopedia.php:211
+msgid "New Term"
+msgstr "Neuer Eintrag"
+
+#: ../wp-plugin-encyclopedia.php:212
+msgid "Edit Term"
+msgstr "Eintrag bearbeiten"
+
+#: ../wp-plugin-encyclopedia.php:213
+msgid "View Term"
+msgstr "Eintrag ansehen"
+
+#: ../wp-plugin-encyclopedia.php:214
+msgid "Search Terms"
+msgstr "Einträge durchsuchen"
+
+#: ../wp-plugin-encyclopedia.php:215
+msgid "No Terms found"
+msgstr "Keine Einträge gefunden"
+
+#: ../wp-plugin-encyclopedia.php:216
+msgid "No Terms found in Trash"
+msgstr "Keine Einträge im Papierkorb gefunden."
+
+#: ../wp-plugin-encyclopedia.php:240
+#, php-format
+msgid "Term updated. (<a href=\"%s\">View Term</a>)"
+msgstr "Eintrag aktualisiert. (<a href=\"%s\">Eintrag ansehen</a>)"
+
+#: ../wp-plugin-encyclopedia.php:243
+msgid "Term updated."
+msgstr "Eintrag aktualisiert."
+
+#: ../wp-plugin-encyclopedia.php:244
+#, php-format
+msgid "Term restored to revision from %s"
+msgstr "Eintrag auf den Stand von %s zurückgesetzt"
+
+#: ../wp-plugin-encyclopedia.php:245
+#, php-format
+msgid "Term published. (<a href=\"%s\">View Term</a>)"
+msgstr "Eintrag veröffentlicht. (<a href=\"%s\">Eintrag ansehen</a>)"
+
+#: ../wp-plugin-encyclopedia.php:246
+msgid "Term saved."
+msgstr "Eintrag gespeichert."
+
+#: ../wp-plugin-encyclopedia.php:247
+msgid "Term submitted."
+msgstr "Eintrag eingereicht."
+
+#: ../wp-plugin-encyclopedia.php:248
+#, php-format
+msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
+msgstr "Eintrag angelegt. (<a target=\"_blank\" href=\"%s\">Eintrag ansehen</a>)"
+
+#: ../wp-plugin-encyclopedia.php:249
+#, php-format
+msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
+msgstr "Entwurf gespeichert. (<a target=\"_blank\" href=\"%s\">Vorschau</a>)"
+
+#: ../wp-plugin-encyclopedia.php:256
+msgid "Encyclopedia Tags"
+msgstr "Enzyklopädie Schlagwörter"
+
+#: ../wp-plugin-encyclopedia.php:258
+msgid "Tags"
+msgstr "Schlagworte"
+
+#: ../wp-plugin-encyclopedia.php:259
+msgid "Tag"
+msgstr "Schlagwort"
+
+#: ../wp-plugin-encyclopedia.php:260
+msgid "Search Tags"
+msgstr "Schlagworte durchsuchen"
+
+#: ../wp-plugin-encyclopedia.php:261
+msgid "All Tags"
+msgstr "Alle Schlagworte"
+
+#: ../wp-plugin-encyclopedia.php:262
+msgid "Edit Tag"
+msgstr "Schlagwort bearbeiten"
+
+#: ../wp-plugin-encyclopedia.php:263
+msgid "Update Tag"
+msgstr "Schlagwort aktualisieren"
+
+#: ../wp-plugin-encyclopedia.php:264
+msgid "Add New Tag"
+msgstr "Neues Schlagwort hinzufügen"
+
+#: ../wp-plugin-encyclopedia.php:265
+msgid "New Tag"
+msgstr "Neues Schlagwort"
+
+#: ../wp-plugin-encyclopedia.php:293
+#, php-format
+msgid "This is the URL to the archive of this %s."
+msgstr "Das ist die URL des %s-Archives."
+
+#: ../wp-plugin-encyclopedia.php:297
+msgid "Archive Feed"
+msgstr "Archiv Feed"
+
+#: ../wp-plugin-encyclopedia.php:300
+#, php-format
+msgid "This is the URL to the feed of the archive of this %s."
+msgstr "Das ist die URL zum RSS Feed des %s-Archives."
+
+#: ../wp-plugin-encyclopedia.php:334
+msgid "Sorry!"
+msgstr "Entschuldigung!"
+
+#: ../wp-plugin-encyclopedia.php:335
+#: ../wp-plugin-encyclopedia.php:350
+msgid "In the Lite Version you can create five terms only."
+msgstr "In der Lite Version können Sie nur fünf Einträge anlegen."
+
+#: ../wp-plugin-encyclopedia.php:336
+#: ../wp-plugin-encyclopedia.php:351
+msgid "Why not switching to <a href=\"http://dennishoppe.de/en/wordpress-plugins/encyclopedia\" target=\"_blank\">Encyclopedia Pro</a>? :)"
+msgstr "Warum nicht zu <a href=\"http://dennishoppe.de/wordpress-plugins/encyclopedia\" target=\"_blank\">Encyclopedia Pro</a> wechseln? :)"
+
+#: ../wp-plugin-encyclopedia.php:340
+msgid "&laquo; Back to your terms"
+msgstr "&laquo; Zurück zu den Einträgen"
+
+#: ../wp-plugin-encyclopedia.php:349
+msgid "Please notice:"
+msgstr "Bitte bedenken Sie:"
+
+#: ../wp-plugin-encyclopedia.php:499
+#, php-format
+msgid "Sorry, this feature is only available in the <a href=\"%s\" target=\"_blank\">Pro Version of the Encyclopedia Plugin</a>."
+msgstr "Entschuldigung, diese Funktion gibt es nur in <a href=\"%s\" target=\"_blank\">Encyclopedia Pro</a>."
+
+#: ../wp-plugin-encyclopedia.php:500
+msgctxt "Link to the authors website"
+msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
+msgstr "http://dennishoppe.de/wordpress-plugins/encyclopedia"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:15
+msgid "Encyclopedia Taxonomy Cloud"
+msgstr "Enzyklopädie Klassifizierungen (Wolke)"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:16
+msgid "Displays your Encyclopedia taxonomies as cloud."
+msgstr "Zeigt Ihre Enzyklopädieklassifizierungen als  \"Wortwolke\" an."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:62
+#: ../wp-widget-encyclopedia-terms.php:60
+#: ../wp-widget-encyclopedia-related-terms.php:59
+#: ../wp-widget-encyclopedia-taxonomies.php:61
+msgid "Title"
+msgstr "Titel"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:64
+#: ../wp-widget-encyclopedia-terms.php:62
+#: ../wp-widget-encyclopedia-related-terms.php:61
+#: ../wp-widget-encyclopedia-taxonomies.php:63
+msgid "Leave blank to use the widget default title."
+msgstr "Leer lassen um Standardtitel zu verwenden."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:68
+#: ../wp-widget-encyclopedia-taxonomies.php:67
+msgid "Taxonomy"
+msgstr "Klassifizierung"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:74
+#: ../wp-widget-encyclopedia-taxonomies.php:73
+msgid "Please choose the Taxonomy the widget should display."
+msgstr "Bitte wählen Sie die Klassifizierung aus, die das Widget anzeigen soll."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:78
+#: ../wp-widget-encyclopedia-related-terms.php:65
+#: ../wp-widget-encyclopedia-taxonomies.php:77
+msgid "Number"
+msgstr "Anzahl"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:80
+msgid "Leave blank (or \"0\") to show all."
+msgstr "Leer lassen (oder \"0\") um alles anzuzeigen."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:86
+msgid "Taxonomy IDs, separated by commas."
+msgstr "Klassifizierungs-IDs, durch Komma getrennt."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:90
+#: ../wp-widget-encyclopedia-terms.php:66
+#: ../wp-widget-encyclopedia-taxonomies.php:94
+msgid "Order by"
+msgstr "Sortieren nach"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:93
+msgid "Gallery Count"
+msgstr "Galerieanzahl"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:98
+#: ../wp-widget-encyclopedia-terms.php:80
+#: ../wp-widget-encyclopedia-taxonomies.php:104
+msgid "Order"
+msgstr "Reihenfolge"
+
+#: ../wp-widget-encyclopedia-terms.php:14
+msgid "Encyclopedia Terms"
+msgstr "Enzyklopädie Einträge"
+
+#: ../wp-widget-encyclopedia-terms.php:15
+msgid "Displays your encyclopedia terms as list."
+msgstr "Zeigt die Liste der veröffentlichten Enzyklopädiebeiträge an."
+
+#: ../wp-widget-encyclopedia-terms.php:70
+msgid "Author"
+msgstr "Autor"
+
+#: ../wp-widget-encyclopedia-terms.php:71
+msgid "Date"
+msgstr "Zeitraum"
+
+#: ../wp-widget-encyclopedia-terms.php:72
+msgid "Last modification"
+msgstr "Aktualisierungszeit"
+
+#: ../wp-widget-encyclopedia-terms.php:73
+msgid "Random"
+msgstr "Zufall"
+
+#: ../wp-widget-encyclopedia-terms.php:74
+msgid "Comment Count"
+msgstr "Kommentaranzahl"
+
+#: ../wp-widget-encyclopedia-terms.php:75
+msgid "Menu Order"
+msgstr "Reihenfolge"
+
+#: ../wp-widget-encyclopedia-related-terms.php:14
+msgid "Encyclopedia Related Terms"
+msgstr "Enzyklopädie: Verwandte Einträge"
+
+#: ../wp-widget-encyclopedia-related-terms.php:15
+msgid "Displays encyclopedia terms which are related to the current one as list."
+msgstr "Zeigt eine Liste mit verwandten Einträgen aus der Enzyklopädie an."
+
+#: ../wp-widget-encyclopedia-related-terms.php:67
+msgid "The number of related terms you want to show."
+msgstr "Anzahl der anzuzeigenden verwandten Einträge."
+
+#: ../wp-widget-encyclopedia-taxonomies.php:14
+msgid "Encyclopedia Taxonomies"
+msgstr "Enzyklopädieklassifizierungen"
+
+#: ../wp-widget-encyclopedia-taxonomies.php:15
+msgid "Displays your encyclopedia taxonomies like Categories, Tags, etc."
+msgstr "Zeigt Enzyklopädieklassifizierungen wie Kategorien, Schlagworte, etc. an."
+
+#: ../wp-widget-encyclopedia-taxonomies.php:79
+msgid "Leave blank to show all."
+msgstr "Leer lassen um alle anzuzeigen."
+
+#: ../wp-widget-encyclopedia-taxonomies.php:85
+msgid "Term IDs, separated by commas."
+msgstr "Klassifizierungs-IDs, durch Komma getrennt."
+
+#: ../wp-widget-encyclopedia-taxonomies.php:97
+msgid "Term Count"
+msgstr "Anzahl der Einträge"
+
+#: ../wp-widget-encyclopedia-taxonomies.php:99
+msgid "Slug"
+msgstr "Slug"
+
+#: ../templates/encyclopedia-related-terms.php:2
+msgid "Related entries"
+msgstr "Ähnliche Einträge"
+
+#: ../options-page/box-archive-page.php:3
+msgid "Terms per page:"
+msgstr "Einträge pro Seite:"
+
+#: ../options-page/box-archive-page.php:6
+msgid "This option effects all encyclopedia archive pages."
+msgstr "Diese Einstellung betrifft alle Enzyklopädie-Übersichtsseiten."
+
+#: ../options-page/box-archive-page.php:12
+msgid "Term filter"
+msgstr "Eintragsfilter"
+
+#: ../options-page/box-archive-page.php:18
+msgid "Display a term filter above the encyclopedia archive automatically or not."
+msgstr "Zeige einen Eintragsfilter über Enzyklopädiearchiven an (oder nicht)."
+
+#: ../options-page/box-taxonomies.php:3
+msgid "Activate categories"
+msgstr "Kategorien aktivieren"
+
+#: ../options-page/box-taxonomies.php:9
+msgid "Categories can help you create an awesome knowledge base."
+msgstr "Kategorien sind nützlich um beeindruckende Wissensdatenbanken aufzubauen."
+
+#: ../options-page/box-taxonomies.php:15
+msgid "Activate tags"
+msgstr "Schlagwörter aktivieren"
+
+#: ../options-page/box-taxonomies.php:21
+msgid "Tags are necessary if you want to display relevant entries automatically."
+msgstr "Schlagwörter sind notwendig um Verwandtschaften zwischen Einträgen herstellen zu können."
+
+#: ../options-page/box-general.php:3
+msgid "Encyclopedia type:"
+msgstr "Enzyklopädietyp:"
+
+#: ../options-page/box-general.php:8
+msgid "Glossary"
+msgstr "Glossar"
+
+#: ../options-page/box-general.php:9
+msgid "Dictionary"
+msgstr "Wörterbuch"
+
+#: ../options-page/box-general.php:11
+msgid "Please choose the type of your encyclopedia. This option does not change the behavior of the plugin. It's just for the labels and captions in the backend."
+msgstr "Bitte wählen Sie den Typ Ihrer Enzyklopädie aus. Diese Option ändert nichts am Verhalten des Plugins, es beeinflusst lediglich die Beschriftungen im Backend."
+
+#: ../options-page/box-general.php:17
+msgid "Use default style"
+msgstr "Standard CSS verwenden"
+
+#: ../options-page/box-general.php:23
+msgid "Set this option to \"No\" if you want to use your own style for the encyclopedia."
+msgstr "Setzen diese Einstellungen auf \"Nein\" wenn Sie Ihr eigenes CSS verwenden möchten."
+
+#: ../options-page/box-single-page.php:3
+msgid "Display related entries"
+msgstr "Zeige verwandte Einträge"
+
+#: ../options-page/box-single-page.php:5
+msgid "below the encyclopedia entry"
+msgstr "unter dem Enzyklopädieeintrag"
+
+#: ../options-page/box-single-page.php:6
+msgid "above the encyclopedia entry"
+msgstr "über dem Enzyklopädieeintrag"
+
+#: ../options-page/box-single-page.php:7
+msgid "do not show related terms"
+msgstr "keine verwandten Einträge anzeigen"
+
+#: ../options-page/box-archive-link.php:2
+#, php-format
+msgid "The Archive link for your Encyclopedia is: <div><code><a href=\"%1$s\" target=\"_blank\">%1$s</a></code></div>"
+msgstr "Der Archiv-Link für Ihre Enzyklopädie lautet: <div><code><a href=\"%1$s\" target=\"_blank\">%1$s</a></code></div>"
+
+#: ../options-page/box-archive-link.php:5
+#, php-format
+msgid "The Archive Feed for your Encyclopedia is: <div><code><a href=\"%1$s\" target=\"_blank\">%1$s</a></code></div>"
+msgstr "Der Archiv-Link zum RSS Feed Ihrer Enzyklopädie lautet: <div><code><a href=\"%1$s\" target=\"_blank\">%1$s</a></code></div>"
+
+#~ msgid "Capabilities"
+#~ msgstr "Ressourcen"
+
+#~ msgid "Updates"
+#~ msgstr "Aktualisierungen"
+
+#~ msgid "Categories"
+#~ msgstr "Kategorien"
+
+#~ msgid "Category"
+#~ msgstr "Kategorie"
+
+#~ msgid "Search Categories"
+#~ msgstr "Kategorien durchsuchen"
+
+#~ msgid "All Categories"
+#~ msgstr "Alle Kategorien"
+
+#~ msgid "Parent Category"
+#~ msgstr "Übergeordnete Kategorie"
+
+#~ msgid "Parent Category:"
+#~ msgstr "Übergeordnete Kategorie:"
+
+#~ msgid "Edit Category"
+#~ msgstr "Kategorie bearbeiten"
+
+#~ msgid "Update Category"
+#~ msgstr "Kategorie aktualisieren"
+
+#~ msgid "Add New Category"
+#~ msgstr "Neue Kategorie hinzufügen"
+
+#~ msgid "New Category"
+#~ msgstr "Neue Kategorie"
+
+#~ msgid "Update notification"
+#~ msgstr "Aktualisierungsbenachrichtigung"
+
+#~ msgid "Disable Update notification."
+#~ msgstr "Aktualisierungsbenachrichtigung deaktivieren."
+
+#~ msgid "Your DennisHoppe.de Account"
+#~ msgstr "Ihr DennisHoppe.de Account"
+
+#~ msgid "Edit and create (own) Terms"
+#~ msgstr "Erstellen und Bearbeiten (eigener) Einträge"
+
+#~ msgid "Edit others Terms"
+#~ msgstr "Bearbeiten fremder Einträge"
+
+#~ msgid "Edit (own) private Terms"
+#~ msgstr "Bearbeiten (eigener) privater Einträge"
+
+#~ msgid "Edit (own) published Terms"
+#~ msgstr "Bearbeiten (eigener) veröffentlichter Einträge"
+
+#~ msgid "Delete (own) Terms"
+#~ msgstr "Löschen (eigener) Einträge"
+
+#~ msgid "Delete (own) private Terms"
+#~ msgstr "Löschen (eigener) privater Einträge"
+
+#~ msgid "Delete (own) published Terms"
+#~ msgstr "Löschen (eigener) veröffentlichter Einträge"
+
+#~ msgid "Delete others Terms"
+#~ msgstr "Löschen fremder Einträge"
+
+#~ msgid "Publish Terms"
+#~ msgstr "Einträge veröffentlichen"
+
+#~ msgid "View (others) private Terms"
+#~ msgstr "Ansehen (fremder) privater Einträge"
+
+#~ msgid "Manage Categories"
+#~ msgstr "Kategorien verwalten"
+
+#~ msgid "Manage Tags"
+#~ msgstr "Schlagwörter verwalten"
+
+#~ msgid ""
+#~ "To display this gallery in posts or pages easily you can use the <em>"
+#~ "[gallery]</em> Shortcode:"
+#~ msgstr ""
+#~ "Um diese Galerie in einem Artikel oder auf einer Seite darzustellen "
+#~ "verwenden Sie einfach diesen <em>[gallery]</em> Shortcode:"
+
+#~ msgid "Copy this code to all places where this gallery should appear."
+#~ msgstr ""
+#~ "Kopieren Sie diesen Code an alle Stellen, an denen diese Galerie "
+#~ "erscheinen soll."
+
+#~ msgid "Deactivate Archive"
+#~ msgstr "Archiv deaktivieren"
+
+#~ msgid "Deactivate the archive feature."
+#~ msgstr "Die Archivfunktion deaktivieren."
+
+#~ msgid ""
+#~ "If you tick this box visitors will no more be able to navigate through "
+#~ "the gallery archive."
+#~ msgstr ""
+#~ "Wenn Sie diese Option aktivieren sind die Besucher nicht mehr in der Lage "
+#~ "das Galeriearchiv einzusehen."
+
+#~ msgid "Fancy Random Images"
+#~ msgstr "Zufallsbilder"
+
+#~ msgid "Displays some random images from your galleries."
+#~ msgstr "Zeigt zufällige Bilder aus Ihren Galerien an."
+
+#~ msgid "Number of Images"
+#~ msgstr "Anzahl der Bilder"
+
+#~ msgid "Link target"
+#~ msgstr "Linkziel"
+
+#~ msgid "Fullsize Image"
+#~ msgstr "Bild in Originalgröße"
+
+#~ msgid "Image Gallery"
+#~ msgstr "Bildergalerie"
+
+#~ msgid "Thumbnail width:"
+#~ msgstr "Breite des Miniaturbildes:"
+
+#~ msgid "Thumbnail height:"
+#~ msgstr "Höhe des Miniaturbildes:"
+
+#~ msgid "Convert thumbnails to grayscale."
+#~ msgstr "Miniaturbilder in Graustufen konvertieren."
+
+#~ msgid "Negate the thumbnails."
+#~ msgstr "Miniaturbilder als Negativ anzeigen."
+
+#~ msgid "Template"
+#~ msgstr "Vorlage"
+
+#~ msgid "Please choose a template to display this widget."
+#~ msgstr "Bitte wählen Sie eine Vorlage zum Anzeigen des Widgets aus."
+
+#~ msgid ""
+#~ "Consolidate single images in a post to one group so the user can navigate "
+#~ "through them."
+#~ msgstr ""
+#~ "Einzelbilder in einem Artikel zu einer Gruppe zusammenfassen, so dass der "
+#~ "Benutzer diese durchblättern kann."
+
+#~ msgid "So you will have an image navigation for all images."
+#~ msgstr "So erhalten Sie eine Bildnavigation für alle Bilder."
+
+#~ msgid "Group single images by post."
+#~ msgstr "Einzelbilder nach Artikel gruppieren."
+
+#~ msgid "Will create different navigation paths for different posts."
+#~ msgstr "Dabei wird je ein Navigationspfad für einen Artikel erstellt."
+
+#~ msgid "Image appearance"
+#~ msgstr "Bildanzeige"
+
+#~ msgid "Convert images to inline elements."
+#~ msgstr "Konvertiert Bilder zu Inline-Elementen."
+
+#~ msgid "Tick this box if your images are among each other."
+#~ msgstr ""
+#~ "Aktivieren Sie dieses Feld wenn Ihre Galeriebilder untereinander "
+#~ "angezeigt werden."
+
+#~ msgid "Option Page"
+#~ msgstr "Einstellungen"
+
+#~ msgid "Do not show the options page as sub menu of the \"Galleries\" menu."
+#~ msgstr ""
+#~ "Die Einstellungsseite nicht als Untermenü des \"Galerien\"-Menüs anzeigen."
+
+#~ msgid "Owner"
+#~ msgstr "Eigentümer"
+
+#~ msgid "Changes the owner of this gallery."
+#~ msgstr "Verändert den Eigentümer dieser Galerie."
+
+#~ msgid "Are you sure you want to delete this template?"
+#~ msgstr "Sind Sie sicher, dass Sie diese Vorlage löschen wollen?"
+
+#~ msgid "by"
+#~ msgstr "von"
+
+#~ msgid "Delete this template"
+#~ msgstr "Diese Vorlage löschen"
+
+#~ msgid "Delete"
+#~ msgstr "Löschen"
+
+#~ msgid "Found in <em>%s</em>."
+#~ msgstr "Gefunden in <em>%s</em>."
+
+#~ msgid "Install a template in ZIP format"
+#~ msgstr "Eine Vorlage im ZIP-Format installieren"
+
+#~ msgid ""
+#~ "If you have a template as a .zip archive, you may install it by uploading "
+#~ "it here."
+#~ msgstr ""
+#~ "Installieren Sie eine Vorlage aus einem .zip-Archiv indem Sie diese hier "
+#~ "hochladen."
+
+#~ msgid "Template as ZIP File"
+#~ msgstr "Vorlage als ZIP-Datei"
+
+#~ msgid "Install a template in PHP format"
+#~ msgstr "Eine Vorlage im PHP-Format installieren"
+
+#~ msgid ""
+#~ "If you have a template as a .php file, you may install it by uploading it "
+#~ "here."
+#~ msgstr ""
+#~ "Installieren Sie eine Vorlage aus einer .php-Datei indem Sie diese hier "
+#~ "hochladen."
+
+#~ msgid "Templates PHP File"
+#~ msgstr "Vorlagen-PHP-Datei"
+
+#~ msgid "Install template and save all options"
+#~ msgstr "Vorlagen installieren und alle Optionen speichern"
+
+#~ msgid ""
+#~ "These settings affect the appearance of the thumbnail images of this "
+#~ "gallery."
+#~ msgstr ""
+#~ "Mithilfe dieser Einstellungen können die Miniaturbilder dieser Galerie "
+#~ "verändert werden."
+
+#~ msgid "Loop mode"
+#~ msgstr "Schleifenmodus"
+
+#~ msgid ""
+#~ "Will enable the user to get from the last image to the first one with the "
+#~ "\"Next &raquo;\" button."
+#~ msgstr ""
+#~ "Ermöglicht es dem Benutzer vom letzten zum ersten Bild durch den \"Weiter "
+#~ "&raquo;\" Button zu gelangen."
+
+#~ msgid "Scrollbars"
+#~ msgstr "Scroll-Leisten"
+
+#~ msgid "Automatic"
+#~ msgstr "Automatisch"
+
+#~ msgid ""
+#~ "\"Automatic\" means scrollbars will be visibly if necessary. \"Yes\" and "
+#~ "\"No\" should be clear."
+#~ msgstr ""
+#~ "\"Automatisch\" bedeutet die Scroll-Leisten werden eingeblendet wenn "
+#~ "nötig. \"Ja\" und \"Nein\" sollten klar sein."
+
+#~ msgid ""
+#~ "This option controls the appearance of the scrollbars inside the fancy "
+#~ "box."
+#~ msgstr ""
+#~ "Diese Option steuert die Darstellung der Scroll-Leisten in der FancyBox."
+
+#~ msgid "Center on scroll"
+#~ msgstr "Zentrieren beim Scrollen"
+
+#~ msgid ""
+#~ "Keep the FancyBox always in the center of the screen while scrolling the "
+#~ "page."
+#~ msgstr ""
+#~ "Die FancyBox, auch wärend des Scrollens, immer in der Bildschirmmitte "
+#~ "halten."
+
+#~ msgid "Close button"
+#~ msgstr "Schließen-Knopf"
+
+#~ msgid "Hide the close button."
+#~ msgstr "Den Schließen-Knopf verstecken."
+
+#~ msgid "Overlay opacity"
+#~ msgstr "Milchglas-Hintergrund Transparenzgrad"
+
+#~ msgid ""
+#~ "Percentaged opacity of the background of the FancyBox. Should be a value "
+#~ "from 0 (invisible) to 100 (opaque). (Default is 30)"
+#~ msgstr ""
+#~ "Prozentualer Sichtbarkeitsgrad für die \"Milchglasscheibe\" hinter der "
+#~ "FancyBox. Es sollte ein Wert zwischen 0 (unsichtbar) und 100 "
+#~ "(undurchschaubar) sein. (Standard ist 30)"
+
+#~ msgid "Overlay color"
+#~ msgstr "Milchglas-Hintergrund Grundfarbe"
+
+#~ msgid "Please choose the color of the \"darker\" background."
+#~ msgstr "Bitte wählen Sie eine Farbe für das Milchglas hinter der FancyBox."
+
+#~ msgid "Border width"
+#~ msgstr "Rahmenbreite"
+#~ msgctxt "Abbr. Pixels"
+
+#~ msgid "px"
+#~ msgstr "px"
+
+#~ msgid "Width of the image frame border. (in pixels)"
+#~ msgstr "Breite des Bildrahmens. (In Pixeln)"
+
+#~ msgid "Image title"
+#~ msgstr "Bildtitel"
+
+#~ msgid "Use the title of the image as title of the fancy box."
+#~ msgstr "Benutze den Bildtitel als Titel für die FancyBox."
+
+#~ msgid "Use the alternative text of the image as title of the fancy box."
+#~ msgstr "Benutze den alternativen Bildtext als Titel für die FancyBox."
+
+#~ msgid "Use the image caption as title of the fancy box."
+#~ msgstr "Benutze die Bildbeschriftung als Titel für die FancyBox."
+
+#~ msgid "Use the image description as title of the fancy box."
+#~ msgstr "Benutze die Bildbeschreibung als Titel für die FancyBox."
+
+#~ msgid "Title position"
+#~ msgstr "Bildtitelposition"
+
+#~ msgid "Outside the FancyBox"
+#~ msgstr "Außerhalb der FancyBox"
+
+#~ msgid "Does not work with multiline titles."
+#~ msgstr "Funktioniert nicht mit mehrzeiligen Bilduntertiteln."
+
+#~ msgid "Inside the FancyBox"
+#~ msgstr "In der FancyBox"
+
+#~ msgid "Does not work blameless with multiline titles."
+#~ msgstr "Funktioniert nur teilweise mit mehrzeiligen Bildtiteln."
+
+#~ msgid "Over the image"
+#~ msgstr "Auf dem Bild"
+
+#~ msgid "Works fine with multiline titles."
+#~ msgstr "Funktioniert auch mit mehrzeiligen Bildtiteln."
+
+#~ msgid "Opening transition"
+#~ msgstr "Einblendeffekt"
+
+#~ msgid "Fade"
+#~ msgstr "Aufblenden"
+
+#~ msgid "Elastic"
+#~ msgstr "Elastisch"
+
+#~ msgid "No transition"
+#~ msgstr "Kein Effekt"
+
+#~ msgid "Opening speed"
+#~ msgstr "Einblendverzögerung"
+#~ msgctxt "Abbr. Milliseconds"
+
+#~ msgid "msec"
+#~ msgstr "ms"
+
+#~ msgid "Speed of the fade and elastic transitions. (in milliseconds)"
+#~ msgstr "Laufzeit des Überblend-Effektes. (in Millisekunden)"
+
+#~ msgid "Closing transition"
+#~ msgstr "Ausblendeffekt"
+
+#~ msgid "Closing speed"
+#~ msgstr "Ausblendverzögerung"
+
+#~ msgid "Image resizing speed"
+#~ msgstr "Zeit der Bildgrößenanpassung"
+
+#~ msgid "Speed of resizing when changing gallery items. (in milliseconds)"
+#~ msgstr ""
+#~ "Laufzeit in der sich die FancyBox an die Größe eines Bildes anpassen "
+#~ "soll. (in Millisekunden)"
+
+#~ msgid "Script position"
+#~ msgstr "Scriptposition"
+
+#~ msgid "Footer of the website"
+#~ msgstr "Fußbereich der Webseite"
+
+#~ msgid "Header of the website"
+#~ msgstr "Kopfbereich der Webseite"
+
+#~ msgid ""
+#~ "Please choose the position of the javascript. Footer is recommended. Use "
+#~ "\"Header\" if you have trouble to make the Fancybox work."
+#~ msgstr ""
+#~ "Bitte wählen Sie die Position des Javascripts aus. Der \"Fußbereich\" "
+#~ "wird empfohlen. Wählen Sie \"Kopfbereich\" aus, wenn die Fancybox nicht "
+#~ "richtig funktioniert."
+
+#~ msgid "Referer Check"
+#~ msgstr "Referer Überprüfung"
+
+#~ msgid ""
+#~ "Disable the referer check in the dynamically JavaScript and CSS files."
+#~ msgstr ""
+#~ "Referer Überprüfung für dynamische JavaScript und CSS Komponenten "
+#~ "<b>deaktivieren</b>."
+
+#~ msgid ""
+#~ "Tick this is box if see a \"Wrong Referer\" message on your own website!"
+#~ msgstr ""
+#~ "Aktivieren Sie diese Option wenn Sie eine \"Wrong Referer\" Nachricht auf "
+#~ "Ihrer Webseite sehen!"
+
+#~ msgid "Please select the taxonomies you need to classify your galleries."
+#~ msgstr ""
+#~ "Bitte wählen Sie die Klassifizierungen zur Gruppierung Ihrer Galerien aus."
+
+#~ msgid "hierarchical"
+#~ msgstr "hierarchisch"
+
+#~ msgid ""
+#~ "Usually posts have optional hand-crafted summaries of their content. But "
+#~ "galleries do not."
+#~ msgstr ""
+#~ "Normale Artikel haben optional eine selbst verfasste Kurzzusammenfassung, "
+#~ "Galerien jedoch nicht."
+
+#~ msgid "Gallery excerpts are randomly chosen images from a gallery."
+#~ msgstr ""
+#~ "Die Galerievorschauen bestehen aus zufällig ausgewählten Bildern einer "
+#~ "Galerie."
+
+#~ msgid "These settings may be overridden for individual galleries."
+#~ msgstr ""
+#~ "Diese Einstellungen können für individuelle Galerien überschrieben werden."
+
+#~ msgid "Do not generate excerpts out of random gallery images."
+#~ msgstr "Keine Vorschau aus zufälligen Galeriebildern erstellen."
+
+#~ msgid "Images per Excerpt:"
+#~ msgstr "Bilder in der Vorschau:"
+
+#~ msgid "Set Gallery Thumbnail"
+#~ msgstr "Galerievorschaubild setzen"
+
+#~ msgid "Remove Gallery Thumbnail"
+#~ msgstr "Vorschaubild entfernen"
+
+#~ msgid "Use as Gallery Thumbnail"
+#~ msgstr "Als Galerievorschaubild verwenden"
+
+#~ msgid "Fancy Gallery"
+#~ msgstr "Fancy Gallery"
+
+#~ msgid "Fancy Light Box"
+#~ msgstr "Fancy Light Box"
+
+#~ msgid "Templates"
+#~ msgstr "Vorlagen"
+
+#~ msgid "Gallery \"Excerpts\""
+#~ msgstr "Galerie \"Auszug\""
+
+#~ msgid "Miscellaneous"
+#~ msgstr "Sonstiges"
+
+#~ msgid "Error while deleting: "
+#~ msgstr "Fehler während des Löschvorgangs:"
+
+#~ msgid "Template installed."
+#~ msgstr "Vorlage installiert."
+
+#~ msgid "Template deleted."
+#~ msgstr "Vorlage gelöscht."
+
+#~ msgid "Galleries"
+#~ msgstr "Galerien"
+
+#~ msgid "Gallery"
+#~ msgstr "Galerie"
+
+#~ msgid "New Gallery"
+#~ msgstr "Neue Galerie"
+
+#~ msgid "Edit Gallery"
+#~ msgstr "Galerie bearbeiten"
+
+#~ msgid "Search Galleries"
+#~ msgstr "Galerien suchen"
+
+#~ msgid "Gallery Tags"
+#~ msgstr "Schlagworte der Galerie "
+
+#~ msgid "Gallery Events"
+#~ msgstr "Ereignisse"
+
+#~ msgid "Events"
+#~ msgstr "Ereignisse"
+
+#~ msgid "Event"
+#~ msgstr "Ereignis"
+
+#~ msgid "Search Events"
+#~ msgstr "Ereignisse durchsuchen"
+
+#~ msgid "All Events"
+#~ msgstr "Alle Ereignisse"
+
+#~ msgid "Edit Event"
+#~ msgstr "Ereignis bearbeiten"
+
+#~ msgid "Update Event"
+#~ msgstr "Ereignis aktualisieren"
+
+#~ msgid "Add New Event"
+#~ msgstr "Neues Ereignis hinzufügen"
+
+#~ msgid "New Event"
+#~ msgstr "Neues Ereignis"
+
+#~ msgid "Gallery Places"
+#~ msgstr "Orte"
+
+#~ msgid "Places"
+#~ msgstr "Orte"
+
+#~ msgid "Place"
+#~ msgstr "Ort"
+
+#~ msgid "Search Places"
+#~ msgstr "Orte durchsuchen"
+
+#~ msgid "All Places"
+#~ msgstr "Alle Orte"
+
+#~ msgid "Edit Place"
+#~ msgstr "Ort bearbeiten"
+
+#~ msgid "Update Place"
+#~ msgstr "Orte aktualisieren"
+
+#~ msgid "Add New Place"
+#~ msgstr "Neue Orte hinzufügen"
+
+#~ msgid "New Place"
+#~ msgstr "Neuer Ort"
+
+#~ msgid "Gallery Dates"
+#~ msgstr "Zeiträume"
+
+#~ msgid "Dates"
+#~ msgstr "Zeiträume"
+
+#~ msgid "Search Dates"
+#~ msgstr "Zeiträume suchen"
+
+#~ msgid "All Dates"
+#~ msgstr "Alle Zeiträume"
+
+#~ msgid "Edit Date"
+#~ msgstr "Zeitraum bearbeiten"
+
+#~ msgid "Update Date"
+#~ msgstr "Zeitraum aktualisieren"
+
+#~ msgid "Add New Date"
+#~ msgstr "Neuen Zeitraum hinzufügen"
+
+#~ msgid "New Date"
+#~ msgstr "Neuer Zeitraum"
+
+#~ msgid "Gallery Persons"
+#~ msgstr "Personen"
+
+#~ msgid "Persons"
+#~ msgstr "Personen"
+
+#~ msgid "Person"
+#~ msgstr "Person"
+
+#~ msgid "Search Persons"
+#~ msgstr "Personen suchen"
+
+#~ msgid "All Persons"
+#~ msgstr "Alle Personen"
+
+#~ msgid "Edit Person"
+#~ msgstr "Person bearbeiten"
+
+#~ msgid "Update Person"
+#~ msgstr "Person aktualisieren"
+
+#~ msgid "Add New Person"
+#~ msgstr "Neue Person hinzufügen"
+
+#~ msgid "New Person"
+#~ msgstr "Neue Person"
+
+#~ msgid "Gallery Photographers"
+#~ msgstr "Fotografen"
+
+#~ msgid "Photographers"
+#~ msgstr "Fotografen"
+
+#~ msgid "Photographer"
+#~ msgstr "Fotograf"
+
+#~ msgid "Search Photographers"
+#~ msgstr "Fotografen suchen"
+
+#~ msgid "All Photographers"
+#~ msgstr "Alle Fotografen"
+
+#~ msgid "Edit Photographer"
+#~ msgstr "Fotograf bearbeiten"
+
+#~ msgid "Update Photographer"
+#~ msgstr "Fotograf aktualisieren"
+
+#~ msgid "Add New Photographer"
+#~ msgstr "Neuen Fotograf hinzufügen"
+
+#~ msgid "New Photographer"
+#~ msgstr "Neuer Fotograf"
+
+#~ msgid "Upload Images"
+#~ msgstr "Bilder hochladen"
+
+#~ msgid "Import from Library"
+#~ msgstr "Aus Bibliothek importieren"
+
+#~ msgid "Images"
+#~ msgstr "Bilder"
+
+#~ msgid "Excerpt"
+#~ msgstr "Vorschau"
+
+#~ msgid "Gallery ShortCode"
+#~ msgstr "Galerie-Shortcode"
+
+#~ msgid "Thumbnails"
+#~ msgstr "Vorschaubilder"
+
+#~ msgid "The Attachment was moved to your gallery."
+#~ msgstr "Das Bild wurde in Ihre Galerie verschoben."
+
+#~ msgid "Image: \"%s\""
+#~ msgstr "Bild: \"%s\""
+
+#~ msgid "Belongs to %s: \"%s\""
+#~ msgstr "Gehört zu %s: \"%s\""
+
+#~ msgid "Not attached to a post."
+#~ msgstr "Nicht an einen Artikel gebunden."
+
+#~ msgid "This image belongs to your gallery."
+#~ msgstr "Das Bild gehört zu Ihrer Galerie."
+
+#~ msgid "Import to my gallery"
+#~ msgstr "In meine Galerie verschieben"
+
+#~ msgid "Please choose a template to display this gallery."
+#~ msgstr "Bitte wählen Sie eine Vorlage zur Anzeige dieser Galerie aus."
+
+#~ msgid ""
+#~ "In this mode the excerpt of the gallery will display a set of random "
+#~ "images."
+#~ msgstr ""
+#~ "In diesem Modus wird die Galerievorschau als eine Reihe zufälliger Bilder "
+#~ "angezeigt."
+
+#~ msgid "Please choose a template to display the excerpt of this gallery."
+#~ msgstr "Bitte wählen Sie eine Vorlage für die Galerievorschau aus."
+
+#~ msgid "Text Excerpt"
+#~ msgstr "Textauszug"
+
+#~ msgid "Please log into your Account and download the new version."
+#~ msgstr ""
+#~ "Bitte loggen Sie sich in Ihren Account ein und laden Sie die neue Version "
+#~ "herunter."
+
+#~ msgid ""
+#~ "These settings affect the appearance of gallery overviews and the gallery "
+#~ "preview images."
+#~ msgstr ""
+#~ "Mithilfe dieser Einstellungen können Galerieübersichten und "
+#~ "Vorschaubilder der Galerie angezeigt werden."
+
+#~ msgid "Preview image width"
+#~ msgstr "Breite des Vorschaubildes"
+
+#~ msgid "Preview image height"
+#~ msgstr "Höhe des Vorschaubildes"
+
+#~ msgid "Convert Preview images to grayscale."
+#~ msgstr "Zeigt Vorschaubilder in Graustufen an."
+
+#~ msgid "Appearance problems"
+#~ msgstr "Darstellungsprobleme"
+
+#~ msgid ""
+#~ "Convert gallery images to inline elements. (Tick this box if your "
+#~ "galleries have only one column.)"
+#~ msgstr ""
+#~ "Konvertiere Galeriebilder in \"Inline\"-Elemente. (Aktivieren Sie dieses "
+#~ "Feld wenn Ihre Galerien mit nur einer Spalte dargestellt werden.)"
+
+#~ msgid ""
+#~ "Some themes let images appear as block elements. This effects that your "
+#~ "image galleries have only one column."
+#~ msgstr ""
+#~ "Einige Themes zeigen Bilder als Block-Elemente, was darin resultiert dass "
+#~ "Ihre Galerien einspaltig dargestellt werden."
+
+#, fuzzy
+#~ msgid "Fancy Gallery Pro Settings"
+#~ msgstr "Fancy Gallery Einstellungen"
