@@ -60,6 +60,19 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 = Frequently Asked Questions =
 I am still collecting frequently asked questions. ;)
 
+== Screenshots ==
+1. Example Archive page in TwentyTwelve Theme
+2. Example single term view in TwentyTwelve Theme
+3. user capabilities.
+4. Encyclopedia categories
+5. Edit screen of an encyclopedia category
+6. Edit screen of an encyclopedia term
+7. Encyclopedia items in your WP menues
+8. Encyclopedia options page
+9. Encyclopedia "Related terms" widgets
+10. Encyclopedia Taxonomy widget
+11. Encyclopedia taxonomy cloud
+12. Encyclopedia term list
 
 == Changelog ==
 
