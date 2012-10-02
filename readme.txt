@@ -77,6 +77,9 @@ I am still collecting frequently asked questions. ;)
 
 == Changelog ==
 
+= 1.0.2 =
+* Fixed the bug that you could not restore other post types with lite version
+
 = 1.0.1 =
 * Added Polish translation.
 

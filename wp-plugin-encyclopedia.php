@@ -3,7 +3,7 @@
 Plugin Name: Encyclopedia Lite
 Plugin URI: http://dennishoppe.de/wordpress-plugins/encyclopedia
 Description: Encyclopedia Lite enables you to create your own encyclopedia, lexicon, glossary, wiki or dictionary.
-Version: 1.0.1
+Version: 1.0.2
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
@@ -47,7 +47,7 @@ class wp_plugin_encyclopedia {
     Add_Filter('the_content', Array($this, 'Filter_Content'));
     Add_Action('wp_enqueue_scripts', Array($this, 'Enqueue_Encyclopedia_Style'));
     Add_Action('admin_init', Array($this, 'User_Creates_New_Term'));
-    Add_Action('untrash_post', Array($this, 'Check_Term_Count'));
+    Add_Action('untrash_post', Array($this, 'User_Untrashes_Post'));
     Add_Filter('views_edit-encyclopedia', Array($this, 'Add_Term_Count_Notice'));
 
     // Register Widgets
@@ -319,6 +319,11 @@ class wp_plugin_encyclopedia {
 
   function User_Creates_New_Term(){
     If ( BaseName($_SERVER['SCRIPT_NAME']) == 'post-new.php' && IsSet($_GET['post_type']) && $_GET['post_type'] == $this->post_type )
+      $this->Check_Term_Count();
+  }
+
+  function User_Untrashes_Post($post_id){
+    If (Get_Post_Type($post_id) == $this->post_type)
       $this->Check_Term_Count();
   }
 
