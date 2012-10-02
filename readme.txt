@@ -1,4 +1,4 @@
-=== Encyclopedia / Lexicon / Glossary / Wiki / Dictionary ===
+=== Encyclopedia / Lexicon / Glossary / Wiki / Dictionary / Knowledge base ===
 Contributors: dhoppe
 Tags: widget, Post, plugin, admin, posts, sidebar, comments, twitter, google, images, page, image, links, encyclopedia, lexicon, glossary, dictionary, knowledge base, wiki, wikipedia
 Requires at least: 3.1
