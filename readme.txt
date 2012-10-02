@@ -43,6 +43,7 @@ I know you have many questions – my mailbox is the proof. ;) But unfortunately
 = Language =
 * This Plugin is available in English.
 * Diese Erweiterung ist in Deutsch verfügbar. ([Dennis Hoppe](http://DennisHoppe.de/))
+* Ta wtyczka jest dostępna po Polsku. (Andrzej Opejda)
 
 
 = Translate this plugin =
@@ -75,6 +76,9 @@ I am still collecting frequently asked questions. ;)
 12. Encyclopedia term list
 
 == Changelog ==
+
+= 1.0.1 =
+* Added Polish translation.
 
 = 1.0 =
 * Everything works fine.

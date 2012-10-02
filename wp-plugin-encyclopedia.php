@@ -3,7 +3,7 @@
 Plugin Name: Encyclopedia Lite
 Plugin URI: http://dennishoppe.de/wordpress-plugins/encyclopedia
 Description: Encyclopedia Lite enables you to create your own encyclopedia, lexicon, glossary, wiki or dictionary.
-Version: 1.0
+Version: 1.0.1
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
@@ -48,7 +48,7 @@ class wp_plugin_encyclopedia {
     Add_Action('wp_enqueue_scripts', Array($this, 'Enqueue_Encyclopedia_Style'));
     Add_Action('admin_init', Array($this, 'User_Creates_New_Term'));
     Add_Action('untrash_post', Array($this, 'Check_Term_Count'));
-    Add_Action('admin_head-edit.php', Array($this, 'Add_Term_Count_Notice'));
+    Add_Filter('views_edit-encyclopedia', Array($this, 'Add_Term_Count_Notice'));
 
     // Register Widgets
     Add_Action ('widgets_init', Array($this,'Register_Widgets'));
@@ -343,15 +343,16 @@ class wp_plugin_encyclopedia {
     );
   }
 
-  function Add_Term_Count_Notice(){
-    Global $post_type_object; If ($post_type_object->name != $this->post_type) return; ?>
-    <div id="message" class="error"><p><?php PrintF('%s %s %s',
+  function Add_Term_Count_Notice($views){
+    ?><div id="message" class="error">
+    <p><?php PrintF('%s %s %s',
       $this->t('Please notice:'),
       $this->t('In the Lite Version you can create five terms only.'),
       $this->t('Why not switching to <a href="http://dennishoppe.de/en/wordpress-plugins/encyclopedia" target="_blank">Encyclopedia Pro</a>? :)')
     );
-    ?></p></div>
-    <?php
+    ?></p>
+    </div><?php
+    return $views;
   }
 
   function Filter_Query($query){

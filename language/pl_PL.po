@@ -1,0 +1,415 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Encyclopedia Lite\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-02 11:32+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
+"Language-Team: Andrzej Opejda <andrzej@opejda.pl>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: t;t:2c,1\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: POLAND\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../wp-plugin-encyclopedia.php:89
+#: ../options-page/options-page.php:3
+msgid "Encyclopedia Options"
+msgstr "Opcje encyklopedii"
+
+#: ../wp-plugin-encyclopedia.php:90
+msgid "Encyclopedia"
+msgstr "Encyklopedia"
+
+#: ../wp-plugin-encyclopedia.php:101
+msgid "Taxonomies"
+msgstr "Taksonomie"
+
+#: ../wp-plugin-encyclopedia.php:102
+msgid "Archive Page"
+msgstr "Archiwum"
+
+#: ../wp-plugin-encyclopedia.php:103
+msgid "Single Page"
+msgstr "Pojedyńcza strona"
+
+#: ../wp-plugin-encyclopedia.php:104
+#: ../wp-plugin-encyclopedia.php:290
+msgid "Archive Url"
+msgstr "Adres archiwum"
+
+#: ../wp-plugin-encyclopedia.php:201
+msgid "Lexicon"
+msgstr "Leksykon"
+
+#: ../wp-plugin-encyclopedia.php:209
+msgid "Term"
+msgstr "Hasło"
+
+#: ../wp-plugin-encyclopedia.php:210
+msgid "Add Term"
+msgstr "Dodaj hasło"
+
+#: ../wp-plugin-encyclopedia.php:211
+msgid "New Term"
+msgstr "Nowe hasło"
+
+#: ../wp-plugin-encyclopedia.php:212
+msgid "Edit Term"
+msgstr "Edytuj hasło"
+
+#: ../wp-plugin-encyclopedia.php:213
+msgid "View Term"
+msgstr "Zobacz hasło"
+
+#: ../wp-plugin-encyclopedia.php:214
+msgid "Search Terms"
+msgstr "Szukaj hasła"
+
+#: ../wp-plugin-encyclopedia.php:215
+msgid "No Terms found"
+msgstr "Nie znaleziono hasła"
+
+#: ../wp-plugin-encyclopedia.php:216
+msgid "No Terms found in Trash"
+msgstr "Nie znaleziono hasła w koszu"
+
+#: ../wp-plugin-encyclopedia.php:240
+#, php-format
+msgid "Term updated. (<a href=\"%s\">View Term</a>)"
+msgstr "Hasło zostało zaktualizowane. (<a href=\"%s\">Zobacz hasło</a>)"
+
+#: ../wp-plugin-encyclopedia.php:243
+msgid "Term updated."
+msgstr "Hasło zostało zaktualizowane."
+
+#: ../wp-plugin-encyclopedia.php:244
+#, php-format
+msgid "Term restored to revision from %s"
+msgstr "Przywrócono wersję hasła z %s"
+
+#: ../wp-plugin-encyclopedia.php:245
+#, php-format
+msgid "Term published. (<a href=\"%s\">View Term</a>)"
+msgstr "Hasło opublikowano. (<a href=\"%s\">Zobacz hasło</a>)"
+
+#: ../wp-plugin-encyclopedia.php:246
+msgid "Term saved."
+msgstr "Hasło zostało zapisane."
+
+#: ../wp-plugin-encyclopedia.php:247
+msgid "Term submitted."
+msgstr "Hasło zostało przesłane."
+
+#: ../wp-plugin-encyclopedia.php:248
+#, php-format
+msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
+msgstr "Hasło zostało zaplanowane. (<a target=\"_blank\" href=\"%s\">Zobacz hasło</a>)"
+
+#: ../wp-plugin-encyclopedia.php:249
+#, php-format
+msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
+msgstr "Zaktualizowano wersję próbną. (<a target=\"_blank\" href=\"%s\">Podgląd hasła</a>)"
+
+#: ../wp-plugin-encyclopedia.php:256
+msgid "Encyclopedia Tags"
+msgstr "Tagi encyklopedii"
+
+#: ../wp-plugin-encyclopedia.php:258
+msgid "Tags"
+msgstr "Tagi"
+
+#: ../wp-plugin-encyclopedia.php:259
+msgid "Tag"
+msgstr "Tag"
+
+#: ../wp-plugin-encyclopedia.php:260
+msgid "Search Tags"
+msgstr "Szukaj tagów"
+
+#: ../wp-plugin-encyclopedia.php:261
+msgid "All Tags"
+msgstr "Wszystkie tagi"
+
+#: ../wp-plugin-encyclopedia.php:262
+msgid "Edit Tag"
+msgstr "Edytuj tag"
+
+#: ../wp-plugin-encyclopedia.php:263
+msgid "Update Tag"
+msgstr "Zaktualizuj tag"
+
+#: ../wp-plugin-encyclopedia.php:264
+msgid "Add New Tag"
+msgstr "Dodaj nowy tag"
+
+#: ../wp-plugin-encyclopedia.php:265
+msgid "New Tag"
+msgstr "Nowy tag"
+
+#: ../wp-plugin-encyclopedia.php:293
+#, php-format
+msgid "This is the URL to the archive of this %s."
+msgstr "To jest URL do archiwum %s."
+
+#: ../wp-plugin-encyclopedia.php:297
+msgid "Archive Feed"
+msgstr "Kanał archiwum"
+
+#: ../wp-plugin-encyclopedia.php:300
+#, php-format
+msgid "This is the URL to the feed of the archive of this %s."
+msgstr "To jest URL do kanału archiwum %s."
+
+#: ../wp-plugin-encyclopedia.php:334
+msgid "Sorry!"
+msgstr "Przepraszamy!"
+
+#: ../wp-plugin-encyclopedia.php:335
+#: ../wp-plugin-encyclopedia.php:350
+msgid "In the Lite Version you can create five terms only."
+msgstr "W wersji Lite można utworzyć tylko pięć haseł."
+
+#: ../wp-plugin-encyclopedia.php:336
+#: ../wp-plugin-encyclopedia.php:351
+msgid "Why not switching to <a href=\"http://dennishoppe.de/en/wordpress-plugins/encyclopedia\" target=\"_blank\">Encyclopedia Pro</a>? :)"
+msgstr "Dlaczego więc nie przejść na <a href=\"http://dennishoppe.de/en/wordpress-plugins/encyclopedia\" target=\"_blank\">Encyclopedia Pro</a>? :)"
+
+#: ../wp-plugin-encyclopedia.php:340
+msgid "&laquo; Back to your terms"
+msgstr "&laquo; Powróć do swoich haseł"
+
+#: ../wp-plugin-encyclopedia.php:349
+msgid "Please notice:"
+msgstr "Uwaga:"
+
+#: ../wp-plugin-encyclopedia.php:500
+#, php-format
+msgid "Sorry, this feature is only available in the <a href=\"%s\" target=\"_blank\">Pro Version of the Encyclopedia Plugin</a>."
+msgstr "Przepraszam, ta cecha dostępna jest tylko w <a href=\"%s\" target=\"_blank\">wersji Pro wtyczki Encyclopedia</a>."
+
+#: ../wp-plugin-encyclopedia.php:501
+msgctxt "Link to the authors website"
+msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
+msgstr "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:15
+msgid "Encyclopedia Taxonomy Cloud"
+msgstr "Chmura taksonomii Encyklopedii"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:16
+msgid "Displays your Encyclopedia taxonomies as cloud."
+msgstr "Wyświetla taksonomie Encyklopedii jako chmurę."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:62
+#: ../wp-widget-encyclopedia-terms.php:60
+#: ../wp-widget-encyclopedia-related-terms.php:59
+#: ../wp-widget-encyclopedia-taxonomies.php:61
+msgid "Title"
+msgstr "Tytuł"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:64
+#: ../wp-widget-encyclopedia-terms.php:62
+#: ../wp-widget-encyclopedia-related-terms.php:61
+#: ../wp-widget-encyclopedia-taxonomies.php:63
+msgid "Leave blank to use the widget default title."
+msgstr "Pozostaw puste, aby użyto domyślnego tytułu widgetu."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:68
+#: ../wp-widget-encyclopedia-taxonomies.php:67
+msgid "Taxonomy"
+msgstr "Taksonomia"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:74
+#: ../wp-widget-encyclopedia-taxonomies.php:73
+msgid "Please choose the Taxonomy the widget should display."
+msgstr "Proszę wybrać taksonomię, która ma być wyświetlana przez widget."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:78
+#: ../wp-widget-encyclopedia-related-terms.php:65
+#: ../wp-widget-encyclopedia-taxonomies.php:77
+msgid "Number"
+msgstr "Numer"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:80
+msgid "Leave blank (or \"0\") to show all."
+msgstr "Pozostaw puste (lub \"0\"), aby wyświetlić wszystkie."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:86
+msgid "Taxonomy IDs, separated by commas."
+msgstr "ID taksonomii, oddzielane przecinkiem."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:90
+#: ../wp-widget-encyclopedia-terms.php:66
+#: ../wp-widget-encyclopedia-taxonomies.php:94
+msgid "Order by"
+msgstr "Sortowanie wg"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:93
+msgid "Gallery Count"
+msgstr "Liczba galerii"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:98
+#: ../wp-widget-encyclopedia-terms.php:80
+#: ../wp-widget-encyclopedia-taxonomies.php:104
+msgid "Order"
+msgstr "Kolejność"
+
+#: ../wp-widget-encyclopedia-terms.php:14
+msgid "Encyclopedia Terms"
+msgstr "Hasła encyklopedii"
+
+#: ../wp-widget-encyclopedia-terms.php:15
+msgid "Displays your encyclopedia terms as list."
+msgstr "Wyświetla hasła encyklopedii jako listę."
+
+#: ../wp-widget-encyclopedia-terms.php:70
+msgid "Author"
+msgstr "Autor"
+
+#: ../wp-widget-encyclopedia-terms.php:71
+msgid "Date"
+msgstr "Data"
+
+#: ../wp-widget-encyclopedia-terms.php:72
+msgid "Last modification"
+msgstr "Ostatnia zmiana"
+
+#: ../wp-widget-encyclopedia-terms.php:73
+msgid "Random"
+msgstr "Losowo"
+
+#: ../wp-widget-encyclopedia-terms.php:74
+msgid "Comment Count"
+msgstr "Liczba komentarzy"
+
+#: ../wp-widget-encyclopedia-terms.php:75
+msgid "Menu Order"
+msgstr "Kolejność menu"
+
+#: ../wp-widget-encyclopedia-related-terms.php:14
+msgid "Encyclopedia Related Terms"
+msgstr "Hasła podobne"
+
+#: ../wp-widget-encyclopedia-related-terms.php:15
+msgid "Displays encyclopedia terms which are related to the current one as list."
+msgstr "Wyświetla listę haseł encyklopedii podobnych do bieżącego."
+
+#: ../wp-widget-encyclopedia-related-terms.php:67
+msgid "The number of related terms you want to show."
+msgstr "Liczba podobnych haseł, które mają być wyświetlane."
+
+#: ../wp-widget-encyclopedia-taxonomies.php:14
+msgid "Encyclopedia Taxonomies"
+msgstr "Taksonomie encyklopedii"
+
+#: ../wp-widget-encyclopedia-taxonomies.php:15
+msgid "Displays your encyclopedia taxonomies like Categories, Tags, etc."
+msgstr "Wyświetla taksonomie Twojej encyklopedii takie, jak kategorie, tagi itp."
+
+#: ../wp-widget-encyclopedia-taxonomies.php:79
+msgid "Leave blank to show all."
+msgstr "Pozostaw puste, aby wyświetlić wszystkie."
+
+#: ../wp-widget-encyclopedia-taxonomies.php:85
+msgid "Term IDs, separated by commas."
+msgstr "ID hasła, oddzielane przecinkiem."
+
+#: ../wp-widget-encyclopedia-taxonomies.php:97
+msgid "Term Count"
+msgstr "Liczba haseł"
+
+#: ../wp-widget-encyclopedia-taxonomies.php:99
+msgid "Slug"
+msgstr "slug"
+
+#: ../templates/encyclopedia-related-terms.php:2
+msgid "Related entries"
+msgstr "Pokrewne hasła"
+
+#: ../options-page/box-archive-page.php:3
+msgid "Terms per page:"
+msgstr "Liczba haseł na stronie:"
+
+#: ../options-page/box-archive-page.php:6
+msgid "This option effects all encyclopedia archive pages."
+msgstr "Ta opcja mw wpływ na wszystkie strony archiwalne."
+
+#: ../options-page/box-archive-page.php:12
+msgid "Term filter"
+msgstr "Filtr haseł"
+
+#: ../options-page/box-archive-page.php:18
+msgid "Display a term filter above the encyclopedia archive automatically or not."
+msgstr "Wyświetlać lub nie filtr haseł powyżej archiwum encyklopedii."
+
+#: ../options-page/box-taxonomies.php:3
+msgid "Activate categories"
+msgstr "Aktywuj kategorie"
+
+#: ../options-page/box-taxonomies.php:9
+msgid "Categories can help you create an awesome knowledge base."
+msgstr "Kategorie mogą być pomocne w tworzenie wspaniałej bazy wiedzy."
+
+#: ../options-page/box-taxonomies.php:15
+msgid "Activate tags"
+msgstr "Aktywuj tagi"
+
+#: ../options-page/box-taxonomies.php:21
+msgid "Tags are necessary if you want to display relevant entries automatically."
+msgstr "Tagi są konieczne, jeśli chcesz automatycznie wyświetlać odpowiednie wpisy."
+
+#: ../options-page/box-general.php:3
+msgid "Encyclopedia type:"
+msgstr "Rodzaj encyklopedii:"
+
+#: ../options-page/box-general.php:8
+msgid "Glossary"
+msgstr "Leksykon"
+
+#: ../options-page/box-general.php:9
+msgid "Dictionary"
+msgstr "Słownik"
+
+#: ../options-page/box-general.php:11
+msgid "Please choose the type of your encyclopedia. This option does not change the behavior of the plugin. It's just for the labels and captions in the backend."
+msgstr "Wybierz rodzaj swojej encyklopedii. Ta opcja nie zmienia działania wtyczki. To potrzebne jest tylko do stosowania odpowiednich etykiet i podpisów."
+
+#: ../options-page/box-general.php:17
+msgid "Use default style"
+msgstr "Używaj stylu domyślnego"
+
+#: ../options-page/box-general.php:23
+msgid "Set this option to \"No\" if you want to use your own style for the encyclopedia."
+msgstr "Wybierz \"Nie\", jeśli chcesz używać własnego stylu encyklopedii."
+
+#: ../options-page/box-single-page.php:3
+msgid "Display related entries"
+msgstr "Wyświetlaj podobne wpisy"
+
+#: ../options-page/box-single-page.php:5
+msgid "below the encyclopedia entry"
+msgstr "poniżej wpisu w encyklopedii"
+
+#: ../options-page/box-single-page.php:6
+msgid "above the encyclopedia entry"
+msgstr "powyżej wpisu w encyklopedii"
+
+#: ../options-page/box-single-page.php:7
+msgid "do not show related terms"
+msgstr "nie wyświetlaj wcale podobnych haseł"
+
+#: ../options-page/box-archive-link.php:2
+#, php-format
+msgid "The Archive link for your Encyclopedia is: <div><code><a href=\"%1$s\" target=\"_blank\">%1$s</a></code></div>"
+msgstr "Link do archiwum Twojej encyklopedii: <div><code><a href=\"%1$s\" target=\"_blank\">%1$s</a></code></div>"
+
+#: ../options-page/box-archive-link.php:5
+#, php-format
+msgid "The Archive Feed for your Encyclopedia is: <div><code><a href=\"%1$s\" target=\"_blank\">%1$s</a></code></div>"
+msgstr "Link do kanału archiwum Twojej enycklopedii: <div><code><a href=\"%1$s\" target=\"_blank\">%1$s</a></code></div>"
+
