@@ -5,16 +5,16 @@ Requires at least: 3.1
 Tested up to: 3.5
 Stable tag: trunk
 
-Encyclopedia Lite enables you to create, manage and present a Knowledge Base / Encyclopedia / Lexicon / Glossary / Dictionary -- Completely coalesced with your WordPress!
+This great Encyclopedia Lite enables you to create an awesome Encyclopedia, Lexicon, Glossary, Wiki, Dictionary or Knowledge Base!
 
 == Description ==
-[Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) Lite is a state of the art [WordPress encyclopedia / lexicon / glossary / dictionary plugin](http://dennishoppe.de/en/wordpress-plugins/encyclopedia). It enables you to create, manage and present a knowledge base. Completely coalesced with your WordPress and fully compatible with all the cool publishing tools you like.
+[Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) Lite is a state of the art [WordPress encyclopedia / lexicon / glossary / wiki / dictionary plugin](http://dennishoppe.de/en/wordpress-plugins/encyclopedia). It enables you to create, manage and present a knowledge base. Completely coalesced with your WordPress and fully compatible with all the cool publishing tools you like.
 
 In the Lite Edition of the plugin you can take a look around and you try out everything. On several places in the plugin you will find a notice that this function is included in the [Pro Version](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) only. There is no support available for the free Lite Version.
 
 = Main features =
 * Create, manage and structure your Terms as
-* [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia), lexicon, glossary, Wiki or dictionary
+* [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia), lexicon, glossary, Wiki, dictionary or knowledge base
 * Use tags and categories to classify your terms
 * Automatic association of related terms
 * Completely translatable - .po file is included
