@@ -43,7 +43,7 @@ I know you have many questions – my mailbox is the proof. ;) But unfortunately
 = Language =
 * This Plugin is available in English.
 * Diese Erweiterung ist in Deutsch verfügbar. ([Dennis Hoppe](http://DennisHoppe.de/))
-* Ta wtyczka jest dostępna po Polsku. (Andrzej Opejda)
+* Ta wtyczka jest dostępna po Polsku. ([Andrzej Opejda](http://astrolog.pl/))
 
 
 = Translate this plugin =
