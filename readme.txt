@@ -77,6 +77,9 @@ I am still collecting frequently asked questions. ;)
 
 == Changelog ==
 
+= 1.0.3 =
+* Added translatable url slugs
+
 = 1.0.2 =
 * Fixed the bug that you could not restore other post types with lite version
 

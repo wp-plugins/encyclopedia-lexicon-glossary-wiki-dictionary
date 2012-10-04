@@ -14,6 +14,15 @@
 </tr>
 
 <tr>
+  <th><?php Echo $this->t('URL Slugs') ?>:</th>
+  <td>
+		<input type="checkbox" name="translate_url_slugs" id="translate_url_slugs" value="yes" <?php Checked($this->Get_Option('translate_url_slugs'), 'yes') ?> >
+    <label  for="translate_url_slugs"><?php Echo $this->t('Translate the URL slugs of the encyclopedia type.') ?></label><br>
+		<small><?php Echo $this->t('Warning: Do not use this option if your website uses multilingual plugins like WPML!') ?></small>
+	</td>
+</tr>
+
+<tr>
   <th><label for="embed_default_style"><?php Echo $this->t('Use default style') ?>:</label></th>
   <td>
 		<select name="embed_default_style" id="embed_default_style">

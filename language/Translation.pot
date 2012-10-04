@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia Lite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-01 09:22+0100\n"
+"POT-Creation-Date: 2012-10-04 18:31+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: \n"
@@ -42,6 +42,10 @@ msgstr ""
 
 #: ../wp-plugin-encyclopedia.php:201
 msgid "Lexicon"
+msgstr ""
+
+#: ../wp-plugin-encyclopedia.php:202
+msgid "lexicon"
 msgstr ""
 
 #: ../wp-plugin-encyclopedia.php:209
@@ -163,34 +167,34 @@ msgstr ""
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:334
+#: ../wp-plugin-encyclopedia.php:339
 msgid "Sorry!"
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:335
-#: ../wp-plugin-encyclopedia.php:350
+#: ../wp-plugin-encyclopedia.php:340
+#: ../wp-plugin-encyclopedia.php:355
 msgid "In the Lite Version you can create five terms only."
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:336
-#: ../wp-plugin-encyclopedia.php:351
+#: ../wp-plugin-encyclopedia.php:341
+#: ../wp-plugin-encyclopedia.php:356
 msgid "Why not switching to <a href=\"http://dennishoppe.de/en/wordpress-plugins/encyclopedia\" target=\"_blank\">Encyclopedia Pro</a>? :)"
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:340
+#: ../wp-plugin-encyclopedia.php:345
 msgid "&laquo; Back to your terms"
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:349
+#: ../wp-plugin-encyclopedia.php:354
 msgid "Please notice:"
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:499
+#: ../wp-plugin-encyclopedia.php:505
 #, php-format
 msgid "Sorry, this feature is only available in the <a href=\"%s\" target=\"_blank\">Pro Version of the Encyclopedia Plugin</a>."
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:500
+#: ../wp-plugin-encyclopedia.php:506
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr ""
@@ -378,10 +382,22 @@ msgid "Please choose the type of your encyclopedia. This option does not change 
 msgstr ""
 
 #: ../options-page/box-general.php:17
+msgid "URL Slugs"
+msgstr ""
+
+#: ../options-page/box-general.php:20
+msgid "Translate the URL slugs of the encyclopedia type."
+msgstr ""
+
+#: ../options-page/box-general.php:21
+msgid "Warning: Do not use this option if your website uses multilingual plugins like WPML!"
+msgstr ""
+
+#: ../options-page/box-general.php:26
 msgid "Use default style"
 msgstr ""
 
-#: ../options-page/box-general.php:23
+#: ../options-page/box-general.php:32
 msgid "Set this option to \"No\" if you want to use your own style for the encyclopedia."
 msgstr ""
 

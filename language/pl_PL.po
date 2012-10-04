@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia Lite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-02 11:32+0100\n"
+"POT-Creation-Date: 2012-10-04 18:33+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Andrzej Opejda <andrzej@opejda.pl>\n"
@@ -45,6 +45,10 @@ msgstr "Adres archiwum"
 #: ../wp-plugin-encyclopedia.php:201
 msgid "Lexicon"
 msgstr "Leksykon"
+
+#: ../wp-plugin-encyclopedia.php:202
+msgid "lexicon"
+msgstr "leksykon"
 
 #: ../wp-plugin-encyclopedia.php:209
 msgid "Term"
@@ -165,34 +169,34 @@ msgstr "Kanał archiwum"
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "To jest URL do kanału archiwum %s."
 
-#: ../wp-plugin-encyclopedia.php:334
+#: ../wp-plugin-encyclopedia.php:339
 msgid "Sorry!"
 msgstr "Przepraszamy!"
 
-#: ../wp-plugin-encyclopedia.php:335
-#: ../wp-plugin-encyclopedia.php:350
+#: ../wp-plugin-encyclopedia.php:340
+#: ../wp-plugin-encyclopedia.php:355
 msgid "In the Lite Version you can create five terms only."
 msgstr "W wersji Lite można utworzyć tylko pięć haseł."
 
-#: ../wp-plugin-encyclopedia.php:336
-#: ../wp-plugin-encyclopedia.php:351
+#: ../wp-plugin-encyclopedia.php:341
+#: ../wp-plugin-encyclopedia.php:356
 msgid "Why not switching to <a href=\"http://dennishoppe.de/en/wordpress-plugins/encyclopedia\" target=\"_blank\">Encyclopedia Pro</a>? :)"
 msgstr "Dlaczego więc nie przejść na <a href=\"http://dennishoppe.de/en/wordpress-plugins/encyclopedia\" target=\"_blank\">Encyclopedia Pro</a>? :)"
 
-#: ../wp-plugin-encyclopedia.php:340
+#: ../wp-plugin-encyclopedia.php:345
 msgid "&laquo; Back to your terms"
 msgstr "&laquo; Powróć do swoich haseł"
 
-#: ../wp-plugin-encyclopedia.php:349
+#: ../wp-plugin-encyclopedia.php:354
 msgid "Please notice:"
 msgstr "Uwaga:"
 
-#: ../wp-plugin-encyclopedia.php:500
+#: ../wp-plugin-encyclopedia.php:505
 #, php-format
 msgid "Sorry, this feature is only available in the <a href=\"%s\" target=\"_blank\">Pro Version of the Encyclopedia Plugin</a>."
 msgstr "Przepraszam, ta cecha dostępna jest tylko w <a href=\"%s\" target=\"_blank\">wersji Pro wtyczki Encyclopedia</a>."
 
-#: ../wp-plugin-encyclopedia.php:501
+#: ../wp-plugin-encyclopedia.php:506
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
@@ -380,10 +384,22 @@ msgid "Please choose the type of your encyclopedia. This option does not change 
 msgstr "Wybierz rodzaj swojej encyklopedii. Ta opcja nie zmienia działania wtyczki. To potrzebne jest tylko do stosowania odpowiednich etykiet i podpisów."
 
 #: ../options-page/box-general.php:17
+msgid "URL Slugs"
+msgstr ""
+
+#: ../options-page/box-general.php:20
+msgid "Translate the URL slugs of the encyclopedia type."
+msgstr ""
+
+#: ../options-page/box-general.php:21
+msgid "Warning: Do not use this option if your website uses multilingual plugins like WPML!"
+msgstr ""
+
+#: ../options-page/box-general.php:26
 msgid "Use default style"
 msgstr "Używaj stylu domyślnego"
 
-#: ../options-page/box-general.php:23
+#: ../options-page/box-general.php:32
 msgid "Set this option to \"No\" if you want to use your own style for the encyclopedia."
 msgstr "Wybierz \"Nie\", jeśli chcesz używać własnego stylu encyklopedii."
 
