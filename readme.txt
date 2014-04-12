@@ -1,5 +1,5 @@
 === Encyclopedia / Lexicon / Glossary / Wiki / Dictionary / Knowledge base ===
-Contributors: Dennis Hoppe
+Contributors: dhoppe
 Tags: encyclopedia, lexicon, glossary, dictionary, knowledge base, wiki, wikipedia,        widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
 Requires at least: 3.1
 Tested up to: 3.5
