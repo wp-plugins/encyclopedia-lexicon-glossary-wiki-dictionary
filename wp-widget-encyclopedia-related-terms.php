@@ -2,7 +2,7 @@
 Class wp_widget_encyclopedia_related_terms Extends WP_Widget {
   var $encyclopedia;
 
-  Function __construct(){
+  function __construct(){
     If (IsSet($GLOBALS['wp_plugin_encyclopedia']) && Is_Object($GLOBALS['wp_plugin_encyclopedia']))
       $this->encyclopedia = $GLOBALS['wp_plugin_encyclopedia'];
     Else
@@ -16,11 +16,11 @@ Class wp_widget_encyclopedia_related_terms Extends WP_Widget {
     );
   }
 
-  Function t ($text, $context = ''){
+  function t ($text, $context = ''){
     return $this->encyclopedia->t($text, $context);
   }
 
-  Function Default_Options(){
+  function Default_Options(){
     // Default settings
     return Array(
       'number'  => 5,
@@ -28,7 +28,7 @@ Class wp_widget_encyclopedia_related_terms Extends WP_Widget {
     );
   }
 
-  Function Load_Options($options){
+  function Load_Options($options){
     $options = (ARRAY) $options;
 
     // Delete empty values
@@ -39,43 +39,43 @@ Class wp_widget_encyclopedia_related_terms Extends WP_Widget {
     $this->arr_option = Array_Merge ($this->Default_Options(), $options);
   }
 
-  Function Get_Option($key, $default = False){
+  function Get_Option($key, $default = False){
     If (IsSet($this->arr_option[$key]) && $this->arr_option[$key])
       return $this->arr_option[$key];
     Else
       return $default;
   }
 
-  Function Set_Option($key, $value){
+  function Set_Option($key, $value){
     $this->arr_option[$key] = $value;
   }
 
-  Function Form ($settings){
+  function Form ($settings){
     // Load options
     $this->load_options ($settings); Unset ($settings);
     ?>
 
     <p>
-      <label for="<?php Echo $this->Get_Field_Id('title') ?>"><?php Echo $this->t('Title') ?></label>:
-      <input type="text" id="<?php Echo $this->Get_Field_Id('title') ?>" name="<?php Echo $this->get_field_name('title')?>" value="<?php Echo HTMLSpecialChars($this->get_option('title')) ?>"><br>
+      <label for="<?php Echo $this->Get_Field_Id('title') ?>"><?php _e('Title:') ?></label>
+      <input type="text" id="<?php Echo $this->Get_Field_Id('title') ?>" name="<?php Echo $this->Get_Field_Name('title')?>" value="<?php Echo HTMLSpecialChars($this->Get_Option('title')) ?>" class="widefat">
       <small><?php Echo $this->t('Leave blank to use the widget default title.') ?></small>
     </p>
 
     <p>
-      <label for="<?php Echo $this->Get_Field_Id('number') ?>"><?php Echo $this->t('Number') ?></label>:
-      <input type="text" id="<?php Echo $this->Get_Field_Id('number') ?>" name="<?php Echo $this->get_field_name('number')?>" value="<?php Echo HTMLSpecialChars($this->get_option('number')) ?>" size="4"><br>
+      <label for="<?php Echo $this->Get_Field_Id('number') ?>"><?php Echo $this->t('Number:') ?></label>
+      <input type="number" id="<?php Echo $this->Get_Field_Id('number') ?>" name="<?php Echo $this->Get_Field_Name('number')?>" value="<?php Echo HTMLSpecialChars($this->Get_Option('number')) ?>" size="4"><br>
       <small><?php Echo $this->t('The number of related terms you want to show.') ?></small>
     </p>
 
     <?php
   }
 
-  Function Widget ($args, $settings){
+  function Widget ($args, $settings){
     // Load options
-    $this->load_options ($settings); Unset ($settings);
+    $this->load_options ($settings);
 
     // Load the Query
-    $term_query = $this->encyclopedia->get_tag_related_terms(Null, $this->get_option('number'));
+    $term_query = $this->encyclopedia->Get_Tag_Related_Terms(Null, $this->get_option('number'));
     If (!$term_query) return;
 
     // Display Widget
@@ -88,10 +88,9 @@ Class wp_widget_encyclopedia_related_terms Extends WP_Widget {
     WP_Reset_Postdata();
   }
 
-  Function Update ($new_settings, $old_settings){
+  function Update ($new_settings, $old_settings){
     return $new_settings;
   }
 
 } /* End of Class */
 } /* End of If-Class-Exists-Condition */
-/* End of File */

@@ -6,8 +6,10 @@
 			<option value="" <?php Selected($this->Get_Option('encyclopedia_categories'), 'yes') ?> disabled="disabled"><?php _e('Yes') ?></option>
 			<option value="" <?php Selected($this->Get_Option('encyclopedia_categories'), 'no') ?> disabled="disabled" selected="selected"><?php _e('No') ?></option>
 		</select><br>
-		<small><?php Echo $this->t('Categories can help you create an awesome knowledge base.') ?></small>
-    <p class="pro-notice"><?php $this->Pro_Notice() ?></p>
+		<small>
+      <?php Echo $this->t('Categories can help you create an awesome knowledge base.') ?>
+      <span class="pro-notice"><?php $this->Pro_Notice() ?></span>
+    </small>
 	</td>
 </tr>
 
@@ -18,7 +20,9 @@
 			<option value="yes" <?php Selected($this->Get_Option('encyclopedia_tags'), 'yes') ?> ><?php _e('Yes') ?></option>
 			<option value="no" <?php Selected($this->Get_Option('encyclopedia_tags'), 'no') ?> ><?php _e('No') ?></option>
 		</select><br>
-		<small><?php Echo $this->t('Tags are necessary if you want to display relevant entries automatically.') ?></small>
+		<small>
+      <?php Echo $this->t('Tags are necessary if you want to display relevant entries automatically.') ?>
+    </small>
 	</td>
 </tr>
 </table>

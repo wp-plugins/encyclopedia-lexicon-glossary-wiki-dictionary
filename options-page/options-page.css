@@ -5,7 +5,15 @@ div.capability-selection input { margin-left: 15px; }
 div.capability-selection.highlight1 { background-color: #eee; }
 div.capability-selection.highlight2 { background-color: #ddd; }
 
-.pro-notice {
-  color: red;
-  font-style: italic;
+.wrap .postbox-container .postbox { min-width: 0; width: auto }
+.wrap .postbox-container.left { width: 64%; float: left }
+.wrap .postbox-container.right { width: 34%; float: right }
+
+
+@media screen and (max-width: 760px){
+  body { min-width: 0 }
+  .wrap .postbox-container.left,
+  .wrap .postbox-container.right { float: none; width: auto }
 }
+
+.pro-notice { font-style: italic }

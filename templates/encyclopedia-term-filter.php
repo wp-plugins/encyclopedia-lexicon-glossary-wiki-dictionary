@@ -8,7 +8,7 @@ ForEach ($filter AS $filter_line) : ?>
 
 		<?php ForEach ($filter_line AS $element) : ?>
 			<span class="filter <?php Echo ($element->active) ? 'current-filter' : '' ?>">
-				<a href="<?php Echo $element->link ?>" class="filter-link"><?php Echo $element->filter ?></a>
+				<a href="<?php Echo $element->link ?>" class="filter-link"><?php Echo HTMLEntities($element->filter, Null, 'UTF-8') ?></a>
 			</span>
 		<?php EndForEach ?>
 

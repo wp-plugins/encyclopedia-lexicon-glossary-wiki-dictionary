@@ -11,7 +11,7 @@
 <form method="post" action="" enctype="multipart/form-data">
 <div class="metabox-holder">
 
-	<div class="postbox-container" style="width:69%;">
+	<div class="postbox-container left">
 		<?php ForEach ($this->arr_option_box['main'] AS $box) : ?>
 			<div class="postbox should-be-<?php Echo $box['state'] ?>">
 				<div class="handlediv" title="<?php _e('Click to toggle') ?>"><br /></div>
@@ -21,7 +21,7 @@
 		<?php EndForEach ?>
 	</div>
 
-	<div class="postbox-container" style="width:29%;float:right">
+	<div class="postbox-container right">
 		<?php ForEach ($this->arr_option_box['side'] AS $box) : ?>
 			<div class="postbox should-be-<?php Echo $box['state'] ?>">
 				<div class="handlediv" title="<?php _e('Click to toggle') ?>"><br /></div>

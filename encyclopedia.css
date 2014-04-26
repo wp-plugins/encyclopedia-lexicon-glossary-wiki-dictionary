@@ -1,29 +1,49 @@
 /* Default Themes: Remove useless Elements */
-.post-type-archive-encyclopedia .page-title,
-.post-type-archive-encyclopedia .entry-meta,
-.post-type-archive-encyclopedia .comments-link,
-.post-type-archive-encyclopedia .archive-header,
-.tax-encyclopedia-category .page-title,
-.tax-encyclopedia-category .entry-meta,
-.tax-encyclopedia-category .comments-link,
-.tax-encyclopedia-category .archive-header,
-.tax-encyclopedia-tag .page-title,
-.tax-encyclopedia-tag .entry-meta,
-.tax-encyclopedia-tag .comments-link,
-.tax-encyclopedia-tag .archive-header,
-.single-encyclopedia .entry-meta {
-  display: none;
-}
+/* Twenty Ten */
+html body.post-type-archive-encyclopedia div#wrapper.hfeed div#main div#container div#content h1.page-title,
+html body.post-type-archive-encyclopedia div#wrapper.hfeed div#main div#container div#content div.encyclopedia div.entry-meta,
+html body.post-type-archive-encyclopedia div#wrapper.hfeed div#main div#container div#content div.encyclopedia div.entry-utility span.cat-links,
+html body.post-type-archive-encyclopedia div#wrapper.hfeed div#main div#container div#content div.encyclopedia div.entry-utility span.meta-sep,
+html body.post-type-archive-encyclopedia div#wrapper.hfeed div#main div#container div#content div.encyclopedia div.entry-utility span.comments-link,
+html body.single-encyclopedia div#wrapper.hfeed div#main div#container div#content div.encyclopedia div.entry-meta
+{ display: none }
+html body.post-type-archive-encyclopedia.search-results div#wrapper.hfeed div#main div#container div#content h1.page-title
+{ display: block }
+
+/* Twenty Eleven */
+html body.post-type-archive-encyclopedia div#page.hfeed div#main section#primary div#content header.page-header
+{ display: none }
+html body.post-type-archive-encyclopedia.search-results div#page.hfeed div#main section#primary div#content header.page-header
+{ display: block }
+
+/* Twenty Twelve */
+html body.post-type-archive-encyclopedia div#page.hfeed div#main.wrapper section#primary.site-content div#content header.archive-header,
+html body.post-type-archive-encyclopedia div#page.hfeed div#main.wrapper section#primary.site-content div#content article.encyclopedia footer.entry-meta,
+html body.single-encyclopedia div#page.hfeed div#main.wrapper div#primary.site-content div#content article.encyclopedia footer.entry-meta
+{ display: none }
+html body.post-type-archive-encyclopedia.search-results div#page.hfeed div#main.wrapper section#primary.site-content div#content header.page-header
+{ display: block }
+
+/* Twenty Thirteen */
+html body.post-type-archive-encyclopedia div#page.hfeed div#main.site-main div#primary.content-area div#content.site-content header.archive-header
+{ display: none }
+html body.post-type-archive-encyclopedia div#page.hfeed div#main.site-main div#tertiary.sidebar-container,
+html body.single-encyclopedia div#page.hfeed div#main.site-main div#tertiary.sidebar-container
+{ top: 140px }
+html body.post-type-archive-encyclopedia.search-results div#page.hfeed div#main.site-main div#primary.content-area div#content.site-content header.page-header
+{ display: block }
+
+/* Twenty Fourteen */
+html body.post-type-archive-encyclopedia.search-results div#page.hfeed div#main.site-main section#primary.content-area div#content.site-content header.page-header
+{ display: block }
+
 
 /* Encyclopedia Filter */
 .encyclopedia-filter {
   background-color: #f1f1f1;
   border-bottom: 1px solid #d9d9d9;
-}
-.encyclopedia-filter:after {
-  content: " ";
-  display: table;
-  clear: both;
+  overflow: hidden;
+  text-align: center;
 }
 .encyclopedia-filter:last-child {
   margin-bottom: 1em;
@@ -34,7 +54,6 @@
 
 .encyclopedia-filter a.filter-link {
   display: inline-block;
-  float: left;
   text-align: center;
   min-width: 2.846153846%;
   padding: 8px 0;
