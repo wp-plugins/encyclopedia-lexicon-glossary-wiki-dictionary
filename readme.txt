@@ -13,7 +13,7 @@ This great Encyclopedia Lite plugin enables you to create an awesome Encyclopedi
 == Description ==
 [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) Lite is a state of the art [WordPress encyclopedia / lexicon / glossary / wiki / dictionary plugin](http://dennishoppe.de/en/wordpress-plugins/encyclopedia). It enables you to create, manage and present a knowledge base. Completely coalesced with your WordPress and fully compatible with all the cool publishing tools you like.
 
-In the Lite Edition of the plugin you can take a look around, try out everything and create a small lexicon. On several places in the plugin you will find a notice that this function is included in the [Pro Version](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) only.
+In the this edition of the plugin you can create a small lexicon. On several places in the plugin you will find a notice that this function is included in the [Pro Version](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) only.
 
 = Main features =
 * Create, manage and structure your terms as [encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia), lexicon, glossary, Wiki, dictionary or knowledge base
@@ -36,13 +36,13 @@ In the Lite Edition of the plugin you can take a look around, try out everything
 You can find the settings page in WP Admin Panel &raquo; Settings &raquo; [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia).
 
 
-= Limitations =
-The most features are available but you cannot select every option. You will find a small notice for each unavailable options on the settings page. The maximal number of encyclopedia terms is limited to twelve.
-
-
 = Template files =
 All plugin outputs can be changed via user defined HTML templates. Just put the templates you want to overwrite inside your theme folder (no matter if parent theme or child theme). You can find the default templates in the plugin folder in "templates/".
 [You can find a list of the available templates here.](http://dennishoppe.de/en/wordpress-plugins/encyclopedia#templates) *Please do not modify the original templates! You would lose all your modifications when updating the plugin!*
+
+
+= Limitations =
+The most features are available but you cannot select every option. You will find a small notice for each unavailable option on the settings page. The maximal number of encyclopedia terms is limited to twelve.
 
 
 = Questions / Support requests =
