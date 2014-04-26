@@ -80,9 +80,9 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 
 = Automatic installation =
 
-Automatic installation is the easiest option as WordPress handles the file transfers itself and you do not need to leave your web browser. To do an automatic install of Encyclopedia, log in to your WordPress dashboard, navigate to the Plugins menu and click Add New.
+Automatic installation is the easiest option as WordPress handles the file transfers itself and you do not need to leave your web browser. To do an automatic install of Encyclopedia, log in to your WordPress dashboard, navigate to the Plugins menu and click "Add New".
 
-In the search field type "Encyclopedia" and click "Search Plugins". Once you have found my plugin you can view details about it such as the the point release, rating and description. Most importantly of course, you can install it by simply clicking "Install Now".
+In the search field type "Encyclopedia" and click "Search Plugins". Once you have found my plugin you can view details about it such as the point release, rating and description. Most importantly of course, you can install it by simply clicking "Install Now".
 
 = Manual installation =
 
@@ -105,7 +105,7 @@ I am still collecting frequently asked questions. ;)
 5. Edit screen of an encyclopedia term
 6. Encyclopedia items in your WP menues
 7. Encyclopedia options page
-8. Encyclopedia "Related terms" widgets
+8. Encyclopedia "Related terms" widget
 9. Encyclopedia Taxonomy widget
 10. Encyclopedia taxonomy cloud
 11. Encyclopedia term list
