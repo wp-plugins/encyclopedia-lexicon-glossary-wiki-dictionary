@@ -1,198 +1,200 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Encyclopedia Lite\n"
+"Project-Id-Version: Encyclopedia\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-26 17:43+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
-"Language-Team: Andrzej Opejda <andrzej@opejda.pl>\n"
-"Language: \n"
+"Language-Team: Ahrale | Atar4U.com <contact@atar4u.com>\n"
+"Language: he_IL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-KeywordsList: t;t:2c,1\n"
-"X-Poedit-Language: Polish\n"
-"X-Poedit-Country: POLAND\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Language: Hebrew\n"
+"X-Poedit-Country: ISRAEL\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../wp-plugin-encyclopedia.php:144
 msgid "Encyclopedia Options"
-msgstr "Opcje encyklopedii"
+msgstr "אפשרויות אנציקלופדיה"
 
 #: ../wp-plugin-encyclopedia.php:145
 msgid "Encyclopedia"
-msgstr "Encyklopedia"
+msgstr "אנציקלופדיה"
 
 #: ../wp-plugin-encyclopedia.php:156
 msgid "Taxonomies"
-msgstr "Taksonomie"
+msgstr "טקסונומיות"
 
 #: ../wp-plugin-encyclopedia.php:157
 msgid "Archive Page"
-msgstr "Archiwum"
+msgstr "דף ארכיון"
 
 #: ../wp-plugin-encyclopedia.php:158
 #, fuzzy
 msgid "Search Page"
-msgstr "Szukaj tagów"
+msgstr "חיפוש תגיות"
 
 #: ../wp-plugin-encyclopedia.php:159
 msgid "Single Page"
-msgstr "Pojedyńcza strona"
+msgstr "דף יחיד"
 
 #: ../wp-plugin-encyclopedia.php:160
 msgid "Linked Terms in Contents"
-msgstr ""
+msgstr "ביטויים מקושרים בתוכן"
 
 #: ../wp-plugin-encyclopedia.php:161
 #: ../wp-plugin-encyclopedia.php:342
 msgid "Archive Url"
-msgstr "Adres archiwum"
+msgstr "כתובת ארכיון"
 
 #: ../wp-plugin-encyclopedia.php:254
 msgid "Lexicon"
-msgstr "Leksykon"
+msgstr "לכסיקון"
 
 #: ../wp-plugin-encyclopedia.php:255
 msgctxt "URL slug"
 msgid "lexicon"
-msgstr "leksykon"
+msgstr "לכסיקון"
 
 #: ../wp-plugin-encyclopedia.php:262
 msgid "Term"
-msgstr "Hasło"
+msgstr "ביטוי"
 
 #: ../wp-plugin-encyclopedia.php:263
 msgid "Add Term"
-msgstr "Dodaj hasło"
+msgstr "הוספת ביטוי"
 
 #: ../wp-plugin-encyclopedia.php:264
 msgid "New Term"
-msgstr "Nowe hasło"
+msgstr "ביטוי חדש"
 
 #: ../wp-plugin-encyclopedia.php:265
 msgid "Edit Term"
-msgstr "Edytuj hasło"
+msgstr "עריכת ביטוי"
 
 #: ../wp-plugin-encyclopedia.php:266
 msgid "View Term"
-msgstr "Zobacz hasło"
+msgstr "הצג את הביטוי"
 
 #: ../wp-plugin-encyclopedia.php:267
 msgid "Search Terms"
-msgstr "Szukaj hasła"
+msgstr "חיפוש ביטויים"
 
 #: ../wp-plugin-encyclopedia.php:268
 msgid "No Terms found"
-msgstr "Nie znaleziono hasła"
+msgstr "לא נמצאו ביטויים"
 
 #: ../wp-plugin-encyclopedia.php:269
 msgid "No Terms found in Trash"
-msgstr "Nie znaleziono hasła w koszu"
+msgstr "לא נמצאו ביטויים באשפה"
 
 #: ../wp-plugin-encyclopedia.php:290
 #, php-format
 msgid "Term updated. (<a href=\"%s\">View Term</a>)"
-msgstr "Hasło zostało zaktualizowane. (<a href=\"%s\">Zobacz hasło</a>)"
+msgstr "הביטוי עודכן, (<a href=\"%s\">הצג</a>)"
 
 #: ../wp-plugin-encyclopedia.php:293
 msgid "Term updated."
-msgstr "Hasło zostało zaktualizowane."
+msgstr "הביטוי הוצג"
 
 #: ../wp-plugin-encyclopedia.php:294
 #, php-format
 msgid "Term restored to revision from %s"
-msgstr "Przywrócono wersję hasła z %s"
+msgstr "הביטוי שוחזר לגרסה מ %s"
 
 #: ../wp-plugin-encyclopedia.php:295
 #, php-format
 msgid "Term published. (<a href=\"%s\">View Term</a>)"
-msgstr "Hasło opublikowano. (<a href=\"%s\">Zobacz hasło</a>)"
+msgstr "הביטוי פורסם. (<a href=\"%s\">הצג</a>)"
 
 #: ../wp-plugin-encyclopedia.php:296
 msgid "Term saved."
-msgstr "Hasło zostało zapisane."
+msgstr "הביטוי נשמר"
 
 #: ../wp-plugin-encyclopedia.php:297
 msgid "Term submitted."
-msgstr "Hasło zostało przesłane."
+msgstr "הביטוי נשלח."
 
 #: ../wp-plugin-encyclopedia.php:298
 #, php-format
 msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
-msgstr "Hasło zostało zaplanowane. (<a target=\"_blank\" href=\"%s\">Zobacz hasło</a>)"
+msgstr "הביטוי תוזמן. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 
 #: ../wp-plugin-encyclopedia.php:299
 #, php-format
 msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
-msgstr "Zaktualizowano wersję próbną. (<a target=\"_blank\" href=\"%s\">Podgląd hasła</a>)"
+msgstr "הטיוטה עודכנה. (<a target=\"_blank\" href=\"%s\">תצוגה מוקדמת</a>)"
 
 #: ../wp-plugin-encyclopedia.php:306
 msgid "Encyclopedia Tags"
-msgstr "Tagi encyklopedii"
+msgstr "תגיות אנציקלופדיה"
 
 #: ../wp-plugin-encyclopedia.php:308
 msgid "Tags"
-msgstr "Tagi"
+msgstr "תגיות"
 
 #: ../wp-plugin-encyclopedia.php:309
 msgid "Tag"
-msgstr "Tag"
+msgstr "תגית"
 
 #: ../wp-plugin-encyclopedia.php:310
 msgid "Search Tags"
-msgstr "Szukaj tagów"
+msgstr "חיפוש תגיות"
 
 #: ../wp-plugin-encyclopedia.php:311
 msgid "All Tags"
-msgstr "Wszystkie tagi"
+msgstr "כל התגיות"
 
 #: ../wp-plugin-encyclopedia.php:312
 msgid "Edit Tag"
-msgstr "Edytuj tag"
+msgstr "עריכת תגית"
 
 #: ../wp-plugin-encyclopedia.php:313
 msgid "Update Tag"
-msgstr "Zaktualizuj tag"
+msgstr "עדכון תגית"
 
 #: ../wp-plugin-encyclopedia.php:314
 msgid "Add New Tag"
-msgstr "Dodaj nowy tag"
+msgstr "הוספת תגית"
 
 #: ../wp-plugin-encyclopedia.php:315
 msgid "New Tag"
-msgstr "Nowy tag"
+msgstr "תגית חדשה"
 
 #: ../wp-plugin-encyclopedia.php:323
 #, php-format
 msgctxt "URL slug"
 msgid "%s-tag"
-msgstr ""
+msgstr "%s-תגית"
 
 #: ../wp-plugin-encyclopedia.php:345
 #, php-format
 msgid "This is the URL to the archive of this %s."
-msgstr "To jest URL do archiwum %s."
+msgstr "זו כתובת ה URL לארכיון של %s זה."
 
 #: ../wp-plugin-encyclopedia.php:350
 msgid "Archive Feed"
-msgstr "Kanał archiwum"
+msgstr "הזנת ארכיון"
 
 #: ../wp-plugin-encyclopedia.php:353
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
-msgstr "To jest URL do kanału archiwum %s."
+msgstr "זוהי כתובת ה URL של הארכיון של %s זה."
 
 #: ../wp-plugin-encyclopedia.php:640
 #, fuzzy, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">Premium Version</a>."
-msgstr "Przepraszam, ta cecha dostępna jest tylko w <a href=\"%s\" target=\"_blank\">wersji Pro wtyczki Encyclopedia</a>."
+msgstr "מצטערים, תכונה זו זמינה רק ב <a href=\"%s\" target=\"_blank\">גרסה המקצועית של תוסף האנציקלופדיה</a>."
 
 #: ../wp-plugin-encyclopedia.php:641
 #, fuzzy, php-format
 msgid "Changeable in the <a href=\"%s\" target=\"_blank\">Premium Version</a>."
-msgstr "Przepraszam, ta cecha dostępna jest tylko w <a href=\"%s\" target=\"_blank\">wersji Pro wtyczki Encyclopedia</a>."
+msgstr "מצטערים, תכונה זו זמינה רק ב <a href=\"%s\" target=\"_blank\">גרסה המקצועית של תוסף האנציקלופדיה</a>."
 
 #: ../wp-plugin-encyclopedia.php:642
 #, php-format
@@ -207,7 +209,7 @@ msgstr ""
 #: ../wp-plugin-encyclopedia.php:644
 #, fuzzy, php-format
 msgid "Do you like the term management? Upgrade to the <a href=\"%s\" target=\"_blank\">Premium Version of Encyclopedia</a>!"
-msgstr "Przepraszam, ta cecha dostępna jest tylko w <a href=\"%s\" target=\"_blank\">wersji Pro wtyczki Encyclopedia</a>."
+msgstr "מצטערים, תכונה זו זמינה רק ב <a href=\"%s\" target=\"_blank\">גרסה המקצועית של תוסף האנציקלופדיה</a>."
 
 #: ../wp-plugin-encyclopedia.php:648
 msgctxt "Link to the authors website"
@@ -216,143 +218,142 @@ msgstr "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 
 #: ../wp-plugin-encyclopedia.php:684
 msgid "&laquo; Back to your terms"
-msgstr "&laquo; Powróć do swoich haseł"
+msgstr "&raquo;חזרה לביטויים שלך"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:15
 msgid "Encyclopedia Taxonomy Cloud"
-msgstr "Chmura taksonomii Encyklopedii"
+msgstr "ענן טקסונומיה של האנציקלופדיה"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:16
 msgid "Displays your Encyclopedia taxonomies as cloud."
-msgstr "Wyświetla taksonomie Encyklopedii jako chmurę."
+msgstr "מציג את ביטויי האנציקלופדיה שלך כענן"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:62
 #: ../wp-widget-encyclopedia-search.php:58
 #: ../wp-widget-encyclopedia-terms.php:60
 #: ../wp-widget-encyclopedia-taxonomies.php:61
+#, fuzzy
 msgid "Title:"
-msgstr "Tytuł:"
+msgstr "כותרת:"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:64
 #: ../wp-widget-encyclopedia-terms.php:62
 #: ../wp-widget-encyclopedia-related-terms.php:61
 #: ../wp-widget-encyclopedia-taxonomies.php:63
 msgid "Leave blank to use the widget default title."
-msgstr "Pozostaw puste, aby użyto domyślnego tytułu widgetu."
+msgstr "השאר ריק כדי להשתמש בכותרת ברירת המחדל של הוידג'ט"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:68
 #: ../wp-widget-encyclopedia-taxonomies.php:67
 msgid "Taxonomy"
-msgstr "Taksonomia"
+msgstr "טקסונומיה"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:74
 #: ../wp-widget-encyclopedia-taxonomies.php:73
 msgid "Please choose the Taxonomy the widget should display."
-msgstr "Proszę wybrać taksonomię, która ma być wyświetlana przez widget."
+msgstr "נא לבחור את הטקסונומיה שיציג הוידג'ט"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:78
 #: ../wp-widget-encyclopedia-taxonomies.php:77
 msgid "Number"
-msgstr "Numer"
+msgstr "מספר"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:80
 msgid "Leave blank (or \"0\") to show all."
-msgstr "Pozostaw puste (lub \"0\"), aby wyświetlić wszystkie."
+msgstr "השאר ריק (או 0) כדי להציג הכל."
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:86
 msgid "Taxonomy IDs, separated by commas."
-msgstr "ID taksonomii, oddzielane przecinkiem."
+msgstr "מזהי טקסונומיה, מופרדים בפסיקים."
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:90
 #: ../wp-widget-encyclopedia-terms.php:66
 #: ../wp-widget-encyclopedia-taxonomies.php:94
 msgid "Order by"
-msgstr "Sortowanie wg"
+msgstr "סדר לפי"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:93
 #: ../wp-widget-encyclopedia-taxonomies.php:97
 msgid "Term Count"
-msgstr "Liczba haseł"
+msgstr "מספר הביטוי"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:98
 #: ../wp-widget-encyclopedia-terms.php:80
 #: ../wp-widget-encyclopedia-taxonomies.php:104
 msgid "Order"
-msgstr "Kolejność"
+msgstr "סדר"
 
 #: ../wp-widget-encyclopedia-search.php:14
-#, fuzzy
 msgid "Encyclopedia Search"
-msgstr "Hasła encyklopedii"
+msgstr "חיפוש באנציקלופדיה"
 
 #: ../wp-widget-encyclopedia-search.php:15
-#, fuzzy
 msgid "Displays the encyclopedia search field."
-msgstr "Wyświetla hasła encyklopedii jako listę."
+msgstr "הצג את שדה החיפוש באנציקלופדיה"
 
 #: ../wp-widget-encyclopedia-terms.php:14
 msgid "Encyclopedia Terms"
-msgstr "Hasła encyklopedii"
+msgstr "ביטויי אנציקלופדיה"
 
 #: ../wp-widget-encyclopedia-terms.php:15
 msgid "Displays your encyclopedia terms as list."
-msgstr "Wyświetla hasła encyklopedii jako listę."
+msgstr "מציג את האנציקלופדיה שלך כרשימה."
 
 #: ../wp-widget-encyclopedia-terms.php:70
 msgid "Author"
-msgstr "Autor"
+msgstr "מחבר"
 
 #: ../wp-widget-encyclopedia-terms.php:71
 msgid "Date"
-msgstr "Data"
+msgstr "תאריך"
 
 #: ../wp-widget-encyclopedia-terms.php:72
 msgid "Last modification"
-msgstr "Ostatnia zmiana"
+msgstr "שינוי אחרון"
 
 #: ../wp-widget-encyclopedia-terms.php:73
 msgid "Random"
-msgstr "Losowo"
+msgstr "אקראי"
 
 #: ../wp-widget-encyclopedia-terms.php:74
 msgid "Comment Count"
-msgstr "Liczba komentarzy"
+msgstr "ספירת תגובות"
 
 #: ../wp-widget-encyclopedia-terms.php:75
 msgid "Menu Order"
-msgstr "Kolejność menu"
+msgstr "סדר תפריט"
 
 #: ../wp-widget-encyclopedia-related-terms.php:14
 msgid "Encyclopedia Related Terms"
-msgstr "Hasła podobne"
+msgstr "ביטויים קשורים"
 
 #: ../wp-widget-encyclopedia-related-terms.php:15
 msgid "Displays encyclopedia terms which are related to the current one as list."
-msgstr "Wyświetla listę haseł encyklopedii podobnych do bieżącego."
+msgstr "מציג כרשימה את ביטויי האנציקלופדיה הקשורים לביטוי הנוכחי"
 
 #: ../wp-widget-encyclopedia-related-terms.php:65
 msgid "Number:"
-msgstr "Numer:"
+msgstr "מספר:"
 
 #: ../wp-widget-encyclopedia-related-terms.php:67
 msgid "The number of related terms you want to show."
-msgstr "Liczba podobnych haseł, które mają być wyświetlane."
+msgstr "מספר הביטויים הקשורים שאתה רוצה להשיג."
 
 #: ../wp-widget-encyclopedia-taxonomies.php:14
 msgid "Encyclopedia Taxonomies"
-msgstr "Taksonomie encyklopedii"
+msgstr "טקסונומיות אנציקלופדיה"
 
 #: ../wp-widget-encyclopedia-taxonomies.php:15
 msgid "Displays your encyclopedia taxonomies like Categories, Tags, etc."
-msgstr "Wyświetla taksonomie Twojej encyklopedii takie, jak kategorie, tagi itp."
+msgstr "מציג את טקסונומיות האנציקלופדיה שלך, כמו קטגוריות, תגיות וכד'."
 
 #: ../wp-widget-encyclopedia-taxonomies.php:79
 msgid "Leave blank to show all."
-msgstr "Pozostaw puste, aby wyświetlić wszystkie."
+msgstr "השאר ריק כדי להציג הכל."
 
 #: ../wp-widget-encyclopedia-taxonomies.php:85
 msgid "Term IDs, separated by commas."
-msgstr "ID hasła, oddzielane przecinkiem."
+msgstr "מזהי ביטויים, מופרדים בפסיקים."
 
 #: ../wp-widget-encyclopedia-taxonomies.php:90
 msgid "Show term counts."
@@ -360,167 +361,167 @@ msgstr ""
 
 #: ../wp-widget-encyclopedia-taxonomies.php:99
 msgid "Slug"
-msgstr "slug"
+msgstr "כתובת"
 
 #: ../templates/encyclopedia-related-terms.php:2
 msgid "Related entries"
-msgstr "Pokrewne hasła"
+msgstr "ערכים קשורים"
 
 #: ../options-page/box-archive-page.php:3
 msgid "Terms per page:"
-msgstr "Liczba haseł na stronie:"
+msgstr "ביטויים לעמוד"
 
 #: ../options-page/box-archive-page.php:7
 msgid "This option effects all encyclopedia archive pages."
-msgstr "Ta opcja mw wpływ na wszystkie strony archiwalne."
+msgstr "אפשרות זו משפיע על דפי ארכיון של האנציקלופדיה"
 
 #: ../options-page/box-archive-page.php:14
 msgid "Term filter"
-msgstr "Filtr haseł"
+msgstr "סינון ביטויים"
 
 #: ../options-page/box-archive-page.php:20
 msgid "Display a term filter above the encyclopedia archive automatically or not."
-msgstr "Wyświetlać lub nie filtr haseł powyżej archiwum encyklopedii."
+msgstr "מציג אוטומטית או לא מסנן ביטויים מעל ארכיון האנציקלופדיה"
 
 #: ../options-page/box-taxonomies.php:3
 msgid "Activate categories"
-msgstr "Aktywuj kategorie"
+msgstr "הפעל קטגוריות"
 
 #: ../options-page/box-taxonomies.php:10
 msgid "Categories can help you create an awesome knowledge base."
-msgstr "Kategorie mogą być pomocne w tworzenie wspaniałej bazy wiedzy."
+msgstr "קטגוריות יכולות לעזור לך ליצור מאגר מידע מדהים."
 
 #: ../options-page/box-taxonomies.php:17
 msgid "Activate tags"
-msgstr "Aktywuj tagi"
+msgstr "הפעל תגיות"
 
 #: ../options-page/box-taxonomies.php:24
 msgid "Tags are necessary if you want to display relevant entries automatically."
-msgstr "Tagi są konieczne, jeśli chcesz automatycznie wyświetlać odpowiednie wpisy."
+msgstr "תגיות הכרחיות אם אתה רוצה להציג אוטומטית ערכים רלוונטיים."
 
 #: ../options-page/box-search.php:3
 msgid "Query terms directly"
-msgstr ""
+msgstr "שאילתות ישירות של ביטויים"
 
 #: ../options-page/box-search.php:10
 msgid "Enable this feature to redirect the user to the term if the search query matches a term title exactly."
-msgstr ""
+msgstr "הפעל תכונה זו כדי להפנות מחדש את המשתמש אם שאילתת ביטוי תואמת במדויק כותרת ביטוי."
 
 #: ../options-page/box-search.php:17
 msgid "Autocomplete Min Length"
-msgstr ""
+msgstr "אורך מינימלי להשלמה אוטומטית"
 
 #: ../options-page/box-search.php:19
 msgctxt "characters unit"
 msgid "Characters"
-msgstr ""
+msgstr "אותיות"
 
 #: ../options-page/box-search.php:21
 msgid "The minimum number of characters a user must type before suggestions will be shown."
-msgstr ""
+msgstr "המספר המינימלי של אותיות שמשתמש חייב להקליד לפני הופעת הצעות."
 
 #: ../options-page/box-search.php:28
 msgid "Autocomplete Delay"
-msgstr ""
+msgstr "עיכוב השלמה אוטומטית"
 
 #: ../options-page/box-search.php:30
 msgctxt "milliseconds time unit"
 msgid "ms"
-msgstr ""
+msgstr "אלפיות השניה"
 
 #: ../options-page/box-search.php:32
 msgid "The delay in milliseconds between when a keystroke occurs and when suggestions will be shown."
-msgstr ""
+msgstr "העיכוב באלפיות השניה בין הקשת אות להופעת ההצעות."
 
 #: ../options-page/box-general.php:3
 msgid "Encyclopedia type:"
-msgstr "Rodzaj encyklopedii:"
+msgstr "סוג האנציקלופדיה:"
 
 #: ../options-page/box-general.php:8
 msgid "Wiki"
-msgstr ""
+msgstr "ויקי"
 
 #: ../options-page/box-general.php:9
 msgid "Knowledge Base"
-msgstr ""
+msgstr "מאגר נתונים"
 
 #: ../options-page/box-general.php:10
 msgid "Glossary"
-msgstr "Leksykon"
+msgstr "רשימת מונחים"
 
 #: ../options-page/box-general.php:11
 msgid "Dictionary"
-msgstr "Słownik"
+msgstr "מילון"
 
 #: ../options-page/box-general.php:14
 msgid "Please choose the type of your encyclopedia. This option does not change the behavior of the plugin. It's just for the labels and captions in the backend."
-msgstr "Wybierz rodzaj swojej encyklopedii. Ta opcja nie zmienia działania wtyczki. To potrzebne jest tylko do stosowania odpowiednich etykiet i podpisów."
+msgstr "נא לבחור את סוג האנציקלופדיה. אפשרות זו אינה משנה את התנהגות התוסף. זה רק עבור התוויות והכותרות בצד האחורי."
 
 #: ../options-page/box-general.php:21
 msgid "Use default style"
-msgstr "Używaj stylu domyślnego"
+msgstr "השתמש בעיצוב ברירת המחדל"
 
 #: ../options-page/box-general.php:28
 msgid "Set this option to \"No\" if you want to use your own style for the encyclopedia."
-msgstr "Wybierz \"Nie\", jeśli chcesz używać własnego stylu encyklopedii."
+msgstr "הגדר אפשרות זו כ \"לא\" אם אתה רוצה להשתמש בעיצוב משלך לאנציקלופדיה."
 
 #: ../options-page/box-general.php:34
 msgid "Enable Revisions"
-msgstr ""
+msgstr "הפעל מהדורות"
 
 #: ../options-page/box-general.php:41
 msgid "Enables or disables revisions for the encyclopedia terms."
-msgstr ""
+msgstr "הפעל או כבה את מהדורות עבור ביטויי אנציקלופדיה."
 
 #: ../options-page/box-general.php:48
 msgid "Enable Comments"
-msgstr ""
+msgstr "הפעל תגובות"
 
 #: ../options-page/box-general.php:55
 msgid "Enables or disables comments and trackbacks for the encyclopedia terms."
-msgstr ""
+msgstr "הפעל או כבה תגובות וטראקבקים עבור ביטויי האנציקלופדיה."
 
 #: ../options-page/box-general.php:62
 msgid "Enable Thumbnails"
-msgstr ""
+msgstr "הפעל תמונות ממוזערות"
 
 #: ../options-page/box-general.php:69
 msgid "Enables or disables the \"Featured Image\" for the encyclopedia terms."
-msgstr ""
+msgstr "הפעל או כבה את ה \"תמונה ראשית\" עבור ביטויי אנציקלופדיה"
 
 #: ../options-page/box-single-page.php:3
+#, fuzzy
 msgid "Display related entries"
-msgstr "Wyświetlaj podobne wpisy"
+msgstr "הצג ביטויים קשורים"
 
 #: ../options-page/box-single-page.php:5
 msgid "below the encyclopedia entry"
-msgstr "poniżej wpisu w encyklopedii"
+msgstr "מתחת לערך האנציקלופדיה"
 
 #: ../options-page/box-single-page.php:6
 msgid "above the encyclopedia entry"
-msgstr "powyżej wpisu w encyklopedii"
+msgstr "מעל לערך האנציקלופדיה"
 
 #: ../options-page/box-single-page.php:7
 msgid "do not show related terms"
-msgstr "nie wyświetlaj wcale podobnych haseł"
+msgstr "אל תציג ביטויים קשורים"
 
 #: ../options-page/box-single-page.php:13
-#, fuzzy
 msgid "Number of related terms"
-msgstr "nie wyświetlaj wcale podobnych haseł"
+msgstr "מספר הביטויים הקשורים"
 
 #: ../options-page/box-single-page.php:17
 msgid "How many related terms should be shown for each term?"
-msgstr ""
+msgstr "כמה ביטויים קשורים להציג עבור כל ביטוי?"
 
 #: ../options-page/box-single-page.php:30
 #, fuzzy
 msgid "Display a term filter above the encyclopedia term content automatically or not."
-msgstr "Wyświetlać lub nie filtr haseł powyżej archiwum encyklopedii."
+msgstr "הצג אוטומטית מסנן ביטוי מעל לתוכן ביטוי האנציקלופדיה"
 
 #: ../options-page/box-linked-terms.php:1
 msgid "Enable automatically linked encyclopedia terms for the following content types:"
-msgstr ""
+msgstr "הפעל קישר אוטומטי של ביטויי אנציקלופדיה עבור דפי התוכן שלהלן:"
 
 #: ../options-page/box-linked-terms.php:13
 msgid "Open link in a new window"
@@ -528,30 +529,106 @@ msgstr ""
 
 #: ../options-page/box-linked-terms.php:20
 msgid "Link the first match of each term only."
-msgstr ""
+msgstr "קשר את ההתאמה הראשונה בלבד עבור כל ביטוי."
 
 #: ../options-page/box-archive-link.php:2
 #, php-format
 msgid "The Archive link for your Encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
-msgstr "Link do archiwum Twojej encyklopedii: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+msgstr "הקישור הפעיל עבור האנציקלופדיה שלך הוא: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
 
 #: ../options-page/box-archive-link.php:5
 #, php-format
 msgid "The Archive Feed for your Encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
-msgstr "Link do kanału archiwum Twojej enycklopedii: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+msgstr "ארכיון ההזנה של האנציקלופדיה שלך הוא: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
 
 #~ msgid "Sorry!"
-#~ msgstr "Przepraszamy!"
+#~ msgstr "מצטערים!"
 
 #~ msgid "In the Lite Version you can create five terms only."
-#~ msgstr "W wersji Lite można utworzyć tylko pięć haseł."
+#~ msgstr "בגרסה הקלה אתה יכול ליצור 5 ביטויים בלבד."
 
 #~ msgid ""
 #~ "Why not switching to <a href=\"http://dennishoppe.de/en/wordpress-plugins/"
 #~ "encyclopedia\" target=\"_blank\">Encyclopedia Pro</a>? :)"
 #~ msgstr ""
-#~ "Dlaczego więc nie przejść na <a href=\"http://dennishoppe.de/en/wordpress-"
-#~ "plugins/encyclopedia\" target=\"_blank\">Encyclopedia Pro</a>? :)"
+#~ "למה לא לשדרג ל <a href=\"http://dennishoppe.de/en/wordpress-plugins/"
+#~ "encyclopedia\" target=\"_blank\">אנציקלופדיה מקצועית</a>? :)"
 
 #~ msgid "Please notice:"
-#~ msgstr "Uwaga:"
+#~ msgstr "נא לשים לב:"
+
+#, fuzzy
+#~ msgid "Search"
+#~ msgstr "דף חיפוש"
+
+#, fuzzy
+#~ msgid "Updates"
+#~ msgstr "עדכון תגית"
+
+#, fuzzy
+#~ msgid "Search Categories"
+#~ msgstr "דף חיפוש"
+
+#, fuzzy
+#~ msgid "All Categories"
+#~ msgstr "הפעל קטגוריות"
+
+#, fuzzy
+#~ msgid "Edit Category"
+#~ msgstr "עריכת תגית"
+
+#, fuzzy
+#~ msgid "Update Category"
+#~ msgstr "עדכון תגית"
+
+#, fuzzy
+#~ msgid "Add New Category"
+#~ msgstr "הוספת תגית"
+
+#, fuzzy
+#~ msgid "New Category"
+#~ msgstr "תגית חדשה"
+
+#, fuzzy
+#~ msgctxt "URL slug"
+
+#~ msgid "encyclopedia"
+#~ msgstr "אנציקלופדיה"
+
+#, fuzzy
+#~ msgctxt "URL slug"
+
+#~ msgid "glossary"
+#~ msgstr "רשימת מונחים"
+
+#, fuzzy
+#~ msgctxt "URL slug"
+
+#~ msgid "dictionary"
+#~ msgstr "מילון"
+
+#, fuzzy
+#~ msgctxt "URL slug"
+
+#~ msgid "knowledge-base"
+#~ msgstr "מאגר נתונים"
+
+#, fuzzy
+#~ msgid "Update notification"
+#~ msgstr "שינוי אחרון"
+
+#, fuzzy
+#~ msgid "Link the term in its own content."
+#~ msgstr "ביטויים מקושרים בתוכן"
+
+#, fuzzy
+#~ msgid "Edit others Terms"
+#~ msgstr "עריכת ביטוי"
+
+#, fuzzy
+#~ msgid "Edit (own) private Terms"
+#~ msgstr "אל תציג ביטויים קשורים"
+
+#, fuzzy
+#~ msgid "Manage Categories"
+#~ msgstr "הפעל קטגוריות"

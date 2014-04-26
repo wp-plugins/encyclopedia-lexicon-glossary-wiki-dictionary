@@ -1,45 +1,47 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Encyclopedia Lite\n"
+"Project-Id-Version: Encyclopedia\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-26 17:43+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
-"Language-Team: Andrzej Opejda <andrzej@opejda.pl>\n"
-"Language: \n"
+"Language-Team: Nasrulhaq Muiz <nasrulhaq81@gmail.com>\n"
+"Language: id_ID\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-KeywordsList: t;t:2c,1\n"
-"X-Poedit-Language: Polish\n"
-"X-Poedit-Country: POLAND\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Language: Indonesian\n"
+"X-Poedit-Country: INDONESIA\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../wp-plugin-encyclopedia.php:144
 msgid "Encyclopedia Options"
-msgstr "Opcje encyklopedii"
+msgstr "Opsi Ensiklopedia"
 
 #: ../wp-plugin-encyclopedia.php:145
 msgid "Encyclopedia"
-msgstr "Encyklopedia"
+msgstr "Ensiklopedia"
 
 #: ../wp-plugin-encyclopedia.php:156
 msgid "Taxonomies"
-msgstr "Taksonomie"
+msgstr "Taksonomi"
 
 #: ../wp-plugin-encyclopedia.php:157
 msgid "Archive Page"
-msgstr "Archiwum"
+msgstr "Arsip Halaman"
 
 #: ../wp-plugin-encyclopedia.php:158
 #, fuzzy
 msgid "Search Page"
-msgstr "Szukaj tagów"
+msgstr "Cari Label"
 
 #: ../wp-plugin-encyclopedia.php:159
 msgid "Single Page"
-msgstr "Pojedyńcza strona"
+msgstr "Satu Halaman"
 
 #: ../wp-plugin-encyclopedia.php:160
 msgid "Linked Terms in Contents"
@@ -48,121 +50,121 @@ msgstr ""
 #: ../wp-plugin-encyclopedia.php:161
 #: ../wp-plugin-encyclopedia.php:342
 msgid "Archive Url"
-msgstr "Adres archiwum"
+msgstr "Arsip URL"
 
 #: ../wp-plugin-encyclopedia.php:254
 msgid "Lexicon"
-msgstr "Leksykon"
+msgstr "Kosa Kata"
 
 #: ../wp-plugin-encyclopedia.php:255
 msgctxt "URL slug"
 msgid "lexicon"
-msgstr "leksykon"
+msgstr "kosakata"
 
 #: ../wp-plugin-encyclopedia.php:262
 msgid "Term"
-msgstr "Hasło"
+msgstr "Istilah"
 
 #: ../wp-plugin-encyclopedia.php:263
 msgid "Add Term"
-msgstr "Dodaj hasło"
+msgstr "Tambah Istilah"
 
 #: ../wp-plugin-encyclopedia.php:264
 msgid "New Term"
-msgstr "Nowe hasło"
+msgstr "Istilah Baru"
 
 #: ../wp-plugin-encyclopedia.php:265
 msgid "Edit Term"
-msgstr "Edytuj hasło"
+msgstr "Atur Istilah"
 
 #: ../wp-plugin-encyclopedia.php:266
 msgid "View Term"
-msgstr "Zobacz hasło"
+msgstr "Lihat Istilah"
 
 #: ../wp-plugin-encyclopedia.php:267
 msgid "Search Terms"
-msgstr "Szukaj hasła"
+msgstr "Cari Istilah"
 
 #: ../wp-plugin-encyclopedia.php:268
 msgid "No Terms found"
-msgstr "Nie znaleziono hasła"
+msgstr "Tidak menemukan istilah"
 
 #: ../wp-plugin-encyclopedia.php:269
 msgid "No Terms found in Trash"
-msgstr "Nie znaleziono hasła w koszu"
+msgstr "Tidak menemukan istilah di tempat sampah"
 
 #: ../wp-plugin-encyclopedia.php:290
 #, php-format
 msgid "Term updated. (<a href=\"%s\">View Term</a>)"
-msgstr "Hasło zostało zaktualizowane. (<a href=\"%s\">Zobacz hasło</a>)"
+msgstr "Istilah diperbarui. (<a href=\"%s\">Lihat Istilah</a>)"
 
 #: ../wp-plugin-encyclopedia.php:293
 msgid "Term updated."
-msgstr "Hasło zostało zaktualizowane."
+msgstr "Istilah diperbarui"
 
 #: ../wp-plugin-encyclopedia.php:294
 #, php-format
 msgid "Term restored to revision from %s"
-msgstr "Przywrócono wersję hasła z %s"
+msgstr "Istilah direvisi kembali dari %s"
 
 #: ../wp-plugin-encyclopedia.php:295
 #, php-format
 msgid "Term published. (<a href=\"%s\">View Term</a>)"
-msgstr "Hasło opublikowano. (<a href=\"%s\">Zobacz hasło</a>)"
+msgstr "Istilah diterbitkan. (<a href=\"%s\">Lihat Istilah</a>)"
 
 #: ../wp-plugin-encyclopedia.php:296
 msgid "Term saved."
-msgstr "Hasło zostało zapisane."
+msgstr "Istilah disimpan"
 
 #: ../wp-plugin-encyclopedia.php:297
 msgid "Term submitted."
-msgstr "Hasło zostało przesłane."
+msgstr "Istilah didaftarkan"
 
 #: ../wp-plugin-encyclopedia.php:298
 #, php-format
 msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
-msgstr "Hasło zostało zaplanowane. (<a target=\"_blank\" href=\"%s\">Zobacz hasło</a>)"
+msgstr "Istilah dijadwalkan. (<a target=\"_blank\" href=\"%s\">Lihat Istilah</a>)"
 
 #: ../wp-plugin-encyclopedia.php:299
 #, php-format
 msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
-msgstr "Zaktualizowano wersję próbną. (<a target=\"_blank\" href=\"%s\">Podgląd hasła</a>)"
+msgstr "Draft diperbarui. (<a target=\"_blank\" href=\"%s\">Pratampil Istilah</a>)"
 
 #: ../wp-plugin-encyclopedia.php:306
 msgid "Encyclopedia Tags"
-msgstr "Tagi encyklopedii"
+msgstr "Label Ensiklopedia"
 
 #: ../wp-plugin-encyclopedia.php:308
 msgid "Tags"
-msgstr "Tagi"
+msgstr "Label"
 
 #: ../wp-plugin-encyclopedia.php:309
 msgid "Tag"
-msgstr "Tag"
+msgstr "Label"
 
 #: ../wp-plugin-encyclopedia.php:310
 msgid "Search Tags"
-msgstr "Szukaj tagów"
+msgstr "Cari Label"
 
 #: ../wp-plugin-encyclopedia.php:311
 msgid "All Tags"
-msgstr "Wszystkie tagi"
+msgstr "Semua Label"
 
 #: ../wp-plugin-encyclopedia.php:312
 msgid "Edit Tag"
-msgstr "Edytuj tag"
+msgstr "Atur Label"
 
 #: ../wp-plugin-encyclopedia.php:313
 msgid "Update Tag"
-msgstr "Zaktualizuj tag"
+msgstr "Perbarui Label"
 
 #: ../wp-plugin-encyclopedia.php:314
 msgid "Add New Tag"
-msgstr "Dodaj nowy tag"
+msgstr "Tambah Label Baru"
 
 #: ../wp-plugin-encyclopedia.php:315
 msgid "New Tag"
-msgstr "Nowy tag"
+msgstr "Label Baru"
 
 #: ../wp-plugin-encyclopedia.php:323
 #, php-format
@@ -173,26 +175,26 @@ msgstr ""
 #: ../wp-plugin-encyclopedia.php:345
 #, php-format
 msgid "This is the URL to the archive of this %s."
-msgstr "To jest URL do archiwum %s."
+msgstr "URL ini untuk arsip %s."
 
 #: ../wp-plugin-encyclopedia.php:350
 msgid "Archive Feed"
-msgstr "Kanał archiwum"
+msgstr "Arsip Umpan"
 
 #: ../wp-plugin-encyclopedia.php:353
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
-msgstr "To jest URL do kanału archiwum %s."
+msgstr "ini URL umpan pada arsip %s."
 
 #: ../wp-plugin-encyclopedia.php:640
 #, fuzzy, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">Premium Version</a>."
-msgstr "Przepraszam, ta cecha dostępna jest tylko w <a href=\"%s\" target=\"_blank\">wersji Pro wtyczki Encyclopedia</a>."
+msgstr "Maaf, fitur ini hanya tersedia untuk <a href=\"%s\" target=\"_blank\">Plugin Ensiklopedia versi Pro</a>."
 
 #: ../wp-plugin-encyclopedia.php:641
 #, fuzzy, php-format
 msgid "Changeable in the <a href=\"%s\" target=\"_blank\">Premium Version</a>."
-msgstr "Przepraszam, ta cecha dostępna jest tylko w <a href=\"%s\" target=\"_blank\">wersji Pro wtyczki Encyclopedia</a>."
+msgstr "Maaf, fitur ini hanya tersedia untuk <a href=\"%s\" target=\"_blank\">Plugin Ensiklopedia versi Pro</a>."
 
 #: ../wp-plugin-encyclopedia.php:642
 #, php-format
@@ -207,7 +209,7 @@ msgstr ""
 #: ../wp-plugin-encyclopedia.php:644
 #, fuzzy, php-format
 msgid "Do you like the term management? Upgrade to the <a href=\"%s\" target=\"_blank\">Premium Version of Encyclopedia</a>!"
-msgstr "Przepraszam, ta cecha dostępna jest tylko w <a href=\"%s\" target=\"_blank\">wersji Pro wtyczki Encyclopedia</a>."
+msgstr "Maaf, fitur ini hanya tersedia untuk <a href=\"%s\" target=\"_blank\">Plugin Ensiklopedia versi Pro</a>."
 
 #: ../wp-plugin-encyclopedia.php:648
 msgctxt "Link to the authors website"
@@ -216,143 +218,143 @@ msgstr "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 
 #: ../wp-plugin-encyclopedia.php:684
 msgid "&laquo; Back to your terms"
-msgstr "&laquo; Powróć do swoich haseł"
+msgstr "&laquo; Kembali pada istilah anda"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:15
 msgid "Encyclopedia Taxonomy Cloud"
-msgstr "Chmura taksonomii Encyklopedii"
+msgstr "Taksonomi awan Ensiklopedia"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:16
 msgid "Displays your Encyclopedia taxonomies as cloud."
-msgstr "Wyświetla taksonomie Encyklopedii jako chmurę."
+msgstr "Tampilkan taksonomi ensiklopedia sebagai awan (cloud)"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:62
 #: ../wp-widget-encyclopedia-search.php:58
 #: ../wp-widget-encyclopedia-terms.php:60
 #: ../wp-widget-encyclopedia-taxonomies.php:61
 msgid "Title:"
-msgstr "Tytuł:"
+msgstr "Titel:"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:64
 #: ../wp-widget-encyclopedia-terms.php:62
 #: ../wp-widget-encyclopedia-related-terms.php:61
 #: ../wp-widget-encyclopedia-taxonomies.php:63
 msgid "Leave blank to use the widget default title."
-msgstr "Pozostaw puste, aby użyto domyślnego tytułu widgetu."
+msgstr "Biarkan kosong untuk menggunakan widget pada titel awal"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:68
 #: ../wp-widget-encyclopedia-taxonomies.php:67
 msgid "Taxonomy"
-msgstr "Taksonomia"
+msgstr "Taksonomi"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:74
 #: ../wp-widget-encyclopedia-taxonomies.php:73
 msgid "Please choose the Taxonomy the widget should display."
-msgstr "Proszę wybrać taksonomię, która ma być wyświetlana przez widget."
+msgstr "Pilih taksonomi bagaimana widget ditampilkan"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:78
 #: ../wp-widget-encyclopedia-taxonomies.php:77
 msgid "Number"
-msgstr "Numer"
+msgstr "Angka"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:80
 msgid "Leave blank (or \"0\") to show all."
-msgstr "Pozostaw puste (lub \"0\"), aby wyświetlić wszystkie."
+msgstr "Biarkan kosong (atau \"0\") menampilkan semua."
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:86
 msgid "Taxonomy IDs, separated by commas."
-msgstr "ID taksonomii, oddzielane przecinkiem."
+msgstr "ID Taksonomi, diantarai tanda koma."
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:90
 #: ../wp-widget-encyclopedia-terms.php:66
 #: ../wp-widget-encyclopedia-taxonomies.php:94
 msgid "Order by"
-msgstr "Sortowanie wg"
+msgstr "Diatur oleh"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:93
 #: ../wp-widget-encyclopedia-taxonomies.php:97
 msgid "Term Count"
-msgstr "Liczba haseł"
+msgstr "Jumlah Istilah"
 
 #: ../wp-widget-encyclopedia-taxonomy-cloud.php:98
 #: ../wp-widget-encyclopedia-terms.php:80
 #: ../wp-widget-encyclopedia-taxonomies.php:104
 msgid "Order"
-msgstr "Kolejność"
+msgstr "Atur"
 
 #: ../wp-widget-encyclopedia-search.php:14
 #, fuzzy
 msgid "Encyclopedia Search"
-msgstr "Hasła encyklopedii"
+msgstr "Istilah Ensiklopedia"
 
 #: ../wp-widget-encyclopedia-search.php:15
 #, fuzzy
 msgid "Displays the encyclopedia search field."
-msgstr "Wyświetla hasła encyklopedii jako listę."
+msgstr "Tampilkan istilah ensiklopedia dalam bentuk list"
 
 #: ../wp-widget-encyclopedia-terms.php:14
 msgid "Encyclopedia Terms"
-msgstr "Hasła encyklopedii"
+msgstr "Istilah Ensiklopedia"
 
 #: ../wp-widget-encyclopedia-terms.php:15
 msgid "Displays your encyclopedia terms as list."
-msgstr "Wyświetla hasła encyklopedii jako listę."
+msgstr "Tampilkan istilah ensiklopedia dalam bentuk list"
 
 #: ../wp-widget-encyclopedia-terms.php:70
 msgid "Author"
-msgstr "Autor"
+msgstr "Pengarang"
 
 #: ../wp-widget-encyclopedia-terms.php:71
 msgid "Date"
-msgstr "Data"
+msgstr "Tanggal"
 
 #: ../wp-widget-encyclopedia-terms.php:72
 msgid "Last modification"
-msgstr "Ostatnia zmiana"
+msgstr "Modifikasi terakhir"
 
 #: ../wp-widget-encyclopedia-terms.php:73
 msgid "Random"
-msgstr "Losowo"
+msgstr "Acak"
 
 #: ../wp-widget-encyclopedia-terms.php:74
 msgid "Comment Count"
-msgstr "Liczba komentarzy"
+msgstr "Jumlah Komentar"
 
 #: ../wp-widget-encyclopedia-terms.php:75
 msgid "Menu Order"
-msgstr "Kolejność menu"
+msgstr "Menu Pengaturan"
 
 #: ../wp-widget-encyclopedia-related-terms.php:14
 msgid "Encyclopedia Related Terms"
-msgstr "Hasła podobne"
+msgstr "Istilah Terkait Ensiklopedia"
 
 #: ../wp-widget-encyclopedia-related-terms.php:15
 msgid "Displays encyclopedia terms which are related to the current one as list."
-msgstr "Wyświetla listę haseł encyklopedii podobnych do bieżącego."
+msgstr "Tampilkan istilah ensiklopedia yang terkait dengan saat ini dalam bentuk list"
 
 #: ../wp-widget-encyclopedia-related-terms.php:65
 msgid "Number:"
-msgstr "Numer:"
+msgstr "Angka:"
 
 #: ../wp-widget-encyclopedia-related-terms.php:67
 msgid "The number of related terms you want to show."
-msgstr "Liczba podobnych haseł, które mają być wyświetlane."
+msgstr "Jumlah istilah terkait yang ingin anda tampilkan"
 
 #: ../wp-widget-encyclopedia-taxonomies.php:14
 msgid "Encyclopedia Taxonomies"
-msgstr "Taksonomie encyklopedii"
+msgstr "Taksonomi Ensiklopedia"
 
 #: ../wp-widget-encyclopedia-taxonomies.php:15
 msgid "Displays your encyclopedia taxonomies like Categories, Tags, etc."
-msgstr "Wyświetla taksonomie Twojej encyklopedii takie, jak kategorie, tagi itp."
+msgstr "Tampilkan taksonomi ensiklopedia seperti Kategori, Label, dst."
 
 #: ../wp-widget-encyclopedia-taxonomies.php:79
 msgid "Leave blank to show all."
-msgstr "Pozostaw puste, aby wyświetlić wszystkie."
+msgstr "Kosongkan agar tampil semua"
 
 #: ../wp-widget-encyclopedia-taxonomies.php:85
 msgid "Term IDs, separated by commas."
-msgstr "ID hasła, oddzielane przecinkiem."
+msgstr "ID istilah dipisahkan dengan tanda koma"
 
 #: ../wp-widget-encyclopedia-taxonomies.php:90
 msgid "Show term counts."
@@ -360,43 +362,43 @@ msgstr ""
 
 #: ../wp-widget-encyclopedia-taxonomies.php:99
 msgid "Slug"
-msgstr "slug"
+msgstr "Slug"
 
 #: ../templates/encyclopedia-related-terms.php:2
 msgid "Related entries"
-msgstr "Pokrewne hasła"
+msgstr "Entri Terkait"
 
 #: ../options-page/box-archive-page.php:3
 msgid "Terms per page:"
-msgstr "Liczba haseł na stronie:"
+msgstr "Istilah per halaman:"
 
 #: ../options-page/box-archive-page.php:7
 msgid "This option effects all encyclopedia archive pages."
-msgstr "Ta opcja mw wpływ na wszystkie strony archiwalne."
+msgstr "Pilihan ini berefek pada semua arsip halaman ensiklopedia"
 
 #: ../options-page/box-archive-page.php:14
 msgid "Term filter"
-msgstr "Filtr haseł"
+msgstr "Saring Istilah"
 
 #: ../options-page/box-archive-page.php:20
 msgid "Display a term filter above the encyclopedia archive automatically or not."
-msgstr "Wyświetlać lub nie filtr haseł powyżej archiwum encyklopedii."
+msgstr "Tampilkan filter istilah diatas arsip ensiklopedia secara otomatis atau tidak."
 
 #: ../options-page/box-taxonomies.php:3
 msgid "Activate categories"
-msgstr "Aktywuj kategorie"
+msgstr "Aktifkan kategori"
 
 #: ../options-page/box-taxonomies.php:10
 msgid "Categories can help you create an awesome knowledge base."
-msgstr "Kategorie mogą być pomocne w tworzenie wspaniałej bazy wiedzy."
+msgstr "Kategori dapat membantu membuat pengetahuan dasar yang baik"
 
 #: ../options-page/box-taxonomies.php:17
 msgid "Activate tags"
-msgstr "Aktywuj tagi"
+msgstr "Aktifkan label"
 
 #: ../options-page/box-taxonomies.php:24
 msgid "Tags are necessary if you want to display relevant entries automatically."
-msgstr "Tagi są konieczne, jeśli chcesz automatycznie wyświetlać odpowiednie wpisy."
+msgstr "Label penting jika anda ingin menampilkan entri yang relevan secara otomatis."
 
 #: ../options-page/box-search.php:3
 msgid "Query terms directly"
@@ -434,7 +436,7 @@ msgstr ""
 
 #: ../options-page/box-general.php:3
 msgid "Encyclopedia type:"
-msgstr "Rodzaj encyklopedii:"
+msgstr "tipe Ensiklopedia:"
 
 #: ../options-page/box-general.php:8
 msgid "Wiki"
@@ -446,31 +448,32 @@ msgstr ""
 
 #: ../options-page/box-general.php:10
 msgid "Glossary"
-msgstr "Leksykon"
+msgstr "Daftar Kata-kata Sukar"
 
 #: ../options-page/box-general.php:11
 msgid "Dictionary"
-msgstr "Słownik"
+msgstr "Kamus"
 
 #: ../options-page/box-general.php:14
 msgid "Please choose the type of your encyclopedia. This option does not change the behavior of the plugin. It's just for the labels and captions in the backend."
-msgstr "Wybierz rodzaj swojej encyklopedii. Ta opcja nie zmienia działania wtyczki. To potrzebne jest tylko do stosowania odpowiednich etykiet i podpisów."
+msgstr "Silakan pilih jenis ensiklopedia Anda. Pilihan ini tidak mengubah perilaku plugin. Ini hanya untuk label dan keterangan di backend."
 
 #: ../options-page/box-general.php:21
 msgid "Use default style"
-msgstr "Używaj stylu domyślnego"
+msgstr "Gunakan style dasar"
 
 #: ../options-page/box-general.php:28
 msgid "Set this option to \"No\" if you want to use your own style for the encyclopedia."
-msgstr "Wybierz \"Nie\", jeśli chcesz używać własnego stylu encyklopedii."
+msgstr "Atur pilihan ini ke \"Tidak\" jika anda ingin menggunakan setelan pribadi pada ensiklopedia."
 
 #: ../options-page/box-general.php:34
 msgid "Enable Revisions"
 msgstr ""
 
 #: ../options-page/box-general.php:41
+#, fuzzy
 msgid "Enables or disables revisions for the encyclopedia terms."
-msgstr ""
+msgstr "Terjemahkan URL tembak pada tipe ensiklopedia"
 
 #: ../options-page/box-general.php:48
 msgid "Enable Comments"
@@ -490,24 +493,24 @@ msgstr ""
 
 #: ../options-page/box-single-page.php:3
 msgid "Display related entries"
-msgstr "Wyświetlaj podobne wpisy"
+msgstr "Tampilkan entri terkait"
 
 #: ../options-page/box-single-page.php:5
 msgid "below the encyclopedia entry"
-msgstr "poniżej wpisu w encyklopedii"
+msgstr "dibawah entri ensiklopedia"
 
 #: ../options-page/box-single-page.php:6
 msgid "above the encyclopedia entry"
-msgstr "powyżej wpisu w encyklopedii"
+msgstr "diatas entri ensiklopedia"
 
 #: ../options-page/box-single-page.php:7
 msgid "do not show related terms"
-msgstr "nie wyświetlaj wcale podobnych haseł"
+msgstr "jangan tampilkan istilah terkait"
 
 #: ../options-page/box-single-page.php:13
 #, fuzzy
 msgid "Number of related terms"
-msgstr "nie wyświetlaj wcale podobnych haseł"
+msgstr "jangan tampilkan istilah terkait"
 
 #: ../options-page/box-single-page.php:17
 msgid "How many related terms should be shown for each term?"
@@ -516,7 +519,7 @@ msgstr ""
 #: ../options-page/box-single-page.php:30
 #, fuzzy
 msgid "Display a term filter above the encyclopedia term content automatically or not."
-msgstr "Wyświetlać lub nie filtr haseł powyżej archiwum encyklopedii."
+msgstr "Tampilkan filter istilah diatas arsip ensiklopedia secara otomatis atau tidak."
 
 #: ../options-page/box-linked-terms.php:1
 msgid "Enable automatically linked encyclopedia terms for the following content types:"
@@ -533,25 +536,35 @@ msgstr ""
 #: ../options-page/box-archive-link.php:2
 #, php-format
 msgid "The Archive link for your Encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
-msgstr "Link do archiwum Twojej encyklopedii: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+msgstr "Link arsip ke ensiklopedia anda: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
 
 #: ../options-page/box-archive-link.php:5
 #, php-format
 msgid "The Archive Feed for your Encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
-msgstr "Link do kanału archiwum Twojej enycklopedii: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+msgstr "Arsip pengumpan pada Ensiklopedia anda adalah: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
 
 #~ msgid "Sorry!"
-#~ msgstr "Przepraszamy!"
+#~ msgstr "Maaf!"
 
 #~ msgid "In the Lite Version you can create five terms only."
-#~ msgstr "W wersji Lite można utworzyć tylko pięć haseł."
+#~ msgstr "Pada Versi Lite anda hanya dapat membuat 5 istilah"
 
 #~ msgid ""
 #~ "Why not switching to <a href=\"http://dennishoppe.de/en/wordpress-plugins/"
 #~ "encyclopedia\" target=\"_blank\">Encyclopedia Pro</a>? :)"
 #~ msgstr ""
-#~ "Dlaczego więc nie przejść na <a href=\"http://dennishoppe.de/en/wordpress-"
+#~ "Mengapa tidak beralih ke <a href=\"http://dennishoppe.de/en/wordpress-"
 #~ "plugins/encyclopedia\" target=\"_blank\">Encyclopedia Pro</a>? :)"
 
 #~ msgid "Please notice:"
-#~ msgstr "Uwaga:"
+#~ msgstr "harap dicatat:"
+
+#~ msgid "URL Slugs"
+#~ msgstr "URL Tembak"
+
+#~ msgid ""
+#~ "Warning: Do not use this option if your website uses multilingual plugins "
+#~ "like WPML!"
+#~ msgstr ""
+#~ "Peringatan: Jangan menggunakan pilihan ini jika anda menggunakan plugin "
+#~ "multilingual seperti WPML!"
