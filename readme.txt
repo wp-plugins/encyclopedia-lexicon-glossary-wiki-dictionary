@@ -1,7 +1,7 @@
 === Encyclopedia / Lexicon / Glossary / Wiki / Dictionary / Knowledge base ===
 Contributors: dhoppe
 Tags: encyclopedia, lexicon, glossary, dictionary, knowledge base, wiki, wikipedia,        widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
-Requires at least: 3.4.2
+Requires at least: 3.5
 Tested up to: 3.9
 Stable tag: trunk
 Donate link: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
@@ -13,10 +13,10 @@ This great Encyclopedia Lite plugin enables you to create an awesome Encyclopedi
 == Description ==
 [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) Lite is a state of the art [WordPress encyclopedia / lexicon / glossary / wiki / dictionary plugin](http://dennishoppe.de/en/wordpress-plugins/encyclopedia). It enables you to create, manage and present a knowledge base. Completely coalesced with your WordPress and fully compatible with all the cool publishing tools you like.
 
-In the Lite Edition of the plugin you can take a look around and you try out everything. On several places in the plugin you will find a notice that this function is included in the [Pro Version](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) only. There is no support available for the free Lite Version.
+In the Lite Edition of the plugin you can take a look around, try out everything and create a small lexicon. On several places in the plugin you will find a notice that this function is included in the [Pro Version](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) only.
 
 = Main features =
-* Create, manage and structure your Terms as [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia), lexicon, glossary, Wiki, dictionary or knowledge base
+* Create, manage and structure your terms as [encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia), lexicon, glossary, Wiki, dictionary or knowledge base
 * Use tags and categories¹ to classify your terms
 * Automatic association of related terms
 * Automatic linking of terms in post and page contents
@@ -59,7 +59,7 @@ Please use the support forum on WordPress.org for this version of the Plugin. Fo
 
 
 = Translate this plugin =
-If you have translated this plugin in your language or updated the language file please feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plugin is available in %YOUR_LANGUAGE_NAME%." So i can add it to the plugin and a link to your website to this page.
+If you have translated this plugin in your language or updated the language file please feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plugin is available in %YOUR_LANGUAGE_NAME%." So I can add it to the plugin and a link to your website to this page.
 
 You can find the *Translation.pot* file in the *language/* folder in the plugin directory.
 
