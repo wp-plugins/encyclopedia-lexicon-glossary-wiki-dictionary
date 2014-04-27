@@ -26,3 +26,5 @@
 	</td>
 </tr>
 </table>
+
+<p><?php Echo $this->Pro_Notice('custom_tax') ?></p>

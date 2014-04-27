@@ -50,7 +50,6 @@ class wp_plugin_encyclopedia {
     Add_Action('wp_enqueue_scripts', Array($this, 'Enqueue_Encyclopedia_Style'));
     Add_Action('admin_init', Array($this, 'User_Creates_New_Term'));
     Add_Action('untrash_post', Array($this, 'User_Untrashes_Post'));
-    Add_Action('save_post', Array($this, 'User_Saves_Post'), 10, 2);
     Add_Filter('views_edit-encyclopedia', Array($this, 'Add_Term_Count_Notice'));
     Add_Filter('the_content', Array($this, 'Link_Terms'), 99);
     Add_Filter('nav_menu_meta_box_object', Array($this, 'Change_Taxonomy_Menu_Label'));
@@ -660,17 +659,12 @@ class wp_plugin_encyclopedia {
   }
 
   function Check_Term_Count(){
-    return ($this->Count_Terms(12) <= 12);
+    return $this->Count_Terms(12) < 12;
   }
 
   function User_Creates_New_Term(){
     If ( BaseName($_SERVER['SCRIPT_NAME']) == 'post-new.php' && IsSet($_GET['post_type']) && $_GET['post_type'] == $this->post_type && !$this->Check_Term_Count() )
       $this->Print_Term_Count_Limit();
-  }
-
-  function User_Saves_Post($post_id, $post){
-    # Alias for:
-    $this->User_Untrashes_Post($post_id);
   }
 
   function User_Untrashes_Post($post_id){
