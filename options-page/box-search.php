@@ -1,6 +1,6 @@
 <table class="form-table">
 <tr>
-  <th><label for="redirect_user_to_search_term"><?php Echo $this->t('Query terms directly') ?>:</label></th>
+  <th><label for="redirect_user_to_search_term"><?php Echo $this->t('Query terms directly') ?></label></th>
   <td>
 		<select>
 			<option <?php Disabled(True) ?> ><?php _e('Yes') ?></option>
@@ -14,9 +14,10 @@
 </tr>
 
 <tr>
-	<th><label><?php Echo $this->t('Autocomplete Min Length') ?>:</label></th>
+	<th><label><?php Echo $this->t('Autocomplete min length') ?></label></th>
 	<td>
-    <input type="number" value="2" class="short" <?php Disabled(True) ?> > <?php Echo $this->t('Characters', 'characters unit') ?><br>
+    <input type="number" value="2" class="short" <?php Disabled(True) ?> >
+    <?php Echo $this->t('characters', 'characters unit') ?><br>
     <small>
       <?php Echo $this->t('The minimum number of characters a user must type before suggestions will be shown.') ?>
       <span class="pro-notice"><?php $this->Pro_Notice('changeable') ?></span>
@@ -25,9 +26,10 @@
 </tr>
 
 <tr>
-	<th><label><?php Echo $this->t('Autocomplete Delay') ?>:</label></th>
+	<th><label><?php Echo $this->t('Autocomplete delay') ?></label></th>
 	<td>
-    <input type="number" value="400" class="short" <?php Disabled(True) ?> ><?php Echo $this->t('ms', 'milliseconds time unit') ?><br>
+    <input type="number" value="400" class="short" <?php Disabled(True) ?> >
+    <?php Echo $this->t('ms', 'milliseconds time unit') ?><br>
     <small>
       <?php Echo $this->t('The delay in milliseconds between when a keystroke occurs and when suggestions will be shown.') ?>
       <span class="pro-notice"><?php $this->Pro_Notice('changeable') ?></span>

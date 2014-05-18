@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-26 17:43+0100\n"
+"POT-Creation-Date: 2014-05-18 21:52+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: \n"
@@ -15,207 +15,210 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../wp-plugin-encyclopedia.php:144
+#: ../wp-plugin-encyclopedia.php:143
 msgid "Encyclopedia Options"
 msgstr "Ansiklopedi Ayarları"
 
-#: ../wp-plugin-encyclopedia.php:145
+#: ../wp-plugin-encyclopedia.php:144
 msgid "Encyclopedia"
 msgstr "Ansiklopedi"
 
-#: ../wp-plugin-encyclopedia.php:156
+#: ../wp-plugin-encyclopedia.php:155
 msgid "Taxonomies"
 msgstr "Taksonomiler"
 
-#: ../wp-plugin-encyclopedia.php:157
-msgid "Archive Page"
+#: ../wp-plugin-encyclopedia.php:156
+#, fuzzy
+msgid "Archive page"
 msgstr "Arşiv Sayfası"
+
+#: ../wp-plugin-encyclopedia.php:157
+#, fuzzy
+msgid "Search page"
+msgstr "Etiketlerde Ara"
 
 #: ../wp-plugin-encyclopedia.php:158
 #, fuzzy
-msgid "Search Page"
-msgstr "Etiketlerde Ara"
-
-#: ../wp-plugin-encyclopedia.php:159
-msgid "Single Page"
+msgid "Single page"
 msgstr "Tekil Sayfa"
 
-#: ../wp-plugin-encyclopedia.php:160
-msgid "Linked Terms in Contents"
+#: ../wp-plugin-encyclopedia.php:159
+#, fuzzy
+msgid "Linked terms in contents"
 msgstr "İçerikteki Bağlantılı Terimler"
 
-#: ../wp-plugin-encyclopedia.php:161
-#: ../wp-plugin-encyclopedia.php:342
+#: ../wp-plugin-encyclopedia.php:160
+#: ../wp-plugin-encyclopedia.php:341
 msgid "Archive Url"
 msgstr "Arşiv Bağlantısı"
 
-#: ../wp-plugin-encyclopedia.php:254
+#: ../wp-plugin-encyclopedia.php:253
 msgid "Lexicon"
 msgstr "Lügat"
 
-#: ../wp-plugin-encyclopedia.php:255
+#: ../wp-plugin-encyclopedia.php:254
 msgctxt "URL slug"
 msgid "lexicon"
 msgstr "sozlukce"
 
-#: ../wp-plugin-encyclopedia.php:262
+#: ../wp-plugin-encyclopedia.php:261
 msgid "Term"
 msgstr "Terim"
 
-#: ../wp-plugin-encyclopedia.php:263
+#: ../wp-plugin-encyclopedia.php:262
 msgid "Add Term"
 msgstr "Terim Ekle"
 
-#: ../wp-plugin-encyclopedia.php:264
+#: ../wp-plugin-encyclopedia.php:263
 msgid "New Term"
 msgstr "Yeni Terim"
 
-#: ../wp-plugin-encyclopedia.php:265
+#: ../wp-plugin-encyclopedia.php:264
 msgid "Edit Term"
 msgstr "Terimi Düzenle"
 
-#: ../wp-plugin-encyclopedia.php:266
+#: ../wp-plugin-encyclopedia.php:265
 msgid "View Term"
 msgstr "Terimi Gör"
 
-#: ../wp-plugin-encyclopedia.php:267
+#: ../wp-plugin-encyclopedia.php:266
 msgid "Search Terms"
 msgstr "Terim Ara"
 
-#: ../wp-plugin-encyclopedia.php:268
+#: ../wp-plugin-encyclopedia.php:267
 msgid "No Terms found"
 msgstr "Terim Bulunamadı"
 
-#: ../wp-plugin-encyclopedia.php:269
+#: ../wp-plugin-encyclopedia.php:268
 msgid "No Terms found in Trash"
 msgstr "Çöp Kutusunda Terim Bulunamadı"
 
-#: ../wp-plugin-encyclopedia.php:290
+#: ../wp-plugin-encyclopedia.php:289
 #, php-format
 msgid "Term updated. (<a href=\"%s\">View Term</a>)"
 msgstr "Terim güncellendi. (<a href=\"%s\">Terime Bak</a>)"
 
-#: ../wp-plugin-encyclopedia.php:293
+#: ../wp-plugin-encyclopedia.php:292
 msgid "Term updated."
 msgstr "Terim güncellendi."
 
-#: ../wp-plugin-encyclopedia.php:294
+#: ../wp-plugin-encyclopedia.php:293
 #, php-format
 msgid "Term restored to revision from %s"
 msgstr "Terim %s tarafından yapılan düzeltiye döndürüldü."
 
-#: ../wp-plugin-encyclopedia.php:295
+#: ../wp-plugin-encyclopedia.php:294
 #, php-format
 msgid "Term published. (<a href=\"%s\">View Term</a>)"
 msgstr "Terim yayımlandı. (<a href=\"%s\">Terimi Gör</a>)"
 
-#: ../wp-plugin-encyclopedia.php:296
+#: ../wp-plugin-encyclopedia.php:295
 msgid "Term saved."
 msgstr "Terim kaydedildi."
 
-#: ../wp-plugin-encyclopedia.php:297
+#: ../wp-plugin-encyclopedia.php:296
 msgid "Term submitted."
 msgstr "Terim eklendi."
 
-#: ../wp-plugin-encyclopedia.php:298
+#: ../wp-plugin-encyclopedia.php:297
 #, php-format
 msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 msgstr "Terim takvime eklendi. (<a target=\"_blank\" href=\"%s\">Terimi Gör</a>)"
 
-#: ../wp-plugin-encyclopedia.php:299
+#: ../wp-plugin-encyclopedia.php:298
 #, php-format
 msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
 msgstr "Taslak güncellendi. (<a target=\"_blank\" href=\"%s\">Terimi Önizle</a>)"
 
-#: ../wp-plugin-encyclopedia.php:306
+#: ../wp-plugin-encyclopedia.php:305
 #, fuzzy
 msgid "Encyclopedia Tags"
 msgstr "Ansiklopedi Terimleri"
 
-#: ../wp-plugin-encyclopedia.php:308
+#: ../wp-plugin-encyclopedia.php:307
 #, fuzzy
 msgid "Tags"
 msgstr "Tüm Etiketler"
 
-#: ../wp-plugin-encyclopedia.php:309
+#: ../wp-plugin-encyclopedia.php:308
 msgid "Tag"
 msgstr "Etiket"
 
-#: ../wp-plugin-encyclopedia.php:310
+#: ../wp-plugin-encyclopedia.php:309
 msgid "Search Tags"
 msgstr "Etiketlerde Ara"
 
-#: ../wp-plugin-encyclopedia.php:311
+#: ../wp-plugin-encyclopedia.php:310
 msgid "All Tags"
 msgstr "Tüm Etiketler"
 
-#: ../wp-plugin-encyclopedia.php:312
+#: ../wp-plugin-encyclopedia.php:311
 msgid "Edit Tag"
 msgstr "Etiketi Düzenle"
 
-#: ../wp-plugin-encyclopedia.php:313
+#: ../wp-plugin-encyclopedia.php:312
 msgid "Update Tag"
 msgstr "Etiketi Güncelle"
 
-#: ../wp-plugin-encyclopedia.php:314
+#: ../wp-plugin-encyclopedia.php:313
 msgid "Add New Tag"
 msgstr "Yeni Etiket Ekle"
 
-#: ../wp-plugin-encyclopedia.php:315
+#: ../wp-plugin-encyclopedia.php:314
 msgid "New Tag"
 msgstr "Yeni Etiket"
 
-#: ../wp-plugin-encyclopedia.php:323
+#: ../wp-plugin-encyclopedia.php:322
 #, php-format
 msgctxt "URL slug"
 msgid "%s-tag"
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:345
+#: ../wp-plugin-encyclopedia.php:344
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "Bu %s arşivine ait bağlantı adresidir."
 
-#: ../wp-plugin-encyclopedia.php:350
+#: ../wp-plugin-encyclopedia.php:349
 msgid "Archive Feed"
 msgstr "Arşiv Geri-Beslemesi"
 
-#: ../wp-plugin-encyclopedia.php:353
+#: ../wp-plugin-encyclopedia.php:352
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "Bu %s arşivine ait geri-besleme bağlantı adresidir."
 
+#: ../wp-plugin-encyclopedia.php:639
+#, php-format
+msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
+msgstr ""
+
 #: ../wp-plugin-encyclopedia.php:640
 #, php-format
-msgid "Available in the <a href=\"%s\" target=\"_blank\">Premium Version</a>."
+msgid "Changeable in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr ""
 
 #: ../wp-plugin-encyclopedia.php:641
 #, php-format
-msgid "Changeable in the <a href=\"%s\" target=\"_blank\">Premium Version</a>."
+msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
 msgstr ""
 
 #: ../wp-plugin-encyclopedia.php:642
 #, php-format
-msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
+msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
 msgstr ""
 
 #: ../wp-plugin-encyclopedia.php:643
 #, php-format
-msgid "In the <a href=\"%s\" target=\"_blank\">Premium Version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
+msgid "Do you like the term management? Upgrade to the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a>!"
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:644
-#, php-format
-msgid "Do you like the term management? Upgrade to the <a href=\"%s\" target=\"_blank\">Premium Version of Encyclopedia</a>!"
-msgstr ""
-
-#: ../wp-plugin-encyclopedia.php:648
+#: ../wp-plugin-encyclopedia.php:647
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:684
+#: ../wp-plugin-encyclopedia.php:678
 msgid "&laquo; Back to your terms"
 msgstr ""
 
@@ -368,7 +371,8 @@ msgid "Related entries"
 msgstr "İlişkili girdiler"
 
 #: ../options-page/box-archive-page.php:3
-msgid "Terms per page:"
+#, fuzzy
+msgid "Terms per page"
 msgstr "Sayfa başına düşen terim:"
 
 #: ../options-page/box-archive-page.php:7
@@ -408,33 +412,34 @@ msgid "Enable this feature to redirect the user to the term if the search query 
 msgstr ""
 
 #: ../options-page/box-search.php:17
-msgid "Autocomplete Min Length"
+msgid "Autocomplete min length"
 msgstr ""
 
-#: ../options-page/box-search.php:19
+#: ../options-page/box-search.php:20
 msgctxt "characters unit"
-msgid "Characters"
+msgid "characters"
 msgstr ""
 
-#: ../options-page/box-search.php:21
+#: ../options-page/box-search.php:22
 msgid "The minimum number of characters a user must type before suggestions will be shown."
 msgstr ""
 
-#: ../options-page/box-search.php:28
-msgid "Autocomplete Delay"
+#: ../options-page/box-search.php:29
+msgid "Autocomplete delay"
 msgstr ""
 
-#: ../options-page/box-search.php:30
+#: ../options-page/box-search.php:32
 msgctxt "milliseconds time unit"
 msgid "ms"
 msgstr ""
 
-#: ../options-page/box-search.php:32
+#: ../options-page/box-search.php:34
 msgid "The delay in milliseconds between when a keystroke occurs and when suggestions will be shown."
 msgstr ""
 
 #: ../options-page/box-general.php:3
-msgid "Encyclopedia type:"
+#, fuzzy
+msgid "Encyclopedia type"
 msgstr "Ansiklopedi türü:"
 
 #: ../options-page/box-general.php:8
@@ -466,7 +471,7 @@ msgid "Set this option to \"No\" if you want to use your own style for the encyc
 msgstr "Kendi biçeminizi kullanmak istiyorsanız \"Hayır\" seçeneğini işaretleyiniz."
 
 #: ../options-page/box-general.php:34
-msgid "Enable Revisions"
+msgid "Enable revisions"
 msgstr ""
 
 #: ../options-page/box-general.php:41
@@ -474,7 +479,7 @@ msgid "Enables or disables revisions for the encyclopedia terms."
 msgstr ""
 
 #: ../options-page/box-general.php:48
-msgid "Enable Comments"
+msgid "Enable comments"
 msgstr ""
 
 #: ../options-page/box-general.php:55
@@ -482,7 +487,7 @@ msgid "Enables or disables comments and trackbacks for the encyclopedia terms."
 msgstr ""
 
 #: ../options-page/box-general.php:62
-msgid "Enable Thumbnails"
+msgid "Enable thumbnails"
 msgstr ""
 
 #: ../options-page/box-general.php:69
@@ -523,22 +528,24 @@ msgstr "Ansiklopedi arşiv sayfasının üstünde, otomatik olarak terim filtres
 msgid "Enable automatically linked encyclopedia terms for the following content types:"
 msgstr "Bağlantılı ansiklopedi terimlerini, otomatik olarak, sıralanan içerik türleri için etkinleştirin:"
 
-#: ../options-page/box-linked-terms.php:13
-msgid "Open link in a new window"
-msgstr ""
-
 #: ../options-page/box-linked-terms.php:20
+#: ../options-page/box-linked-terms.php:26
 msgid "Link the first match of each term only."
 msgstr ""
 
+#: ../options-page/box-linked-terms.php:32
+#, fuzzy
+msgid "Link the term in its own content."
+msgstr "İçerikteki Bağlantılı Terimler"
+
 #: ../options-page/box-archive-link.php:2
-#, php-format
-msgid "The Archive link for your Encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+#, fuzzy, php-format
+msgid "The archive link for your encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
 msgstr "Ansiklopedi Arşiv Sayfanız: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
 
 #: ../options-page/box-archive-link.php:5
-#, php-format
-msgid "The Archive Feed for your Encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+#, fuzzy, php-format
+msgid "The archive feed for your encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
 msgstr "Ansiklopedi Arşiv Sayfası Geri-Besleme Adresi: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
 
 #, fuzzy
@@ -601,10 +608,6 @@ msgstr "Ansiklopedi Arşiv Sayfası Geri-Besleme Adresi: <a href=\"%1$s\" target
 
 #~ msgid "Your update subscription account"
 #~ msgstr "Güncelleme hesabı"
-
-#, fuzzy
-#~ msgid "Link the term in its own content."
-#~ msgstr "İçerikteki Bağlantılı Terimler"
 
 #~ msgid "Edit and create (own) Terms"
 #~ msgstr "(Size ait) terim oluşturun ya da terimi düzenleyin"

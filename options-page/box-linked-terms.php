@@ -7,17 +7,29 @@ ForEach (Get_Post_Types(Array('show_ui' => True),'objects') AS $type): ?>
     <input type="checkbox" <?php Disabled(True); Checked(True) ?> >
     <?php Echo $type->label ?>
   </label>
-  &raquo;
-  <label>
+
+  (<label>
     <input type="checkbox" <?php Disabled(True) ?> >
-    <?php Echo $this->t('Open link in a new window') ?>
-  </label>
+    <?php _e('Open link in a new window/tab') ?>
+  </label>)
 </p>
 <?php EndForEach ?>
 <p>
   <label>
     <input type="checkbox" <?php Disabled(True) ?> >
     <?php Echo $this->t('Link the first match of each term only.') ?>
+  </label>
+</p>
+<p>
+  <label for="">
+    <input type="checkbox" <?php Disabled(True) ?> >
+    <?php Echo $this->t('Link the first match of each term only.') ?>
+  </label>
+</p>
+<p>
+  <label for="">
+    <input type="checkbox" <?php Disabled(True) ?> >
+    <?php Echo $this->t('Link the term in its own content.') ?>
   </label>
 </p>
 <small class="pro-notice"><?php $this->Pro_Notice('changeable') ?></small>

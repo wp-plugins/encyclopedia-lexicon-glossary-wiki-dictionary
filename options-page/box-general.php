@@ -1,6 +1,6 @@
 <table class="form-table">
 <tr>
-	<th><label for="encyclopedia_type"><?php Echo $this->t('Encyclopedia type:') ?></label></th>
+	<th><label for="encyclopedia_type"><?php Echo $this->t('Encyclopedia type') ?></label></th>
 	<td>
 		<select name="encyclopedia_type" id="encyclopedia_type">
       <option value="" <?php Disabled(True) ?> ><?php Echo $this->t('Encyclopedia') ?></option>
@@ -18,7 +18,7 @@
 </tr>
 
 <tr>
-  <th><label for="embed_default_style"><?php Echo $this->t('Use default style') ?>:</label></th>
+  <th><label for="embed_default_style"><?php Echo $this->t('Use default style') ?></label></th>
   <td>
 		<select name="embed_default_style" id="embed_default_style">
 			<option value="yes" <?php Selected($this->Get_Option('embed_default_style'), 'yes') ?> ><?php _e('Yes') ?></option>
@@ -31,7 +31,7 @@
 </tr>
 
 <tr>
-  <th><label for="enable_revisions"><?php Echo $this->t('Enable Revisions') ?>:</label></th>
+  <th><label for="enable_revisions"><?php Echo $this->t('Enable revisions') ?></label></th>
   <td>
 		<select name="" id="enable_revisions">
 			<option <?php Disabled(True) ?> ><?php _e('Yes') ?></option>
@@ -45,7 +45,7 @@
 </tr>
 
 <tr>
-  <th><label for="enable_comments"><?php Echo $this->t('Enable Comments') ?>:</label></th>
+  <th><label for="enable_comments"><?php Echo $this->t('Enable comments') ?></label></th>
   <td>
 		<select name="" id="enable_comments">
 			<option <?php Disabled(True) ?> ><?php _e('Yes') ?></option>
@@ -59,7 +59,7 @@
 </tr>
 
 <tr>
-  <th><label for="enable_thumbnails"><?php Echo $this->t('Enable Thumbnails') ?>:</label></th>
+  <th><label for="enable_thumbnails"><?php Echo $this->t('Enable thumbnails') ?></label></th>
   <td>
 		<select name="" id="enable_thumbnails">
 			<option <?php Disabled(True) ?> ><?php _e('Yes') ?></option>

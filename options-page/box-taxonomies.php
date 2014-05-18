@@ -1,6 +1,6 @@
 <table class="form-table">
 <tr>
-  <th><label for="encyclopedia_categories"><?php Echo $this->t('Activate categories') ?>:</label></th>
+  <th><label for="encyclopedia_categories"><?php Echo $this->t('Activate categories') ?></label></th>
   <td>
 		<select id="encyclopedia_categories">
 			<option value="" <?php Selected($this->Get_Option('encyclopedia_categories'), 'yes') ?> disabled="disabled"><?php _e('Yes') ?></option>
@@ -14,7 +14,7 @@
 </tr>
 
 <tr>
-  <th><label for="encyclopedia_tags"><?php Echo $this->t('Activate tags') ?>:</label></th>
+  <th><label for="encyclopedia_tags"><?php Echo $this->t('Activate tags') ?></label></th>
   <td>
 		<select name="encyclopedia_tags" id="encyclopedia_tags">
 			<option value="yes" <?php Selected($this->Get_Option('encyclopedia_tags'), 'yes') ?> ><?php _e('Yes') ?></option>

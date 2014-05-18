@@ -3,7 +3,7 @@
 Plugin Name: Encyclopedia Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
 Description: Encyclopedia Lite enables you to create your own encyclopedia, lexicon, glossary, wiki or dictionary.
-Version: 1.5
+Version: 1.5.1
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
@@ -153,10 +153,10 @@ class wp_plugin_encyclopedia {
     # Add option boxes
     $this->Add_Option_Box(__('General'), DirName(__FILE__).'/options-page/box-general.php');
     $this->Add_Option_Box($this->t('Taxonomies'), DirName(__FILE__).'/options-page/box-taxonomies.php');
-    $this->Add_Option_Box($this->t('Archive Page'), DirName(__FILE__).'/options-page/box-archive-page.php');
-    $this->Add_Option_Box($this->t('Search Page'), DirName(__FILE__).'/options-page/box-search.php');
-    $this->Add_Option_Box($this->t('Single Page'), DirName(__FILE__).'/options-page/box-single-page.php');
-    $this->Add_Option_Box($this->t('Linked Terms in Contents'), DirName(__FILE__).'/options-page/box-linked-terms.php');
+    $this->Add_Option_Box($this->t('Archive page'), DirName(__FILE__).'/options-page/box-archive-page.php');
+    $this->Add_Option_Box($this->t('Search page'), DirName(__FILE__).'/options-page/box-search.php');
+    $this->Add_Option_Box($this->t('Single page'), DirName(__FILE__).'/options-page/box-single-page.php');
+    $this->Add_Option_Box($this->t('Linked terms in contents'), DirName(__FILE__).'/options-page/box-linked-terms.php');
     $this->Add_Option_Box($this->t('Archive Url'), DirName(__FILE__).'/options-page/box-archive-link.php', 'side' );
   }
 
@@ -176,7 +176,7 @@ class wp_plugin_encyclopedia {
     WP_Enqueue_Script('dashboard');
     WP_Enqueue_Style('dashboard');
 
-    WP_Enqueue_Script('options-page', $this->base_url . '/options-page/options-page.js', Array('jquery'));
+    #WP_Enqueue_Script('options-page', $this->base_url . '/options-page/options-page.js', Array('jquery'), Null, True);
     WP_Enqueue_Style('options-page', $this->base_url . '/options-page/options-page.css');
 
     # Remove incompatible JS Libs
@@ -636,11 +636,11 @@ class wp_plugin_encyclopedia {
 
   function Pro_Notice($message = 'feature', $output = True){
     $arr_message = Array(
-      'feature' => $this->t('Available in the <a href="%s" target="_blank">Premium Version</a>.'),
-      'changeable' => $this->t('Changeable in the <a href="%s" target="_blank">Premium Version</a>.'),
+      'feature' => $this->t('Available in the <a href="%s" target="_blank">premium version</a> only.'),
+      'changeable' => $this->t('Changeable in the <a href="%s" target="_blank">premium version</a> only.'),
       'custom_tax' => $this->t('Do you need a special taxonomy for your website? No problem! Just <a href="%s" target="_blank">get in touch</a>.'),
-      'count_limit' => $this->t('In the <a href="%s" target="_blank">Premium Version of Encyclopedia</a> you will take advantage of unlimited terms and many more features.'),
-      'do_you_like' => $this->t('Do you like the term management? Upgrade to the <a href="%s" target="_blank">Premium Version of Encyclopedia</a>!')
+      'count_limit' => $this->t('In the <a href="%s" target="_blank">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features.'),
+      'do_you_like' => $this->t('Do you like the term management? Upgrade to the <a href="%s" target="_blank">premium version of Encyclopedia</a>!')
     );
 
     If (IsSet($arr_message[$message])){

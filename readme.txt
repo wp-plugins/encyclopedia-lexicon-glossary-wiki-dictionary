@@ -112,6 +112,10 @@ I am still collecting frequently asked questions. ;)
 
 == Changelog ==
 
+= 1.5.1 =
+* Still cleaning up the options page
+* Fixed a few typos
+
 = 1.5 =
 * Cleanup options page
 * Changed number of available terms
