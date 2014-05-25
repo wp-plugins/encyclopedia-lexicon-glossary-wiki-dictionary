@@ -3,7 +3,7 @@
 Plugin Name: Encyclopedia Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
 Description: Encyclopedia Lite enables you to create your own encyclopedia, lexicon, glossary, wiki or dictionary.
-Version: 1.5.1
+Version: 1.5.2
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
@@ -50,14 +50,13 @@ class wp_plugin_encyclopedia {
     Add_Action('wp_enqueue_scripts', Array($this, 'Enqueue_Encyclopedia_Style'));
     Add_Action('admin_init', Array($this, 'User_Creates_New_Term'));
     Add_Action('untrash_post', Array($this, 'User_Untrashes_Post'));
-    Add_Filter('views_edit-encyclopedia', Array($this, 'Add_Term_Count_Notice'));
     Add_Filter('the_content', Array($this, 'Link_Terms'), 99);
     Add_Filter('nav_menu_meta_box_object', Array($this, 'Change_Taxonomy_Menu_Label'));
     Add_Filter('query_vars', Array($this, 'Register_Query_Vars'));
     Add_Filter('init', Array($this, 'Define_Rewrite_Rules'));
     Add_Filter('rewrite_rules_array', Array($this, 'Add_Rewrite_Rules'));
     Add_Action('wp_loaded', Array($this, 'Optionally_Flush_Rewrite_Rules'));
-    Add_Action('admin_print_styles', Array($this, 'Print_Dashboard_Styles'));
+    Add_Action('admin_footer', Array($this, 'Print_Dashboard_JS'));
 
     # Register Widgets
     Add_Action ('widgets_init', Array($this,'Register_Widgets'));
@@ -636,11 +635,13 @@ class wp_plugin_encyclopedia {
 
   function Pro_Notice($message = 'feature', $output = True){
     $arr_message = Array(
+      'upgrade' => $this->t('Upgrade to Pro'),
+      'upgrade_url' => '%s',
       'feature' => $this->t('Available in the <a href="%s" target="_blank">premium version</a> only.'),
       'changeable' => $this->t('Changeable in the <a href="%s" target="_blank">premium version</a> only.'),
       'custom_tax' => $this->t('Do you need a special taxonomy for your website? No problem! Just <a href="%s" target="_blank">get in touch</a>.'),
       'count_limit' => $this->t('In the <a href="%s" target="_blank">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features.'),
-      'do_you_like' => $this->t('Do you like the term management? Upgrade to the <a href="%s" target="_blank">premium version of Encyclopedia</a>!')
+      #'do_you_like' => $this->t('Do you like the term management? Upgrade to the <a href="%s" target="_blank">premium version of Encyclopedia</a>!')
     );
 
     If (IsSet($arr_message[$message])){
@@ -680,15 +681,25 @@ class wp_plugin_encyclopedia {
     );
   }
 
-  function Print_Dashboard_Styles(){
+  function Print_Dashboard_JS(){
     If (!$this->Check_Term_Count()): ?>
-    <style type="text/css">a[href*="post-new.php?post_type=<?php Echo $this->post_type ?>"]{ display: none !important }</style>
-    <?php EndIf;
-  }
+    <script type="text/javascript">
+    (function($){
+      $('a[href*="post-new.php?post_type=<?php Echo $this->post_type ?>"]')
+        .text('<?php $this->Pro_Notice('upgrade') ?>')
+        .attr({
+          'title': '<?php $this->Pro_Notice('upgrade') ?>',
+          'href': '<?php $this->Pro_Notice('upgrade_url') ?>',
+          'target': '_blank'
+        })
+        .css({
+          'color': 'green',
+          'font-weight': 'bold'
+        });
+    })(jQuery);
+    </script>
 
-  function Add_Term_Count_Notice($views){
-    If (!$this->Check_Term_Count()): ?><div id="message" class="updated"><p><?php $this->Pro_Notice('do_you_like') ?></p></div><?php EndIf;
-    return $views;
+    <?php EndIf;
   }
 
 } /* End of the Class */

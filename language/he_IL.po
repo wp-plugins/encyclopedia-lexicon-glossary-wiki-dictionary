@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-18 21:52+0100\n"
+"POT-Creation-Date: 2014-05-25 21:48+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Ahrale | Atar4U.com <contact@atar4u.com>\n"
@@ -18,208 +18,207 @@ msgstr ""
 "X-Poedit-Country: ISRAEL\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../wp-plugin-encyclopedia.php:143
+#: ../wp-plugin-encyclopedia.php:142
 msgid "Encyclopedia Options"
 msgstr "אפשרויות אנציקלופדיה"
 
-#: ../wp-plugin-encyclopedia.php:144
+#: ../wp-plugin-encyclopedia.php:143
 msgid "Encyclopedia"
 msgstr "אנציקלופדיה"
 
-#: ../wp-plugin-encyclopedia.php:155
+#: ../wp-plugin-encyclopedia.php:154
 msgid "Taxonomies"
 msgstr "טקסונומיות"
 
-#: ../wp-plugin-encyclopedia.php:156
+#: ../wp-plugin-encyclopedia.php:155
 #, fuzzy
 msgid "Archive page"
 msgstr "דף ארכיון"
 
-#: ../wp-plugin-encyclopedia.php:157
+#: ../wp-plugin-encyclopedia.php:156
 #, fuzzy
 msgid "Search page"
 msgstr "חיפוש תגיות"
 
-#: ../wp-plugin-encyclopedia.php:158
+#: ../wp-plugin-encyclopedia.php:157
 #, fuzzy
 msgid "Single page"
 msgstr "דף יחיד"
 
-#: ../wp-plugin-encyclopedia.php:159
+#: ../wp-plugin-encyclopedia.php:158
 #, fuzzy
 msgid "Linked terms in contents"
 msgstr "ביטויים מקושרים בתוכן"
 
-#: ../wp-plugin-encyclopedia.php:160
-#: ../wp-plugin-encyclopedia.php:341
+#: ../wp-plugin-encyclopedia.php:159
+#: ../wp-plugin-encyclopedia.php:340
 msgid "Archive Url"
 msgstr "כתובת ארכיון"
 
-#: ../wp-plugin-encyclopedia.php:253
+#: ../wp-plugin-encyclopedia.php:252
 msgid "Lexicon"
 msgstr "לכסיקון"
 
-#: ../wp-plugin-encyclopedia.php:254
+#: ../wp-plugin-encyclopedia.php:253
 msgctxt "URL slug"
 msgid "lexicon"
 msgstr "לכסיקון"
 
-#: ../wp-plugin-encyclopedia.php:261
+#: ../wp-plugin-encyclopedia.php:260
 msgid "Term"
 msgstr "ביטוי"
 
-#: ../wp-plugin-encyclopedia.php:262
+#: ../wp-plugin-encyclopedia.php:261
 msgid "Add Term"
 msgstr "הוספת ביטוי"
 
-#: ../wp-plugin-encyclopedia.php:263
+#: ../wp-plugin-encyclopedia.php:262
 msgid "New Term"
 msgstr "ביטוי חדש"
 
-#: ../wp-plugin-encyclopedia.php:264
+#: ../wp-plugin-encyclopedia.php:263
 msgid "Edit Term"
 msgstr "עריכת ביטוי"
 
-#: ../wp-plugin-encyclopedia.php:265
+#: ../wp-plugin-encyclopedia.php:264
 msgid "View Term"
 msgstr "הצג את הביטוי"
 
-#: ../wp-plugin-encyclopedia.php:266
+#: ../wp-plugin-encyclopedia.php:265
 msgid "Search Terms"
 msgstr "חיפוש ביטויים"
 
-#: ../wp-plugin-encyclopedia.php:267
+#: ../wp-plugin-encyclopedia.php:266
 msgid "No Terms found"
 msgstr "לא נמצאו ביטויים"
 
-#: ../wp-plugin-encyclopedia.php:268
+#: ../wp-plugin-encyclopedia.php:267
 msgid "No Terms found in Trash"
 msgstr "לא נמצאו ביטויים באשפה"
 
-#: ../wp-plugin-encyclopedia.php:289
+#: ../wp-plugin-encyclopedia.php:288
 #, php-format
 msgid "Term updated. (<a href=\"%s\">View Term</a>)"
 msgstr "הביטוי עודכן, (<a href=\"%s\">הצג</a>)"
 
-#: ../wp-plugin-encyclopedia.php:292
+#: ../wp-plugin-encyclopedia.php:291
 msgid "Term updated."
 msgstr "הביטוי הוצג"
 
-#: ../wp-plugin-encyclopedia.php:293
+#: ../wp-plugin-encyclopedia.php:292
 #, php-format
 msgid "Term restored to revision from %s"
 msgstr "הביטוי שוחזר לגרסה מ %s"
 
-#: ../wp-plugin-encyclopedia.php:294
+#: ../wp-plugin-encyclopedia.php:293
 #, php-format
 msgid "Term published. (<a href=\"%s\">View Term</a>)"
 msgstr "הביטוי פורסם. (<a href=\"%s\">הצג</a>)"
 
-#: ../wp-plugin-encyclopedia.php:295
+#: ../wp-plugin-encyclopedia.php:294
 msgid "Term saved."
 msgstr "הביטוי נשמר"
 
-#: ../wp-plugin-encyclopedia.php:296
+#: ../wp-plugin-encyclopedia.php:295
 msgid "Term submitted."
 msgstr "הביטוי נשלח."
 
-#: ../wp-plugin-encyclopedia.php:297
+#: ../wp-plugin-encyclopedia.php:296
 #, php-format
 msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 msgstr "הביטוי תוזמן. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 
-#: ../wp-plugin-encyclopedia.php:298
+#: ../wp-plugin-encyclopedia.php:297
 #, php-format
 msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
 msgstr "הטיוטה עודכנה. (<a target=\"_blank\" href=\"%s\">תצוגה מוקדמת</a>)"
 
-#: ../wp-plugin-encyclopedia.php:305
+#: ../wp-plugin-encyclopedia.php:304
 msgid "Encyclopedia Tags"
 msgstr "תגיות אנציקלופדיה"
 
-#: ../wp-plugin-encyclopedia.php:307
+#: ../wp-plugin-encyclopedia.php:306
 msgid "Tags"
 msgstr "תגיות"
 
-#: ../wp-plugin-encyclopedia.php:308
+#: ../wp-plugin-encyclopedia.php:307
 msgid "Tag"
 msgstr "תגית"
 
-#: ../wp-plugin-encyclopedia.php:309
+#: ../wp-plugin-encyclopedia.php:308
 msgid "Search Tags"
 msgstr "חיפוש תגיות"
 
-#: ../wp-plugin-encyclopedia.php:310
+#: ../wp-plugin-encyclopedia.php:309
 msgid "All Tags"
 msgstr "כל התגיות"
 
-#: ../wp-plugin-encyclopedia.php:311
+#: ../wp-plugin-encyclopedia.php:310
 msgid "Edit Tag"
 msgstr "עריכת תגית"
 
-#: ../wp-plugin-encyclopedia.php:312
+#: ../wp-plugin-encyclopedia.php:311
 msgid "Update Tag"
 msgstr "עדכון תגית"
 
-#: ../wp-plugin-encyclopedia.php:313
+#: ../wp-plugin-encyclopedia.php:312
 msgid "Add New Tag"
 msgstr "הוספת תגית"
 
-#: ../wp-plugin-encyclopedia.php:314
+#: ../wp-plugin-encyclopedia.php:313
 msgid "New Tag"
 msgstr "תגית חדשה"
 
-#: ../wp-plugin-encyclopedia.php:322
+#: ../wp-plugin-encyclopedia.php:321
 #, php-format
 msgctxt "URL slug"
 msgid "%s-tag"
 msgstr "%s-תגית"
 
-#: ../wp-plugin-encyclopedia.php:344
+#: ../wp-plugin-encyclopedia.php:343
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "זו כתובת ה URL לארכיון של %s זה."
 
-#: ../wp-plugin-encyclopedia.php:349
+#: ../wp-plugin-encyclopedia.php:348
 msgid "Archive Feed"
 msgstr "הזנת ארכיון"
 
-#: ../wp-plugin-encyclopedia.php:352
+#: ../wp-plugin-encyclopedia.php:351
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "זוהי כתובת ה URL של הארכיון של %s זה."
 
-#: ../wp-plugin-encyclopedia.php:639
+#: ../wp-plugin-encyclopedia.php:638
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: ../wp-plugin-encyclopedia.php:640
 #, fuzzy, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr "מצטערים, תכונה זו זמינה רק ב <a href=\"%s\" target=\"_blank\">גרסה המקצועית של תוסף האנציקלופדיה</a>."
 
-#: ../wp-plugin-encyclopedia.php:640
+#: ../wp-plugin-encyclopedia.php:641
 #, fuzzy, php-format
 msgid "Changeable in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr "מצטערים, תכונה זו זמינה רק ב <a href=\"%s\" target=\"_blank\">גרסה המקצועית של תוסף האנציקלופדיה</a>."
 
-#: ../wp-plugin-encyclopedia.php:641
+#: ../wp-plugin-encyclopedia.php:642
 #, php-format
 msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:642
+#: ../wp-plugin-encyclopedia.php:643
 #, php-format
 msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:643
-#, fuzzy, php-format
-msgid "Do you like the term management? Upgrade to the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a>!"
-msgstr "מצטערים, תכונה זו זמינה רק ב <a href=\"%s\" target=\"_blank\">גרסה המקצועית של תוסף האנציקלופדיה</a>."
-
-#: ../wp-plugin-encyclopedia.php:647
+#: ../wp-plugin-encyclopedia.php:648
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 
-#: ../wp-plugin-encyclopedia.php:678
+#: ../wp-plugin-encyclopedia.php:679
 msgid "&laquo; Back to your terms"
 msgstr "&raquo;חזרה לביטויים שלך"
 
@@ -553,6 +552,14 @@ msgstr "הקישור הפעיל עבור האנציקלופדיה שלך הוא:
 #, fuzzy, php-format
 msgid "The archive feed for your encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
 msgstr "ארכיון ההזנה של האנציקלופדיה שלך הוא: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+
+#, fuzzy
+#~ msgid ""
+#~ "Do you like the term management? Upgrade to the <a href=\"%s\" target="
+#~ "\"_blank\">premium version of Encyclopedia</a>!"
+#~ msgstr ""
+#~ "מצטערים, תכונה זו זמינה רק ב <a href=\"%s\" target=\"_blank\">גרסה "
+#~ "המקצועית של תוסף האנציקלופדיה</a>."
 
 #~ msgid "Sorry!"
 #~ msgstr "מצטערים!"

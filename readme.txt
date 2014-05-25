@@ -1,7 +1,7 @@
 === Encyclopedia / Lexicon / Glossary / Wiki / Dictionary / Knowledge base ===
 Contributors: dhoppe
 Tags: encyclopedia, lexicon, glossary, dictionary, knowledge base, wiki, wikipedia,        widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
-Requires at least: 3.5
+Requires at least: 3.7
 Tested up to: 3.9.1
 Stable tag: trunk
 Donate link: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
@@ -74,7 +74,7 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 
 = Minimum Requirements =
 
-* WordPress 3.5 or greater
+* WordPress 3.7 or greater
 * PHP version 5.2.4 or greater
 * MySQL version 5.0 or greater
 
@@ -111,6 +111,9 @@ I am still collecting frequently asked questions. ;)
 11. Encyclopedia term list
 
 == Changelog ==
+
+= 1.5.2 =
+* Added upgrade button to post edit section
 
 = 1.5.1 =
 * Still cleaning up the options page
