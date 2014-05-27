@@ -98,15 +98,15 @@ I am still collecting frequently asked questions. ;)
 
 
 == Screenshots ==
-1. Example Archive page in TwentyTwelve Theme
-2. Example single term view in TwentyTwelve Theme
-3. Encyclopedia tags
-4. Edit screen of an encyclopedia tag
-5. Edit screen of an encyclopedia term
-6. Encyclopedia items in your WP menues
-7. Encyclopedia options page
-8. Encyclopedia "Related terms" widget
-9. Encyclopedia Taxonomy widget
+01. Example Archive page in TwentyTwelve Theme
+02. Example single term view in TwentyTwelve Theme
+03. Encyclopedia tags
+04. Edit screen of an encyclopedia tag
+05. Edit screen of an encyclopedia term
+06. Encyclopedia items in your WP menues
+07. Encyclopedia options page
+08. Encyclopedia "Related terms" widget
+09. Encyclopedia Taxonomy widget
 10. Encyclopedia taxonomy cloud
 11. Encyclopedia term list
 
