@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia Lite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-25 21:49+0100\n"
+"POT-Creation-Date: 2014-06-03 21:45+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Andrzej Opejda <andrzej@opejda.pl>\n"
@@ -48,7 +48,7 @@ msgid "Linked terms in contents"
 msgstr ""
 
 #: ../wp-plugin-encyclopedia.php:159
-#: ../wp-plugin-encyclopedia.php:340
+#: ../wp-plugin-encyclopedia.php:341
 msgid "Archive Url"
 msgstr "Adres archiwum"
 
@@ -61,143 +61,138 @@ msgctxt "URL slug"
 msgid "lexicon"
 msgstr "leksykon"
 
-#: ../wp-plugin-encyclopedia.php:260
+#: ../wp-plugin-encyclopedia.php:261
 msgid "Term"
 msgstr "Hasło"
 
-#: ../wp-plugin-encyclopedia.php:261
+#: ../wp-plugin-encyclopedia.php:262
 msgid "Add Term"
 msgstr "Dodaj hasło"
 
-#: ../wp-plugin-encyclopedia.php:262
+#: ../wp-plugin-encyclopedia.php:263
 msgid "New Term"
 msgstr "Nowe hasło"
 
-#: ../wp-plugin-encyclopedia.php:263
+#: ../wp-plugin-encyclopedia.php:264
 msgid "Edit Term"
 msgstr "Edytuj hasło"
 
-#: ../wp-plugin-encyclopedia.php:264
+#: ../wp-plugin-encyclopedia.php:265
 msgid "View Term"
 msgstr "Zobacz hasło"
 
-#: ../wp-plugin-encyclopedia.php:265
+#: ../wp-plugin-encyclopedia.php:266
 msgid "Search Terms"
 msgstr "Szukaj hasła"
 
-#: ../wp-plugin-encyclopedia.php:266
+#: ../wp-plugin-encyclopedia.php:267
 msgid "No Terms found"
 msgstr "Nie znaleziono hasła"
 
-#: ../wp-plugin-encyclopedia.php:267
+#: ../wp-plugin-encyclopedia.php:268
 msgid "No Terms found in Trash"
 msgstr "Nie znaleziono hasła w koszu"
 
-#: ../wp-plugin-encyclopedia.php:288
+#: ../wp-plugin-encyclopedia.php:289
 #, php-format
 msgid "Term updated. (<a href=\"%s\">View Term</a>)"
 msgstr "Hasło zostało zaktualizowane. (<a href=\"%s\">Zobacz hasło</a>)"
 
-#: ../wp-plugin-encyclopedia.php:291
+#: ../wp-plugin-encyclopedia.php:292
 msgid "Term updated."
 msgstr "Hasło zostało zaktualizowane."
 
-#: ../wp-plugin-encyclopedia.php:292
+#: ../wp-plugin-encyclopedia.php:293
 #, php-format
 msgid "Term restored to revision from %s"
 msgstr "Przywrócono wersję hasła z %s"
 
-#: ../wp-plugin-encyclopedia.php:293
+#: ../wp-plugin-encyclopedia.php:294
 #, php-format
 msgid "Term published. (<a href=\"%s\">View Term</a>)"
 msgstr "Hasło opublikowano. (<a href=\"%s\">Zobacz hasło</a>)"
 
-#: ../wp-plugin-encyclopedia.php:294
+#: ../wp-plugin-encyclopedia.php:295
 msgid "Term saved."
 msgstr "Hasło zostało zapisane."
 
-#: ../wp-plugin-encyclopedia.php:295
+#: ../wp-plugin-encyclopedia.php:296
 msgid "Term submitted."
 msgstr "Hasło zostało przesłane."
 
-#: ../wp-plugin-encyclopedia.php:296
+#: ../wp-plugin-encyclopedia.php:297
 #, php-format
 msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 msgstr "Hasło zostało zaplanowane. (<a target=\"_blank\" href=\"%s\">Zobacz hasło</a>)"
 
-#: ../wp-plugin-encyclopedia.php:297
+#: ../wp-plugin-encyclopedia.php:298
 #, php-format
 msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
 msgstr "Zaktualizowano wersję próbną. (<a target=\"_blank\" href=\"%s\">Podgląd hasła</a>)"
 
-#: ../wp-plugin-encyclopedia.php:304
+#: ../wp-plugin-encyclopedia.php:305
 msgid "Encyclopedia Tags"
 msgstr "Tagi encyklopedii"
 
-#: ../wp-plugin-encyclopedia.php:306
+#: ../wp-plugin-encyclopedia.php:307
 msgid "Tags"
 msgstr "Tagi"
 
-#: ../wp-plugin-encyclopedia.php:307
+#: ../wp-plugin-encyclopedia.php:308
 msgid "Tag"
 msgstr "Tag"
 
-#: ../wp-plugin-encyclopedia.php:308
+#: ../wp-plugin-encyclopedia.php:309
 msgid "Search Tags"
 msgstr "Szukaj tagów"
 
-#: ../wp-plugin-encyclopedia.php:309
+#: ../wp-plugin-encyclopedia.php:310
 msgid "All Tags"
 msgstr "Wszystkie tagi"
 
-#: ../wp-plugin-encyclopedia.php:310
+#: ../wp-plugin-encyclopedia.php:311
 msgid "Edit Tag"
 msgstr "Edytuj tag"
 
-#: ../wp-plugin-encyclopedia.php:311
+#: ../wp-plugin-encyclopedia.php:312
 msgid "Update Tag"
 msgstr "Zaktualizuj tag"
 
-#: ../wp-plugin-encyclopedia.php:312
+#: ../wp-plugin-encyclopedia.php:313
 msgid "Add New Tag"
 msgstr "Dodaj nowy tag"
 
-#: ../wp-plugin-encyclopedia.php:313
+#: ../wp-plugin-encyclopedia.php:314
 msgid "New Tag"
 msgstr "Nowy tag"
 
-#: ../wp-plugin-encyclopedia.php:321
+#: ../wp-plugin-encyclopedia.php:322
 #, php-format
 msgctxt "URL slug"
 msgid "%s-tag"
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:343
+#: ../wp-plugin-encyclopedia.php:344
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "To jest URL do archiwum %s."
 
-#: ../wp-plugin-encyclopedia.php:348
+#: ../wp-plugin-encyclopedia.php:349
 msgid "Archive Feed"
 msgstr "Kanał archiwum"
 
-#: ../wp-plugin-encyclopedia.php:351
+#: ../wp-plugin-encyclopedia.php:352
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "To jest URL do kanału archiwum %s."
 
-#: ../wp-plugin-encyclopedia.php:638
+#: ../wp-plugin-encyclopedia.php:639
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:640
-#, fuzzy, php-format
-msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
-msgstr "Przepraszam, ta cecha dostępna jest tylko w <a href=\"%s\" target=\"_blank\">wersji Pro wtyczki Encyclopedia</a>."
-
 #: ../wp-plugin-encyclopedia.php:641
 #, fuzzy, php-format
-msgid "Changeable in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
+msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr "Przepraszam, ta cecha dostępna jest tylko w <a href=\"%s\" target=\"_blank\">wersji Pro wtyczki Encyclopedia</a>."
 
 #: ../wp-plugin-encyclopedia.php:642
@@ -210,12 +205,12 @@ msgstr ""
 msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:648
+#: ../wp-plugin-encyclopedia.php:649
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 
-#: ../wp-plugin-encyclopedia.php:679
+#: ../wp-plugin-encyclopedia.php:680
 msgid "&laquo; Back to your terms"
 msgstr "&laquo; Powróć do swoich haseł"
 
@@ -376,11 +371,11 @@ msgstr "Liczba haseł na stronie:"
 msgid "This option effects all encyclopedia archive pages."
 msgstr "Ta opcja mw wpływ na wszystkie strony archiwalne."
 
-#: ../options-page/box-archive-page.php:14
+#: ../options-page/box-archive-page.php:13
 msgid "Term filter"
 msgstr "Filtr haseł"
 
-#: ../options-page/box-archive-page.php:20
+#: ../options-page/box-archive-page.php:19
 msgid "Display a term filter above the encyclopedia archive automatically or not."
 msgstr "Wyświetlać lub nie filtr haseł powyżej archiwum encyklopedii."
 
@@ -392,11 +387,11 @@ msgstr "Aktywuj kategorie"
 msgid "Categories can help you create an awesome knowledge base."
 msgstr "Kategorie mogą być pomocne w tworzenie wspaniałej bazy wiedzy."
 
-#: ../options-page/box-taxonomies.php:17
+#: ../options-page/box-taxonomies.php:16
 msgid "Activate tags"
 msgstr "Aktywuj tagi"
 
-#: ../options-page/box-taxonomies.php:24
+#: ../options-page/box-taxonomies.php:23
 msgid "Tags are necessary if you want to display relevant entries automatically."
 msgstr "Tagi są konieczne, jeśli chcesz automatycznie wyświetlać odpowiednie wpisy."
 
@@ -404,7 +399,7 @@ msgstr "Tagi są konieczne, jeśli chcesz automatycznie wyświetlać odpowiednie
 msgid "Query terms directly"
 msgstr ""
 
-#: ../options-page/box-search.php:10
+#: ../options-page/box-search.php:11
 msgid "Enable this feature to redirect the user to the term if the search query matches a term title exactly."
 msgstr ""
 
@@ -417,7 +412,7 @@ msgctxt "characters unit"
 msgid "characters"
 msgstr ""
 
-#: ../options-page/box-search.php:22
+#: ../options-page/box-search.php:23
 msgid "The minimum number of characters a user must type before suggestions will be shown."
 msgstr ""
 
@@ -430,7 +425,7 @@ msgctxt "milliseconds time unit"
 msgid "ms"
 msgstr ""
 
-#: ../options-page/box-search.php:34
+#: ../options-page/box-search.php:35
 msgid "The delay in milliseconds between when a keystroke occurs and when suggestions will be shown."
 msgstr ""
 
@@ -459,35 +454,35 @@ msgstr "Słownik"
 msgid "Please choose the type of your encyclopedia. This option does not change the behavior of the plugin. It's just for the labels and captions in the backend."
 msgstr "Wybierz rodzaj swojej encyklopedii. Ta opcja nie zmienia działania wtyczki. To potrzebne jest tylko do stosowania odpowiednich etykiet i podpisów."
 
-#: ../options-page/box-general.php:21
+#: ../options-page/box-general.php:20
 msgid "Use default style"
 msgstr "Używaj stylu domyślnego"
 
-#: ../options-page/box-general.php:28
+#: ../options-page/box-general.php:27
 msgid "Set this option to \"No\" if you want to use your own style for the encyclopedia."
 msgstr "Wybierz \"Nie\", jeśli chcesz używać własnego stylu encyklopedii."
 
-#: ../options-page/box-general.php:34
+#: ../options-page/box-general.php:33
 msgid "Enable revisions"
 msgstr ""
 
-#: ../options-page/box-general.php:41
+#: ../options-page/box-general.php:40
 msgid "Enables or disables revisions for the encyclopedia terms."
 msgstr ""
 
-#: ../options-page/box-general.php:48
+#: ../options-page/box-general.php:46
 msgid "Enable comments"
 msgstr ""
 
-#: ../options-page/box-general.php:55
+#: ../options-page/box-general.php:53
 msgid "Enables or disables comments and trackbacks for the encyclopedia terms."
 msgstr ""
 
-#: ../options-page/box-general.php:62
+#: ../options-page/box-general.php:59
 msgid "Enable thumbnails"
 msgstr ""
 
-#: ../options-page/box-general.php:69
+#: ../options-page/box-general.php:66
 msgid "Enables or disables the \"Featured Image\" for the encyclopedia terms."
 msgstr ""
 
@@ -507,7 +502,7 @@ msgstr "powyżej wpisu w encyklopedii"
 msgid "do not show related terms"
 msgstr "nie wyświetlaj wcale podobnych haseł"
 
-#: ../options-page/box-single-page.php:13
+#: ../options-page/box-single-page.php:12
 #, fuzzy
 msgid "Number of related terms"
 msgstr "nie wyświetlaj wcale podobnych haseł"
@@ -516,7 +511,7 @@ msgstr "nie wyświetlaj wcale podobnych haseł"
 msgid "How many related terms should be shown for each term?"
 msgstr ""
 
-#: ../options-page/box-single-page.php:30
+#: ../options-page/box-single-page.php:29
 #, fuzzy
 msgid "Display a term filter above the encyclopedia term content automatically or not."
 msgstr "Wyświetlać lub nie filtr haseł powyżej archiwum encyklopedii."
@@ -525,12 +520,12 @@ msgstr "Wyświetlać lub nie filtr haseł powyżej archiwum encyklopedii."
 msgid "Enable automatically linked encyclopedia terms for the following content types:"
 msgstr ""
 
-#: ../options-page/box-linked-terms.php:20
-#: ../options-page/box-linked-terms.php:26
+#: ../options-page/box-linked-terms.php:21
+#: ../options-page/box-linked-terms.php:28
 msgid "Link the first match of each term only."
 msgstr ""
 
-#: ../options-page/box-linked-terms.php:32
+#: ../options-page/box-linked-terms.php:35
 msgid "Link the term in its own content."
 msgstr ""
 
@@ -543,6 +538,14 @@ msgstr "Link do archiwum Twojej encyklopedii: <a href=\"%1$s\" target=\"_blank\"
 #, fuzzy, php-format
 msgid "The archive feed for your encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
 msgstr "Link do kanału archiwum Twojej enycklopedii: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+
+#, fuzzy
+#~ msgid ""
+#~ "Changeable in the <a href=\"%s\" target=\"_blank\">premium version</a> "
+#~ "only."
+#~ msgstr ""
+#~ "Przepraszam, ta cecha dostępna jest tylko w <a href=\"%s\" target=\"_blank"
+#~ "\">wersji Pro wtyczki Encyclopedia</a>."
 
 #, fuzzy
 #~ msgid ""

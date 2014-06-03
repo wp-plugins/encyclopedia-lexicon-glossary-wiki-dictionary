@@ -2,20 +2,19 @@
 <tr>
   <th><label for="related_terms"><?php Echo $this->t('Display related entries') ?></label></th>
   <td>
-		<input type="radio" id="related_terms_below" disabled="disabled"> <label for="related_terms_below"><?php Echo $this->t('below the encyclopedia entry') ?></label><br>
+		<input type="radio" id="related_terms_below" disabled="disabled"> <label for="related_terms_below"><?php Echo $this->t('below the encyclopedia entry') ?></label> <span class="asterisk">*</span><br>
 		<input type="radio" id="related_terms_above" checked="checked"> <label for="related_terms_above"><?php Echo $this->t('above the encyclopedia entry') ?></label><br>
-		<input type="radio" id="related_terms_none" disabled="disabled"> <label for="related_terms_none"><?php Echo $this->t('do not show related terms') ?></label><br>
-    <small class="pro-notice"><?php $this->Pro_Notice('changeable') ?></small>
+		<input type="radio" id="related_terms_none" disabled="disabled"> <label for="related_terms_none"><?php Echo $this->t('do not show related terms') ?></label> <span class="asterisk">*</span><br>
 	</td>
 </tr>
 
 <tr>
   <th><label><?php Echo $this->t('Number of related terms') ?></label></th>
   <td>
-    <input type="number" value="10" class="short" <?php Disabled(True) ?> ><br>
+    <input type="number" value="10" class="short" <?php Disabled(True) ?> >
+    <span class="asterisk">*</span><br>
     <small>
       <?php Echo $this->t('How many related terms should be shown for each term?') ?>
-      <span class="pro-notice"><?php $this->Pro_Notice('changeable') ?></span>
     </small>
 	</td>
 </tr>
@@ -32,3 +31,8 @@
 </tr>
 
 </table>
+
+<p>
+  <span class="asterisk">*</span>
+  <span class="pro-notice"><?php $this->Pro_Notice() ?></span>
+</p>

@@ -2,13 +2,12 @@
 <tr>
   <th><label for="encyclopedia_categories"><?php Echo $this->t('Activate categories') ?></label></th>
   <td>
-		<select id="encyclopedia_categories">
-			<option value="" <?php Selected($this->Get_Option('encyclopedia_categories'), 'yes') ?> disabled="disabled"><?php _e('Yes') ?></option>
-			<option value="" <?php Selected($this->Get_Option('encyclopedia_categories'), 'no') ?> disabled="disabled" selected="selected"><?php _e('No') ?></option>
-		</select><br>
+		<select id="encyclopedia_categories" <?php Disabled(True) ?> >
+			<option><?php _e('Yes') ?></option>
+			<option <?php Selected(True) ?> ><?php _e('No') ?></option>
+		</select> <span class="asterisk">*</span><br>
 		<small>
       <?php Echo $this->t('Categories can help you create an awesome knowledge base.') ?>
-      <span class="pro-notice"><?php $this->Pro_Notice() ?></span>
     </small>
 	</td>
 </tr>
@@ -28,3 +27,8 @@
 </table>
 
 <p><?php Echo $this->Pro_Notice('custom_tax') ?></p>
+
+<p>
+  <span class="asterisk">*</span>
+  <span class="pro-notice"><?php $this->Pro_Notice() ?></span>
+</p>

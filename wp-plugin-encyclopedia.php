@@ -3,7 +3,7 @@
 Plugin Name: Encyclopedia Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
 Description: Encyclopedia Lite enables you to create your own encyclopedia, lexicon, glossary, wiki or dictionary.
-Version: 1.5.2
+Version: 1.5.3
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
@@ -248,9 +248,10 @@ class wp_plugin_encyclopedia {
   }
 
   function Load_Encyclopedia_Type(){
-		$this->encyclopedia_type = New StdClass;
-    $this->encyclopedia_type->label = $this->t('Lexicon');
-		$this->encyclopedia_type->slug = $this->t('lexicon', 'URL slug');
+		$this->encyclopedia_type = (Object) Array(
+      'label' => $this->t('Lexicon'),
+      'slug' => $this->t('lexicon', 'URL slug')
+    );
 	}
 
   function Register_Post_Type(){
@@ -638,9 +639,9 @@ class wp_plugin_encyclopedia {
       'upgrade' => $this->t('Upgrade to Pro'),
       'upgrade_url' => '%s',
       'feature' => $this->t('Available in the <a href="%s" target="_blank">premium version</a> only.'),
-      'changeable' => $this->t('Changeable in the <a href="%s" target="_blank">premium version</a> only.'),
       'custom_tax' => $this->t('Do you need a special taxonomy for your website? No problem! Just <a href="%s" target="_blank">get in touch</a>.'),
       'count_limit' => $this->t('In the <a href="%s" target="_blank">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features.'),
+      #'changeable' => $this->t('Changeable in the <a href="%s" target="_blank">premium version</a> only.'),
       #'do_you_like' => $this->t('Do you like the term management? Upgrade to the <a href="%s" target="_blank">premium version of Encyclopedia</a>!')
     );
 

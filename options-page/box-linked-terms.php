@@ -7,6 +7,7 @@ ForEach (Get_Post_Types(Array('show_ui' => True),'objects') AS $type): ?>
     <input type="checkbox" <?php Disabled(True); Checked(True) ?> >
     <?php Echo $type->label ?>
   </label>
+  <span class="asterisk">*</span>
 
   (<label>
     <input type="checkbox" <?php Disabled(True) ?> >
@@ -19,17 +20,24 @@ ForEach (Get_Post_Types(Array('show_ui' => True),'objects') AS $type): ?>
     <input type="checkbox" <?php Disabled(True) ?> >
     <?php Echo $this->t('Link the first match of each term only.') ?>
   </label>
+  <span class="asterisk">*</span>
 </p>
 <p>
   <label for="">
     <input type="checkbox" <?php Disabled(True) ?> >
     <?php Echo $this->t('Link the first match of each term only.') ?>
   </label>
+  <span class="asterisk">*</span>
 </p>
 <p>
   <label for="">
     <input type="checkbox" <?php Disabled(True) ?> >
     <?php Echo $this->t('Link the term in its own content.') ?>
   </label>
+  <span class="asterisk">*</span>
 </p>
-<small class="pro-notice"><?php $this->Pro_Notice('changeable') ?></small>
+
+<p>
+  <span class="asterisk">*</span>
+  <span class="pro-notice"><?php $this->Pro_Notice() ?></span>
+</p>

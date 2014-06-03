@@ -12,4 +12,4 @@ input.short { width: 60px }
   .wrap .postbox-container.right { float: none; width: auto }
 }
 
-.pro-notice { font-style: italic }
+.asterisk { font-weight: bold; color: green; font-size: 125% }

@@ -113,6 +113,9 @@ I am still collecting frequently asked questions. ;)
 
 == Changelog ==
 
+= 1.5.3 =
+* Removed pro versions links from options page
+
 = 1.5.2 =
 * Added upgrade button to post edit section
 
