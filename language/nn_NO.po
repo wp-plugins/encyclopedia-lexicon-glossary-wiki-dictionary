@@ -1,0 +1,641 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Encyclopedia WordPress Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-24 20:06+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
+"Language-Team: Erik Bolstad <erik.bolstad@nrk.no>\n"
+"Language: nn_NO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: t;t:2c,1\n"
+"X-Generator: Poedit 1.6.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Norwegian Nynorsk\n"
+"X-Poedit-Country: NORWAY\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../wp-plugin-encyclopedia.php:142
+msgid "Encyclopedia Options"
+msgstr "Oppslagsverkinnstillingar"
+
+#: ../wp-plugin-encyclopedia.php:143
+msgid "Encyclopedia"
+msgstr "Oppslagsverk"
+
+#: ../wp-plugin-encyclopedia.php:154
+msgid "Taxonomies"
+msgstr "Klassifiseringar"
+
+#: ../wp-plugin-encyclopedia.php:155
+msgid "Archive page"
+msgstr "Arkivside"
+
+#: ../wp-plugin-encyclopedia.php:156
+#, fuzzy
+msgid "Search page"
+msgstr "Søk i emneord"
+
+#: ../wp-plugin-encyclopedia.php:157
+msgid "Single page"
+msgstr "Einskildside"
+
+#: ../wp-plugin-encyclopedia.php:158
+msgid "Linked terms in contents"
+msgstr "Lenka termar i kontekst"
+
+#: ../wp-plugin-encyclopedia.php:159
+#: ../wp-plugin-encyclopedia.php:341
+msgid "Archive Url"
+msgstr "Arkiv-URL"
+
+#: ../wp-plugin-encyclopedia.php:252
+msgid "Lexicon"
+msgstr "Leksikon"
+
+#: ../wp-plugin-encyclopedia.php:253
+msgctxt "URL slug"
+msgid "lexicon"
+msgstr "leksikon"
+
+#: ../wp-plugin-encyclopedia.php:261
+msgid "Term"
+msgstr "Term"
+
+#: ../wp-plugin-encyclopedia.php:262
+msgid "Add Term"
+msgstr "Legg til oppføring"
+
+#: ../wp-plugin-encyclopedia.php:263
+msgid "New Term"
+msgstr "Ny oppføring"
+
+#: ../wp-plugin-encyclopedia.php:264
+msgid "Edit Term"
+msgstr "Rediger oppføring"
+
+#: ../wp-plugin-encyclopedia.php:265
+msgid "View Term"
+msgstr "Sjå oppføring"
+
+#: ../wp-plugin-encyclopedia.php:266
+msgid "Search Terms"
+msgstr "Søk blant oppføringar"
+
+#: ../wp-plugin-encyclopedia.php:267
+msgid "No Terms found"
+msgstr "Fann ingen oppføringar"
+
+#: ../wp-plugin-encyclopedia.php:268
+msgid "No Terms found in Trash"
+msgstr "Fann ingen oppføringar blant sletta element"
+
+#: ../wp-plugin-encyclopedia.php:289
+#, php-format
+msgid "Term updated. (<a href=\"%s\">View Term</a>)"
+msgstr "Oppføringa er oppdatert. (<a href=\"%s\">Sjå oppføringar</a>)"
+
+#: ../wp-plugin-encyclopedia.php:292
+msgid "Term updated."
+msgstr "Oppføringa er oppdatert"
+
+#: ../wp-plugin-encyclopedia.php:293
+#, php-format
+msgid "Term restored to revision from %s"
+msgstr "Oppføringa vart tilbakestilt til versjonen frå %s"
+
+#: ../wp-plugin-encyclopedia.php:294
+#, php-format
+msgid "Term published. (<a href=\"%s\">View Term</a>)"
+msgstr "Oppføringa er publisert. (<a href=\"%s\">Sjå oppføringar</a>)"
+
+#: ../wp-plugin-encyclopedia.php:295
+msgid "Term saved."
+msgstr "Oppføringa er lagra."
+
+#: ../wp-plugin-encyclopedia.php:296
+msgid "Term submitted."
+msgstr "Oppføringa er lagt til."
+
+#: ../wp-plugin-encyclopedia.php:297
+#, php-format
+msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
+msgstr "Oppføringa er tidsstyrt. (<a target=\"_blank\" href=\"%s\">Sjå oppføringa</a>).a>)"
+
+#: ../wp-plugin-encyclopedia.php:298
+#, php-format
+msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
+msgstr "Kladden er oppdatert. (<a target=\"_blank\" href=\"%s\">Førehandsvis</a>)."
+
+#: ../wp-plugin-encyclopedia.php:305
+#, fuzzy
+msgid "Encyclopedia Tags"
+msgstr "Oppslagsverk-oppføringar"
+
+#: ../wp-plugin-encyclopedia.php:307
+#, fuzzy
+msgid "Tags"
+msgstr "Alle emneord"
+
+#: ../wp-plugin-encyclopedia.php:308
+msgid "Tag"
+msgstr "Emneord"
+
+#: ../wp-plugin-encyclopedia.php:309
+msgid "Search Tags"
+msgstr "Søk i emneord"
+
+#: ../wp-plugin-encyclopedia.php:310
+msgid "All Tags"
+msgstr "Alle emneord"
+
+#: ../wp-plugin-encyclopedia.php:311
+msgid "Edit Tag"
+msgstr "Rediger emneord"
+
+#: ../wp-plugin-encyclopedia.php:312
+msgid "Update Tag"
+msgstr "Oppdater emneord"
+
+#: ../wp-plugin-encyclopedia.php:313
+msgid "Add New Tag"
+msgstr "Legg til nytt emneord"
+
+#: ../wp-plugin-encyclopedia.php:314
+msgid "New Tag"
+msgstr "Nytt emneord"
+
+#: ../wp-plugin-encyclopedia.php:322
+#, php-format
+msgctxt "URL slug"
+msgid "%s-tag"
+msgstr "%s-emne"
+
+#: ../wp-plugin-encyclopedia.php:344
+#, php-format
+msgid "This is the URL to the archive of this %s."
+msgstr "URL-en til %s-arkivet."
+
+#: ../wp-plugin-encyclopedia.php:349
+msgid "Archive Feed"
+msgstr "Arkivstraum"
+
+#: ../wp-plugin-encyclopedia.php:352
+#, php-format
+msgid "This is the URL to the feed of the archive of this %s."
+msgstr "Dette er RSS-straumen til %s-arkivet."
+
+#: ../wp-plugin-encyclopedia.php:640
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: ../wp-plugin-encyclopedia.php:642
+#, php-format
+msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
+msgstr ""
+
+#: ../wp-plugin-encyclopedia.php:643
+#, php-format
+msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
+msgstr ""
+
+#: ../wp-plugin-encyclopedia.php:644
+#, php-format
+msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
+msgstr ""
+
+#: ../wp-plugin-encyclopedia.php:650
+msgctxt "Link to the authors website"
+msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
+msgstr ""
+
+#: ../wp-plugin-encyclopedia.php:681
+msgid "&laquo; Back to your terms"
+msgstr ""
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:15
+msgid "Encyclopedia Taxonomy Cloud"
+msgstr "Klassifiseringssky"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:16
+msgid "Displays your Encyclopedia taxonomies as cloud."
+msgstr "Viser klassifiseringane dine som ei sky."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:62
+#: ../wp-widget-encyclopedia-search.php:58
+#: ../wp-widget-encyclopedia-terms.php:60
+#: ../wp-widget-encyclopedia-taxonomies.php:61
+#, fuzzy
+msgid "Title:"
+msgstr "Tittel"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:64
+#: ../wp-widget-encyclopedia-terms.php:62
+#: ../wp-widget-encyclopedia-related-terms.php:61
+#: ../wp-widget-encyclopedia-taxonomies.php:63
+msgid "Leave blank to use the widget default title."
+msgstr "La stå blank for å vise standard innstikkstittel."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:68
+#: ../wp-widget-encyclopedia-taxonomies.php:67
+msgid "Taxonomy"
+msgstr "Klassifisering"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:74
+#: ../wp-widget-encyclopedia-taxonomies.php:73
+msgid "Please choose the Taxonomy the widget should display."
+msgstr "Vel klassifiseringa innstikket skal vise."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:78
+#: ../wp-widget-encyclopedia-taxonomies.php:77
+msgid "Number"
+msgstr "Nummer"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:80
+msgid "Leave blank (or \"0\") to show all."
+msgstr "La stå blank (eller «0») for å vise alle."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:86
+msgid "Taxonomy IDs, separated by commas."
+msgstr "Klassifiserings-ID-ar, delt med komma."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:90
+#: ../wp-widget-encyclopedia-terms.php:66
+#: ../wp-widget-encyclopedia-taxonomies.php:94
+msgid "Order by"
+msgstr "Sorter etter"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:93
+#: ../wp-widget-encyclopedia-taxonomies.php:97
+msgid "Term Count"
+msgstr "Tal oppføringar"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:98
+#: ../wp-widget-encyclopedia-terms.php:80
+#: ../wp-widget-encyclopedia-taxonomies.php:104
+msgid "Order"
+msgstr "Rekkefylgje"
+
+#: ../wp-widget-encyclopedia-search.php:14
+msgid "Encyclopedia Search"
+msgstr "Oppslagsverk-søk"
+
+#: ../wp-widget-encyclopedia-search.php:15
+msgid "Displays the encyclopedia search field."
+msgstr "Viser søkjefelt for oppslagsverket-"
+
+#: ../wp-widget-encyclopedia-terms.php:14
+msgid "Encyclopedia Terms"
+msgstr "Oppslagsverk-oppføringar"
+
+#: ../wp-widget-encyclopedia-terms.php:15
+msgid "Displays your encyclopedia terms as list."
+msgstr "Viser oppføringane dine som ei liste"
+
+#: ../wp-widget-encyclopedia-terms.php:70
+msgid "Author"
+msgstr "Forfattar"
+
+#: ../wp-widget-encyclopedia-terms.php:71
+msgid "Date"
+msgstr "Dato"
+
+#: ../wp-widget-encyclopedia-terms.php:72
+msgid "Last modification"
+msgstr "Sist endra"
+
+#: ../wp-widget-encyclopedia-terms.php:73
+msgid "Random"
+msgstr "Tilfeldig"
+
+#: ../wp-widget-encyclopedia-terms.php:74
+msgid "Comment Count"
+msgstr "Tal kommentarar"
+
+#: ../wp-widget-encyclopedia-terms.php:75
+msgid "Menu Order"
+msgstr "Rekkefylgje"
+
+#: ../wp-widget-encyclopedia-related-terms.php:14
+msgid "Encyclopedia Related Terms"
+msgstr "Relaterte oppføringar"
+
+#: ../wp-widget-encyclopedia-related-terms.php:15
+msgid "Displays encyclopedia terms which are related to the current one as list."
+msgstr "Viser ei liste over relaterte oppføringar."
+
+#: ../wp-widget-encyclopedia-related-terms.php:65
+msgid "Number:"
+msgstr "Nummer:"
+
+#: ../wp-widget-encyclopedia-related-terms.php:67
+msgid "The number of related terms you want to show."
+msgstr "Kor mange relaterte oppføringar vil du vise?"
+
+#: ../wp-widget-encyclopedia-taxonomies.php:14
+msgid "Encyclopedia Taxonomies"
+msgstr "Oppslagsverk-klassifikasjonar"
+
+#: ../wp-widget-encyclopedia-taxonomies.php:15
+msgid "Displays your encyclopedia taxonomies like Categories, Tags, etc."
+msgstr "Viser klassifiseringane dine, f.eks. kategoriar, emneord o.s.v."
+
+#: ../wp-widget-encyclopedia-taxonomies.php:79
+msgid "Leave blank to show all."
+msgstr "La stå blank for å vise alle."
+
+#: ../wp-widget-encyclopedia-taxonomies.php:85
+msgid "Term IDs, separated by commas."
+msgstr "Klassifiserings-ID-ar, delt med komma."
+
+#: ../wp-widget-encyclopedia-taxonomies.php:90
+msgid "Show term counts."
+msgstr ""
+
+#: ../wp-widget-encyclopedia-taxonomies.php:99
+msgid "Slug"
+msgstr "Permalenke (slug)"
+
+#: ../templates/encyclopedia-related-terms.php:2
+msgid "Related entries"
+msgstr "Relaterte oppføringar"
+
+#: ../options-page/box-archive-page.php:3
+msgid "Terms per page"
+msgstr "Oppføringar per side"
+
+#: ../options-page/box-archive-page.php:7
+msgid "This option effects all encyclopedia archive pages."
+msgstr "Denne innstillinga endrar alle arkivsidene i oppslagsverket."
+
+#: ../options-page/box-archive-page.php:13
+msgid "Term filter"
+msgstr "Oppføringsfilter"
+
+#: ../options-page/box-archive-page.php:19
+msgid "Display a term filter above the encyclopedia archive automatically or not."
+msgstr "Vil du vise eit oppføringsfilter over arkivet automatisk?"
+
+#: ../options-page/box-taxonomies.php:3
+msgid "Activate categories"
+msgstr "Aktiver kategoriar"
+
+#: ../options-page/box-taxonomies.php:10
+msgid "Categories can help you create an awesome knowledge base."
+msgstr "Kategoriane gjer at du kan lage ein fantastisk kunnskapsbase!"
+
+#: ../options-page/box-taxonomies.php:16
+msgid "Activate tags"
+msgstr "Aktiver emneord"
+
+#: ../options-page/box-taxonomies.php:23
+msgid "Tags are necessary if you want to display relevant entries automatically."
+msgstr "Du må bruke emneord dersom du vil vise relaterte oppføringar automatisk."
+
+#: ../options-page/box-search.php:3
+msgid "Query terms directly"
+msgstr "Gå direkte til emneord"
+
+#: ../options-page/box-search.php:11
+msgid "Enable this feature to redirect the user to the term if the search query matches a term title exactly."
+msgstr "Slå på denne funksjonen for å sende brukaren rett til ei oppføring dersom søket er eksakt likt som oppføringsordet."
+
+#: ../options-page/box-search.php:17
+msgid "Autocomplete min length"
+msgstr "Minste tal teikn for autofullføring"
+
+#: ../options-page/box-search.php:20
+msgctxt "characters unit"
+msgid "characters"
+msgstr "bokstavar"
+
+#: ../options-page/box-search.php:23
+msgid "The minimum number of characters a user must type before suggestions will be shown."
+msgstr "Det minste talet bokstavar brukaren må skrive inn for å vise autofullføring."
+
+#: ../options-page/box-search.php:29
+msgid "Autocomplete delay"
+msgstr "Autofullføringsforseinking"
+
+#: ../options-page/box-search.php:32
+msgctxt "milliseconds time unit"
+msgid "ms"
+msgstr "ms"
+
+#: ../options-page/box-search.php:35
+msgid "The delay in milliseconds between when a keystroke occurs and when suggestions will be shown."
+msgstr "Forseinking i millisekund frå brukaren tastar eit teikn til autofullføringa blir vist."
+
+#: ../options-page/box-general.php:3
+msgid "Encyclopedia type"
+msgstr "Type oppslagsverk"
+
+#: ../options-page/box-general.php:8
+msgid "Wiki"
+msgstr "Wiki"
+
+#: ../options-page/box-general.php:9
+msgid "Knowledge Base"
+msgstr "Kunnskapsbase"
+
+#: ../options-page/box-general.php:10
+msgid "Glossary"
+msgstr "Ordliste"
+
+#: ../options-page/box-general.php:11
+msgid "Dictionary"
+msgstr "Ordbok"
+
+#: ../options-page/box-general.php:14
+msgid "Please choose the type of your encyclopedia. This option does not change the behavior of the plugin. It's just for the labels and captions in the backend."
+msgstr "Vel type oppslagsverk. Denne innstillinga endrar ikkje korleis dette innstikket oppfører seg, det er berre for innstillingane og overskriftene i administrasjonsgrensesnittet."
+
+#: ../options-page/box-general.php:20
+msgid "Use default style"
+msgstr "Bruk standard CSS"
+
+#: ../options-page/box-general.php:27
+msgid "Set this option to \"No\" if you want to use your own style for the encyclopedia."
+msgstr "Set denne til «Nei» dersom du vil bruke din eigen CSS."
+
+#: ../options-page/box-general.php:33
+msgid "Enable revisions"
+msgstr "Endringshistorikk"
+
+#: ../options-page/box-general.php:40
+msgid "Enables or disables revisions for the encyclopedia terms."
+msgstr "Slår på/av endringshistorikk for oppføringane."
+
+#: ../options-page/box-general.php:46
+msgid "Enable comments"
+msgstr "Kommentarar"
+
+#: ../options-page/box-general.php:53
+msgid "Enables or disables comments and trackbacks for the encyclopedia terms."
+msgstr "Slår på/av kommentarar og tilbaketråkk for oppføringane."
+
+#: ../options-page/box-general.php:59
+msgid "Enable thumbnails"
+msgstr "Småbilete"
+
+#: ../options-page/box-general.php:66
+msgid "Enables or disables the \"Featured Image\" for the encyclopedia terms."
+msgstr "Slår på/av småbilete for oppføringane."
+
+#: ../options-page/box-single-page.php:3
+#, fuzzy
+msgid "Display related entries"
+msgstr "Vis relaterte oppføringar"
+
+#: ../options-page/box-single-page.php:5
+msgid "below the encyclopedia entry"
+msgstr "nedanfor oppføringa"
+
+#: ../options-page/box-single-page.php:6
+msgid "above the encyclopedia entry"
+msgstr "over oppføringa"
+
+#: ../options-page/box-single-page.php:7
+msgid "do not show related terms"
+msgstr "ikkje vis relaterte oppføringar"
+
+#: ../options-page/box-single-page.php:12
+msgid "Number of related terms"
+msgstr "Tal relaterte oppføringar"
+
+#: ../options-page/box-single-page.php:17
+msgid "How many related terms should be shown for each term?"
+msgstr "Kor mange relaterte oppføringar vil du vise?"
+
+#: ../options-page/box-single-page.php:29
+#, fuzzy
+msgid "Display a term filter above the encyclopedia term content automatically or not."
+msgstr "Vis eit oppføringsfilter over oppføringa"
+
+#: ../options-page/box-linked-terms.php:1
+msgid "Enable automatically linked encyclopedia terms for the following content types:"
+msgstr "Slå på automatisk lenking av oppføringar for fylgjande innhaldstyper:"
+
+#: ../options-page/box-linked-terms.php:21
+#: ../options-page/box-linked-terms.php:28
+msgid "Link the first match of each term only."
+msgstr "Berre lenke på fyrste oppføring."
+
+#: ../options-page/box-linked-terms.php:35
+msgid "Link the term in its own content."
+msgstr "Lag lenke til oppføringa i seg sjølv."
+
+#: ../options-page/box-archive-link.php:2
+#, php-format
+msgid "The archive link for your encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+msgstr "Arkivlenka for oppslagsverket ditt er <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+
+#: ../options-page/box-archive-link.php:5
+#, php-format
+msgid "The archive feed for your encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+msgstr "RSS-straumen for arkivet ditt er <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+
+#~ msgid "Search"
+#~ msgstr "Søk"
+
+#~ msgid "User rights"
+#~ msgstr "Brukartilgangar"
+
+#~ msgid "Updates"
+#~ msgstr "Oppdateringar"
+
+#~ msgid "Category"
+#~ msgstr "Kategori"
+
+#~ msgid "Search Categories"
+#~ msgstr "Søk i kategoriar"
+
+#~ msgid "All Categories"
+#~ msgstr "Alle kategoriar"
+
+#~ msgid "Parent Category"
+#~ msgstr "Overordna kategori"
+
+#~ msgid "Parent Category:"
+#~ msgstr "Overordna kategori:"
+
+#~ msgid "Edit Category"
+#~ msgstr "Rediger kategoriar"
+
+#~ msgid "Update Category"
+#~ msgstr "Oppdater kategori"
+
+#~ msgid "Add New Category"
+#~ msgstr "Legg til ny kategori"
+
+#~ msgid "New Category"
+#~ msgstr "Ny kategori"
+#~ msgctxt "URL slug"
+
+#~ msgid "%s-category"
+#~ msgstr "%s-kategori"
+#~ msgctxt "URL slug"
+
+#~ msgid "encyclopedia"
+#~ msgstr "oppslagsverk"
+#~ msgctxt "URL slug"
+
+#~ msgid "glossary"
+#~ msgstr "ord"
+#~ msgctxt "URL slug"
+
+#~ msgid "dictionary"
+#~ msgstr "ordbok"
+#~ msgctxt "URL slug"
+
+#~ msgid "wiki"
+#~ msgstr "wiki"
+#~ msgctxt "URL slug"
+
+#~ msgid "knowledge-base"
+#~ msgstr "kunnskapsbase"
+
+#~ msgid "Your update subscription account"
+#~ msgstr "Din abonnementskonto"
+
+#~ msgid "Link complete words only."
+#~ msgstr "Berre lenke på heile ord"
+
+#~ msgid "Edit and create (own) terms"
+#~ msgstr "Rediger og opprett (eigne) oppføringar"
+
+#~ msgid "Edit others terms"
+#~ msgstr "Rediger andres oppføringar"
+
+#~ msgid "Edit (own) private terms"
+#~ msgstr "Rediger (eigne) skjulte oppføringar"
+
+#~ msgid "Edit (own) published terms"
+#~ msgstr "Rediger (eigne) publiserte oppføringar"
+
+#~ msgid "Delete (own) terms"
+#~ msgstr "Slett (eigne) oppføringar"
+
+#~ msgid "Delete (own) private terms"
+#~ msgstr "Slett (eigne) skjulte oppføringar"
+
+#~ msgid "Delete (own) published terms"
+#~ msgstr "Slett (eigne) publiserte oppføringar"
+
+#~ msgid "Delete others terms"
+#~ msgstr "Slett andres oppføringar"
+
+#~ msgid "Publish terms"
+#~ msgstr "Publiser oppføringar"
+
+#~ msgid "View (others) private terms"
+#~ msgstr "Sjå (andres) skjulte oppføringar"
+
+#~ msgid "Manage categories"
+#~ msgstr "Rediger kategoriar"
+
+#~ msgid "Manage tags"
+#~ msgstr "Rediger emneord"

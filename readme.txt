@@ -113,8 +113,11 @@ I am still collecting frequently asked questions. ;)
 
 == Changelog ==
 
+= 1.5.5 =
+* Added: Norwegian translation by Erik Bolstad
+
 = 1.5.4 =
-* Fixed: Terms will be linked in their own content now
+* Fixed: terms will be linked in their own content now
 
 = 1.5.3 =
 * Removed pro versions links from options page
