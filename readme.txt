@@ -56,6 +56,7 @@ Please use the support forum on WordPress.org for this version of the Plugin. Fo
 * Ta wtyczka jest dostępna po Polsku. ([Andrzej Opejda](http://astrolog.pl/))
 * Plugin ini tersedia dalam Bahasa Indonesia ([Nasrulhaq Muiz](http://al-badar.net/))
 * Este plugin está disponible en español. ([Fátima Da Silva](http://www.fcdsbtraducciones.com/))
+* Dette istikket er omsett til nynorsk. ([Erik Bolstad](http://www.erikbolstad.no/))
 
 
 = Translate this plugin =
@@ -114,7 +115,7 @@ I am still collecting frequently asked questions. ;)
 == Changelog ==
 
 = 1.5.5 =
-* Added: Norwegian translation by Erik Bolstad
+* Added: Norwegian translation by [Erik Bolstad](http://www.erikbolstad.no/)
 
 = 1.5.4 =
 * Fixed: terms will be linked in their own content now
