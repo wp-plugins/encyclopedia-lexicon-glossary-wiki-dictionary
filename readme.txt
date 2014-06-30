@@ -114,6 +114,9 @@ I am still collecting frequently asked questions. ;)
 
 == Changelog ==
 
+= 1.5.6 =
+* Added: Option to change the number of words of the auto linked terms links.
+
 = 1.5.5 =
 * Added: Norwegian translation by [Erik Bolstad](http://www.erikbolstad.no/)
 

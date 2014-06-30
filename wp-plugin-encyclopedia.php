@@ -3,7 +3,7 @@
 Plugin Name: Encyclopedia Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
 Description: Encyclopedia Lite enables you to create your own encyclopedia, lexicon, glossary, wiki or dictionary.
-Version: 1.5.5
+Version: 1.5.6
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
@@ -84,9 +84,9 @@ class wp_plugin_encyclopedia {
     Load_TextDomain (__CLASS__, DirName(__FILE__).'/language/' . $locale . '.mo');
   }
 
-  function t ($text, $context = ''){
+  function t ($text, $context = Null){
     # Translates the string $text with context $context
-    If ($context == '')
+    If (Empty($context))
       return Translate ($text, __CLASS__);
     Else
       return Translate_With_GetText_Context ($text, $context, __CLASS__);
@@ -243,7 +243,8 @@ class wp_plugin_encyclopedia {
       'embed_default_style' => 'yes',
 			'encyclopedia_tags' => 'yes',
       'term_filter_for_archives' => 'yes',
-      'term_filter_for_singulars' => 'yes'
+      'term_filter_for_singulars' => 'yes',
+      'auto_link_title_length' => Apply_Filters('excerpt_length', 55)
     );
   }
 
@@ -417,7 +418,7 @@ class wp_plugin_encyclopedia {
   function Link_Terms($content){
     Global $post;
 
-    $arr_terms = New WP_Query(Array(
+    $terms_query = New WP_Query(Array(
       'posts_per_page' => -1,
       'post_type' => $this->post_type,
       'post__not_in' => Array($post->ID),
@@ -425,7 +426,7 @@ class wp_plugin_encyclopedia {
       'ignore_sticky_posts' => True
     ));
 
-    ForEach($arr_terms->posts AS $term){
+    ForEach($terms_query->posts AS $term){
       $content = $this->Link_Term_in_Content($content, $term);
     }
 
@@ -458,7 +459,6 @@ class wp_plugin_encyclopedia {
     Echo $this->Load_Template('encyclopedia-term-filter.php', Array('filter' => $this->Generate_Term_Filters()));
   }
 
-
   function Link_Term_in_Content($content, $term){
     Global $post;
 
@@ -473,10 +473,16 @@ class wp_plugin_encyclopedia {
     If (Empty($content) || Empty($term_value)) return $content;
 
     # Get Term Title
-    If (Empty($term->post_excerpt))
-      $link_title = WP_Trim_Words($term->post_content, 55, '...');
+    If (Empty($term->post_excerpt)){
+      $link_title_more = Apply_Filters('excerpt_more', '&hellip;');
+      $link_title_more = Apply_Filters('encyclopedia_link_title_more', $link_title_more);
+      $link_title_length = Apply_Filters('excerpt_length', $this->Get_Option('auto_link_title_length'));
+      $link_title_length = Apply_Filters('encyclopedia_link_title_length', $link_title_length);
+      $link_title = WP_Trim_Words(Strip_Shortcodes($term->post_content), $link_title_length, HTML_Entity_Decode($link_title_more));
+    }
     Else
       $link_title = WP_Strip_All_Tags($term->post_excerpt, True);
+
     $link_title = Apply_Filters('encyclopedia_term_link_title', $link_title, $term);
 
     # Prepare search
@@ -504,6 +510,7 @@ class wp_plugin_encyclopedia {
     $body_start = MB_StrPos($resultHTML, '<body>', 0, 'UTF-8') + 6;
     $body_end = MB_StrPos($resultHTML, '</body>', $body_start, 'UTF-8');
     $resultBody = MB_SubStr($resultHTML, $body_start, $body_end - $body_start);
+
     return $resultBody;
   }
 
