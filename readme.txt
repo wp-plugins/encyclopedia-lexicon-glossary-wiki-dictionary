@@ -1,7 +1,7 @@
 === Encyclopedia / Lexicon / Glossary / Wiki / Dictionary / Knowledge base ===
 Contributors: dhoppe
 Tags: encyclopedia, lexicon, glossary, dictionary, knowledge base, wiki, wikipedia,        widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
-Requires at least: 3.7
+Requires at least: 3.8
 Tested up to: 3.9.1
 Stable tag: trunk
 Donate link: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
@@ -75,8 +75,8 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 
 = Minimum Requirements =
 
-* WordPress 3.7 or greater
-* PHP version 5.2.4 or greater
+* WordPress 3.8 or greater
+* PHP version 5.3 or greater
 * MySQL version 5.0 or greater
 
 = Automatic installation =
@@ -113,6 +113,10 @@ I am still collecting frequently asked questions. ;)
 
 
 == Changelog ==
+
+= 1.5.7 =
+* Fixed: Disappearing elements which contains auto linked terms
+* Added: new filter "encyclopedia_auto_link_skip_elements"
 
 = 1.5.6 =
 * Added: Option to change the number of words of the auto linked terms links.

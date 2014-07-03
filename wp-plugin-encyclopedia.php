@@ -465,7 +465,7 @@ class wp_plugin_encyclopedia {
     # Prepare search term
     $term_value = Trim($term->post_title);
     $term_value = Strip_Tags($term_value);
-    $term_value = HTMLSpecialChars($term_value);
+    $term_value = HTML_Entity_Decode($term_value);
 
     $content = Trim($content);
 
@@ -476,33 +476,46 @@ class wp_plugin_encyclopedia {
     If (Empty($term->post_excerpt)){
       $link_title_more = Apply_Filters('excerpt_more', '&hellip;');
       $link_title_more = Apply_Filters('encyclopedia_link_title_more', $link_title_more);
+      $link_title_more = HTML_Entity_Decode($link_title_more);
+
       $link_title_length = Apply_Filters('excerpt_length', $this->Get_Option('auto_link_title_length'));
       $link_title_length = Apply_Filters('encyclopedia_link_title_length', $link_title_length);
-      $link_title = WP_Trim_Words(Strip_Shortcodes($term->post_content), $link_title_length, HTML_Entity_Decode($link_title_more));
-    }
-    Else
-      $link_title = WP_Strip_All_Tags($term->post_excerpt, True);
 
+      $link_title = Strip_Shortcodes($term->post_content);
+      $link_title = WP_Strip_All_Tags($link_title);
+      $link_title = HTML_Entity_Decode($link_title);
+      $link_title = WP_Trim_Words($link_title, $link_title_length, $link_title_more);
+    }
+    Else {
+      $link_title = WP_Strip_All_Tags($term->post_excerpt, True);
+      $link_title = HTML_Entity_Decode($link_title);
+    }
+
+    # Apply link title filter
     $link_title = Apply_Filters('encyclopedia_term_link_title', $link_title, $term);
 
     # Prepare search
-    $search = SPrintF('|\b(%s)|imsuU', PReg_Quote($term_value));
-    $link = SPrintF('<a href="%1$s" target="_self" title="%2$s" class="encyclopedia">$1</a>', Get_Permalink($term->ID), $link_title);
+    $search = SPrintF('/\b(%s)/imsuU', PReg_Quote(HTMLSpecialChars($term_value)));
+    $link = SPrintF('<a href="%1$s" title="%2$s" class="encyclopedia">$1</a>', Get_Permalink($term->ID), Esc_Attr(HTMLSpecialChars($link_title)));
 
     # Load DOM
     $encoded_content = MB_Convert_Encoding($content, 'HTML-ENTITIES', 'UTF-8');
     $dom = new DOMDocument();
-    @$dom->loadHTML($encoded_content); # Here we could get a Warning if the $content is not valid HTML
+    If (!@$dom->loadHTML($encoded_content)) return $content; # Here we could get a Warning if the $content is not valid HTML
     $xpath = new DOMXPath($dom);
 
     # Go through nodes and replace
-    ForEach($xpath->Query('//text()[not(ancestor::a)][not(ancestor::script)][not(ancestor::iframe)]') As $currentNode){
-      $currentText = HTMLSpecialChars($currentNode->wholeText);
-      $newText = PReg_Replace($search, $link, $currentText);
-      If ($newText != $currentText){
-        $newNode = $dom->createDocumentFragment();
-        @$newNode->appendXML($newText);
-        $currentNode->parentNode->replaceChild($newNode, $currentNode);
+    $skip_elements = Apply_Filters('encyclopedia_auto_link_skip_elements', Array('a', 'script', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'button', 'textarea', 'style'));
+    $xpath_query = '//text()';
+    ForEach ($skip_elements As $skip_element) $xpath_query .= SPrintF('[not(ancestor::%s)]', $skip_element);
+    ForEach($xpath->Query($xpath_query) As $original_node){
+      $original_text = HTMLSpecialChars(HTML_Entity_Decode($original_node->wholeText));
+      $new_text = PReg_Replace($search, $link, $original_text);
+      If ($new_text != $original_text){
+        $new_node = $dom->createDocumentFragment();
+        If (@$new_node->appendXML($new_text)){ # If the $new_text is not valid XML this will break
+          $original_node->parentNode->replaceChild($new_node, $original_node);
+        }
       }
     }
 
