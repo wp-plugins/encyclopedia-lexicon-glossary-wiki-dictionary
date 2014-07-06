@@ -3,7 +3,7 @@
 Plugin Name: Encyclopedia Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
 Description: Encyclopedia Lite enables you to create your own encyclopedia, lexicon, glossary, wiki or dictionary.
-Version: 1.5.7
+Version: 1.5.8
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
@@ -464,7 +464,7 @@ class wp_plugin_encyclopedia {
 
     # Prepare search term
     $term_value = Trim($term->post_title);
-    $term_value = Strip_Tags($term_value);
+    $term_value = WPTexturize($term_value); # This is necessary because the content runs through this filter, too
     $term_value = HTML_Entity_Decode($term_value);
 
     $content = Trim($content);
@@ -495,8 +495,8 @@ class wp_plugin_encyclopedia {
     $link_title = Apply_Filters('encyclopedia_term_link_title', $link_title, $term);
 
     # Prepare search
-    $search = SPrintF('/\b(%s)/imsuU', PReg_Quote(HTMLSpecialChars($term_value)));
-    $link = SPrintF('<a href="%1$s" title="%2$s" class="encyclopedia">$1</a>', Get_Permalink($term->ID), Esc_Attr(HTMLSpecialChars($link_title)));
+    $search = SPrintF('/(^|\W)(%s)/imsuU', PReg_Quote(HTMLSpecialChars($term_value), '/'));
+    $link = SPrintF('$1<a href="%1$s" title="%2$s" class="encyclopedia">$2</a>', Get_Permalink($term->ID), Esc_Attr(HTMLSpecialChars($link_title)));
 
     # Load DOM
     $encoded_content = MB_Convert_Encoding($content, 'HTML-ENTITIES', 'UTF-8');
@@ -505,12 +505,12 @@ class wp_plugin_encyclopedia {
     $xpath = new DOMXPath($dom);
 
     # Go through nodes and replace
-    $skip_elements = Apply_Filters('encyclopedia_auto_link_skip_elements', Array('a', 'script', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'button', 'textarea', 'style'));
+    $skip_elements = Apply_Filters('encyclopedia_auto_link_skip_elements', Array('a', 'script', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'button', 'textarea', 'style', 'pre', 'code', 'kbd', 'tt'));
     $xpath_query = '//text()';
     ForEach ($skip_elements As $skip_element) $xpath_query .= SPrintF('[not(ancestor::%s)]', $skip_element);
     ForEach($xpath->Query($xpath_query) As $original_node){
       $original_text = HTMLSpecialChars(HTML_Entity_Decode($original_node->wholeText));
-      $new_text = PReg_Replace($search, $link, $original_text);
+      $new_text = @PReg_Replace($search, $link, $original_text);
       If ($new_text != $original_text){
         $new_node = $dom->createDocumentFragment();
         If (@$new_node->appendXML($new_text)){ # If the $new_text is not valid XML this will break

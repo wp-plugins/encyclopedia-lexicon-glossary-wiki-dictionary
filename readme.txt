@@ -114,6 +114,11 @@ I am still collecting frequently asked questions. ;)
 
 == Changelog ==
 
+= 1.5.8 =
+* Fixed: Terms with a slash will not occur a warning anymore
+* Patched: Word boundary which prevented auto links for terms with special chars
+* Added some tags which were skipped for auto links
+
 = 1.5.7 =
 * Fixed: Disappearing elements which contains auto linked terms
 * Added: new filter "encyclopedia_auto_link_skip_elements"
