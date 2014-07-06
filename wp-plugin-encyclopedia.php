@@ -465,7 +465,7 @@ class wp_plugin_encyclopedia {
     # Prepare search term
     $term_value = Trim($term->post_title);
     $term_value = WPTexturize($term_value); # This is necessary because the content runs through this filter, too
-    $term_value = HTML_Entity_Decode($term_value);
+    $term_value = HTML_Entity_Decode($term_value, ENT_QUOTES, 'UTF-8');
 
     $content = Trim($content);
 
@@ -476,19 +476,19 @@ class wp_plugin_encyclopedia {
     If (Empty($term->post_excerpt)){
       $link_title_more = Apply_Filters('excerpt_more', '&hellip;');
       $link_title_more = Apply_Filters('encyclopedia_link_title_more', $link_title_more);
-      $link_title_more = HTML_Entity_Decode($link_title_more);
+      $link_title_more = HTML_Entity_Decode($link_title_more, ENT_QUOTES, 'UTF-8');
 
       $link_title_length = Apply_Filters('excerpt_length', $this->Get_Option('auto_link_title_length'));
       $link_title_length = Apply_Filters('encyclopedia_link_title_length', $link_title_length);
 
       $link_title = Strip_Shortcodes($term->post_content);
       $link_title = WP_Strip_All_Tags($link_title);
-      $link_title = HTML_Entity_Decode($link_title);
+      $link_title = HTML_Entity_Decode($link_title, ENT_QUOTES, 'UTF-8');
       $link_title = WP_Trim_Words($link_title, $link_title_length, $link_title_more);
     }
     Else {
       $link_title = WP_Strip_All_Tags($term->post_excerpt, True);
-      $link_title = HTML_Entity_Decode($link_title);
+      $link_title = HTML_Entity_Decode($link_title, ENT_QUOTES, 'UTF-8');
     }
 
     # Apply link title filter
@@ -509,7 +509,7 @@ class wp_plugin_encyclopedia {
     $xpath_query = '//text()';
     ForEach ($skip_elements As $skip_element) $xpath_query .= SPrintF('[not(ancestor::%s)]', $skip_element);
     ForEach($xpath->Query($xpath_query) As $original_node){
-      $original_text = HTMLSpecialChars(HTML_Entity_Decode($original_node->wholeText));
+      $original_text = HTMLSpecialChars(HTML_Entity_Decode($original_node->wholeText, ENT_QUOTES, 'UTF-8'));
       $new_text = @PReg_Replace($search, $link, $original_text);
       If ($new_text != $original_text){
         $new_node = $dom->createDocumentFragment();

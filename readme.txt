@@ -114,6 +114,9 @@ I am still collecting frequently asked questions. ;)
 
 == Changelog ==
 
+= 1.5.8.1 =
+* Changed the HTML_Entity_Decode calls to make them compatible with older PHP versions
+
 = 1.5.8 =
 * Fixed: Terms with a slash will not occur a warning anymore
 * Patched: Word boundary which prevented auto links for terms with special chars
