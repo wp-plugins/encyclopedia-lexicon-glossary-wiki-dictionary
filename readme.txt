@@ -114,6 +114,9 @@ I am still collecting frequently asked questions. ;)
 
 == Changelog ==
 
+= 1.5.9 =
+* Removed: the excerpt_more filter from the auto link titles
+
 = 1.5.8.1 =
 * Changed the HTML_Entity_Decode calls to make them compatible with older PHP versions
 
