@@ -3,7 +3,7 @@
 Plugin Name: Encyclopedia Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
 Description: Encyclopedia Lite enables you to create your own encyclopedia, lexicon, glossary, wiki or dictionary.
-Version: 1.5.9
+Version: 1.5.9.1
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
@@ -16,7 +16,6 @@ Include DirName(__FILE__).'/wp-widget-encyclopedia-taxonomy-cloud.php';
 Include DirName(__FILE__).'/wp-widget-encyclopedia-terms.php';
 
 # Load Plugin Kernel
-If (!Class_Exists('wp_plugin_encyclopedia')){
 class wp_plugin_encyclopedia {
   var $base_url; # url to the plugin directory
   var $arr_taxonomies; # All buildIn Taxonomies.
@@ -725,4 +724,3 @@ class wp_plugin_encyclopedia {
 
 } /* End of the Class */
 New wp_plugin_encyclopedia;
-} /* End of the If-Class-Exists-Condition */

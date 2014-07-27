@@ -114,6 +114,9 @@ I am still collecting frequently asked questions. ;)
 
 == Changelog ==
 
+= 1.5.9.1 =
+* Removed all if-class-exists-conditions to speed up the plugin
+
 = 1.5.9 =
 * Removed: the excerpt_more filter from the auto link titles
 

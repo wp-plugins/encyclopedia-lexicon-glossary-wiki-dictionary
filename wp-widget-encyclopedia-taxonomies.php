@@ -1,5 +1,5 @@
-<?php If (!Class_Exists('wp_widget_encyclopedia_taxonomies')){
-Class wp_widget_encyclopedia_taxonomies Extends WP_Widget {
+<?php
+class wp_widget_encyclopedia_taxonomies Extends WP_Widget {
   var $encyclopedia;
 
   function __construct(){
@@ -143,4 +143,3 @@ Class wp_widget_encyclopedia_taxonomies Extends WP_Widget {
   }
 
 } /* End of Class */
-} /* End of If-Class-Exists-Condition */
