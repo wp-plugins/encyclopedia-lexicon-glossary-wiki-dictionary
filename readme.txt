@@ -8,7 +8,7 @@ Donate link: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This great Encyclopedia Lite plugin enables you to create an awesome Encyclopedia, Lexicon, Glossary, Wiki, Dictionary or Knowledge Base!
+Encyclopedia is the most successful glossary and lexicon plugin in 2014. Start an awesome lexicon, glossary, wiki, dictionary or knowledge base now!
 
 == Description ==
 [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) Lite is a state of the art [WordPress encyclopedia / lexicon / glossary / wiki / dictionary plugin](http://dennishoppe.de/en/wordpress-plugins/encyclopedia). It enables you to create, manage and present a knowledge base. Completely coalesced with your WordPress and fully compatible with all the cool publishing tools you like.
@@ -33,7 +33,7 @@ In this edition of the plugin you can create a small lexicon. On several places 
 
 
 = Settings =
-You can find the settings page in WP Admin Panel &raquo; Settings &raquo; [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia).
+You can find the settings page in WP Admin Panel » Settings » [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia).
 
 
 = Template files =
@@ -67,7 +67,7 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 * Copy it.
 * Rename it (to your language code).
 * Translate everything.
-* Send it via E-Mail to &lt;Mail [@t] [DennisHoppe](http://DennisHoppe.de/) [dot] de&gt;.
+* Send it via E-Mail to <Mail [@t] [DennisHoppe](http://DennisHoppe.de/) [dot] de>.
 * Thats it. Thank you! =)
 
 
