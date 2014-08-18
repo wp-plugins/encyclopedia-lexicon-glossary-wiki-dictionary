@@ -2,13 +2,13 @@
 /*
 Plugin Name: Encyclopedia Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
-Description: Encyclopedia Lite enables you to create your own encyclopedia, lexicon, glossary, wiki or dictionary.
-Version: 1.5.9.1
+Description: Encyclopedia enables you to create your own encyclopedia, lexicon, glossary, wiki or dictionary.
+Version: 1.5.10
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
 
-# Load Widget
+# Load Widgets
 Include DirName(__FILE__).'/wp-widget-encyclopedia-related-terms.php';
 Include DirName(__FILE__).'/wp-widget-encyclopedia-search.php';
 Include DirName(__FILE__).'/wp-widget-encyclopedia-taxonomies.php';
@@ -108,10 +108,19 @@ class wp_plugin_encyclopedia {
 	}
 
   function Define_Rewrite_Rules(){
+    # Add filter permalink structure for post type archive
     $post_type = Get_Post_Type_Object($this->post_type);
     $archive_url_path = $post_type->rewrite['slug'];
     $this->rewrite_rules[SPrintF('%s/filter:([^/]+)/?$', $archive_url_path)] = SPrintF('index.php?post_type=%s&filter=$matches[1]', $this->post_type);
     $this->rewrite_rules[SPrintF('%s/filter:([^/]+)/page/([0-9]{1,})/?$', $archive_url_path)] = SPrintF('index.php?post_type=%s&filter=$matches[1]&paged=$matches[2]', $this->post_type);
+
+    # Add filter permalink structure for taxonomy archives
+    ForEach (Get_Taxonomies(Null, 'objects') As $taxonomy){
+      $taxonomy_slug = $taxonomy->rewrite['slug'];
+      If (!In_Array($this->post_type, $taxonomy->object_type)) Continue;
+      $this->rewrite_rules[SPrintF('%s/([^/]+)/filter:([^/]+)/?$', $taxonomy_slug)] = SPrintF('index.php?%s=$matches[1]&filter=$matches[2]', $taxonomy->name);
+      $this->rewrite_rules[SPrintF('%s/([^/]+)/filter:([^/]+)/page/([0-9]{1,})/?$', $taxonomy_slug)] = SPrintF('index.php?%s=$matches[1]&filter=$matches[2]&paged=$matches[3]', $taxonomy->name);
+    }
   }
 
   function Add_Rewrite_Rules($rules){
@@ -155,7 +164,7 @@ class wp_plugin_encyclopedia {
     $this->Add_Option_Box($this->t('Search page'), DirName(__FILE__).'/options-page/box-search.php');
     $this->Add_Option_Box($this->t('Single page'), DirName(__FILE__).'/options-page/box-single-page.php');
     $this->Add_Option_Box($this->t('Linked terms in contents'), DirName(__FILE__).'/options-page/box-linked-terms.php');
-    $this->Add_Option_Box($this->t('Archive Url'), DirName(__FILE__).'/options-page/box-archive-link.php', 'side' );
+    $this->Add_Option_Box($this->t('Archive Url'), DirName(__FILE__).'/options-page/box-archive-link.php', 'side');
   }
 
   function Get_Options_Page_Url($parameters = Array()){
@@ -210,7 +219,7 @@ class wp_plugin_encyclopedia {
     # Read Options
     $arr_option = Array_Merge (
       (Array) $this->Default_Options(),
-      (Array) get_option(__CLASS__)
+      (Array) Get_Option(__CLASS__)
     );
 
     # Locate the option
@@ -240,9 +249,9 @@ class wp_plugin_encyclopedia {
   function Default_Options(){
     return Array(
       'embed_default_style' => 'yes',
-			'encyclopedia_tags' => 'yes',
-      'term_filter_for_archives' => 'yes',
-      'term_filter_for_singulars' => 'yes',
+      'encyclopedia_tags' => 'yes',
+      'prefix_filter_for_archives' => 'yes',
+      'prefix_filter_for_singulars' => 'yes',
       'auto_link_title_length' => Apply_Filters('excerpt_length', 55)
     );
   }
@@ -336,7 +345,6 @@ class wp_plugin_encyclopedia {
     $archive_url = get_term_link(get_term($tag->term_id, $taxonomy->name));
     $archive_feed = get_term_feed_link($tag->term_id, $taxonomy->name);
     ?>
-
     <tr class="form-field">
       <th scope="row" valign="top"><?php Echo $this->t('Archive Url') ?></th>
       <td>
@@ -344,7 +352,6 @@ class wp_plugin_encyclopedia {
         <span class="description"><?php PrintF($this->t('This is the URL to the archive of this %s.'), $taxonomy->labels->singular_name) ?></span>
       </td>
     </tr>
-
     <tr class="form-field">
       <th scope="row" valign="top"><?php Echo $this->t('Archive Feed') ?></th>
       <td>
@@ -352,7 +359,6 @@ class wp_plugin_encyclopedia {
         <span class="description"><?php PrintF($this->t('This is the URL to the feed of the archive of this %s.'), $taxonomy->labels->singular_name) ?></span>
       </td>
     </tr>
-
     <?php
   }
 
@@ -364,7 +370,7 @@ class wp_plugin_encyclopedia {
   function Is_Encyclopedia_Archive($query){
 		If ($query->is_post_type_archive || $query->is_tax){
       $encyclopedia_taxonomies = Get_Object_Taxonomies($this->post_type);
-			If ($query->Is_Post_Type_Archive($this->post_type) || (!Empty($encyclopedia_taxonomies) && $query->is_tax($encyclopedia_taxonomies))){
+			If ($query->Is_Post_Type_Archive($this->post_type) || (!Empty($encyclopedia_taxonomies) && $query->Is_Tax($encyclopedia_taxonomies))){
 				return True;
 			}
 		}
@@ -373,7 +379,7 @@ class wp_plugin_encyclopedia {
 
   function Filter_Query($query){
 		If ($this->Is_Encyclopedia_Archive($query) && !$query->Get('suppress_filters')){
-      # Define new Query Arguments
+      # Order the terms in the backend by title, ASC.
       If (!$query->Get('order')) $query->Set('order', 'asc');
       If (!$query->Get('orderby')) $query->Set('orderby', 'title');
 
@@ -444,18 +450,18 @@ class wp_plugin_encyclopedia {
 
     # Conditions
     If ($query->Is_Main_Query() && !$query->get('suppress_filters')){
-      $is_archive_filter = $this->Is_Encyclopedia_Archive($query) && $this->Get_Option('term_filter_for_archives') == 'yes';
-      $is_singular_filter = $query->Is_Singular($this->post_type) && $this->Get_Option('term_filter_for_singulars') == 'yes';
+      $is_archive_filter = $this->Is_Encyclopedia_Archive($query) && $this->Get_Option('prefix_filter_for_archives') == 'yes';
+      $is_singular_filter = $query->Is_Singular($this->post_type) && $this->Get_Option('prefix_filter_for_singulars') == 'yes';
 
       If ($is_archive_filter || $is_singular_filter){
-        $this->Print_Term_Filter();
+        $this->Print_Prefix_Filter();
         $loop_already_started = True;
       }
     }
   }
 
-  function Print_Term_Filter(){
-    Echo $this->Load_Template('encyclopedia-term-filter.php', Array('filter' => $this->Generate_Term_Filters()));
+  function Print_Prefix_Filter(){
+    Echo $this->Load_Template('encyclopedia-prefix-filter.php', Array('filter' => $this->Generate_Prefix_Filters()));
   }
 
   function Link_Term_in_Content($content, $term){
@@ -532,7 +538,7 @@ class wp_plugin_encyclopedia {
     return $tax;
   }
 
-  function Generate_Term_Filters(){
+  function Generate_Prefix_Filters(){
     # Get current Filter string
     $filter = RawUrlDecode(Get_Query_Var('filter'));
     If (!Empty($filter))
@@ -549,19 +555,22 @@ class wp_plugin_encyclopedia {
 		$arr_filter = Array(); # This will be the function result
     $filter_part = '';
 
+    # Check if we are inside a taxonomy archive
+    $taxonomy_term = Is_Tax() ? Get_Queried_Object() : Null;
+
 		ForEach ($arr_current_filter AS $filter_letter){
 			$filter_part .= $filter_letter;
-			$arr_available_filters = $this->Get_Available_Filters($filter_part);
+			$arr_available_filters = $this->Get_Available_Filters($filter_part, $taxonomy_term);
 			If (Count($arr_available_filters) < 2) Break;
 			$active_filter_part = MB_SubStr(Implode($arr_current_filter), 0, MB_StrLen($filter_part) + 1);
 
 			$arr_filter_line = Array();
 			ForEach ($arr_available_filters AS $available_filter){
-				$filter = New StdClass;
-        $filter->filter = MB_StrToUpper(MB_SubStr($available_filter, 0, 1)) . MB_SubStr($available_filter, 1); # UCFirst Workaround for multibyte chars
-				$filter->link = $this->Get_Archive_Link($available_filter);
-				$filter->active = ($active_filter_part == $available_filter);
-				$arr_filter_line[] = $filter;
+				$arr_filter_line[] = (Object) Array(
+          'filter' => MB_StrToUpper(MB_SubStr($available_filter, 0, 1)) . MB_SubStr($available_filter, 1), # UCFirst Workaround for multibyte chars
+          'link' => $this->Get_Archive_Link($available_filter, $taxonomy_term),
+          'active' => $active_filter_part == $available_filter
+        );
 			}
 			$arr_filter[] = $arr_filter_line;
 		}
@@ -569,12 +578,19 @@ class wp_plugin_encyclopedia {
 		return $arr_filter;
 	}
 
-  function Get_Archive_Link($filter = ''){
+  function Get_Archive_Link($filter = '', $taxonomy_term = Null){
     $permalink_structure = Get_Option('permalink_structure');
-    If (!Empty($permalink_structure))
-      return User_TrailingSlashIt(SPrintF('%1$s/filter:%2$s', RTrim(Get_Post_Type_Archive_Link($this->post_type), '/'), RawURLEncode($filter)));
+
+    # Get base url
+    If ($taxonomy_term)
+      $base_url = Get_Term_Link($taxonomy_term);
     Else
-      return Add_Query_Arg(Array('filter' => RawURLEncode($filter)), Get_Post_Type_Archive_Link($this->post_type));
+      $base_url = Get_Post_Type_Archive_Link($this->post_type);
+
+    If (!Empty($permalink_structure))
+      return User_TrailingSlashIt(SPrintF('%1$s/filter:%2$s', RTrim($base_url, '/'), RawURLEncode($filter)));
+    Else
+      return Add_Query_Arg(Array('filter' => RawURLEncode($filter)), $base_url);
   }
 
   function Load_Template($template_name, $vars = Array()){
@@ -586,18 +602,29 @@ class wp_plugin_encyclopedia {
 		return Ob_Get_Clean();
 	}
 
-  function Get_Available_Filters($prefix = ''){
+  function Get_Available_Filters($prefix = '', $taxonomy_term = Null){
     Global $wpdb;
     $prefix_length = MB_StrLen($prefix) + 1;
+    $tables = Array($wpdb->posts.' AS posts');
+    $where = Array(
+      'posts.post_status  =     "publish"',
+      'posts.post_type    =     "'.$this->post_type.'"',
+      'posts.post_title   !=    ""',
+      'posts.post_title   LIKE  "'.$prefix.'%"'
+    );
 
-    $stmt = "SELECT   LOWER(SUBSTRING(post_title,1,{$prefix_length})) subword
-             FROM     {$wpdb->posts} AS posts
-             WHERE    posts.post_status = 'publish' AND
-                      posts.post_type = '{$this->post_type}' AND
-                      posts.post_title != '' AND
-                      posts.post_title LIKE '{$prefix}%'
+    If ($taxonomy_term){
+      $tables[] = $wpdb->term_relationships.' AS term_relationships';
+      $where[] = 'term_relationships.object_id = posts.id';
+      $where[] = 'term_relationships.term_taxonomy_id = '.$taxonomy_term->term_taxonomy_id;
+    }
+
+    $stmt = 'SELECT   LOWER(SUBSTRING(posts.post_title,1,'.$prefix_length.')) subword
+             FROM     '.Join($tables, ',').'
+             WHERE    '.Join($where, ' AND ').'
              GROUP BY subword
-             ORDER BY subword ASC";
+             ORDER BY subword ASC';
+
     $arr_filter = $wpdb->Get_Col($stmt);
     return $arr_filter;
 	}
@@ -631,15 +658,11 @@ class wp_plugin_encyclopedia {
                      posts.post_date_gmt DESC
               LIMIT  0, {$number}";
 
-    $arr_related_term_ids = $wpdb->Get_Col($stmt);
-
     # Put it in a WP_Query
-    $query = New WP_Query(Array(
-      'post_type' => $this->post_type,
-      'post__in' => $arr_related_term_ids,
-      'orderby' => 'post__in',
-      'ignore_sticky_posts' => True
-    ));
+    $query = New WP_Query();
+    $query->posts = $wpdb->Get_Results($stmt);
+    $query->post_count = Count($query->posts);
+    $query->Rewind_Posts();
 
     # return
     If ($query->post_count == 0) return False;

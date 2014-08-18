@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia WordPress Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-30 09:33+0100\n"
+"POT-Creation-Date: 2014-08-18 11:49+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Erik Bolstad <erik.bolstad@nrk.no>\n"
@@ -18,201 +18,201 @@ msgstr ""
 "X-Poedit-Country: NORWAY\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../wp-plugin-encyclopedia.php:142
+#: ../wp-plugin-encyclopedia.php:150
 msgid "Encyclopedia Options"
 msgstr "Oppslagsverkinnstillingar"
 
-#: ../wp-plugin-encyclopedia.php:143
+#: ../wp-plugin-encyclopedia.php:151
 msgid "Encyclopedia"
 msgstr "Oppslagsverk"
 
-#: ../wp-plugin-encyclopedia.php:154
+#: ../wp-plugin-encyclopedia.php:162
 msgid "Taxonomies"
 msgstr "Klassifiseringar"
 
-#: ../wp-plugin-encyclopedia.php:155
+#: ../wp-plugin-encyclopedia.php:163
 msgid "Archive page"
 msgstr "Arkivside"
 
-#: ../wp-plugin-encyclopedia.php:156
+#: ../wp-plugin-encyclopedia.php:164
 #, fuzzy
 msgid "Search page"
 msgstr "Søk i emneord"
 
-#: ../wp-plugin-encyclopedia.php:157
+#: ../wp-plugin-encyclopedia.php:165
 msgid "Single page"
 msgstr "Einskildside"
 
-#: ../wp-plugin-encyclopedia.php:158
+#: ../wp-plugin-encyclopedia.php:166
 msgid "Linked terms in contents"
 msgstr "Lenka termar i kontekst"
 
-#: ../wp-plugin-encyclopedia.php:159
-#: ../wp-plugin-encyclopedia.php:342
+#: ../wp-plugin-encyclopedia.php:167
+#: ../wp-plugin-encyclopedia.php:349
 msgid "Archive Url"
 msgstr "Arkiv-URL"
 
-#: ../wp-plugin-encyclopedia.php:253
+#: ../wp-plugin-encyclopedia.php:261
 msgid "Lexicon"
 msgstr "Leksikon"
 
-#: ../wp-plugin-encyclopedia.php:254
+#: ../wp-plugin-encyclopedia.php:262
 msgctxt "URL slug"
 msgid "lexicon"
 msgstr "leksikon"
 
-#: ../wp-plugin-encyclopedia.php:262
+#: ../wp-plugin-encyclopedia.php:270
 msgid "Term"
 msgstr "Term"
 
-#: ../wp-plugin-encyclopedia.php:263
+#: ../wp-plugin-encyclopedia.php:271
 msgid "Add Term"
 msgstr "Legg til oppføring"
 
-#: ../wp-plugin-encyclopedia.php:264
+#: ../wp-plugin-encyclopedia.php:272
 msgid "New Term"
 msgstr "Ny oppføring"
 
-#: ../wp-plugin-encyclopedia.php:265
+#: ../wp-plugin-encyclopedia.php:273
 msgid "Edit Term"
 msgstr "Rediger oppføring"
 
-#: ../wp-plugin-encyclopedia.php:266
+#: ../wp-plugin-encyclopedia.php:274
 msgid "View Term"
 msgstr "Sjå oppføring"
 
-#: ../wp-plugin-encyclopedia.php:267
+#: ../wp-plugin-encyclopedia.php:275
 msgid "Search Terms"
 msgstr "Søk blant oppføringar"
 
-#: ../wp-plugin-encyclopedia.php:268
+#: ../wp-plugin-encyclopedia.php:276
 msgid "No Terms found"
 msgstr "Fann ingen oppføringar"
 
-#: ../wp-plugin-encyclopedia.php:269
+#: ../wp-plugin-encyclopedia.php:277
 msgid "No Terms found in Trash"
 msgstr "Fann ingen oppføringar blant sletta element"
 
-#: ../wp-plugin-encyclopedia.php:290
+#: ../wp-plugin-encyclopedia.php:298
 #, php-format
 msgid "Term updated. (<a href=\"%s\">View Term</a>)"
 msgstr "Oppføringa er oppdatert. (<a href=\"%s\">Sjå oppføringar</a>)"
 
-#: ../wp-plugin-encyclopedia.php:293
+#: ../wp-plugin-encyclopedia.php:301
 msgid "Term updated."
 msgstr "Oppføringa er oppdatert"
 
-#: ../wp-plugin-encyclopedia.php:294
+#: ../wp-plugin-encyclopedia.php:302
 #, php-format
 msgid "Term restored to revision from %s"
 msgstr "Oppføringa vart tilbakestilt til versjonen frå %s"
 
-#: ../wp-plugin-encyclopedia.php:295
+#: ../wp-plugin-encyclopedia.php:303
 #, php-format
 msgid "Term published. (<a href=\"%s\">View Term</a>)"
 msgstr "Oppføringa er publisert. (<a href=\"%s\">Sjå oppføringar</a>)"
 
-#: ../wp-plugin-encyclopedia.php:296
+#: ../wp-plugin-encyclopedia.php:304
 msgid "Term saved."
 msgstr "Oppføringa er lagra."
 
-#: ../wp-plugin-encyclopedia.php:297
+#: ../wp-plugin-encyclopedia.php:305
 msgid "Term submitted."
 msgstr "Oppføringa er lagt til."
 
-#: ../wp-plugin-encyclopedia.php:298
+#: ../wp-plugin-encyclopedia.php:306
 #, php-format
 msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 msgstr "Oppføringa er tidsstyrt. (<a target=\"_blank\" href=\"%s\">Sjå oppføringa</a>).a>)"
 
-#: ../wp-plugin-encyclopedia.php:299
+#: ../wp-plugin-encyclopedia.php:307
 #, php-format
 msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
 msgstr "Kladden er oppdatert. (<a target=\"_blank\" href=\"%s\">Førehandsvis</a>)."
 
-#: ../wp-plugin-encyclopedia.php:306
+#: ../wp-plugin-encyclopedia.php:314
 #, fuzzy
 msgid "Encyclopedia Tags"
 msgstr "Oppslagsverk-oppføringar"
 
-#: ../wp-plugin-encyclopedia.php:308
+#: ../wp-plugin-encyclopedia.php:316
 #, fuzzy
 msgid "Tags"
 msgstr "Alle emneord"
 
-#: ../wp-plugin-encyclopedia.php:309
+#: ../wp-plugin-encyclopedia.php:317
 msgid "Tag"
 msgstr "Emneord"
 
-#: ../wp-plugin-encyclopedia.php:310
+#: ../wp-plugin-encyclopedia.php:318
 msgid "Search Tags"
 msgstr "Søk i emneord"
 
-#: ../wp-plugin-encyclopedia.php:311
+#: ../wp-plugin-encyclopedia.php:319
 msgid "All Tags"
 msgstr "Alle emneord"
 
-#: ../wp-plugin-encyclopedia.php:312
+#: ../wp-plugin-encyclopedia.php:320
 msgid "Edit Tag"
 msgstr "Rediger emneord"
 
-#: ../wp-plugin-encyclopedia.php:313
+#: ../wp-plugin-encyclopedia.php:321
 msgid "Update Tag"
 msgstr "Oppdater emneord"
 
-#: ../wp-plugin-encyclopedia.php:314
+#: ../wp-plugin-encyclopedia.php:322
 msgid "Add New Tag"
 msgstr "Legg til nytt emneord"
 
-#: ../wp-plugin-encyclopedia.php:315
+#: ../wp-plugin-encyclopedia.php:323
 msgid "New Tag"
 msgstr "Nytt emneord"
 
-#: ../wp-plugin-encyclopedia.php:323
+#: ../wp-plugin-encyclopedia.php:331
 #, php-format
 msgctxt "URL slug"
 msgid "%s-tag"
 msgstr "%s-emne"
 
-#: ../wp-plugin-encyclopedia.php:345
+#: ../wp-plugin-encyclopedia.php:352
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "URL-en til %s-arkivet."
 
-#: ../wp-plugin-encyclopedia.php:350
+#: ../wp-plugin-encyclopedia.php:356
 msgid "Archive Feed"
 msgstr "Arkivstraum"
 
-#: ../wp-plugin-encyclopedia.php:353
+#: ../wp-plugin-encyclopedia.php:359
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "Dette er RSS-straumen til %s-arkivet."
 
-#: ../wp-plugin-encyclopedia.php:647
+#: ../wp-plugin-encyclopedia.php:681
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:649
+#: ../wp-plugin-encyclopedia.php:683
 #, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:650
+#: ../wp-plugin-encyclopedia.php:684
 #, php-format
 msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:651
+#: ../wp-plugin-encyclopedia.php:685
 #, php-format
 msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:657
+#: ../wp-plugin-encyclopedia.php:691
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:688
+#: ../wp-plugin-encyclopedia.php:722
 msgid "&laquo; Back to your terms"
 msgstr ""
 
@@ -372,11 +372,13 @@ msgid "This option effects all encyclopedia archive pages."
 msgstr "Denne innstillinga endrar alle arkivsidene i oppslagsverket."
 
 #: ../options-page/box-archive-page.php:13
-msgid "Term filter"
+#, fuzzy
+msgid "Prefix filter"
 msgstr "Oppføringsfilter"
 
 #: ../options-page/box-archive-page.php:19
-msgid "Display a term filter above the encyclopedia archive automatically or not."
+#, fuzzy
+msgid "Display a prefix filter above the encyclopedia archive automatically or not."
 msgstr "Vil du vise eit oppføringsfilter over arkivet automatisk?"
 
 #: ../options-page/box-taxonomies.php:3
@@ -512,7 +514,7 @@ msgstr "Kor mange relaterte oppføringar vil du vise?"
 
 #: ../options-page/box-single-page.php:29
 #, fuzzy
-msgid "Display a term filter above the encyclopedia term content automatically or not."
+msgid "Display the prefix filter above the encyclopedia term automatically or not."
 msgstr "Vis eit oppføringsfilter over oppføringa"
 
 #: ../options-page/box-linked-terms.php:11

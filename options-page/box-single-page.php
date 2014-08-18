@@ -20,13 +20,13 @@
 </tr>
 
 <tr>
-  <th><label for="term_filter_for_singulars"><?php Echo $this->t('Term filter') ?></label></th>
+  <th><label for="prefix_filter_for_singulars"><?php Echo $this->t('Prefix filter') ?></label></th>
   <td>
-		<select name="term_filter_for_singulars" id="term_filter_for_singulars">
-			<option value="yes" <?php Selected($this->Get_Option('term_filter_for_singulars'), 'yes') ?> ><?php _e('Yes') ?></option>
-			<option value="no" <?php Selected($this->Get_Option('term_filter_for_singulars'), 'no') ?> ><?php _e('No') ?></option>
+		<select name="prefix_filter_for_singulars" id="prefix_filter_for_singulars">
+			<option value="yes" <?php Selected($this->Get_Option('prefix_filter_for_singulars'), 'yes') ?> ><?php _e('Yes') ?></option>
+			<option value="no" <?php Selected($this->Get_Option('prefix_filter_for_singulars'), 'no') ?> ><?php _e('No') ?></option>
 		</select><br>
-		<small><?php Echo $this->t('Display a term filter above the encyclopedia term content automatically or not.') ?></small>
+		<small><?php Echo $this->t('Display the prefix filter above the encyclopedia term automatically or not.') ?></small>
 	</td>
 </tr>
 

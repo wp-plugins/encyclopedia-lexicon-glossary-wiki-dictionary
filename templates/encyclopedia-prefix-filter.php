@@ -1,4 +1,4 @@
-<div class="encyclopedia-filters">
+<div class="encyclopedia-prefix-filters">
 <?php
 /* Use the $filter var to access all available filters */
 

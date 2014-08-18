@@ -114,6 +114,10 @@ I am still collecting frequently asked questions. ;)
 
 == Changelog ==
 
+= 1.5.10 =
+* Changed the behaviour of the prefix filter: It works taxonomy sensitive now
+* Renamed template "encyclopedia-term-filter" to "encyclopedia-prefix-filter"
+
 = 1.5.9.1 =
 * Removed all if-class-exists-conditions to speed up the plugin
 
