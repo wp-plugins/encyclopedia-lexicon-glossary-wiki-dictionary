@@ -3,7 +3,7 @@
 Plugin Name: Encyclopedia Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
 Description: Encyclopedia enables you to create your own encyclopedia, lexicon, glossary, wiki or dictionary.
-Version: 1.5.10
+Version: 1.5.10.1
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
@@ -17,10 +17,12 @@ Include DirName(__FILE__).'/wp-widget-encyclopedia-terms.php';
 
 # Load Plugin Kernel
 class wp_plugin_encyclopedia {
-  var $base_url; # url to the plugin directory
-  var $arr_taxonomies; # All buildIn Taxonomies.
-  var $post_type = 'encyclopedia'; # Name of the post type
-  var $encyclopedia_type; # An object with the properties of current encyclopedia type
+  public
+    $base_url, # url to the plugin directory
+    $arr_taxonomies, # All buildIn Taxonomies.
+    $post_type = 'encyclopedia', # Name of the post type
+    $encyclopedia_type, # An object with the properties of current encyclopedia type
+    $rewrite_rules = Array(); # Array with the new additional rewrite rules
 
   function __construct(){
     # Read base
@@ -32,11 +34,9 @@ class wp_plugin_encyclopedia {
     # Get ready to translate
     Add_Action('widgets_init', Array($this, 'Load_TextDomain'));
 
-    # Load current Encyclopedia type
-    Add_Action('init', Array($this, 'Load_Encyclopedia_Type'));
-
     # Set Hooks
     Register_Activation_Hook(__FILE__, Array($this, 'Plugin_Activation'));
+    Add_Action('init', Array($this, 'Load_Encyclopedia_Type'));
     Add_Action('admin_menu', Array($this, 'Add_Options_Page'));
     Add_Action('init', Array($this, 'Register_Post_Type'));
     Add_Filter('post_updated_messages', Array($this, 'Updated_Messages' ));
@@ -259,7 +259,7 @@ class wp_plugin_encyclopedia {
   function Load_Encyclopedia_Type(){
 		$this->encyclopedia_type = (Object) Array(
       'label' => $this->t('Lexicon'),
-      'slug' => $this->t('lexicon', 'URL slug')
+      'slug' => Defined('ICL_SITEPRESS_VERSION') ? 'lexicon' : $this->t('lexicon', 'URL slug')
     );
 	}
 
