@@ -3,10 +3,14 @@
 Plugin Name: Encyclopedia Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
 Description: Encyclopedia enables you to create your own encyclopedia, lexicon, glossary, wiki or dictionary.
-Version: 1.5.10.1
+Version: 1.5.11
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
+
+# Load helper classes
+Include DirName(__FILE__).'/class.i18n.php';
+Include DirName(__FILE__).'/class.wpml.php';
 
 # Load Widgets
 Include DirName(__FILE__).'/wp-widget-encyclopedia-related-terms.php';
@@ -19,20 +23,23 @@ Include DirName(__FILE__).'/wp-widget-encyclopedia-terms.php';
 class wp_plugin_encyclopedia {
   public
     $base_url, # url to the plugin directory
-    $arr_taxonomies, # All buildIn Taxonomies.
+    $arr_taxonomies, # All buildIn Taxonomies - also the inactive ones.
     $post_type = 'encyclopedia', # Name of the post type
     $encyclopedia_type, # An object with the properties of current encyclopedia type
-    $rewrite_rules = Array(); # Array with the new additional rewrite rules
+    $rewrite_rules = Array(), # Array with the new additional rewrite rules
+    $i18n, # Pointer to the translation helper object
+    $wpml; # Pointer to the WPML helper object
 
   function __construct(){
     # Read base
     $this->Load_Base_Url();
 
+    # Load helper objects
+    $this->i18n = New WordPress\Plugin\Encyclopedia\I18n();
+    $this->wpml = New WordPress\Plugin\Encyclopedia\WPML($this);
+
     # Option boxes
     $this->arr_option_box = Array( 'main' => Array(), 'side' => Array() );
-
-    # Get ready to translate
-    Add_Action('widgets_init', Array($this, 'Load_TextDomain'));
 
     # Set Hooks
     Register_Activation_Hook(__FILE__, Array($this, 'Plugin_Activation'));
@@ -46,19 +53,19 @@ class wp_plugin_encyclopedia {
     Add_Filter('pre_get_posts', Array($this, 'Filter_Query'));
     Add_Filter('posts_where', Array($this, 'Filter_Posts_Where'), 10, 2);
     Add_Filter('the_content', Array($this, 'Filter_Content'));
-    Add_Action('wp_enqueue_scripts', Array($this, 'Enqueue_Encyclopedia_Style'));
-    Add_Action('admin_init', Array($this, 'User_Creates_New_Term'));
-    Add_Action('untrash_post', Array($this, 'User_Untrashes_Post'));
     Add_Filter('the_content', Array($this, 'Link_Terms'), 99);
     Add_Filter('nav_menu_meta_box_object', Array($this, 'Change_Taxonomy_Menu_Label'));
     Add_Filter('query_vars', Array($this, 'Register_Query_Vars'));
-    Add_Filter('init', Array($this, 'Define_Rewrite_Rules'));
+    Add_Filter('init', Array($this, 'Define_Rewrite_Rules'), 99);
     Add_Filter('rewrite_rules_array', Array($this, 'Add_Rewrite_Rules'));
     Add_Action('wp_loaded', Array($this, 'Optionally_Flush_Rewrite_Rules'));
+    Add_Action('wp_enqueue_scripts', Array($this, 'Enqueue_Encyclopedia_Scripts'));
+    Add_Action('admin_init', Array($this, 'User_Creates_New_Term'));
+    Add_Action('untrash_post', Array($this, 'User_Untrashes_Post'));
     Add_Action('admin_footer', Array($this, 'Print_Dashboard_JS'));
 
     # Register Widgets
-    Add_Action ('widgets_init', Array($this,'Register_Widgets'));
+    Add_Action('widgets_init', Array($this,'Register_Widgets'));
 
     # Shortcodes
     Add_Shortcode('encyclopedia_related_terms', Array($this, 'Shortcode_Related_Terms'));
@@ -78,21 +85,12 @@ class wp_plugin_encyclopedia {
     $this->base_url = Str_Replace("\\", '/', $this->base_url); # Windows Workaround
   }
 
-  function Load_TextDomain(){
-    $locale = Apply_Filters( 'plugin_locale', get_locale(), __CLASS__ );
-    Load_TextDomain (__CLASS__, DirName(__FILE__).'/language/' . $locale . '.mo');
-  }
-
   function t ($text, $context = Null){
-    # Translates the string $text with context $context
-    If (Empty($context))
-      return Translate ($text, __CLASS__);
-    Else
-      return Translate_With_GetText_Context ($text, $context, __CLASS__);
+    return $this->i18n->t($text, $context);
   }
 
   function Plugin_Activation(){
-    $this->Load_TextDomain();
+    $this->i18n->Load_TextDomain();
     $this->Load_Encyclopedia_Type();
     $this->Register_Post_Type();
     $this->Register_Taxonomies();
@@ -178,7 +176,7 @@ class wp_plugin_encyclopedia {
     If (IsSet($_REQUEST['options_saved'])) Flush_Rewrite_Rules();
 
     # If this is a Post request to save the options
-    If ($this->Save_Options()) WP_Redirect( $this->Get_Options_Page_Url(Array('options_saved' => 'true')));
+    If ($this->Save_Options()) WP_Redirect($this->Get_Options_Page_Url(Array('options_saved' => 'true')));
 
     WP_Enqueue_Script('dashboard');
     WP_Enqueue_Style('dashboard');
@@ -259,7 +257,7 @@ class wp_plugin_encyclopedia {
   function Load_Encyclopedia_Type(){
 		$this->encyclopedia_type = (Object) Array(
       'label' => $this->t('Lexicon'),
-      'slug' => Defined('ICL_SITEPRESS_VERSION') ? 'lexicon' : $this->t('lexicon', 'URL slug')
+      'slug' => $this->t('lexicon', 'URL slug')
     );
 	}
 
@@ -295,32 +293,32 @@ class wp_plugin_encyclopedia {
 
   function Updated_Messages($arr_message){
     return Array_Merge ($arr_message, Array($this->post_type => Array(
-      1 => SPrintF ($this->t('Term updated. (<a href="%s">View Term</a>)'), get_permalink()),
+      1 => SPrintF ($this->t('Term updated. (<a href="%s">View Term</a>)'), Get_Permalink()),
       2 => __('Custom field updated.'),
       3 => __('Custom field deleted.'),
       4 => $this->t('Term updated.'),
       5 => IsSet($_GET['revision']) ? SPrintF($this->t('Term restored to revision from %s'), WP_Post_Revision_Title( (Int) $_GET['revision'], False ) ) : False,
-      6 => SPrintF($this->t('Term published. (<a href="%s">View Term</a>)'), get_permalink()),
+      6 => SPrintF($this->t('Term published. (<a href="%s">View Term</a>)'), Get_Permalink()),
       7 => $this->t('Term saved.'),
       8 => $this->t('Term submitted.'),
-      9 => SPrintF($this->t('Term scheduled. (<a target="_blank" href="%s">View Term</a>)'), get_permalink()),
-      10 => SPrintF($this->t('Draft updated. (<a target="_blank" href="%s">Preview Term</a>)'), Add_Query_Arg('preview', 'true', get_permalink()))
+      9 => SPrintF($this->t('Term scheduled. (<a target="_blank" href="%s">View Term</a>)'), Get_Permalink()),
+      10 => SPrintF($this->t('Draft updated. (<a target="_blank" href="%s">Preview Term</a>)'), Add_Query_Arg('preview', 'true', Get_Permalink()))
     )));
   }
 
   function Register_Taxonomies(){
     If($this->Get_Option('encyclopedia_tags') == 'yes'){
 			Register_Taxonomy('encyclopedia-tag', $this->post_type, Array(
-				'label' => $this->t( 'Encyclopedia Tags' ),
+				'label' => $this->t('Encyclopedia Tags'),
 				'labels' => Array(
-					'name' => $this->t( 'Tags' ),
-					'singular_name' => $this->t( 'Tag' ),
-					'search_items' =>  $this->t( 'Search Tags' ),
-					'all_items' => $this->t( 'All Tags' ),
-					'edit_item' => $this->t( 'Edit Tag' ),
-					'update_item' => $this->t( 'Update Tag' ),
-					'add_new_item' => $this->t( 'Add New Tag' ),
-					'new_item_name' => $this->t( 'New Tag' )
+					'name' => $this->t('Tags'),
+					'singular_name' => $this->t('Tag'),
+					'search_items' =>  $this->t('Search Tags'),
+					'all_items' => $this->t('All Tags'),
+					'edit_item' => $this->t('Edit Tag'),
+					'update_item' => $this->t('Update Tag'),
+					'add_new_item' => $this->t('Add New Tag'),
+					'new_item_name' => $this->t('New Tag')
 				),
         'show_admin_column' => True,
 				'hierarchical' => False,
@@ -362,7 +360,7 @@ class wp_plugin_encyclopedia {
     <?php
   }
 
-  function Enqueue_Encyclopedia_Style(){
+  function Enqueue_Encyclopedia_Scripts(){
     If ($this->Get_Option('embed_default_style') == 'yes')
       WP_Enqueue_Style('encyclopedia', $this->base_url.'/encyclopedia.css');
   }
@@ -438,32 +436,6 @@ class wp_plugin_encyclopedia {
     return $content;
 	}
 
-  function Start_Loop($query){
-    Static $loop_already_started;
-		If ($loop_already_started) return;
-
-    # If the current query is not a post query we bail out
-    If (!(GetType($query) == 'object' && Get_Class($query) == 'WP_Query')) return;
-
-		Global $wp_current_filter;
-    If (In_Array('wp_head', $wp_current_filter)) return;
-
-    # Conditions
-    If ($query->Is_Main_Query() && !$query->get('suppress_filters')){
-      $is_archive_filter = $this->Is_Encyclopedia_Archive($query) && $this->Get_Option('prefix_filter_for_archives') == 'yes';
-      $is_singular_filter = $query->Is_Singular($this->post_type) && $this->Get_Option('prefix_filter_for_singulars') == 'yes';
-
-      If ($is_archive_filter || $is_singular_filter){
-        $this->Print_Prefix_Filter();
-        $loop_already_started = True;
-      }
-    }
-  }
-
-  function Print_Prefix_Filter(){
-    Echo $this->Load_Template('encyclopedia-prefix-filter.php', Array('filter' => $this->Generate_Prefix_Filters()));
-  }
-
   function Link_Term_in_Content($content, $term){
     Global $post;
 
@@ -531,8 +503,30 @@ class wp_plugin_encyclopedia {
     return $resultBody;
   }
 
+  function Start_Loop($query){
+    Static $loop_already_started;
+		If ($loop_already_started) return;
+
+    # If the current query is not a post query we bail out
+    If (!(GetType($query) == 'object' && Get_Class($query) == 'WP_Query')) return;
+
+		Global $wp_current_filter;
+    If (In_Array('wp_head', $wp_current_filter)) return;
+
+    # Conditions
+    If ($query->Is_Main_Query() && !$query->Get('suppress_filters')){
+      $is_archive_filter = $this->Is_Encyclopedia_Archive($query) && $this->Get_Option('prefix_filter_for_archives') == 'yes';
+      $is_singular_filter = $query->Is_Singular($this->post_type) && $this->Get_Option('prefix_filter_for_singulars') == 'yes';
+
+      If ($is_archive_filter || $is_singular_filter){
+        $this->Print_Prefix_Filter();
+        $loop_already_started = True;
+      }
+    }
+  }
+
   function Change_Taxonomy_Menu_Label($tax){
-    If (IsSet($tax->object_type) && $tax->object_type == Array($this->post_type)){
+    If (IsSet($tax->object_type) && In_Array($this->post_type, $tax->object_type)){
       $tax->labels->name = SPrintF('%1$s &raquo; %2$s', $this->encyclopedia_type->label, $tax->labels->name);
     }
     return $tax;
@@ -593,6 +587,10 @@ class wp_plugin_encyclopedia {
       return Add_Query_Arg(Array('filter' => RawURLEncode($filter)), $base_url);
   }
 
+  function Print_Prefix_Filter(){
+    Echo $this->Load_Template('encyclopedia-prefix-filter.php', Array('filter' => $this->Generate_Prefix_Filters()));
+  }
+
   function Load_Template($template_name, $vars = Array()){
 		Extract($vars);
 		$template_path = Locate_Template($template_name);
@@ -626,6 +624,7 @@ class wp_plugin_encyclopedia {
              ORDER BY subword ASC';
 
     $arr_filter = $wpdb->Get_Col($stmt);
+    $arr_filter = Apply_Filters('encyclopedia_available_filters', $arr_filter, $prefix, $taxonomy_term);
     return $arr_filter;
 	}
 
