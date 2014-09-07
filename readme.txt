@@ -94,10 +94,6 @@ The manual installation method involves downloading the plugin and uploading it 
 Automatic updates should work like a charm; as always though, ensure you backup your site just in case.
 
 
-== Frequently Asked Questions ==
-I am still collecting frequently asked questions. ;)
-
-
 == Screenshots ==
 01. Example Archive page in TwentyTwelve Theme
 02. Example single term view in TwentyTwelve Theme
