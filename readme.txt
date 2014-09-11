@@ -1,48 +1,63 @@
-=== Encyclopedia / Lexicon / Glossary / Wiki / Dictionary / Knowledge base ===
+﻿=== Encyclopedia / Glossary / Wiki ===
 Contributors: dhoppe
-Tags: encyclopedia, lexicon, glossary, dictionary, knowledge base, wiki, wikipedia,        widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
-Requires at least: 3.8
+Tags: encyclopedia, lexicon, glossary, glossar, dictionary, knowledge base, wiki, wikipedia,				widget, Post, plugin, admin, posts, sidebar, comments, google, images, page, image, links
+Requires at least: 3.6
 Tested up to: 4.0
 Stable tag: trunk
 Donate link: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Encyclopedia is the most successful glossary and lexicon plugin in 2014. Start an awesome lexicon, glossary, wiki, dictionary or knowledge base now!
+Supercharged tool to build your own awesome Glossary / Encyclopedia / Lexicon / Wiki / Dictionary / Knowledge base project in a breath.
 
 == Description ==
-[Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) Lite is a state of the art [WordPress encyclopedia / lexicon / glossary / wiki / dictionary plugin](http://dennishoppe.de/en/wordpress-plugins/encyclopedia). It enables you to create, manage and present a knowledge base. Completely coalesced with your WordPress and fully compatible with all the cool publishing tools you like.
+[Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) is the state of the art [WordPress encyclopedia / lexicon / glossary / wiki / dictionary plugin](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) which enables you to create, manage and present a knowledge base, completely coalesced with your WordPress and fully compatible with all the cool publishing tools you like. Really!
 
-In this edition of the plugin you can create a small lexicon. On several places in the plugin you will find a notice that this function is included in the [Pro Version](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) only.
+Enjoy the easy way to manage your contents with WordPress in combination with a whole bunch of smart features like automatically term linking in your websites contents. Additionally an own glossary gives search engines more content which results in better rankings for you!
 
-= Main features =
+= Features =
 * Create, manage and structure your terms as [encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia), lexicon, glossary, Wiki, dictionary or knowledge base
 * Use tags and categories¹ to classify your terms
 * Automatic association of related terms
+* Set location and number of related terms¹
 * Automatic linking of terms in post and page contents
+* Select the content types (pages, posts, media, custom posts types) where the terms should be linked automatically¹
 * Completely translatable - .pot file is included
-* Supports the WordPress Theme Template hierarchy
+* Supports WPML flawless and enables you to create a multilingual knowledge base
+* Already available in German, French, Spanish, Polish, Indonesian, Norwegian
+* Supports the WordPress theme template hierarchy
 * Supports user defined HTML templates
+* Supports thumbnails and comments²
 * Supports WordPress user rights and capabilities¹
-* Supports RSS Feeds
+* Supports RSS feeds
 * Clean and intuitive user interface
+* Encyclopedia search widget for exclusive searching in encyclopedia or glossary terms
+* Auto-complete and term suggestions for search phrases¹
+* Single page for every glossary term
+* Automatic generated and alphabetically sorted term archive
+* Prefix filter (A|B|C...X|Y|Z) above single page and archive page content which allows a precise, letter-by-letter term selection
+* Optional hiding of the letter navigation
 * Multiple Widgets to display the terms and taxonomies of your [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia)
-* No ads or brandings anywhere - perfect white label solution¹
+* Personal one-on-one real-time support by the developer¹
+* No ads or branding anywhere - perfect white label solution¹
 
-¹ Available in [Encyclopedia Pro](http://dennishoppe.de/en/wordpress-plugins/encyclopedia)
+¹ Available in [Encyclopedia Pro](http://dennishoppe.de/en/wordpress-plugins/encyclopedia)<br>
+² For this feature your theme needs to support it and the functions must be enabled on the Encyclopedia settings page.
 
+
+= Getting started =
+1. View [Installation guide on WordPress.org](https://wordpress.org/plugins/encyclopedia-lexicon-glossary-wiki-dictionary/installation/)
+1. View [Frequently Asked Questions on WordPress.org](https://wordpress.org/plugins/encyclopedia-lexicon-glossary-wiki-dictionary/faq/)
+1. View the [Encyclopedia Pro documentation](http://dennishoppe.de/en/wordpress-plugins/encyclopedia)
+1. Get exclusive [personal one-on-one support](http://dennishoppe.de/en/support)
 
 = Settings =
-You can find the settings page in WP Admin Panel » Settings » [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia).
+You can find the settings page in your Dashboard -> Settings -> [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia).
 
 
 = Template files =
 All plugin outputs can be changed via user defined HTML templates. Just put the templates you want to overwrite inside your theme folder (no matter if parent theme or child theme). You can find the default templates in the plugin folder in "templates/".
 [You can find a list of the available templates here.](http://dennishoppe.de/en/wordpress-plugins/encyclopedia#templates) *Please do not modify the original templates! You would lose all your modifications when updating the plugin!*
-
-
-= Limitations =
-The most features are available but you cannot select every option. You will find a small notice for each unavailable option on the settings page. The maximal number of encyclopedia terms is limited to twelve.
 
 
 = Questions / Support requests =
@@ -71,28 +86,47 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 * Thats it. Thank you! =)
 
 
+= Limitations =
+The most features are available but you cannot select every option. You will find a small notice for each unavailable option on the settings page. The maximal number of encyclopedia terms is limited to twelve.
+
+
 == Installation ==
 
 = Minimum Requirements =
-
-* WordPress 3.8 or greater
+* WordPress 3.6 or greater
 * PHP version 5.3 or greater
 * MySQL version 5.0 or greater
 
 = Automatic installation =
-
 Automatic installation is the easiest option as WordPress handles the file transfers itself and you do not need to leave your web browser. To do an automatic install of Encyclopedia, log in to your WordPress dashboard, navigate to the Plugins menu and click "Add New".
 
 In the search field type "Encyclopedia" and click "Search Plugins". Once you have found my plugin you can view details about it such as the point release, rating and description. Most importantly of course, you can install it by simply clicking "Install Now".
 
 = Manual installation =
-
-The manual installation method involves downloading the plugin and uploading it to your webserver via your favourite FTP application. The WordPress codex contains [instructions on how to do this here](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
+The manual installation method involves downloading the plugin and uploading it to your web server via your favorite FTP application. The WordPress codex contains [instructions on how to do this here](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
 
 = Updating =
-
 Automatic updates should work like a charm; as always though, ensure you backup your site just in case.
 
+== Frequently Asked Questions ==
+
+= How do I embed the term archive page in my website? =
+At Encyclopedia settings page (Dashboard -> Settings -> Encyclopedia) you will find the archive link for your Encyclopedia in the right sidebar box named "Archive URL". Copy the first link and paste it anywhere on your website, for example in a menu or a sidebar widget. Use the second link if you want to embed an RSS feed for Encyclopedia archive.
+
+= How do I create relations between my Encyclopedia terms? =
+To create relations between your terms you need to classify your terms by using tags.
+
+= Can Encyclopedia display and sort terms in other than Latin characters? =
+Yes, Encyclopedia can handle every existing character. All string are handled as UTF8. So it works for Arabian, Russian, Chinese, Turkish, and all other UTF8 compliant languages.
+
+= Is it possible to search for Encyclopedia terms only? =
+Yes, it is. For this purpose place the "Encyclopedia Search" Widget in a sidebar of your choice. The search result will display Encyclopedia terms only.
+
+= What can I do when I have problems with installing or setting up the Encyclopedia? =
+First of all read the installation guide on this site. Follow the guide step by step. If you do so and still have problems, there could be an incompatibility with another plugin: Deactivate all other plugins, try to install/set up Encyclopedia again. If it works re-activate plugin by plugin again to see which one causes the problem. If you need personal assistance or coaching or if you want us to install and set up Encyclopedia on your website, please contact us via [support form](http://dennishoppe.de/en/support) on our website (this is a business service and you need to buy the support package to make use of it).
+
+= Does Encyclopedia display tool tips when hovering linked terms in my contents? =
+Maybe: The linked encyclopedia terms have a title tags which displays the excerpt of the term description. If you hover it with your mouse you can see it. If your theme supports tool tips it will show the term description as tool tip. If you need this implemented please use our [support form](http://dennishoppe.de/en/support).
 
 == Screenshots ==
 01. Example Archive page in TwentyTwelve Theme
@@ -100,7 +134,7 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 03. Encyclopedia tags
 04. Edit screen of an encyclopedia tag
 05. Edit screen of an encyclopedia term
-06. Encyclopedia items in your WP menues
+06. Encyclopedia items in your WP menus
 07. Encyclopedia options page
 08. Encyclopedia "Related terms" widget
 09. Encyclopedia Taxonomy widget
@@ -118,7 +152,7 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 * Added WPML Workaround for translated post type slugs
 
 = 1.5.10 =
-* Changed the behaviour of the prefix filter: It works taxonomy sensitive now
+* Changed the behavior of the prefix filter: It works taxonomy sensitive now
 * Renamed template "encyclopedia-term-filter" to "encyclopedia-prefix-filter"
 
 = 1.5.9.1 =
@@ -167,10 +201,10 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 * Updates custom style sheets for WP default themes
 
 = 1.4.14 =
-* Added hebrew and turkish translation files
+* Added Hebrew and Turkish translation files
 
 = 1.4.13 =
-* Fixed: Terms will not link to itself in theier post contents anymore
+* Fixed: Terms will not link to itself in their post contents anymore
 
 = 1.4.12 =
 * Fixed: Broken iFrame tags in post contents
@@ -193,7 +227,7 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 
 = 1.4.6 =
 * Added term excerpt as link title for auto linked terms
-* Changed the hierachical property of the encyclopedia term to false
+* Changed the hierarchical property of the encyclopedia term to false
 
 = 1.4.5 =
 * Fixed: post_title_like works now without using the ignore_filter_request parameter
@@ -239,7 +273,7 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 * Fixed an encoding bug in the auto linking feature
 
 = 1.3.7 =
-* Added spanish translation by [Fátima Da Silva](http://www.fcdsbtraducciones.com/).
+* Added Spanish translation by [Fátima Da Silva](http://www.fcdsbtraducciones.com/).
 * Added PHP 5.4 and lower patch: Set UTF8 encoding for HTMLEntities.
 
 = 1.3.6 =
@@ -249,7 +283,7 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 * Made Taxonomy slugs translatable
 
 = 1.3.4 =
-* Fixed a small issue which occures the appearance of the term filter on taxonomy archives
+* Fixed a small issue which occurs the appearance of the term filter on taxonomy archives
 * Added a management column for each taxonomy to the encyclopedia term management page
 
 = 1.3.3 =
@@ -267,7 +301,7 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 * Added Search Widget
 
 = 1.2.8 =
-* Improved filter navigation (faster!!!)
+* Improved prefix filter (faster!)
 * Improved multibyte support
 
 = 1.2.7 =
@@ -287,7 +321,7 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 
 = 1.2.3 =
 * Fixed the "order by" list in the cloud widget
-* Fixed some german translations
+* Fixed some German translations
 
 = 1.2.2 =
 * Added the "encyclopedia" class to all auto generated links
