@@ -15,41 +15,68 @@ Supercharged tool to build your own awesome Glossary / Encyclopedia / Lexicon / 
 
 Enjoy the easy way to manage your contents with WordPress in combination with a whole bunch of smart features like automatically term linking in your websites contents. Additionally an own glossary gives search engines more content which results in better rankings for you!
 
-= Features =
-* Create, manage and structure your terms as [encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia), lexicon, glossary, Wiki, dictionary or knowledge base
-* Use tags and categories¹ to classify your terms
-* Automatic association of related terms
-* Set location and number of related terms¹
-* Automatic linking of terms in post and page contents
-* Select the content types (pages, posts, media, custom posts types) where the terms should be linked automatically¹
-* Completely translatable - .pot file is included
-* Supports WPML flawless and enables you to create a multilingual knowledge base
-* Already available in German, French, Spanish, Polish, Indonesian, Norwegian
-* Supports the WordPress theme template hierarchy
-* Supports user defined HTML templates
-* Supports thumbnails and comments²
-* Supports WordPress user rights and capabilities¹
-* Supports RSS feeds
-* Clean and intuitive user interface
-* Encyclopedia search widget for exclusive searching in encyclopedia or glossary terms
-* Auto-complete and term suggestions for search phrases¹
-* Single page for every glossary term
-* Automatic generated and alphabetically sorted term archive
-* Prefix filter (A|B|C...X|Y|Z) above single page and archive page content which allows a precise, letter-by-letter term selection
-* Optional hiding of the letter navigation
-* Multiple Widgets to display the terms and taxonomies of your [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia)
-* Personal one-on-one real-time support by the developer¹
-* No ads or branding anywhere - perfect white label solution¹
+> #### Features
+> * Create, manage and structure your terms as [encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia), lexicon, glossary, Wiki, dictionary or knowledge base
+> * Automatically generated index page with all terms, sorted alphabetically
+> * Every term has its own page and unique URL
+> * SEO conform URL structure
+> * Tags and categories¹ to classify your terms (both tags and categories are disjunct from your post tags and post categories)
+> * Prefix filter (A|B|C...X|Y|Z) above single page and archive page content which allows a precise, letter-by-letter term filtering
+> * Works with Latin, Arabian, Russian, Chinese, Turkish, and all other UTF8 compliant languages!
+> * Automatic association of related terms (based on common tags)
+> * Automatic linking of all your terms appearing in your post and page contents (cross linking)
+> * You can define the target of the links of the automatically linked terms
+> * Selectable content types (pages, posts, media, custom posts types) in which the terms should be linked automatically¹
+> * Completely translatable - .pot file is included
+> * Already available in German, French, Spanish, Polish, Indonesian, Norwegian
+> * Supports WPML flawless and enables you to create a multilingual knowledge base
+> * Supports the WordPress theme template hierarchy and the parent-child-theme paradigm
+> * Supports user defined HTML templates
+> * Supports revisions for your terms – perfect if you have multiple authors
+> * Supports term comments²
+> * Supports featured images as term thumbnails²
+> * Supports excerpts for your entered terms (the same way you already know from regular posts)
+> * Supports WordPress user rights and capabilities¹
+> * Supports the WordPress menus and enables you to add all components of your encyclopedia to any menu
+> * Supports RSS feeds for the index page and for the comments
+> * Clean and intuitive user interface
+> * Flawless integration of Auto, Video, Multimedia elements and shortcodes in the content of your terms
+> * Search function for exclusive searching in encyclopedia or glossary terms
+> * Widget to display the exclusive encyclopedia search in the sidebar
+> * Auto-complete and term suggestions for search phrases¹
+> * Automatic redirect of a user to the term page if he searches for an exact term title
+> * Widget to display the terms in your sidebar
+> * Widget to display the tag and categories of your [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) in the sidebar
+> * Includes a bunch of filter to give you the control of the behavior of this piece of code
+> * Import and export directly via the official "[WordPress Importer](https://wordpress.org/plugins/wordpress-importer/)" by Automattic
+> * Working great with WordPress Multisite
+> * Personal one-on-one real-time support by the developer¹
+> * No ads or branding anywhere - perfect white label solution¹
 
 ¹ Available in [Encyclopedia Pro](http://dennishoppe.de/en/wordpress-plugins/encyclopedia)<br>
 ² For this feature your theme needs to support it and the functions must be enabled on the Encyclopedia settings page.
 
+= Use cases =
+* Dictionary		- Create a dictionary of specifically used terms on your site.
+* Tooltip		- Add links and title description to predefined terms that are contained in your site.
+* Knowledge base	- Create a knowledge base of useful terms and definitions.
+* Encyclopedia	- Build an internal encyclopedia for your site.
+* Synonyms		- Keep and displays synonyms of terms that you are using
+* Lexicon		- Build a lexicon of terms.
+* Vocabulary	- Build a vocabulary of custom words and expressions.
+* Explanations	- Explain the meanings of words in your posts or pages.
+* Translate		- Translate terms and definitions into any defined language using Google Translate.
+* Wikipedia		- Add Wikipedia content to your site.
+* YouTube/Vimeo	- Show YouTube / Vimeo videos in your terms.
+* Music		- Include mp3 voice or music file for each term.
 
-= Getting started =
+
+= Getting started / First aid =
 1. View [Installation guide on WordPress.org](https://wordpress.org/plugins/encyclopedia-lexicon-glossary-wiki-dictionary/installation/)
 1. View [Frequently Asked Questions on WordPress.org](https://wordpress.org/plugins/encyclopedia-lexicon-glossary-wiki-dictionary/faq/)
 1. View the [Encyclopedia Pro documentation](http://dennishoppe.de/en/wordpress-plugins/encyclopedia)
 1. Get exclusive [personal one-on-one support](http://dennishoppe.de/en/support)
+
 
 = Settings =
 You can find the settings page in your Dashboard -> Settings -> [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia).
@@ -117,7 +144,7 @@ At Encyclopedia settings page (Dashboard -> Settings -> Encyclopedia) you will f
 To create relations between your terms you need to classify your terms by using tags.
 
 = Can Encyclopedia display and sort terms in other than Latin characters? =
-Yes, Encyclopedia can handle every existing character. All string are handled as UTF8. So it works for Arabian, Russian, Chinese, Turkish, and all other UTF8 compliant languages.
+Yes, Encyclopedia can handle every existing character. All strings are handled as UTF8. So it works for Arabian, Russian, Chinese, Turkish, and all other UTF8 compliant languages.
 
 = Is it possible to search for Encyclopedia terms only? =
 Yes, it is. For this purpose place the "Encyclopedia Search" Widget in a sidebar of your choice. The search result will display Encyclopedia terms only.
@@ -126,7 +153,7 @@ Yes, it is. For this purpose place the "Encyclopedia Search" Widget in a sidebar
 First of all read the installation guide on this site. Follow the guide step by step. If you do so and still have problems, there could be an incompatibility with another plugin: Deactivate all other plugins, try to install/set up Encyclopedia again. If it works re-activate plugin by plugin again to see which one causes the problem. If you need personal assistance or coaching or if you want us to install and set up Encyclopedia on your website, please contact us via [support form](http://dennishoppe.de/en/support) on our website (this is a business service and you need to buy the support package to make use of it).
 
 = Does Encyclopedia display tool tips when hovering linked terms in my contents? =
-Maybe: The linked encyclopedia terms have a title tags which displays the excerpt of the term description. If you hover it with your mouse you can see it. If your theme supports tool tips it will show the term description as tool tip. If you need this implemented please use our [support form](http://dennishoppe.de/en/support).
+Maybe: The linked encyclopedia terms have a title tag which displays the excerpt of the term description. If you hover it with your mouse you can see it. If your theme supports tool tips it will show the term description as tool tip. If you need this implemented please use our [support form](http://dennishoppe.de/en/support).
 
 == Screenshots ==
 01. Example Archive page in TwentyTwelve Theme
