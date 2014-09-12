@@ -16,7 +16,7 @@ Supercharged tool to build your own awesome Glossary / Encyclopedia / Lexicon / 
 Enjoy the easy way to manage your contents with WordPress in combination with a whole bunch of smart features like automatically term linking in your websites contents. Additionally an own glossary gives search engines more content which results in better rankings for you!
 
 > #### Features
-> * Create, manage and structure your terms as [encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia), lexicon, glossary, Wiki, dictionary or knowledge base
+> * Create, manage and organize your terms as [encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia), lexicon, glossary, Wiki, dictionary or knowledge base
 > * Automatically generated index page with all terms, sorted alphabetically
 > * Every term has its own page and unique URL
 > * SEO conform URL structure
