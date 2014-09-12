@@ -40,7 +40,7 @@ Enjoy the easy way to manage your contents with WordPress in combination with a 
 > * Supports the WordPress menus and enables you to add all components of your encyclopedia to any menu
 > * Supports RSS feeds for the index page and for the comments
 > * Clean and intuitive user interface
-> * Flawless integration of Auto, Video, Multimedia elements and shortcodes in the content of your terms
+> * Flawless integration of audio, video, multimedia elements and shortcodes in the content of your terms
 > * Search function for exclusive searching in encyclopedia or glossary terms
 > * Widget to display the exclusive encyclopedia search in the sidebar
 > * Auto-complete and term suggestions for search phrases¹
