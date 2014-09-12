@@ -57,18 +57,18 @@ Enjoy the easy way to manage your contents with WordPress in combination with a 
 ² For this feature your theme needs to support it and the functions must be enabled on the Encyclopedia settings page.
 
 = Use cases =
-* *Dictionary*		- Create a dictionary of specifically used terms on your site.
-* *Tooltip*			- Add links and title description to predefined terms that are contained in your site.
-* *Knowledge base*		- Create a knowledge base of useful terms and definitions.
-* *Encyclopedia*		- Build an internal encyclopedia for your site.
-* *Synonyms*			- Keep and displays synonyms of terms that you are using.
-* *Lexicon*			- Build a lexicon of terms.
-* *Vocabulary*		- Build a vocabulary of custom words and expressions.
-* *Explanations*		- Explain the meanings of words in your posts or pages.
-* *Translate	*		- Translate terms and definitions into any defined language using Google Translate.
-* *Wikipedia	*		- Add Wikipedia content to your site.
-* *YouTube/Vimeo*		- Show YouTube / Vimeo videos in your terms.
-* *Music*			- Include mp3 voice or music file for each term.
+* **Dictionary**		- Create a dictionary of specifically used terms on your site.
+* **Tooltip**		- Add links and title description to predefined terms that are contained in your site.
+* **Knowledge base**	- Create a knowledge base of useful terms and definitions.
+* **Encyclopedia**		- Build an internal encyclopedia for your site.
+* **Synonyms**		- Keep and displays synonyms of terms that you are using.
+* **Lexicon**		- Build a lexicon of terms.
+* **Vocabulary**		- Build a vocabulary of custom words and expressions.
+* **Explanations**		- Explain the meanings of words in your posts or pages.
+* **Translate**		- Translate terms and definitions into any defined language using Google Translate.
+* **Wikipedia**		- Add Wikipedia content to your site.
+* **YouTube/Vimeo**	- Show YouTube / Vimeo videos in your terms.
+* **Music**			- Include mp3 voice or music file for each term.
 
 
 = Getting started / First aid =
