@@ -11,13 +11,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Supercharged tool to build your own awesome Glossary / Encyclopedia / Lexicon / Wiki / Dictionary / Knowledge base project in a breath.
 
 == Description ==
-[Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) is *the* state of the art [WordPress encyclopedia / lexicon / glossary / wiki / dictionary plugin](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) which enables you to create, manage and present a knowledge base, completely fused in your WordPress and fully compatible with all the cool publishing tools you like. Really!
+[Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) is *the* state of the art **[WordPress encyclopedia / lexicon / glossary / wiki / dictionary plugin](http://dennishoppe.de/en/wordpress-plugins/encyclopedia)** which enables you to create, manage and present a knowledge base, completely fused in your WordPress and fully compatible with all the cool publishing tools you like. Really!
 
 Enjoy the easy way to manage your contents with WordPress in combination with a whole bunch of smart features like automatically term linking in your websites contents. Additionally an own glossary gives search engines more content which results in better rankings for you!
 
+> #### Kick-start
+> Read the feature list below or [take an eye on the screenshots](https://wordpress.org/plugins/encyclopedia-lexicon-glossary-wiki-dictionary/screenshots/)!
+
 = Facts &amp; Features =
-* Manage and organize your terms as [encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia), lexicon, glossary, Wiki, dictionary or knowledge base
-* Automatically generated index page with all terms, sorted alphabetically, with prefix filter on top (optional)
+* Manage and organize your terms as **[encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia), lexicon, glossary, Wiki, dictionary or knowledge base**
+* Automatically generated **index page with all terms**, sorted alphabetically, with prefix filter on top (optional)
 * Every term has its own page with unique URL
 * **SEO conform** URL structure for all kind of pages
 * **Tags and categories**¹ to classify your terms (both tags and categories are disjunct from your post tags and post categories)
@@ -53,8 +56,8 @@ Enjoy the easy way to manage your contents with WordPress in combination with a 
 * Personal **one-on-one real-time support** by the developer¹
 * No ads or branding anywhere - perfect white label solution¹
 
-¹ Available in [Encyclopedia Pro](http://dennishoppe.de/en/wordpress-plugins/encyclopedia)<br>
-² Your theme needs to support this, too
+¹ Available in [Encyclopedia Pro](http://dennishoppe.de/en/wordpress-plugins/encyclopedia).<br>
+² Your theme needs to support this too.
 
 = Use cases =
 * **Dictionary**		- Create a dictionary of specifically used terms on your site.
@@ -113,7 +116,7 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 * Thats it. Thank you! =)
 
 
-= Limitations =
+= Limitations of the lite version =
 The most features are available but you cannot select every option. You will find a small notice for each unavailable option on the settings page. The maximal number of encyclopedia terms is limited to twelve.
 
 
