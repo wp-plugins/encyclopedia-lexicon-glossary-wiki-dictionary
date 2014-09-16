@@ -11,15 +11,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Supercharged tool to build your own awesome Glossary / Encyclopedia / Lexicon / Wiki / Dictionary / Knowledge base project in a breath.
 
 == Description ==
-[Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) is *the* state of the art **[WordPress encyclopedia / lexicon / glossary / wiki / dictionary plugin](http://dennishoppe.de/en/wordpress-plugins/encyclopedia)** which enables you to create, manage and present a knowledge base, completely fused in your WordPress and fully compatible with all the cool publishing tools you like. Really!
+Encyclopedia is *the* state of the art **WordPress encyclopedia / lexicon / glossary / wiki / dictionary plugin** which enables you to create, manage and present a knowledge base, completely fused in your WordPress and fully compatible with all the cool publishing tools you like. Really!
 
 Enjoy the easy way to manage your contents with WordPress in combination with a whole bunch of smart features like automatically term linking in your websites contents. Additionally an own glossary gives search engines more content which results in better rankings for you!
 
-> #### Kick-start
+> #### Kick-Start
 > Read the feature list below or [take an eye on the screenshots](https://wordpress.org/plugins/encyclopedia-lexicon-glossary-wiki-dictionary/screenshots/)!
 
 = Facts &amp; Features =
-* Manage and organize your terms as **[encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia), lexicon, glossary, Wiki, dictionary or knowledge base**
+* Manage and organize your terms as **encyclopedia, lexicon, glossary, Wiki, dictionary or knowledge base**
 * Automatically generated **index page with all terms**, sorted alphabetically, with prefix filter on top (optional)
 * Every term has its own page with unique URL
 * **SEO conform** URL structure for all kind of pages
@@ -49,7 +49,7 @@ Enjoy the easy way to manage your contents with WordPress in combination with a 
 * Auto-complete and term **suggestions for search phrases**¹
 * Automatic redirect of a user to the term page if he searches for an exact term title
 * Widget to display the terms in your sidebar
-* Widget to display the tag and categories of your [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) in the sidebar
+* Widget to display the tag and categories of your encyclopedia in the sidebar
 * Includes a **bunch of filters** to give you the control of the behavior of this piece of code
 * **Import and export** directly via the official "[WordPress Importer](https://wordpress.org/plugins/wordpress-importer/)" by Automattic Inc.
 * Works great with **WordPress Multisite**
@@ -82,16 +82,15 @@ Enjoy the easy way to manage your contents with WordPress in combination with a 
 
 
 = Settings =
-You can find the settings page in your Dashboard -> Settings -> [Encyclopedia](http://dennishoppe.de/en/wordpress-plugins/encyclopedia).
+You can find the settings page in your Dashboard -> Settings -> Encyclopedia.
 
 
 = Template files =
-All plugin outputs can be changed via user defined HTML templates. Just put the templates you want to overwrite inside your theme folder (no matter if parent theme or child theme). You can find the default templates in the plugin folder in "templates/".
-[You can find a list of the available templates here.](http://dennishoppe.de/en/wordpress-plugins/encyclopedia#templates) *Please do not modify the original templates! You would lose all your modifications when updating the plugin!*
+All plugin outputs can be changed via user defined HTML templates. Just put the templates you want to overwrite inside your theme folder (no matter if parent theme or child theme). You can find the default templates in the plugin folder in "templates/". You can find a list of the available template files in documentation of the pro version. *Please do not modify the original templates! You would lose all your modifications when updating the plugin!*
 
 
 = Questions / Support requests =
-Please use the support forum on WordPress.org for this version of the Plugin. For the [Premium Version](http://dennishoppe.de/en/wordpress-plugins/encyclopedia) there is a separate support package [available](http://dennishoppe.de/en/wordpress-plugins/encyclopedia). Of course you can hire me for consulting, support, programming and customizations at any time.
+Please use the support forum on WordPress.org for this version of the Plugin. For the Premium version there is a separate support package available. Of course you can hire me for consulting, support, programming and customizations at any time.
 
 
 = Language =
