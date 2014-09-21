@@ -1,23 +1,4 @@
 <?php
-/*
-Plugin Name: Encyclopedia Lite
-Plugin URI: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
-Description: Encyclopedia enables you to create your own encyclopedia, lexicon, glossary, wiki or dictionary.
-Version: 1.5.11
-Author: Dennis Hoppe
-Author URI: http://DennisHoppe.de
-*/
-
-# Load helper classes
-Include DirName(__FILE__).'/class.i18n.php';
-Include DirName(__FILE__).'/class.wpml.php';
-
-# Load Widgets
-Include DirName(__FILE__).'/wp-widget-encyclopedia-related-terms.php';
-Include DirName(__FILE__).'/wp-widget-encyclopedia-search.php';
-Include DirName(__FILE__).'/wp-widget-encyclopedia-taxonomies.php';
-Include DirName(__FILE__).'/wp-widget-encyclopedia-taxonomy-cloud.php';
-Include DirName(__FILE__).'/wp-widget-encyclopedia-terms.php';
 
 # Load Plugin Kernel
 class wp_plugin_encyclopedia {
@@ -63,6 +44,7 @@ class wp_plugin_encyclopedia {
     Add_Action('admin_init', Array($this, 'User_Creates_New_Term'));
     Add_Action('untrash_post', Array($this, 'User_Untrashes_Post'));
     Add_Action('admin_footer', Array($this, 'Print_Dashboard_JS'));
+    Add_Action('admin_bar_menu', Array($this, 'Filter_Admin_Bar_Menu'), 999);
 
     # Register Widgets
     Add_Action('widgets_init', Array($this,'Register_Widgets'));
@@ -744,5 +726,8 @@ class wp_plugin_encyclopedia {
     <?php EndIf;
   }
 
-} /* End of the Class */
-New wp_plugin_encyclopedia;
+  function Filter_Admin_Bar_Menu($admin_bar){
+    If (!$this->Check_Term_Count()) $admin_bar->Remove_Node(SPrintF('new-%s', $this->post_type));
+  }
+
+}

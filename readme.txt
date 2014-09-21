@@ -170,8 +170,15 @@ Maybe: The linked encyclopedia terms have a title tag which displays the excerpt
 10. Encyclopedia taxonomy cloud
 11. Encyclopedia term list
 
+== Upgrade Notice ==
+If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright that the plugin gets deactivated! Just reactivate it in the plugins section. All your terms and settings are safe!
+
 
 == Changelog ==
+
+= 1.5.12 =
+* Moved the plugin loader to a separate file
+* Added PHP warning if version is lower than 5.3
 
 = 1.5.11 =
 * Fixed multilingual Prefix filter
