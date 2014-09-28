@@ -401,7 +401,10 @@ class wp_plugin_encyclopedia {
 	}
 
   function Link_Terms($content){
-    Global $post;
+    Global $post, $wp_current_filter;
+
+    # If this is for the excerpt we bail out
+    If (In_Array('get_the_excerpt', $wp_current_filter)) return $content;
 
     $terms_query = New WP_Query(Array(
       'posts_per_page' => -1,

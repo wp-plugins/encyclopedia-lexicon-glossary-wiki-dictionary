@@ -176,6 +176,9 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 == Changelog ==
 
+= 1.5.13 =
+* Disabled auto link method call for excerpts
+
 = 1.5.12 =
 * Moved the plugin loader to a separate file
 * Added PHP warning if version is lower than 5.3
