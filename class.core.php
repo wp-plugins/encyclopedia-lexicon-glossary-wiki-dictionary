@@ -47,7 +47,7 @@ class wp_plugin_encyclopedia {
     Add_Action('admin_bar_menu', Array($this, 'Filter_Admin_Bar_Menu'), 999);
 
     # Register Widgets
-    Add_Action('widgets_init', Array($this,'Register_Widgets'));
+    Add_Action('widgets_init', Array($this, 'Register_Widgets'));
 
     # Shortcodes
     Add_Shortcode('encyclopedia_related_terms', Array($this, 'Shortcode_Related_Terms'));
