@@ -89,8 +89,8 @@ You can find the settings page in your Dashboard -> Settings -> Encyclopedia.
 All plugin outputs can be changed via user defined HTML templates. Just put the templates you want to overwrite inside your theme folder (no matter if parent theme or child theme). You can find the default templates in the plugin folder in "templates/". You can find a list of the available template files in documentation of the pro version. *Please do not modify the original templates! You would lose all your modifications when updating the plugin!*
 
 
-= Questions / Support requests =
-Please use the support forum on WordPress.org for this version of the Plugin. For the Premium version there is a separate support package available. Of course you can hire me for consulting, support, programming and customizations at any time.
+= Questions and support requests =
+Please use the support forum on WordPress.org only for this free lite version of the plugin. For the pro version there is a separate support package available. *Please do not use the WordPress.org support forum for questions about the pro version* or questions about my services! Of course you can hire me for consulting, support, programming and customizations at any time.
 
 
 = Language =
