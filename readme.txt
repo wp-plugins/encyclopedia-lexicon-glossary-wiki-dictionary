@@ -99,6 +99,7 @@ Please use the support forum on WordPress.org only for this free lite version of
 * [Forêts Anciennes](http://www.foretsanciennes.fr/encyclopedia/)
 * [Panorama.nl](http://www.panorama.nl/crimipedia)
 * [ManagementEntscheidungen.com](http://managemententscheidungen.com/glossar/)
+* [BetterHealthKare](http://betterhealthkare.com/dictionary/)
 
 
 = Language =
