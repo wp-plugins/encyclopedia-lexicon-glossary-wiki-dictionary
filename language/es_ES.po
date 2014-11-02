@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-18 11:49+0100\n"
+"POT-Creation-Date: 2014-11-02 21:56+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Fátima Da Silva <admin@fcdsbtraducciones.com>\n"
@@ -16,202 +16,202 @@ msgstr ""
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../wp-plugin-encyclopedia.php:150
+#: ../class.core.php:130
 msgid "Encyclopedia Options"
 msgstr "Opciones de Encyclopedia"
 
-#: ../wp-plugin-encyclopedia.php:151
+#: ../class.core.php:131
 msgid "Encyclopedia"
 msgstr "Encyclopedia"
 
-#: ../wp-plugin-encyclopedia.php:162
+#: ../class.core.php:142
 msgid "Taxonomies"
 msgstr "Taxonomías"
 
-#: ../wp-plugin-encyclopedia.php:163
+#: ../class.core.php:143
 #, fuzzy
 msgid "Archive page"
 msgstr "Página de archivos"
 
-#: ../wp-plugin-encyclopedia.php:164
+#: ../class.core.php:144
 #, fuzzy
-msgid "Search page"
+msgid "Search options"
 msgstr "Página de búsqueda"
 
-#: ../wp-plugin-encyclopedia.php:165
+#: ../class.core.php:145
 #, fuzzy
 msgid "Single page"
 msgstr "Página única"
 
-#: ../wp-plugin-encyclopedia.php:166
+#: ../class.core.php:146
 #, fuzzy
 msgid "Linked terms in contents"
 msgstr "Términos enlazados en los contenidos"
 
-#: ../wp-plugin-encyclopedia.php:167
-#: ../wp-plugin-encyclopedia.php:349
+#: ../class.core.php:147
+#: ../class.core.php:331
 msgid "Archive Url"
 msgstr "Url del archivo"
 
-#: ../wp-plugin-encyclopedia.php:261
+#: ../class.core.php:243
 msgid "Lexicon"
 msgstr "Lexicón"
 
-#: ../wp-plugin-encyclopedia.php:262
+#: ../class.core.php:244
 msgctxt "URL slug"
 msgid "lexicon"
 msgstr "lexicón"
 
-#: ../wp-plugin-encyclopedia.php:270
+#: ../class.core.php:252
 msgid "Term"
 msgstr "Término"
 
-#: ../wp-plugin-encyclopedia.php:271
+#: ../class.core.php:253
 msgid "Add Term"
 msgstr "Agregar término"
 
-#: ../wp-plugin-encyclopedia.php:272
+#: ../class.core.php:254
 msgid "New Term"
 msgstr "Término nuevo"
 
-#: ../wp-plugin-encyclopedia.php:273
+#: ../class.core.php:255
 msgid "Edit Term"
 msgstr "Editar término"
 
-#: ../wp-plugin-encyclopedia.php:274
+#: ../class.core.php:256
 msgid "View Term"
 msgstr "Ver término"
 
-#: ../wp-plugin-encyclopedia.php:275
+#: ../class.core.php:257
 msgid "Search Terms"
 msgstr "Buscar términos"
 
-#: ../wp-plugin-encyclopedia.php:276
+#: ../class.core.php:258
 msgid "No Terms found"
 msgstr "No se ha encontrado ningún término."
 
-#: ../wp-plugin-encyclopedia.php:277
+#: ../class.core.php:259
 msgid "No Terms found in Trash"
 msgstr "No se ha encontrado ningún término en la papelera."
 
-#: ../wp-plugin-encyclopedia.php:298
+#: ../class.core.php:280
 #, php-format
 msgid "Term updated. (<a href=\"%s\">View Term</a>)"
 msgstr "Término actualizado. (<a href=\"%s\">Ver término </a>)"
 
-#: ../wp-plugin-encyclopedia.php:301
+#: ../class.core.php:283
 msgid "Term updated."
 msgstr "Término actualizado."
 
-#: ../wp-plugin-encyclopedia.php:302
+#: ../class.core.php:284
 #, php-format
 msgid "Term restored to revision from %s"
 msgstr "Desde %s se ha recuperado el término para revisarlo. "
 
-#: ../wp-plugin-encyclopedia.php:303
+#: ../class.core.php:285
 #, php-format
 msgid "Term published. (<a href=\"%s\">View Term</a>)"
 msgstr "Término publicado. (<a href=\"%s\">Ver término</a>)"
 
-#: ../wp-plugin-encyclopedia.php:304
+#: ../class.core.php:286
 msgid "Term saved."
 msgstr "Término guardado."
 
-#: ../wp-plugin-encyclopedia.php:305
+#: ../class.core.php:287
 msgid "Term submitted."
 msgstr "Término enviado."
 
-#: ../wp-plugin-encyclopedia.php:306
+#: ../class.core.php:288
 #, php-format
 msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 msgstr "Término programado. (<a target=\"_blank\" href=\"%s\">Ver término</a>)"
 
-#: ../wp-plugin-encyclopedia.php:307
+#: ../class.core.php:289
 #, php-format
 msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
 msgstr "Borrador actualizado. (<a target=\"_blank\" href=\"%s\">Término anterior </a>)"
 
-#: ../wp-plugin-encyclopedia.php:314
+#: ../class.core.php:296
 msgid "Encyclopedia Tags"
 msgstr "Etiquetas de Encyclopedia"
 
-#: ../wp-plugin-encyclopedia.php:316
+#: ../class.core.php:298
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: ../wp-plugin-encyclopedia.php:317
+#: ../class.core.php:299
 msgid "Tag"
 msgstr "Etiqueta"
 
-#: ../wp-plugin-encyclopedia.php:318
+#: ../class.core.php:300
 msgid "Search Tags"
 msgstr "Buscar etiquetas"
 
-#: ../wp-plugin-encyclopedia.php:319
+#: ../class.core.php:301
 msgid "All Tags"
 msgstr "Todas las etiquetas"
 
-#: ../wp-plugin-encyclopedia.php:320
+#: ../class.core.php:302
 msgid "Edit Tag"
 msgstr "Editar etiqueta"
 
-#: ../wp-plugin-encyclopedia.php:321
+#: ../class.core.php:303
 msgid "Update Tag"
 msgstr "Actualizar etiqueta"
 
-#: ../wp-plugin-encyclopedia.php:322
+#: ../class.core.php:304
 msgid "Add New Tag"
 msgstr "Añadir una nueva etiqueta"
 
-#: ../wp-plugin-encyclopedia.php:323
+#: ../class.core.php:305
 msgid "New Tag"
 msgstr "Nueva etiqueta"
 
-#: ../wp-plugin-encyclopedia.php:331
+#: ../class.core.php:313
 #, php-format
 msgctxt "URL slug"
 msgid "%s-tag"
 msgstr "%s-tag"
 
-#: ../wp-plugin-encyclopedia.php:352
+#: ../class.core.php:334
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "Este es el URL correspondiente al archivo de este %s."
 
-#: ../wp-plugin-encyclopedia.php:356
+#: ../class.core.php:338
 msgid "Archive Feed"
 msgstr "Archivo de comentarios"
 
-#: ../wp-plugin-encyclopedia.php:359
+#: ../class.core.php:341
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "Este es el URL correspondiente al comentario del archivo de este %s."
 
-#: ../wp-plugin-encyclopedia.php:681
+#: ../class.core.php:677
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:683
+#: ../class.core.php:679
 #, fuzzy, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr "Lo sentimos mucho, esta función está disponible únicamente en la <a href=\"%s\" target=\"_blank\">Versión Pro de Encyclopedia </a>."
 
-#: ../wp-plugin-encyclopedia.php:684
+#: ../class.core.php:680
 #, php-format
 msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:685
+#: ../class.core.php:681
 #, php-format
 msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:691
+#: ../class.core.php:687
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr ""
 
-#: ../wp-plugin-encyclopedia.php:722
+#: ../class.core.php:718
 msgid "&laquo; Back to your terms"
 msgstr "&laquo; Regresar a sus términos"
 
@@ -371,6 +371,7 @@ msgid "This option effects all encyclopedia archive pages."
 msgstr "Esta opción modifica todas las páginas del archivo de Encyclopedia."
 
 #: ../options-page/box-archive-page.php:13
+#: ../options-page/box-single-page.php:23
 #, fuzzy
 msgid "Prefix filter"
 msgstr "Filtro del término"
@@ -379,6 +380,17 @@ msgstr "Filtro del término"
 #, fuzzy
 msgid "Display a prefix filter above the encyclopedia archive automatically or not."
 msgstr "Muestra de forma automática o no el filtro del término encima del archivo de Encyclopedia."
+
+#: ../options-page/box-archive-page.php:24
+#: ../options-page/box-single-page.php:34
+#, fuzzy
+msgid "Prefix filter depth"
+msgstr "Filtro del término"
+
+#: ../options-page/box-archive-page.php:27
+#: ../options-page/box-single-page.php:37
+msgid "The depth of the prefix filter is usually the number of lines with prefixes which are shown."
+msgstr ""
 
 #: ../options-page/box-taxonomies.php:3
 msgid "Activate categories"

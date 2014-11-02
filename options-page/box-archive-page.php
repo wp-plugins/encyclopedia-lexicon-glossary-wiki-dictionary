@@ -20,6 +20,14 @@
 	</td>
 </tr>
 
+<tr>
+	<th><label for="prefix_filter_archive_depth"><?php Echo $this->t('Prefix filter depth') ?></label></th>
+	<td>
+    <input type="number" name="prefix_filter_archive_depth" id="prefix_filter_archive_depth" value="<?php Echo $this->Get_Option('prefix_filter_archive_depth') ?>" class="small-text"><br>
+    <small><?php Echo $this->t('The depth of the prefix filter is usually the number of lines with prefixes which are shown.') ?></small>
+  </td>
+</tr>
+
 </table>
 
 <p>

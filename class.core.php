@@ -141,7 +141,7 @@ class wp_plugin_encyclopedia {
     $this->Add_Option_Box(__('General'), DirName(__FILE__).'/options-page/box-general.php');
     $this->Add_Option_Box($this->t('Taxonomies'), DirName(__FILE__).'/options-page/box-taxonomies.php');
     $this->Add_Option_Box($this->t('Archive page'), DirName(__FILE__).'/options-page/box-archive-page.php');
-    $this->Add_Option_Box($this->t('Search page'), DirName(__FILE__).'/options-page/box-search.php');
+    $this->Add_Option_Box($this->t('Search options'), DirName(__FILE__).'/options-page/box-search.php');
     $this->Add_Option_Box($this->t('Single page'), DirName(__FILE__).'/options-page/box-single-page.php');
     $this->Add_Option_Box($this->t('Linked terms in contents'), DirName(__FILE__).'/options-page/box-linked-terms.php');
     $this->Add_Option_Box($this->t('Archive Url'), DirName(__FILE__).'/options-page/box-archive-link.php', 'side');
@@ -231,7 +231,9 @@ class wp_plugin_encyclopedia {
       'embed_default_style' => 'yes',
       'encyclopedia_tags' => 'yes',
       'prefix_filter_for_archives' => 'yes',
+      'prefix_filter_archive_depth' => 3,
       'prefix_filter_for_singulars' => 'yes',
+      'prefix_filter_singular_depth' => 3,
       'auto_link_title_length' => Apply_Filters('excerpt_length', 55)
     );
   }
@@ -503,8 +505,13 @@ class wp_plugin_encyclopedia {
       $is_archive_filter = $this->Is_Encyclopedia_Archive($query) && $this->Get_Option('prefix_filter_for_archives') == 'yes';
       $is_singular_filter = $query->Is_Singular($this->post_type) && $this->Get_Option('prefix_filter_for_singulars') == 'yes';
 
+      # Get the Filter depth
+      $filter_depth = False;
+      If ($is_archive_filter) $filter_depth = $this->Get_Option('prefix_filter_archive_depth');
+      ElseIf ($is_singular_filter) $filter_depth = $this->Get_Option('prefix_filter_singular_depth');
+
       If ($is_archive_filter || $is_singular_filter){
-        $this->Print_Prefix_Filter();
+        $this->Print_Prefix_Filter($filter_depth);
         $loop_already_started = True;
       }
     }
@@ -517,7 +524,7 @@ class wp_plugin_encyclopedia {
     return $tax;
   }
 
-  function Generate_Prefix_Filters(){
+  function Generate_Prefix_Filters($depth = False){
     # Get current Filter string
     $filter = RawUrlDecode(Get_Query_Var('filter'));
     If (!Empty($filter))
@@ -552,6 +559,9 @@ class wp_plugin_encyclopedia {
         );
 			}
 			$arr_filter[] = $arr_filter_line;
+
+      # Check filter depth limit
+      If ($depth && Count($arr_filter) >= $depth) return $arr_filter;
 		}
 
 		return $arr_filter;
@@ -572,8 +582,10 @@ class wp_plugin_encyclopedia {
       return Add_Query_Arg(Array('filter' => RawURLEncode($filter)), $base_url);
   }
 
-  function Print_Prefix_Filter(){
-    Echo $this->Load_Template('encyclopedia-prefix-filter.php', Array('filter' => $this->Generate_Prefix_Filters()));
+  function Print_Prefix_Filter($filter_depth = False){
+    Echo $this->Load_Template('encyclopedia-prefix-filter.php', Array(
+      'filter' => $this->Generate_Prefix_Filters($filter_depth)
+    ));
   }
 
   function Load_Template($template_name, $vars = Array()){
