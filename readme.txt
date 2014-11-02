@@ -92,15 +92,6 @@ All plugin outputs can be changed via user defined HTML templates. Just put the 
 = Questions and support requests =
 Please use the support forum on WordPress.org only for this free lite version of the plugin. For the pro version there is a separate support package available. *Please do not use the WordPress.org support forum for questions about the pro version* or questions about my services! Of course you can hire me for consulting, support, programming and customizations at any time.
 
-= Real life examples =
-* [OMOXX](http://www.omoxx.com/glossar/)
-* [Connect45+](http://www.connect45plus.de/glossar/)
-* [Website as Service](http://website-as-service.de/glossar)
-* [Forêts Anciennes](http://www.foretsanciennes.fr/encyclopedia/)
-* [Panorama.nl](http://www.panorama.nl/crimipedia)
-* [ManagementEntscheidungen.com](http://managemententscheidungen.com/glossar/)
-* [BetterHealthKare](http://betterhealthkare.com/dictionary/)
-
 
 = Language =
 * This Plugin is available in English.
@@ -122,6 +113,16 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 * Translate everything.
 * Send it via E-Mail to &lt; Mail [@t] [DennisHoppe](http://DennisHoppe.de/) [dot] de &gt;.
 * Thats it. Thank you! =)
+
+
+= Real life examples =
+* [OMOXX](http://www.omoxx.com/glossar/)
+* [Connect45+](http://www.connect45plus.de/glossar/)
+* [Website as Service](http://website-as-service.de/glossar)
+* [Forêts Anciennes](http://www.foretsanciennes.fr/encyclopedia/)
+* [Panorama.nl](http://www.panorama.nl/crimipedia)
+* [ManagementEntscheidungen.com](http://managemententscheidungen.com/glossar/)
+* [BetterHealthKare](http://betterhealthkare.com/dictionary/)
 
 
 = Limitations of the lite version =
