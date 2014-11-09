@@ -21,7 +21,7 @@ class wp_widget_encyclopedia_related_terms Extends WP_Widget {
   }
 
   function Default_Options(){
-    // Default settings
+    # Default settings
     return Array(
       'number'  => 5,
       'exclude' => False
@@ -31,11 +31,11 @@ class wp_widget_encyclopedia_related_terms Extends WP_Widget {
   function Load_Options($options){
     $options = (ARRAY) $options;
 
-    // Delete empty values
+    # Delete empty values
     ForEach ($options AS $key => $value)
       If (!$value) Unset($options[$key]);
 
-    // Load options
+    # Load options
     $this->arr_option = Array_Merge ($this->Default_Options(), $options);
   }
 
@@ -51,7 +51,7 @@ class wp_widget_encyclopedia_related_terms Extends WP_Widget {
   }
 
   function Form ($settings){
-    // Load options
+    # Load options
     $this->load_options ($settings); Unset ($settings);
     ?>
 
@@ -71,20 +71,22 @@ class wp_widget_encyclopedia_related_terms Extends WP_Widget {
   }
 
   function Widget ($args, $settings){
-    // Load options
+    # Load options
     $this->load_options ($settings);
 
-    // Load the Query
-    $term_query = $this->encyclopedia->Get_Tag_Related_Terms(Null, $this->get_option('number'));
-    If (!$term_query) return;
+    # Load the related terms
+    $related_terms = $this->encyclopedia->Get_Tag_Related_Terms(Array(
+      'number' => $this->Get_Option('number')
+    ));
+    If (!$related_terms) return;
 
-    // Display Widget
+    # Display Widget
     Echo $args['before_widget'];
-    Echo $args['before_title'] . Apply_Filters('widget_title', $this->get_option('title'), $settings, $this->id_base) . $args['after_title'];
-    Echo $this->encyclopedia->Load_Template('encyclopedia-related-terms-widget.php', Array('term_query' => $term_query));
+    Echo $args['before_title'] . Apply_Filters('widget_title', $this->Get_Option('title'), $settings, $this->id_base) . $args['after_title'];
+    Echo $this->encyclopedia->Load_Template('encyclopedia-related-terms-widget.php', Array('related_terms' => $related_terms));
     Echo $args['after_widget'];
 
-    // Reset Post data
+    # Reset Post data
     WP_Reset_Postdata();
   }
 
@@ -92,4 +94,4 @@ class wp_widget_encyclopedia_related_terms Extends WP_Widget {
     return $new_settings;
   }
 
-} /* End of Class */
+}
