@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia WordPress Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-02 21:53+0100\n"
+"POT-Creation-Date: 2014-11-09 17:07+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Erik Bolstad <erik.bolstad@nrk.no>\n"
@@ -35,9 +35,8 @@ msgid "Archive page"
 msgstr "Arkivside"
 
 #: ../class.core.php:144
-#, fuzzy
-msgid "Search options"
-msgstr "Søk i kategoriar"
+msgid "Search"
+msgstr "Søk"
 
 #: ../class.core.php:145
 msgid "Single page"
@@ -188,31 +187,31 @@ msgstr "Arkivstraum"
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "Dette er RSS-straumen til %s-arkivet."
 
-#: ../class.core.php:677
+#: ../class.core.php:684
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: ../class.core.php:679
+#: ../class.core.php:686
 #, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr ""
 
-#: ../class.core.php:680
+#: ../class.core.php:687
 #, php-format
 msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
 msgstr ""
 
-#: ../class.core.php:681
+#: ../class.core.php:688
 #, php-format
 msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
 msgstr ""
 
-#: ../class.core.php:687
+#: ../class.core.php:694
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr ""
 
-#: ../class.core.php:718
+#: ../class.core.php:725
 msgid "&laquo; Back to your terms"
 msgstr ""
 
@@ -583,6 +582,10 @@ msgid "The archive feed for your encyclopedia is: <a href=\"%1$s\" target=\"_bla
 msgstr "RSS-straumen for arkivet ditt er <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
 
 #, fuzzy
+#~ msgid "Search options"
+#~ msgstr "Søk i kategoriar"
+
+#, fuzzy
 #~ msgid "Search page"
 #~ msgstr "Søk i emneord"
 
@@ -591,9 +594,6 @@ msgstr "RSS-straumen for arkivet ditt er <a href=\"%1$s\" target=\"_blank\">%1$s
 #~ "types:"
 #~ msgstr ""
 #~ "Slå på automatisk lenking av oppføringar for fylgjande innhaldstyper:"
-
-#~ msgid "Search"
-#~ msgstr "Søk"
 
 #~ msgid "User rights"
 #~ msgstr "Brukartilgangar"

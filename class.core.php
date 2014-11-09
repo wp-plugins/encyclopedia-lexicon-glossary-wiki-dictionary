@@ -141,7 +141,7 @@ class wp_plugin_encyclopedia {
     $this->Add_Option_Box(__('General'), DirName(__FILE__).'/options-page/box-general.php');
     $this->Add_Option_Box($this->t('Taxonomies'), DirName(__FILE__).'/options-page/box-taxonomies.php');
     $this->Add_Option_Box($this->t('Archive page'), DirName(__FILE__).'/options-page/box-archive-page.php');
-    $this->Add_Option_Box($this->t('Search options'), DirName(__FILE__).'/options-page/box-search.php');
+    $this->Add_Option_Box($this->t('Search'), DirName(__FILE__).'/options-page/box-search.php');
     $this->Add_Option_Box($this->t('Single page'), DirName(__FILE__).'/options-page/box-single-page.php');
     $this->Add_Option_Box($this->t('Linked terms in contents'), DirName(__FILE__).'/options-page/box-linked-terms.php');
     $this->Add_Option_Box($this->t('Archive Url'), DirName(__FILE__).'/options-page/box-archive-link.php', 'side');
@@ -389,13 +389,7 @@ class wp_plugin_encyclopedia {
             $this->Get_Option('related_terms') != 'none' && # User can disable the auto append feature
             !post_password_required() # The user isn't allowed to read this post
       ){
-        $attributes = Array( 'max_terms' => $this->Get_Option('number_of_related_terms') );
-
-        If ($this->Get_Option('related_terms') == 'above')
-          $content = $this->Shortcode_Related_Terms($attributes) . $content;
-        Else
-          $content .= $this->Shortcode_Related_Terms($attributes);
-
+          $content .= $this->Shortcode_Related_Terms();
       }
 		}
 
@@ -535,7 +529,7 @@ class wp_plugin_encyclopedia {
       $str_filter = '';
 
     # Explode Filter string
-    $arr_current_filter = (!Empty($str_filter)) ? PReg_Split('/(?<!^)(?!$)/u', $str_filter) : Array();
+    $arr_current_filter = Empty($str_filter) ? Array() : PReg_Split('/(?<!^)(?!$)/u', $str_filter);
     Array_UnShift($arr_current_filter, '');
 
 		$arr_filter = Array(); # This will be the function result
@@ -625,19 +619,26 @@ class wp_plugin_encyclopedia {
     return $arr_filter;
 	}
 
-  function Get_Tag_Related_Terms($term_id = Null, $number = 10){
+  function Get_Tag_Related_Terms($arguments = Array()){
     Global $wpdb, $post;
 
-    If ($term_id == Null) $term_id = $post->ID;
+    # Load default arguments
+    $arguments = (Object) Array_Merge(Array(
+      'term_id' => $post->ID,
+      'number' => 10,
+      'taxonomy' => 'encyclopedia-tag'
+    ), $arguments);
+
+    # apply filter
+    $arguments = Apply_Filters('encyclopedia_tag_related_terms_arguments', $arguments);
 
     # Get the Tags
-    $arr_tags = WP_Get_Post_Terms($term_id, 'encyclopedia-tag');
+    $arr_tags = WP_Get_Post_Terms($arguments->term_id, $arguments->taxonomy);
     If(Empty($arr_tags)) return False;
 
     # Get term IDs
     $arr_term_ids = Array();
-    ForEach( $arr_tags as $taxonomy )
-      $arr_term_ids[] = $taxonomy->term_taxonomy_id;
+    ForEach( $arr_tags as $taxonomy ) $arr_term_ids[] = $taxonomy->term_taxonomy_id;
     $str_tag_list = Implode(',', $arr_term_ids);
 
     # The Query to get the related posts
@@ -647,12 +648,12 @@ class wp_plugin_encyclopedia {
                      {$wpdb->posts} AS posts
               WHERE  term_relationships.object_id = posts.id
               AND    term_relationships.term_taxonomy_id IN({$str_tag_list})
-              AND    posts.id != {$term_id}
+              AND    posts.id != {$arguments->term_id}
               AND    posts.post_status = 'publish'
               GROUP  BY term_relationships.object_id
               ORDER  BY common_tag_count DESC,
                      posts.post_date_gmt DESC
-              LIMIT  0, {$number}";
+              LIMIT  0, {$arguments->number}";
 
     # Put it in a WP_Query
     $query = New WP_Query();
@@ -665,11 +666,17 @@ class wp_plugin_encyclopedia {
     Else return $query;
   }
 
-	function Shortcode_Related_Terms($attributes = False){
+	function Shortcode_Related_Terms($attributes = Array()){
     $attributes = Array_Merge(Array(
-      'max_terms' => 10
+      'number' => 10
     ), (Array) $attributes);
-		return $this->Load_Template('encyclopedia-related-terms.php', Array('attributes' => $attributes));
+
+    $related_terms = $this->Get_Tag_Related_Terms($attributes);
+
+		return $this->Load_Template('encyclopedia-related-terms.php', Array(
+      'attributes' => $attributes,
+      'related_terms' => $related_terms
+    ));
 	}
 
   function Pro_Notice($message = 'feature', $output = True){

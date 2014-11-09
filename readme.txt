@@ -186,6 +186,11 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 == Changelog ==
 
+= 1.5.15 =
+* Added arguments filter for Get_Tag_Related_Terms()
+* Patched related-terms template
+* Moved the related entries to the end of the content by default
+
 = 1.5.14 =
 * Added the filter depth options for archive and single view
 

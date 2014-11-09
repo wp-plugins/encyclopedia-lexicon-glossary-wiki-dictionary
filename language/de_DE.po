@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia Lite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-02 21:50+0100\n"
+"POT-Creation-Date: 2014-11-09 17:06+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Dennis Hoppe <Mail@DennisHoppe.de>\n"
@@ -33,8 +33,8 @@ msgid "Archive page"
 msgstr "Übersichtsseite"
 
 #: ../class.core.php:144
-msgid "Search options"
-msgstr "Sucheinstellungen"
+msgid "Search"
+msgstr "Suche"
 
 #: ../class.core.php:145
 msgid "Single page"
@@ -183,31 +183,31 @@ msgstr "Archiv Feed"
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "Das ist die URL zum RSS Feed des %s-Archives."
 
-#: ../class.core.php:677
+#: ../class.core.php:684
 msgid "Upgrade to Pro"
 msgstr "Upgrade auf Pro"
 
-#: ../class.core.php:679
+#: ../class.core.php:686
 #, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr "Nur in <a href=\"%s\" target=\"_blank\">Encyclopedia Pro</a> verfügbar."
 
-#: ../class.core.php:680
+#: ../class.core.php:687
 #, php-format
 msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
 msgstr "Brauchen Sie eine spezielle Klassifizierung für Ihr Projekt? Kein Problem! <a href=\"%s\" target=\"_blank\">Fragen Sie einfach danach</a>."
 
-#: ../class.core.php:681
+#: ../class.core.php:688
 #, php-format
 msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
 msgstr "In der <a href=\"%s\" target=\"_blank\">Premium Version von Encyclopedia</a> können Sie unbegrenzt viele Einträge anlegen und viele weitere Funktionen nutzen."
 
-#: ../class.core.php:687
+#: ../class.core.php:694
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr "http://dennishoppe.de/wordpress-plugins/encyclopedia"
 
-#: ../class.core.php:718
+#: ../class.core.php:725
 msgid "&laquo; Back to your terms"
 msgstr "&laquo; Zurück zu den Einträgen"
 
@@ -568,6 +568,9 @@ msgstr "Der Archiv-Link für Ihre Enzyklopädie lautet: <a href=\"%1$s\" target=
 #, php-format
 msgid "The archive feed for your encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
 msgstr "Der Archiv-Link zum RSS Feed Ihrer Enzyklopädie lautet:<a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+
+#~ msgid "Search options"
+#~ msgstr "Sucheinstellungen"
 
 #~ msgid ""
 #~ "Enable automatically linked encyclopedia terms for the following content "
