@@ -123,6 +123,7 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 * [Panorama.nl](http://www.panorama.nl/crimipedia)
 * [ManagementEntscheidungen.com](http://managemententscheidungen.com/glossar/)
 * [BetterHealthKare](http://betterhealthkare.com/dictionary/)
+* [KFZ.net](http://www.kfz.net/lexikon/)
 
 
 = Limitations of the lite version =
