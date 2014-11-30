@@ -177,22 +177,26 @@ class wp_plugin_encyclopedia {
   function Add_Option_Box($title, $include_file, $column = 'main', $state = 'opened'){
     # Check the input
     If (!Is_File($include_file)) return False;
-    If ( $title == '' ) $title = '&nbsp;';
+    If (Empty($title)) $title = '&nbsp;';
 
     # Column (can be 'side' or 'main')
-    If ($column != '' && $column != Null && $column != 'main')
+    If ($column != 'main')
       $column = 'side';
     Else
       $column = 'main';
 
     # State (can be 'opened' or 'closed')
-    If ($state != '' && $state != Null && $state != 'opened')
+    If ($state != 'opened')
       $state = 'closed';
     Else
       $state = 'opened';
 
     # Add a new box
-    $this->arr_option_box[$column][] = Array('title' => $title, 'file' => $include_file, 'state' => $state);
+    $this->arr_option_box[$column][] = (Object) Array(
+      'title' => $title,
+      'file' => $include_file,
+      'state' => $state
+    );
   }
 
   function Get_Option($key = Null, $default = False){
