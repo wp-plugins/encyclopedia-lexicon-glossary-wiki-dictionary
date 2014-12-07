@@ -187,6 +187,13 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 == Changelog ==
 
+= 1.5.17 =
+* Fixed: concatenated terms can auto linked now
+* Permalinks will be rewritten on plugin acitvation now
+
+= 1.5.16 =
+* Fixed options page meta box handlers
+
 = 1.5.15 =
 * Added arguments filter for Get_Tag_Related_Terms()
 * Patched related-terms template

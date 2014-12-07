@@ -11,7 +11,7 @@ class wp_plugin_encyclopedia {
     $i18n, # Pointer to the translation helper object
     $wpml; # Pointer to the WPML helper object
 
-  function __construct(){
+  function __construct($plugin_file){
     # Read base
     $this->Load_Base_Url();
 
@@ -23,7 +23,7 @@ class wp_plugin_encyclopedia {
     $this->arr_option_box = Array( 'main' => Array(), 'side' => Array() );
 
     # Set Hooks
-    Register_Activation_Hook(__FILE__, Array($this, 'Plugin_Activation'));
+    Register_Activation_Hook($plugin_file, Array($this, 'Plugin_Activation'));
     Add_Action('init', Array($this, 'Load_Encyclopedia_Type'));
     Add_Action('admin_menu', Array($this, 'Add_Options_Page'));
     Add_Action('init', Array($this, 'Register_Post_Type'));
@@ -33,6 +33,8 @@ class wp_plugin_encyclopedia {
     Add_Action('loop_start', Array($this, 'Start_Loop'));
     Add_Filter('pre_get_posts', Array($this, 'Filter_Query'));
     Add_Filter('posts_where', Array($this, 'Filter_Posts_Where'), 10, 2);
+    Add_Filter('posts_fields', Array($this, 'Filter_Posts_Fields'), 10, 2);
+    Add_Filter('posts_orderby', Array($this, 'Filter_Posts_OrderBy'), 10, 2);
     Add_Filter('the_content', Array($this, 'Filter_Content'));
     Add_Filter('the_content', Array($this, 'Link_Terms'), 99);
     Add_Filter('nav_menu_meta_box_object', Array($this, 'Change_Taxonomy_Menu_Label'));
@@ -385,6 +387,22 @@ class wp_plugin_encyclopedia {
 			return $where;
 	}
 
+  function Filter_Posts_Fields($fields, $query){
+    Global $wpdb;
+
+    If ($query->Get('orderby') == 'post_title_length')
+      $fields .= ", LENGTH({$wpdb->posts}.post_title) post_title_length";
+
+    return $fields;
+  }
+
+  function Filter_Posts_OrderBy($orderby, $query){
+    If ($query->Get('orderby') == 'post_title_length')
+      $orderby = SPrintF('post_title_length %s', $query->Get('order'));
+
+    return $orderby;
+  }
+
 	function Filter_Content($content){
 		Global $post;
 		If ($post->post_type == $this->post_type && Is_Single($post->ID)){
@@ -407,11 +425,12 @@ class wp_plugin_encyclopedia {
     If (In_Array('get_the_excerpt', $wp_current_filter)) return $content;
 
     $terms_query = New WP_Query(Array(
-      'posts_per_page' => -1,
+      'nopaging' => True,
       'post_type' => $this->post_type,
       'post__not_in' => Array($post->ID),
       'ignore_filter_request' => True,
-      'ignore_sticky_posts' => True
+      'orderby' => 'post_title_length',
+      'order' => 'DESC'
     ));
 
     ForEach($terms_query->posts AS $term){
