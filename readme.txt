@@ -187,6 +187,10 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 == Changelog ==
 
+= 1.5.18 =
+* Fixed: Prefixfilter does not give any output if there are no filters
+* Fixed: Convert shortcode attributes to an array in every case
+
 = 1.5.17 =
 * Fixed: concatenated terms can auto linked now
 * Permalinks will be rewritten on plugin acitvation now

@@ -600,9 +600,12 @@ class wp_plugin_encyclopedia {
   }
 
   function Print_Prefix_Filter($filter_depth = False){
-    Echo $this->Load_Template('encyclopedia-prefix-filter.php', Array(
-      'filter' => $this->Generate_Prefix_Filters($filter_depth)
-    ));
+    $prefix_filter = $this->Generate_Prefix_Filters($filter_depth);
+
+    If (!Empty($prefix_filter))
+      Echo $this->Load_Template('encyclopedia-prefix-filter.php', Array('filter' => $prefix_filter));
+    Else
+      return False;
   }
 
   function Load_Template($template_name, $vars = Array()){
@@ -642,8 +645,10 @@ class wp_plugin_encyclopedia {
     return $arr_filter;
 	}
 
-  function Get_Tag_Related_Terms($arguments = Array()){
+  function Get_Tag_Related_Terms($arguments = Null){
     Global $wpdb, $post;
+
+    $arguments = Is_Array($arguments) ? $arguments : Array();
 
     # Load default arguments
     $arguments = (Object) Array_Merge(Array(
@@ -689,7 +694,9 @@ class wp_plugin_encyclopedia {
     Else return $query;
   }
 
-	function Shortcode_Related_Terms($attributes = Array()){
+	function Shortcode_Related_Terms($attributes = Null){
+    $attributes = Is_Array($attributes) ? $attributes : Array();
+
     $attributes = Array_Merge(Array(
       'number' => 10
     ), (Array) $attributes);
