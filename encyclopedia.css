@@ -1,42 +1,47 @@
 /* Default Themes: Remove useless Elements */
 /* Twenty Ten */
-html body.post-type-archive-encyclopedia div#wrapper.hfeed div#main div#container div#content h1.page-title,
-html body.post-type-archive-encyclopedia div#wrapper.hfeed div#main div#container div#content div.encyclopedia div.entry-meta,
-html body.post-type-archive-encyclopedia div#wrapper.hfeed div#main div#container div#content div.encyclopedia div.entry-utility span.cat-links,
-html body.post-type-archive-encyclopedia div#wrapper.hfeed div#main div#container div#content div.encyclopedia div.entry-utility span.meta-sep,
-html body.post-type-archive-encyclopedia div#wrapper.hfeed div#main div#container div#content div.encyclopedia div.entry-utility span.comments-link,
-html body.single-encyclopedia div#wrapper.hfeed div#main div#container div#content div.encyclopedia div.entry-meta
+body.post-type-archive-encyclopedia div#wrapper.hfeed div#main div#container div#content h1.page-title,
+body.post-type-archive-encyclopedia div#wrapper.hfeed div#main div#container div#content div.encyclopedia div.entry-meta,
+body.post-type-archive-encyclopedia div#wrapper.hfeed div#main div#container div#content div.encyclopedia div.entry-utility span.cat-links,
+body.post-type-archive-encyclopedia div#wrapper.hfeed div#main div#container div#content div.encyclopedia div.entry-utility span.meta-sep,
+body.post-type-archive-encyclopedia div#wrapper.hfeed div#main div#container div#content div.encyclopedia div.entry-utility span.comments-link,
+body.single-encyclopedia div#wrapper.hfeed div#main div#container div#content div.encyclopedia div.entry-meta
 { display: none }
 html body.post-type-archive-encyclopedia.search-results div#wrapper.hfeed div#main div#container div#content h1.page-title
 { display: block }
 
 /* Twenty Eleven */
-html body.post-type-archive-encyclopedia div#page.hfeed div#main section#primary div#content header.page-header
+body.post-type-archive-encyclopedia div#page.hfeed div#main section#primary div#content header.page-header
 { display: none }
-html body.post-type-archive-encyclopedia.search-results div#page.hfeed div#main section#primary div#content header.page-header
+body.post-type-archive-encyclopedia.search-results div#page.hfeed div#main section#primary div#content header.page-header
 { display: block }
 
 /* Twenty Twelve */
-html body.post-type-archive-encyclopedia div#page.hfeed div#main.wrapper section#primary.site-content div#content header.archive-header,
-html body.post-type-archive-encyclopedia div#page.hfeed div#main.wrapper section#primary.site-content div#content article.encyclopedia footer.entry-meta,
-html body.single-encyclopedia div#page.hfeed div#main.wrapper div#primary.site-content div#content article.encyclopedia footer.entry-meta
+body.post-type-archive-encyclopedia div#page.hfeed div#main.wrapper section#primary.site-content div#content header.archive-header,
+body.post-type-archive-encyclopedia div#page.hfeed div#main.wrapper section#primary.site-content div#content article.encyclopedia footer.entry-meta,
+body.single-encyclopedia div#page.hfeed div#main.wrapper div#primary.site-content div#content article.encyclopedia footer.entry-meta
 { display: none }
-html body.post-type-archive-encyclopedia.search-results div#page.hfeed div#main.wrapper section#primary.site-content div#content header.page-header
+body.post-type-archive-encyclopedia.search-results div#page.hfeed div#main.wrapper section#primary.site-content div#content header.page-header
 { display: block }
 
 /* Twenty Thirteen */
-html body.post-type-archive-encyclopedia div#page.hfeed div#main.site-main div#primary.content-area div#content.site-content header.archive-header
+body.post-type-archive-encyclopedia div#page.hfeed div#main.site-main div#primary.content-area div#content.site-content header.archive-header
 { display: none }
-html body.post-type-archive-encyclopedia div#page.hfeed div#main.site-main div#tertiary.sidebar-container,
-html body.single-encyclopedia div#page.hfeed div#main.site-main div#tertiary.sidebar-container
+body.post-type-archive-encyclopedia div#page.hfeed div#main.site-main div#tertiary.sidebar-container,
+body.single-encyclopedia div#page.hfeed div#main.site-main div#tertiary.sidebar-container
 { top: 140px }
-html body.post-type-archive-encyclopedia.search-results div#page.hfeed div#main.site-main div#primary.content-area div#content.site-content header.page-header
+body.post-type-archive-encyclopedia.search-results div#page.hfeed div#main.site-main div#primary.content-area div#content.site-content header.page-header
 { display: block }
 
 /* Twenty Fourteen */
-html body.post-type-archive-encyclopedia.search-results div#page.hfeed div#main.site-main section#primary.content-area div#content.site-content header.page-header
+body.post-type-archive-encyclopedia.search-results div#page.hfeed div#main.site-main section#primary.content-area div#content.site-content header.page-header
 { display: block }
 
+/* Twenty Fifteen */
+body.post-type-archive-encyclopedia div#page.hfeed.site div#content.site-content section#primary.content-area main#main.site-main header.page-header
+{ display: none }
+body.search-results.post-type-archive-encyclopedia div#page.hfeed.site div#content.site-content section#primary.content-area main#main.site-main header.page-header
+{ display: block }
 
 /* Encyclopedia Filter */
 .encyclopedia-filter {
@@ -66,4 +71,28 @@ html body.post-type-archive-encyclopedia.search-results div#page.hfeed div#main.
 
 .encyclopedia-filter span.current-filter a.filter-link {
   font-weight: bold;
+}
+
+
+/* Encyclopedia Search Widget */
+.widget_encyclopedia_search {}
+
+/* Encyclopedia Search Form */
+form#encyclopedia-searchform {}
+form#encyclopedia-searchform .ui-helper-hidden-accessible {
+  display: none;
+}
+form#encyclopedia-searchform .ui-autocomplete {
+  background-color: #fff;
+  border: 1px solid #eee;
+  position: absolute;
+  left: auto;
+  top: auto;
+}
+form#encyclopedia-searchform .ui-autocomplete a {
+  cursor: pointer;
+  display: block;
+  padding: 2px 4px;
+}
+form#encyclopedia-searchform .ui-autocomplete a:hover {
 }
