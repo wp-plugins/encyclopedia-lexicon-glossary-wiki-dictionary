@@ -27,7 +27,7 @@ class wp_plugin_encyclopedia {
     Add_Action('init', Array($this, 'Load_Encyclopedia_Type'));
     Add_Action('admin_menu', Array($this, 'Add_Options_Page'));
     Add_Action('init', Array($this, 'Register_Post_Type'));
-    Add_Filter('post_updated_messages', Array($this, 'Updated_Messages' ));
+    Add_Filter('post_updated_messages', Array($this, 'Updated_Messages'));
     Add_Action('init', Array($this, 'Register_Taxonomies'));
     Add_Action('init', Array($this, 'Add_Taxonomy_Archive_Urls'), 99);
     Add_Action('loop_start', Array($this, 'Start_Loop'));
@@ -145,7 +145,7 @@ class wp_plugin_encyclopedia {
     $this->Add_Option_Box($this->t('Archive page'), DirName(__FILE__).'/options-page/box-archive-page.php');
     $this->Add_Option_Box($this->t('Search'), DirName(__FILE__).'/options-page/box-search.php');
     $this->Add_Option_Box($this->t('Single page'), DirName(__FILE__).'/options-page/box-single-page.php');
-    $this->Add_Option_Box($this->t('Linked terms in contents'), DirName(__FILE__).'/options-page/box-linked-terms.php');
+    $this->Add_Option_Box($this->t('Cross linking'), DirName(__FILE__).'/options-page/box-cross-linking.php');
     $this->Add_Option_Box($this->t('Archive Url'), DirName(__FILE__).'/options-page/box-archive-link.php', 'side');
   }
 
@@ -222,25 +222,24 @@ class wp_plugin_encyclopedia {
     If (Empty($_POST)) return False;
 
     # Clean the Post array
-    $_POST = StripSlashes_Deep($_POST);
-    ForEach ($_POST AS $option => $value)
-      If (!$value) Unset ($_POST[$option]);
+    $options = StripSlashes_Deep($_POST);
+    $options = Array_Filter($options, function($value){ return $value == '0' || !Empty($value); });
 
     # Save Options
-    Update_Option (__CLASS__, $_POST);
+    Update_Option (__CLASS__, $options);
 
     return True;
   }
 
   function Default_Options(){
     return Array(
-      'embed_default_style' => 'yes',
-      'encyclopedia_tags' => 'yes',
-      'prefix_filter_for_archives' => 'yes',
+      'embed_default_style' => True,
+      'encyclopedia_tags' => True,
+      'prefix_filter_for_archives' => True,
       'prefix_filter_archive_depth' => 3,
-      'prefix_filter_for_singulars' => 'yes',
+      'prefix_filter_for_singulars' => True,
       'prefix_filter_singular_depth' => 3,
-      'auto_link_title_length' => Apply_Filters('excerpt_length', 55)
+      'cross_link_title_length' => Apply_Filters('excerpt_length', 55)
     );
   }
 
@@ -270,7 +269,7 @@ class wp_plugin_encyclopedia {
       'menu_icon' => 'dashicons-welcome-learn-more',
       'has_archive' => True,
 			'map_meta_cap' => True,
-			'hierarchical' => False,
+			'hierarchical' => True,
       'rewrite' => Array(
         'slug' => $this->encyclopedia_type->slug,
         'with_front' => False
@@ -297,7 +296,7 @@ class wp_plugin_encyclopedia {
   }
 
   function Register_Taxonomies(){
-    If($this->Get_Option('encyclopedia_tags') == 'yes'){
+    If($this->Get_Option('encyclopedia_tags')){
 			Register_Taxonomy('encyclopedia-tag', $this->post_type, Array(
 				'label' => $this->t('Encyclopedia Tags'),
 				'labels' => Array(
@@ -351,7 +350,7 @@ class wp_plugin_encyclopedia {
   }
 
   function Enqueue_Encyclopedia_Scripts(){
-    If ($this->Get_Option('embed_default_style') == 'yes')
+    If ($this->Get_Option('embed_default_style'))
       WP_Enqueue_Style('encyclopedia', $this->base_url.'/encyclopedia.css');
   }
 
@@ -379,7 +378,7 @@ class wp_plugin_encyclopedia {
 
 	function Filter_Posts_Where($where, $query){
 		Global $wpdb;
-		$post_title_like = $query->get('post_title_like');
+		$post_title_like = $query->Get('post_title_like');
 
 		If (!Empty($post_title_like))
       return SPrintF('%s AND %s LIKE "%s" ', $where, $wpdb->posts.'.post_title', Esc_SQL($post_title_like));
@@ -424,6 +423,7 @@ class wp_plugin_encyclopedia {
     # If this is for the excerpt we bail out
     If (In_Array('get_the_excerpt', $wp_current_filter)) return $content;
 
+    # Build the Query
     $terms_query = New WP_Query(Array(
       'nopaging' => True,
       'post_type' => $this->post_type,
@@ -433,13 +433,43 @@ class wp_plugin_encyclopedia {
       'order' => 'DESC'
     ));
 
-    ForEach($terms_query->posts AS $term){
-      $content = $this->Link_Term_in_Content($content, $term);
-    }
+    # Start Cross Linker
+    $cross_linker = New WordPress\Plugin\Encyclopedia\Cross_Linker;
+    $cross_linker->Set_Skip_Elements(Apply_Filters('encyclopedia_cross_linking_skip_elements', Array('a', 'script', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'button', 'textarea', 'style', 'pre', 'code', 'kbd', 'tt')));
+    $cross_linker->Load_Content($content);
+
+    # Go through all encyclopedia items
+    ForEach($terms_query->posts AS $term)
+      $cross_linker->Link_Phrase($term->post_title, $this->Get_Link_Title($term), Get_Permalink($term->ID));
+
+    # Overwrite the content with the parsers document which contains the links to each term
+    $content = $cross_linker->Get_Parser_Document();
 
     return $content;
 	}
 
+  function Get_Link_Title($term){
+    If (Empty($term->post_excerpt)){
+      $more = Apply_Filters('encyclopedia_link_title_more', '&hellip;');
+      $more = HTML_Entity_Decode($more, ENT_QUOTES, 'UTF-8');
+      $length = Apply_Filters('excerpt_length', $this->Get_Option('cross_link_title_length'));
+      $length = Apply_Filters('encyclopedia_link_title_length', $length);
+      $title = Strip_Shortcodes($term->post_content);
+      $title = WP_Strip_All_Tags($title);
+      $title = HTML_Entity_Decode($title, ENT_QUOTES, 'UTF-8');
+      $title = WP_Trim_Words($title, $length, $more);
+    }
+    Else {
+      $title = WP_Strip_All_Tags($term->post_excerpt, True);
+      $title = HTML_Entity_Decode($title, ENT_QUOTES, 'UTF-8');
+    }
+
+    $title = Apply_Filters('encyclopedia_term_link_title', $title, $term);
+
+    return $title;
+  }
+
+  /*
   function Link_Term_in_Content($content, $term){
     Global $post;
 
@@ -506,6 +536,7 @@ class wp_plugin_encyclopedia {
 
     return $resultBody;
   }
+  */
 
   function Start_Loop($query){
     Static $loop_already_started;
@@ -519,8 +550,8 @@ class wp_plugin_encyclopedia {
 
     # Conditions
     If ($query->Is_Main_Query() && !$query->Get('suppress_filters')){
-      $is_archive_filter = $this->Is_Encyclopedia_Archive($query) && $this->Get_Option('prefix_filter_for_archives') == 'yes';
-      $is_singular_filter = $query->Is_Singular($this->post_type) && $this->Get_Option('prefix_filter_for_singulars') == 'yes';
+      $is_archive_filter = $this->Is_Encyclopedia_Archive($query) && $this->Get_Option('prefix_filter_for_archives');
+      $is_singular_filter = $query->Is_Singular($this->post_type) && $this->Get_Option('prefix_filter_for_singulars');
 
       # Get the Filter depth
       $filter_depth = False;
@@ -552,7 +583,7 @@ class wp_plugin_encyclopedia {
       $str_filter = '';
 
     # Explode Filter string
-    $arr_current_filter = Empty($str_filter) ? Array() : PReg_Split('/(?<!^)(?!$)/u', $str_filter);
+    $arr_current_filter = (Empty($str_filter)) ? Array() : PReg_Split('/(?<!^)(?!$)/u', $str_filter);
     Array_UnShift($arr_current_filter, '');
 
 		$arr_filter = Array(); # This will be the function result
@@ -569,17 +600,21 @@ class wp_plugin_encyclopedia {
 
 			$arr_filter_line = Array();
 			ForEach ($arr_available_filters AS $available_filter){
-				$arr_filter_line[] = (Object) Array(
+				$arr_filter_line[$available_filter] = (Object) Array(
           'filter' => MB_StrToUpper(MB_SubStr($available_filter, 0, 1)) . MB_SubStr($available_filter, 1), # UCFirst Workaround for multibyte chars
           'link' => $this->Get_Archive_Link($available_filter, $taxonomy_term),
-          'active' => $active_filter_part == $available_filter
+          'active' => $active_filter_part == $available_filter,
+          'disabled' => False
         );
 			}
 			$arr_filter[] = $arr_filter_line;
 
       # Check filter depth limit
-      If ($depth && Count($arr_filter) >= $depth) return $arr_filter;
+      If ($depth && Count($arr_filter) >= $depth) Break;
 		}
+
+    # Run a filter
+    $arr_filter = Apply_Filters('encyclopedia_prefix_filter_links', $arr_filter, $depth);
 
 		return $arr_filter;
 	}
@@ -641,7 +676,7 @@ class wp_plugin_encyclopedia {
              ORDER BY subword ASC';
 
     $arr_filter = $wpdb->Get_Col($stmt);
-    $arr_filter = Apply_Filters('encyclopedia_available_filters', $arr_filter, $prefix, $taxonomy_term);
+    $arr_filter = Apply_Filters('encyclopedia_available_prefix_filters', $arr_filter, $prefix, $taxonomy_term);
     return $arr_filter;
 	}
 
@@ -666,7 +701,7 @@ class wp_plugin_encyclopedia {
 
     # Get term IDs
     $arr_term_ids = Array();
-    ForEach( $arr_tags as $taxonomy ) $arr_term_ids[] = $taxonomy->term_taxonomy_id;
+    ForEach($arr_tags as $taxonomy) $arr_term_ids[] = $taxonomy->term_taxonomy_id;
     $str_tag_list = Implode(',', $arr_term_ids);
 
     # The Query to get the related posts

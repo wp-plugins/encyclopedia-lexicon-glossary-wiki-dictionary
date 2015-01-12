@@ -187,6 +187,11 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 == Changelog ==
 
+= 1.5.20 =
+* Rewritten cross linker
+* Rewritten options data handler
+* Patched default theme styles
+
 = 1.5.19 =
 * Added styles for Twenty Fifteen
 * Tested with WordPress 4.1

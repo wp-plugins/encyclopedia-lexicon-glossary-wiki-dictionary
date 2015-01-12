@@ -20,8 +20,8 @@
   <th><label for="embed_default_style"><?php Echo $this->t('Use default style') ?></label></th>
   <td>
 		<select name="embed_default_style" id="embed_default_style">
-			<option value="yes" <?php Selected($this->Get_Option('embed_default_style'), 'yes') ?> ><?php _e('Yes') ?></option>
-			<option value="no" <?php Selected($this->Get_Option('embed_default_style'), 'no') ?> ><?php _e('No') ?></option>
+			<option value="1" <?php Selected($this->Get_Option('embed_default_style')) ?> ><?php _e('Yes') ?></option>
+			<option value="0" <?php Selected(!$this->Get_Option('embed_default_style')) ?> ><?php _e('No') ?></option>
 		</select><br>
 		<small>
       <?php Echo $this->t('Set this option to "No" if you want to use your own style for the encyclopedia.') ?>

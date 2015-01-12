@@ -13,8 +13,8 @@
   <th><label for="prefix_filter_for_archives"><?php Echo $this->t('Prefix filter') ?></label></th>
   <td>
 		<select name="prefix_filter_for_archives" id="prefix_filter_for_archives">
-			<option value="yes" <?php Selected($this->Get_Option('prefix_filter_for_archives'), 'yes') ?> ><?php _e('Yes') ?></option>
-			<option value="no" <?php Selected($this->Get_Option('prefix_filter_for_archives'), 'no') ?> ><?php _e('No') ?></option>
+			<option value="1" <?php Selected($this->Get_Option('prefix_filter_for_archives')) ?> ><?php _e('Yes') ?></option>
+			<option value="0" <?php Selected(!$this->Get_Option('prefix_filter_for_archives')) ?> ><?php _e('No') ?></option>
 		</select><br>
 		<small><?php Echo $this->t('Display a prefix filter above the encyclopedia archive automatically or not.') ?></small>
 	</td>

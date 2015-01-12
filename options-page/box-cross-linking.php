@@ -52,7 +52,7 @@ ForEach (Get_Post_Types(Array('show_ui' => True),'objects') AS $type): ?>
 <tr>
 	<th><label for=""><?php Echo $this->t('Link title length') ?></label></th>
 	<td>
-		<input type="number" value="<?php Echo Esc_Attr($this->Get_Option('auto_link_title_length')) ?>" <?php Disabled(True) ?> >
+		<input type="number" value="<?php Echo Esc_Attr($this->Get_Option('cross_link_title_length')) ?>" <?php Disabled(True) ?> >
     <?php Echo $this->t('words') ?>
     <span class="asterisk">*</span>
     <br>

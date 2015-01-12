@@ -23,8 +23,8 @@
   <th><label for="prefix_filter_for_singulars"><?php Echo $this->t('Prefix filter') ?></label></th>
   <td>
 		<select name="prefix_filter_for_singulars" id="prefix_filter_for_singulars">
-			<option value="yes" <?php Selected($this->Get_Option('prefix_filter_for_singulars'), 'yes') ?> ><?php _e('Yes') ?></option>
-			<option value="no" <?php Selected($this->Get_Option('prefix_filter_for_singulars'), 'no') ?> ><?php _e('No') ?></option>
+			<option value="1" <?php Selected($this->Get_Option('prefix_filter_for_singulars')) ?> ><?php _e('Yes') ?></option>
+			<option value="0" <?php Selected(!$this->Get_Option('prefix_filter_for_singulars')) ?> ><?php _e('No') ?></option>
 		</select><br>
 		<small><?php Echo $this->t('Display the prefix filter above the encyclopedia term automatically or not.') ?></small>
 	</td>

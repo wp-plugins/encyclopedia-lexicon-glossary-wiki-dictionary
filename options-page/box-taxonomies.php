@@ -16,8 +16,8 @@
   <th><label for="encyclopedia_tags"><?php Echo $this->t('Activate tags') ?></label></th>
   <td>
 		<select name="encyclopedia_tags" id="encyclopedia_tags">
-			<option value="yes" <?php Selected($this->Get_Option('encyclopedia_tags'), 'yes') ?> ><?php _e('Yes') ?></option>
-			<option value="no" <?php Selected($this->Get_Option('encyclopedia_tags'), 'no') ?> ><?php _e('No') ?></option>
+			<option value="1" <?php Selected($this->Get_Option('encyclopedia_tags')) ?> ><?php _e('Yes') ?></option>
+			<option value="0" <?php Selected(!$this->Get_Option('encyclopedia_tags')) ?> ><?php _e('No') ?></option>
 		</select><br>
 		<small>
       <?php Echo $this->t('Tags are necessary if you want to display relevant entries automatically.') ?>

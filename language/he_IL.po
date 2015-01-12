@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-09 17:07+0100\n"
+"POT-Creation-Date: 2015-01-12 15:00+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Ahrale | Atar4U.com <contact@atar4u.com>\n"
@@ -18,202 +18,201 @@ msgstr ""
 "X-Poedit-Country: ISRAEL\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../class.core.php:130
+#: ../class.core.php:132
 msgid "Encyclopedia Options"
 msgstr "אפשרויות אנציקלופדיה"
 
-#: ../class.core.php:131
+#: ../class.core.php:133
 msgid "Encyclopedia"
 msgstr "אנציקלופדיה"
 
-#: ../class.core.php:142
+#: ../class.core.php:144
 msgid "Taxonomies"
 msgstr "טקסונומיות"
 
-#: ../class.core.php:143
+#: ../class.core.php:145
 #, fuzzy
 msgid "Archive page"
 msgstr "דף ארכיון"
 
-#: ../class.core.php:144
+#: ../class.core.php:146
 #, fuzzy
 msgid "Search"
 msgstr "דף חיפוש"
 
-#: ../class.core.php:145
+#: ../class.core.php:147
 #, fuzzy
 msgid "Single page"
 msgstr "דף יחיד"
 
-#: ../class.core.php:146
-#, fuzzy
-msgid "Linked terms in contents"
-msgstr "ביטויים מקושרים בתוכן"
+#: ../class.core.php:148
+msgid "Cross linking"
+msgstr ""
 
-#: ../class.core.php:147
-#: ../class.core.php:331
+#: ../class.core.php:149
+#: ../class.core.php:336
 msgid "Archive Url"
 msgstr "כתובת ארכיון"
 
-#: ../class.core.php:243
+#: ../class.core.php:248
 msgid "Lexicon"
 msgstr "לכסיקון"
 
-#: ../class.core.php:244
+#: ../class.core.php:249
 msgctxt "URL slug"
 msgid "lexicon"
 msgstr "לכסיקון"
 
-#: ../class.core.php:252
+#: ../class.core.php:257
 msgid "Term"
 msgstr "ביטוי"
 
-#: ../class.core.php:253
+#: ../class.core.php:258
 msgid "Add Term"
 msgstr "הוספת ביטוי"
 
-#: ../class.core.php:254
+#: ../class.core.php:259
 msgid "New Term"
 msgstr "ביטוי חדש"
 
-#: ../class.core.php:255
+#: ../class.core.php:260
 msgid "Edit Term"
 msgstr "עריכת ביטוי"
 
-#: ../class.core.php:256
+#: ../class.core.php:261
 msgid "View Term"
 msgstr "הצג את הביטוי"
 
-#: ../class.core.php:257
+#: ../class.core.php:262
 msgid "Search Terms"
 msgstr "חיפוש ביטויים"
 
-#: ../class.core.php:258
+#: ../class.core.php:263
 msgid "No Terms found"
 msgstr "לא נמצאו ביטויים"
 
-#: ../class.core.php:259
+#: ../class.core.php:264
 msgid "No Terms found in Trash"
 msgstr "לא נמצאו ביטויים באשפה"
 
-#: ../class.core.php:280
+#: ../class.core.php:285
 #, php-format
 msgid "Term updated. (<a href=\"%s\">View Term</a>)"
 msgstr "הביטוי עודכן, (<a href=\"%s\">הצג</a>)"
 
-#: ../class.core.php:283
+#: ../class.core.php:288
 msgid "Term updated."
 msgstr "הביטוי הוצג"
 
-#: ../class.core.php:284
+#: ../class.core.php:289
 #, php-format
 msgid "Term restored to revision from %s"
 msgstr "הביטוי שוחזר לגרסה מ %s"
 
-#: ../class.core.php:285
+#: ../class.core.php:290
 #, php-format
 msgid "Term published. (<a href=\"%s\">View Term</a>)"
 msgstr "הביטוי פורסם. (<a href=\"%s\">הצג</a>)"
 
-#: ../class.core.php:286
+#: ../class.core.php:291
 msgid "Term saved."
 msgstr "הביטוי נשמר"
 
-#: ../class.core.php:287
+#: ../class.core.php:292
 msgid "Term submitted."
 msgstr "הביטוי נשלח."
 
-#: ../class.core.php:288
+#: ../class.core.php:293
 #, php-format
 msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 msgstr "הביטוי תוזמן. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 
-#: ../class.core.php:289
+#: ../class.core.php:294
 #, php-format
 msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
 msgstr "הטיוטה עודכנה. (<a target=\"_blank\" href=\"%s\">תצוגה מוקדמת</a>)"
 
-#: ../class.core.php:296
+#: ../class.core.php:301
 msgid "Encyclopedia Tags"
 msgstr "תגיות אנציקלופדיה"
 
-#: ../class.core.php:298
+#: ../class.core.php:303
 msgid "Tags"
 msgstr "תגיות"
 
-#: ../class.core.php:299
+#: ../class.core.php:304
 msgid "Tag"
 msgstr "תגית"
 
-#: ../class.core.php:300
+#: ../class.core.php:305
 msgid "Search Tags"
 msgstr "חיפוש תגיות"
 
-#: ../class.core.php:301
+#: ../class.core.php:306
 msgid "All Tags"
 msgstr "כל התגיות"
 
-#: ../class.core.php:302
+#: ../class.core.php:307
 msgid "Edit Tag"
 msgstr "עריכת תגית"
 
-#: ../class.core.php:303
+#: ../class.core.php:308
 msgid "Update Tag"
 msgstr "עדכון תגית"
 
-#: ../class.core.php:304
+#: ../class.core.php:309
 msgid "Add New Tag"
 msgstr "הוספת תגית"
 
-#: ../class.core.php:305
+#: ../class.core.php:310
 msgid "New Tag"
 msgstr "תגית חדשה"
 
-#: ../class.core.php:313
+#: ../class.core.php:318
 #, php-format
 msgctxt "URL slug"
 msgid "%s-tag"
 msgstr "%s-תגית"
 
-#: ../class.core.php:334
+#: ../class.core.php:339
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "זו כתובת ה URL לארכיון של %s זה."
 
-#: ../class.core.php:338
+#: ../class.core.php:343
 msgid "Archive Feed"
 msgstr "הזנת ארכיון"
 
-#: ../class.core.php:341
+#: ../class.core.php:346
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "זוהי כתובת ה URL של הארכיון של %s זה."
 
-#: ../class.core.php:684
+#: ../class.core.php:749
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: ../class.core.php:686
+#: ../class.core.php:751
 #, fuzzy, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr "מצטערים, תכונה זו זמינה רק ב <a href=\"%s\" target=\"_blank\">גרסה המקצועית של תוסף האנציקלופדיה</a>."
 
-#: ../class.core.php:687
+#: ../class.core.php:752
 #, php-format
 msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
 msgstr ""
 
-#: ../class.core.php:688
+#: ../class.core.php:753
 #, php-format
 msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
 msgstr ""
 
-#: ../class.core.php:694
+#: ../class.core.php:759
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 
-#: ../class.core.php:725
+#: ../class.core.php:790
 msgid "&laquo; Back to your terms"
 msgstr "&raquo;חזרה לביטויים שלך"
 
@@ -538,49 +537,6 @@ msgstr "כמה ביטויים קשורים להציג עבור כל ביטוי?"
 msgid "Display the prefix filter above the encyclopedia term automatically or not."
 msgstr "הצג אוטומטית מסנן ביטוי מעל לתוכן ביטוי האנציקלופדיה"
 
-#: ../options-page/box-linked-terms.php:11
-#, fuzzy, php-format
-msgid "Link terms in %s"
-msgstr "ביטויים מקושרים בתוכן"
-
-#: ../options-page/box-linked-terms.php:20
-msgid "Complete words"
-msgstr ""
-
-#: ../options-page/box-linked-terms.php:24
-msgid "Link complete words only."
-msgstr ""
-
-#: ../options-page/box-linked-terms.php:31
-msgid "First match only"
-msgstr ""
-
-#: ../options-page/box-linked-terms.php:35
-msgid "Link the first match of each term only."
-msgstr "קשר את ההתאמה הראשונה בלבד עבור כל ביטוי."
-
-#: ../options-page/box-linked-terms.php:42
-msgid "Recursion"
-msgstr ""
-
-#: ../options-page/box-linked-terms.php:46
-#, fuzzy
-msgid "Link the term in its own content."
-msgstr "ביטויים מקושרים בתוכן"
-
-#: ../options-page/box-linked-terms.php:53
-msgid "Link title length"
-msgstr ""
-
-#: ../options-page/box-linked-terms.php:56
-msgid "words"
-msgstr ""
-
-#: ../options-page/box-linked-terms.php:59
-#, fuzzy
-msgid "The number of words of the linked term used as link title."
-msgstr "מספר הביטויים הקשורים שאתה רוצה להשיג."
-
 #: ../options-page/box-archive-link.php:2
 #, fuzzy, php-format
 msgid "The archive link for your encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
@@ -590,6 +546,53 @@ msgstr "הקישור הפעיל עבור האנציקלופדיה שלך הוא:
 #, fuzzy, php-format
 msgid "The archive feed for your encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
 msgstr "ארכיון ההזנה של האנציקלופדיה שלך הוא: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+
+#: ../options-page/box-cross-linking.php:11
+#, fuzzy, php-format
+msgid "Link terms in %s"
+msgstr "ביטויים מקושרים בתוכן"
+
+#: ../options-page/box-cross-linking.php:20
+msgid "Complete words"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:24
+msgid "Link complete words only."
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:31
+msgid "First match only"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:35
+msgid "Link the first match of each term only."
+msgstr "קשר את ההתאמה הראשונה בלבד עבור כל ביטוי."
+
+#: ../options-page/box-cross-linking.php:42
+msgid "Recursion"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:46
+#, fuzzy
+msgid "Link the term in its own content."
+msgstr "ביטויים מקושרים בתוכן"
+
+#: ../options-page/box-cross-linking.php:53
+msgid "Link title length"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:56
+msgid "words"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:59
+#, fuzzy
+msgid "The number of words of the linked term used as link title."
+msgstr "מספר הביטויים הקשורים שאתה רוצה להשיג."
+
+#, fuzzy
+#~ msgid "Linked terms in contents"
+#~ msgstr "ביטויים מקושרים בתוכן"
 
 #, fuzzy
 #~ msgid "Search options"

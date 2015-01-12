@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia WordPress Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-09 17:07+0100\n"
+"POT-Creation-Date: 2015-01-12 15:01+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Erik Bolstad <erik.bolstad@nrk.no>\n"
@@ -18,200 +18,200 @@ msgstr ""
 "X-Poedit-Country: NORWAY\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../class.core.php:130
+#: ../class.core.php:132
 msgid "Encyclopedia Options"
 msgstr "Oppslagsverkinnstillingar"
 
-#: ../class.core.php:131
+#: ../class.core.php:133
 msgid "Encyclopedia"
 msgstr "Oppslagsverk"
 
-#: ../class.core.php:142
+#: ../class.core.php:144
 msgid "Taxonomies"
 msgstr "Klassifiseringar"
 
-#: ../class.core.php:143
+#: ../class.core.php:145
 msgid "Archive page"
 msgstr "Arkivside"
 
-#: ../class.core.php:144
+#: ../class.core.php:146
 msgid "Search"
 msgstr "Søk"
 
-#: ../class.core.php:145
+#: ../class.core.php:147
 msgid "Single page"
 msgstr "Einskildside"
 
-#: ../class.core.php:146
-msgid "Linked terms in contents"
-msgstr "Lenka termar i kontekst"
+#: ../class.core.php:148
+msgid "Cross linking"
+msgstr ""
 
-#: ../class.core.php:147
-#: ../class.core.php:331
+#: ../class.core.php:149
+#: ../class.core.php:336
 msgid "Archive Url"
 msgstr "Arkiv-URL"
 
-#: ../class.core.php:243
+#: ../class.core.php:248
 msgid "Lexicon"
 msgstr "Leksikon"
 
-#: ../class.core.php:244
+#: ../class.core.php:249
 msgctxt "URL slug"
 msgid "lexicon"
 msgstr "leksikon"
 
-#: ../class.core.php:252
+#: ../class.core.php:257
 msgid "Term"
 msgstr "Term"
 
-#: ../class.core.php:253
+#: ../class.core.php:258
 msgid "Add Term"
 msgstr "Legg til oppføring"
 
-#: ../class.core.php:254
+#: ../class.core.php:259
 msgid "New Term"
 msgstr "Ny oppføring"
 
-#: ../class.core.php:255
+#: ../class.core.php:260
 msgid "Edit Term"
 msgstr "Rediger oppføring"
 
-#: ../class.core.php:256
+#: ../class.core.php:261
 msgid "View Term"
 msgstr "Sjå oppføring"
 
-#: ../class.core.php:257
+#: ../class.core.php:262
 msgid "Search Terms"
 msgstr "Søk blant oppføringar"
 
-#: ../class.core.php:258
+#: ../class.core.php:263
 msgid "No Terms found"
 msgstr "Fann ingen oppføringar"
 
-#: ../class.core.php:259
+#: ../class.core.php:264
 msgid "No Terms found in Trash"
 msgstr "Fann ingen oppføringar blant sletta element"
 
-#: ../class.core.php:280
+#: ../class.core.php:285
 #, php-format
 msgid "Term updated. (<a href=\"%s\">View Term</a>)"
 msgstr "Oppføringa er oppdatert. (<a href=\"%s\">Sjå oppføringar</a>)"
 
-#: ../class.core.php:283
+#: ../class.core.php:288
 msgid "Term updated."
 msgstr "Oppføringa er oppdatert"
 
-#: ../class.core.php:284
+#: ../class.core.php:289
 #, php-format
 msgid "Term restored to revision from %s"
 msgstr "Oppføringa vart tilbakestilt til versjonen frå %s"
 
-#: ../class.core.php:285
+#: ../class.core.php:290
 #, php-format
 msgid "Term published. (<a href=\"%s\">View Term</a>)"
 msgstr "Oppføringa er publisert. (<a href=\"%s\">Sjå oppføringar</a>)"
 
-#: ../class.core.php:286
+#: ../class.core.php:291
 msgid "Term saved."
 msgstr "Oppføringa er lagra."
 
-#: ../class.core.php:287
+#: ../class.core.php:292
 msgid "Term submitted."
 msgstr "Oppføringa er lagt til."
 
-#: ../class.core.php:288
+#: ../class.core.php:293
 #, php-format
 msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 msgstr "Oppføringa er tidsstyrt. (<a target=\"_blank\" href=\"%s\">Sjå oppføringa</a>).a>)"
 
-#: ../class.core.php:289
+#: ../class.core.php:294
 #, php-format
 msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
 msgstr "Kladden er oppdatert. (<a target=\"_blank\" href=\"%s\">Førehandsvis</a>)."
 
-#: ../class.core.php:296
+#: ../class.core.php:301
 #, fuzzy
 msgid "Encyclopedia Tags"
 msgstr "Oppslagsverk-oppføringar"
 
-#: ../class.core.php:298
+#: ../class.core.php:303
 #, fuzzy
 msgid "Tags"
 msgstr "Alle emneord"
 
-#: ../class.core.php:299
+#: ../class.core.php:304
 msgid "Tag"
 msgstr "Emneord"
 
-#: ../class.core.php:300
+#: ../class.core.php:305
 msgid "Search Tags"
 msgstr "Søk i emneord"
 
-#: ../class.core.php:301
+#: ../class.core.php:306
 msgid "All Tags"
 msgstr "Alle emneord"
 
-#: ../class.core.php:302
+#: ../class.core.php:307
 msgid "Edit Tag"
 msgstr "Rediger emneord"
 
-#: ../class.core.php:303
+#: ../class.core.php:308
 msgid "Update Tag"
 msgstr "Oppdater emneord"
 
-#: ../class.core.php:304
+#: ../class.core.php:309
 msgid "Add New Tag"
 msgstr "Legg til nytt emneord"
 
-#: ../class.core.php:305
+#: ../class.core.php:310
 msgid "New Tag"
 msgstr "Nytt emneord"
 
-#: ../class.core.php:313
+#: ../class.core.php:318
 #, php-format
 msgctxt "URL slug"
 msgid "%s-tag"
 msgstr "%s-emne"
 
-#: ../class.core.php:334
+#: ../class.core.php:339
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "URL-en til %s-arkivet."
 
-#: ../class.core.php:338
+#: ../class.core.php:343
 msgid "Archive Feed"
 msgstr "Arkivstraum"
 
-#: ../class.core.php:341
+#: ../class.core.php:346
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "Dette er RSS-straumen til %s-arkivet."
 
-#: ../class.core.php:684
+#: ../class.core.php:749
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: ../class.core.php:686
+#: ../class.core.php:751
 #, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr ""
 
-#: ../class.core.php:687
+#: ../class.core.php:752
 #, php-format
 msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
 msgstr ""
 
-#: ../class.core.php:688
+#: ../class.core.php:753
 #, php-format
 msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
 msgstr ""
 
-#: ../class.core.php:694
+#: ../class.core.php:759
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr ""
 
-#: ../class.core.php:725
+#: ../class.core.php:790
 msgid "&laquo; Back to your terms"
 msgstr ""
 
@@ -528,49 +528,6 @@ msgstr "Kor mange relaterte oppføringar vil du vise?"
 msgid "Display the prefix filter above the encyclopedia term automatically or not."
 msgstr "Vis eit oppføringsfilter over oppføringa"
 
-#: ../options-page/box-linked-terms.php:11
-#, fuzzy, php-format
-msgid "Link terms in %s"
-msgstr "Lenka termar i kontekst"
-
-#: ../options-page/box-linked-terms.php:20
-#, fuzzy
-msgid "Complete words"
-msgstr "Berre lenke på heile ord"
-
-#: ../options-page/box-linked-terms.php:24
-msgid "Link complete words only."
-msgstr "Berre lenke på heile ord"
-
-#: ../options-page/box-linked-terms.php:31
-msgid "First match only"
-msgstr ""
-
-#: ../options-page/box-linked-terms.php:35
-msgid "Link the first match of each term only."
-msgstr "Berre lenke på fyrste oppføring."
-
-#: ../options-page/box-linked-terms.php:42
-msgid "Recursion"
-msgstr ""
-
-#: ../options-page/box-linked-terms.php:46
-msgid "Link the term in its own content."
-msgstr "Lag lenke til oppføringa i seg sjølv."
-
-#: ../options-page/box-linked-terms.php:53
-msgid "Link title length"
-msgstr ""
-
-#: ../options-page/box-linked-terms.php:56
-msgid "words"
-msgstr ""
-
-#: ../options-page/box-linked-terms.php:59
-#, fuzzy
-msgid "The number of words of the linked term used as link title."
-msgstr "Kor mange relaterte oppføringar vil du vise?"
-
 #: ../options-page/box-archive-link.php:2
 #, php-format
 msgid "The archive link for your encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
@@ -580,6 +537,52 @@ msgstr "Arkivlenka for oppslagsverket ditt er <a href=\"%1$s\" target=\"_blank\"
 #, php-format
 msgid "The archive feed for your encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
 msgstr "RSS-straumen for arkivet ditt er <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+
+#: ../options-page/box-cross-linking.php:11
+#, fuzzy, php-format
+msgid "Link terms in %s"
+msgstr "Lenka termar i kontekst"
+
+#: ../options-page/box-cross-linking.php:20
+#, fuzzy
+msgid "Complete words"
+msgstr "Berre lenke på heile ord"
+
+#: ../options-page/box-cross-linking.php:24
+msgid "Link complete words only."
+msgstr "Berre lenke på heile ord"
+
+#: ../options-page/box-cross-linking.php:31
+msgid "First match only"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:35
+msgid "Link the first match of each term only."
+msgstr "Berre lenke på fyrste oppføring."
+
+#: ../options-page/box-cross-linking.php:42
+msgid "Recursion"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:46
+msgid "Link the term in its own content."
+msgstr "Lag lenke til oppføringa i seg sjølv."
+
+#: ../options-page/box-cross-linking.php:53
+msgid "Link title length"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:56
+msgid "words"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:59
+#, fuzzy
+msgid "The number of words of the linked term used as link title."
+msgstr "Kor mange relaterte oppføringar vil du vise?"
+
+#~ msgid "Linked terms in contents"
+#~ msgstr "Lenka termar i kontekst"
 
 #, fuzzy
 #~ msgid "Search options"
