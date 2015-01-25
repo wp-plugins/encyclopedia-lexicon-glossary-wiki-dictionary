@@ -3,8 +3,8 @@ Namespace WordPress\Plugin\Encyclopedia;
 
 class Cross_Linker {
   private
-    $DOM,
-    $XPath,
+    $DOM = False,
+    $XPath = False,
     $skip_elements = Array(),
     $link_complete_words_only = False,
     $replace_phrases_once = False,
@@ -64,6 +64,9 @@ class Cross_Linker {
   }
 
   function Link_Phrase($phrase, $title, $url){
+    # Check if there is a valid XPath object available
+    If (!$this->XPath) return False;
+
     # Prepare search term
     $phrase = Trim($phrase);
     $phrase = WPTexturize($phrase); # This is necessary because the content runs through this filter, too
@@ -92,6 +95,7 @@ class Cross_Linker {
   }
 
   function Get_Parser_Document(){
+    If (!$this->DOM) return False;
     $resultHTML = $this->DOM->saveHTML();
     $body_start = MB_StrPos($resultHTML, '<body>', 0, 'UTF-8') + 6;
     $body_end = MB_StrPos($resultHTML, '</body>', $body_start, 'UTF-8');

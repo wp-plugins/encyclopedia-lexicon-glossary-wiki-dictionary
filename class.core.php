@@ -436,7 +436,7 @@ class wp_plugin_encyclopedia {
     # Start Cross Linker
     $cross_linker = New WordPress\Plugin\Encyclopedia\Cross_Linker;
     $cross_linker->Set_Skip_Elements(Apply_Filters('encyclopedia_cross_linking_skip_elements', Array('a', 'script', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'button', 'textarea', 'style', 'pre', 'code', 'kbd', 'tt')));
-    $cross_linker->Load_Content($content);
+    If (!$cross_linker->Load_Content($content)) return $content;
 
     # Go through all encyclopedia items
     ForEach($terms_query->posts AS $term)
