@@ -540,14 +540,17 @@ class wp_plugin_encyclopedia {
 
   function Start_Loop($query){
     Static $loop_already_started;
-		If ($loop_already_started) return;
+    If ($loop_already_started) return;
+    
+    # If this is feed we bail out
+    If (Is_Feed()) return;
 
     # If the current query is not a post query we bail out
     If (!(GetType($query) == 'object' && Get_Class($query) == 'WP_Query')) return;
-
-		Global $wp_current_filter;
+    
+    Global $wp_current_filter;
     If (In_Array('wp_head', $wp_current_filter)) return;
-
+    
     # Conditions
     If ($query->Is_Main_Query() && !$query->Get('suppress_filters')){
       $is_archive_filter = $this->Is_Encyclopedia_Archive($query) && $this->Get_Option('prefix_filter_for_archives');

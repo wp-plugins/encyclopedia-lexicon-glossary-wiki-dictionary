@@ -187,6 +187,9 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 == Changelog ==
 
+= 1.5.22 =
+* Fixed RSS feed
+
 = 1.5.21 =
 * Fixed edge case when XPath cannot be loaded in cross linker
 
