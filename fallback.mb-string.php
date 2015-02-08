@@ -2,7 +2,12 @@
 
 If (!Function_Exists('MB_Convert_Encoding')){
   function MB_Convert_Encoding($str, $to_encoding, $from_encoding = Null){
-    return IConv($from_encoding, $to_encoding, $str);
+    If ($from_encoding == 'UTF-8' && $to_encoding == 'HTML-ENTITIES'){
+      return HTMLSpecialChars_Decode(UTF8_Decode(HTMLEntities($str, ENT_QUOTES, 'utf-8', False)));
+    }
+    Else {
+      return @IConv($from_encoding, $to_encoding, $str);
+    }
   }
 }
 
