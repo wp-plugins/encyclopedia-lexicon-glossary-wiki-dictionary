@@ -25,7 +25,7 @@ Enjoy the easy way to manage your contents with WordPress in combination with a 
 * **SEO conform** URL structure for all kind of pages
 * **Tags and categories**¹ to classify your terms (both tags and categories are disjunct from your post tags and post categories)
 * **Prefix filter** (A|B|C...X|Y|Z) above single view and archive index page which allows a letter-by-letter term filtering
-* Works with Latin, Arabian, Russian, Chinese, Turkish, and all other **UTF8** compliant languages!
+* Works with Latin, Arabian, Russian, Chinese, Turkish, and all other **UTF-8** compliant languages!
 * Automatic association of **related terms** (based on common tags)
 * Automatic linking of all your terms appearing in your post and page contents (**cross linking**)
 * You can define the target of the links of the automatically linked terms
@@ -157,7 +157,7 @@ At Encyclopedia settings page (Dashboard -> Settings -> Encyclopedia) you will f
 To create relations between your terms you need to classify your terms by using tags.
 
 = Can Encyclopedia display and sort terms in other than Latin characters? =
-Yes, Encyclopedia can handle every existing character. All strings are handled as UTF8. So it works for Arabian, Russian, Chinese, Turkish, and all other UTF8 compliant languages.
+Yes, Encyclopedia can handle every existing character. All strings are handled as UTF-8. So it works for Arabian, Russian, Chinese, Turkish, and all other UTF-8 compliant languages.
 
 = Is it possible to search for Encyclopedia terms only? =
 Yes, it is. For this purpose place the "Encyclopedia Search" Widget in a sidebar of your choice. The search result will display Encyclopedia terms only.
@@ -361,7 +361,7 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 = 1.3.7 =
 * Added Spanish translation by [Fátima Da Silva](http://www.fcdsbtraducciones.com/).
-* Added PHP 5.4 and lower patch: Set UTF8 encoding for HTMLEntities.
+* Added PHP 5.4 and lower patch: Set UTF-8 encoding for HTMLEntities.
 
 = 1.3.6 =
 * Added post type support: comments, trackbacks, featured image, revisions
