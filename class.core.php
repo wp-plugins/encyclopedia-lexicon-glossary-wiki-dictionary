@@ -147,6 +147,7 @@ class wp_plugin_encyclopedia {
     $this->Add_Option_Box($this->t('Single page'), DirName(__FILE__).'/options-page/box-single-page.php');
     $this->Add_Option_Box($this->t('Cross linking'), DirName(__FILE__).'/options-page/box-cross-linking.php');
     $this->Add_Option_Box($this->t('Archive Url'), DirName(__FILE__).'/options-page/box-archive-link.php', 'side');
+    $this->Add_Option_Box($this->t('Upgrade to Pro!'), DirName(__FILE__).'/options-page/box-upgrade.php', 'side');
   }
 
   function Get_Options_Page_Url($parameters = Array()){
@@ -747,11 +748,12 @@ class wp_plugin_encyclopedia {
     ));
 	}
 
-  function Pro_Notice($message = 'feature', $output = True){
+  function Pro_Notice($message = 'option', $output = True){
     $arr_message = Array(
       'upgrade' => $this->t('Upgrade to Pro'),
       'upgrade_url' => '%s',
       'feature' => $this->t('Available in the <a href="%s" target="_blank">premium version</a> only.'),
+      'option' => $this->t('This option is changeable in the <a href="%s" target="_blank">premium version</a> only.'),
       'custom_tax' => $this->t('Do you need a special taxonomy for your website? No problem! Just <a href="%s" target="_blank">get in touch</a>.'),
       'count_limit' => $this->t('In the <a href="%s" target="_blank">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features.'),
       #'changeable' => $this->t('Changeable in the <a href="%s" target="_blank">premium version</a> only.'),

@@ -101,6 +101,7 @@ Please use the support forum on WordPress.org only for this free lite version of
 * Plugin ini tersedia dalam Bahasa Indonesia ([Nasrulhaq Muiz](http://al-badar.net/))
 * Este plugin está disponible en español. ([Fátima Da Silva](http://www.fcdsbtraducciones.com/))
 * Dette istikket er omsett til nynorsk. ([Erik Bolstad](http://www.erikbolstad.no/))
+* Este plugin está disponível em português. (Mauro Mascarenhas)
 
 
 = Translate this plugin =
@@ -186,6 +187,10 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 
 == Changelog ==
+
+= 1.5.24 =
+* Added Portuguese translation translation file
+* Updated option page
 
 = 1.5.23 =
 * Added Multibyte String fallbacks

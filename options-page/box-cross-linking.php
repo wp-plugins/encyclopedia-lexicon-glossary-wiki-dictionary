@@ -6,12 +6,12 @@ ForEach (Get_Post_Types(Array('show_ui' => True),'objects') AS $type): ?>
 <tr>
   <th><?php Echo $type->label ?></th>
   <td>
-    <label for="">
+    <label>
       <input type="checkbox" <?php Disabled(True); Checked(True) ?> >
-      <?php PrintF($this->t('Link terms in %s'), $type->label) ?>
-    </label><span class="asterisk">*</span><br>
+      <?php PrintF($this->t('Link terms in %s'), $type->label) ?><span class="asterisk">*</span>
+    </label><br>
 
-    <label for=""><input type="checkbox" <?php Disabled(True) ?> > <?php _e('Open link in a new window/tab') ?></label>
+    <label><input type="checkbox" <?php Disabled(True) ?> > <?php _e('Open link in a new window/tab') ?></label>
   </td>
 </tr>
 <?php EndForEach ?>
@@ -19,33 +19,30 @@ ForEach (Get_Post_Types(Array('show_ui' => True),'objects') AS $type): ?>
 <tr>
   <th><?php Echo $this->t('Complete words') ?></th>
   <td>
-    <label for="">
+    <label>
       <input type="checkbox" <?php Disabled(True) ?> >
-      <?php Echo $this->t('Link complete words only.') ?>
+      <?php Echo $this->t('Link complete words only.') ?><span class="asterisk">*</span>
     </label>
-    <span class="asterisk">*</span>
   </td>
 </tr>
 
 <tr>
   <th><?php Echo $this->t('First match only') ?></th>
   <td>
-    <label for="">
+    <label>
       <input type="checkbox" <?php Disabled(True) ?> >
-      <?php Echo $this->t('Link the first match of each term only.') ?>
+      <?php Echo $this->t('Link the first match of each term only.') ?><span class="asterisk">*</span>
     </label>
-    <span class="asterisk">*</span>
   </td>
 </tr>
 
 <tr>
   <th><?php Echo $this->t('Recursion') ?></th>
   <td>
-    <label for="">
+    <label>
       <input type="checkbox" <?php Disabled(True) ?> >
-      <?php Echo $this->t('Link the term in its own content.') ?>
+      <?php Echo $this->t('Link the term in its own content.') ?><span class="asterisk">*</span>
     </label>
-    <span class="asterisk">*</span>
   </td>
 </tr>
 
@@ -53,8 +50,7 @@ ForEach (Get_Post_Types(Array('show_ui' => True),'objects') AS $type): ?>
 	<th><label for=""><?php Echo $this->t('Link title length') ?></label></th>
 	<td>
 		<input type="number" value="<?php Echo Esc_Attr($this->Get_Option('cross_link_title_length')) ?>" <?php Disabled(True) ?> >
-    <?php Echo $this->t('words') ?>
-    <span class="asterisk">*</span>
+    <?php Echo $this->t('words') ?><span class="asterisk">*</span>
     <br>
 		<small><?php Echo $this->t('The number of words of the linked term used as link title.') ?></small>
 	</td>

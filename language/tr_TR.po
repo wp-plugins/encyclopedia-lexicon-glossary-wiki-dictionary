@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-12 15:01+0100\n"
+"POT-Creation-Date: 2015-03-08 18:50+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: \n"
@@ -47,171 +47,180 @@ msgid "Cross linking"
 msgstr ""
 
 #: ../class.core.php:149
-#: ../class.core.php:336
+#: ../class.core.php:337
 msgid "Archive Url"
 msgstr "Arşiv Bağlantısı"
 
-#: ../class.core.php:248
+#: ../class.core.php:150
+msgid "Upgrade to Pro!"
+msgstr ""
+
+#: ../class.core.php:249
 msgid "Lexicon"
 msgstr "Lügat"
 
-#: ../class.core.php:249
+#: ../class.core.php:250
 msgctxt "URL slug"
 msgid "lexicon"
 msgstr "sozlukce"
 
-#: ../class.core.php:257
+#: ../class.core.php:258
 msgid "Term"
 msgstr "Terim"
 
-#: ../class.core.php:258
+#: ../class.core.php:259
 msgid "Add Term"
 msgstr "Terim Ekle"
 
-#: ../class.core.php:259
+#: ../class.core.php:260
 msgid "New Term"
 msgstr "Yeni Terim"
 
-#: ../class.core.php:260
+#: ../class.core.php:261
 msgid "Edit Term"
 msgstr "Terimi Düzenle"
 
-#: ../class.core.php:261
+#: ../class.core.php:262
 msgid "View Term"
 msgstr "Terimi Gör"
 
-#: ../class.core.php:262
+#: ../class.core.php:263
 msgid "Search Terms"
 msgstr "Terim Ara"
 
-#: ../class.core.php:263
+#: ../class.core.php:264
 msgid "No Terms found"
 msgstr "Terim Bulunamadı"
 
-#: ../class.core.php:264
+#: ../class.core.php:265
 msgid "No Terms found in Trash"
 msgstr "Çöp Kutusunda Terim Bulunamadı"
 
-#: ../class.core.php:285
+#: ../class.core.php:286
 #, php-format
 msgid "Term updated. (<a href=\"%s\">View Term</a>)"
 msgstr "Terim güncellendi. (<a href=\"%s\">Terime Bak</a>)"
 
-#: ../class.core.php:288
+#: ../class.core.php:289
 msgid "Term updated."
 msgstr "Terim güncellendi."
 
-#: ../class.core.php:289
+#: ../class.core.php:290
 #, php-format
 msgid "Term restored to revision from %s"
 msgstr "Terim %s tarafından yapılan düzeltiye döndürüldü."
 
-#: ../class.core.php:290
+#: ../class.core.php:291
 #, php-format
 msgid "Term published. (<a href=\"%s\">View Term</a>)"
 msgstr "Terim yayımlandı. (<a href=\"%s\">Terimi Gör</a>)"
 
-#: ../class.core.php:291
+#: ../class.core.php:292
 msgid "Term saved."
 msgstr "Terim kaydedildi."
 
-#: ../class.core.php:292
+#: ../class.core.php:293
 msgid "Term submitted."
 msgstr "Terim eklendi."
 
-#: ../class.core.php:293
+#: ../class.core.php:294
 #, php-format
 msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 msgstr "Terim takvime eklendi. (<a target=\"_blank\" href=\"%s\">Terimi Gör</a>)"
 
-#: ../class.core.php:294
+#: ../class.core.php:295
 #, php-format
 msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
 msgstr "Taslak güncellendi. (<a target=\"_blank\" href=\"%s\">Terimi Önizle</a>)"
 
-#: ../class.core.php:301
+#: ../class.core.php:302
 #, fuzzy
 msgid "Encyclopedia Tags"
 msgstr "Ansiklopedi Terimleri"
 
-#: ../class.core.php:303
+#: ../class.core.php:304
 #, fuzzy
 msgid "Tags"
 msgstr "Tüm Etiketler"
 
-#: ../class.core.php:304
+#: ../class.core.php:305
 msgid "Tag"
 msgstr "Etiket"
 
-#: ../class.core.php:305
+#: ../class.core.php:306
 msgid "Search Tags"
 msgstr "Etiketlerde Ara"
 
-#: ../class.core.php:306
+#: ../class.core.php:307
 msgid "All Tags"
 msgstr "Tüm Etiketler"
 
-#: ../class.core.php:307
+#: ../class.core.php:308
 msgid "Edit Tag"
 msgstr "Etiketi Düzenle"
 
-#: ../class.core.php:308
+#: ../class.core.php:309
 msgid "Update Tag"
 msgstr "Etiketi Güncelle"
 
-#: ../class.core.php:309
+#: ../class.core.php:310
 msgid "Add New Tag"
 msgstr "Yeni Etiket Ekle"
 
-#: ../class.core.php:310
+#: ../class.core.php:311
 msgid "New Tag"
 msgstr "Yeni Etiket"
 
-#: ../class.core.php:318
+#: ../class.core.php:319
 #, php-format
 msgctxt "URL slug"
 msgid "%s-tag"
 msgstr ""
 
-#: ../class.core.php:339
+#: ../class.core.php:340
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "Bu %s arşivine ait bağlantı adresidir."
 
-#: ../class.core.php:343
+#: ../class.core.php:344
 msgid "Archive Feed"
 msgstr "Arşiv Geri-Beslemesi"
 
-#: ../class.core.php:346
+#: ../class.core.php:347
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "Bu %s arşivine ait geri-besleme bağlantı adresidir."
 
-#: ../class.core.php:749
+#: ../class.core.php:753
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: ../class.core.php:751
+#: ../class.core.php:755
 #, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr ""
 
-#: ../class.core.php:752
+#: ../class.core.php:756
+#, php-format
+msgid "This option is changeable in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
+msgstr ""
+
+#: ../class.core.php:757
 #, php-format
 msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
 msgstr ""
 
-#: ../class.core.php:753
+#: ../class.core.php:758
 #, php-format
 msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
 msgstr ""
 
-#: ../class.core.php:759
+#: ../class.core.php:764
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr ""
 
-#: ../class.core.php:790
+#: ../class.core.php:795
 msgid "&laquo; Back to your terms"
 msgstr ""
 
@@ -373,7 +382,7 @@ msgid "This option effects all encyclopedia archive pages."
 msgstr "Bu seçenek, bütün ansiklopedi arşiv sayfalarını etkiler."
 
 #: ../options-page/box-archive-page.php:13
-#: ../options-page/box-single-page.php:23
+#: ../options-page/box-single-page.php:22
 #, fuzzy
 msgid "Prefix filter"
 msgstr "Terimi filtrele"
@@ -384,13 +393,13 @@ msgid "Display a prefix filter above the encyclopedia archive automatically or n
 msgstr "Ansiklopedi arşiv sayfasının üstünde, otomatik olarak terim filtresi gösterir."
 
 #: ../options-page/box-archive-page.php:24
-#: ../options-page/box-single-page.php:34
+#: ../options-page/box-single-page.php:33
 #, fuzzy
 msgid "Prefix filter depth"
 msgstr "Terimi filtrele"
 
 #: ../options-page/box-archive-page.php:27
-#: ../options-page/box-single-page.php:37
+#: ../options-page/box-single-page.php:36
 msgid "The depth of the prefix filter is usually the number of lines with prefixes which are shown."
 msgstr ""
 
@@ -414,33 +423,33 @@ msgstr "Etiketler, ilişkili terimleri göstermek için gereklidir."
 msgid "Query terms directly"
 msgstr ""
 
-#: ../options-page/box-search.php:11
+#: ../options-page/box-search.php:10
 msgid "Enable this feature to redirect the user to the term if the search query matches a term title exactly."
 msgstr ""
 
-#: ../options-page/box-search.php:17
+#: ../options-page/box-search.php:16
 msgid "Autocomplete min length"
 msgstr ""
 
-#: ../options-page/box-search.php:20
+#: ../options-page/box-search.php:19
 msgctxt "characters unit"
 msgid "characters"
 msgstr ""
 
-#: ../options-page/box-search.php:23
+#: ../options-page/box-search.php:21
 msgid "The minimum number of characters a user must type before suggestions will be shown."
 msgstr ""
 
-#: ../options-page/box-search.php:29
+#: ../options-page/box-search.php:27
 msgid "Autocomplete delay"
 msgstr ""
 
-#: ../options-page/box-search.php:32
+#: ../options-page/box-search.php:30
 msgctxt "milliseconds time unit"
 msgid "ms"
 msgstr ""
 
-#: ../options-page/box-search.php:35
+#: ../options-page/box-search.php:32
 msgid "The delay in milliseconds between when a keystroke occurs and when suggestions will be shown."
 msgstr ""
 
@@ -522,14 +531,18 @@ msgstr "ilişkili terimleri gösterme"
 msgid "Number of related terms"
 msgstr "İlişkili terim sayısı"
 
-#: ../options-page/box-single-page.php:17
+#: ../options-page/box-single-page.php:16
 msgid "How many related terms should be shown for each term?"
 msgstr "Terim başına, kaç adet ilişkili terim gösterilsin istiyorsunuz?"
 
-#: ../options-page/box-single-page.php:29
+#: ../options-page/box-single-page.php:28
 #, fuzzy
 msgid "Display the prefix filter above the encyclopedia term automatically or not."
 msgstr "Ansiklopedi arşiv sayfasının üstünde, otomatik olarak terim filtresi gösterir."
+
+#: ../options-page/box-upgrade.php:1
+msgid "Want to unlock all settings and features? Upgrade to Encyclopedia Pro!"
+msgstr ""
 
 #: ../options-page/box-archive-link.php:2
 #, fuzzy, php-format
@@ -554,32 +567,32 @@ msgstr ""
 msgid "Link complete words only."
 msgstr ""
 
-#: ../options-page/box-cross-linking.php:31
+#: ../options-page/box-cross-linking.php:30
 msgid "First match only"
 msgstr ""
 
-#: ../options-page/box-cross-linking.php:35
+#: ../options-page/box-cross-linking.php:34
 msgid "Link the first match of each term only."
 msgstr ""
 
-#: ../options-page/box-cross-linking.php:42
+#: ../options-page/box-cross-linking.php:40
 msgid "Recursion"
 msgstr ""
 
-#: ../options-page/box-cross-linking.php:46
+#: ../options-page/box-cross-linking.php:44
 #, fuzzy
 msgid "Link the term in its own content."
 msgstr "İçerikteki Bağlantılı Terimler"
 
-#: ../options-page/box-cross-linking.php:53
+#: ../options-page/box-cross-linking.php:50
 msgid "Link title length"
 msgstr ""
 
-#: ../options-page/box-cross-linking.php:56
+#: ../options-page/box-cross-linking.php:53
 msgid "words"
 msgstr ""
 
-#: ../options-page/box-cross-linking.php:59
+#: ../options-page/box-cross-linking.php:55
 #, fuzzy
 msgid "The number of words of the linked term used as link title."
 msgstr "Göstermek istediğiniz ilişkili terim sayısı."

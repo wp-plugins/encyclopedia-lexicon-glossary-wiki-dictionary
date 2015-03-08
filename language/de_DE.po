@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia Lite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-12 14:59+0100\n"
+"POT-Creation-Date: 2015-03-08 17:22+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Dennis Hoppe <Mail@DennisHoppe.de>\n"
@@ -45,169 +45,178 @@ msgid "Cross linking"
 msgstr "Querverknüpfungen"
 
 #: ../class.core.php:149
-#: ../class.core.php:336
+#: ../class.core.php:337
 msgid "Archive Url"
 msgstr "Archiv Url"
 
-#: ../class.core.php:248
+#: ../class.core.php:150
+msgid "Upgrade to Pro!"
+msgstr "Aufrüsten auf Pro!"
+
+#: ../class.core.php:249
 msgid "Lexicon"
 msgstr "Lexikon"
 
-#: ../class.core.php:249
+#: ../class.core.php:250
 msgctxt "URL slug"
 msgid "lexicon"
 msgstr "lexikon"
 
-#: ../class.core.php:257
+#: ../class.core.php:258
 msgid "Term"
 msgstr "Eintrag"
 
-#: ../class.core.php:258
+#: ../class.core.php:259
 msgid "Add Term"
 msgstr "Eintrag hinzufügen"
 
-#: ../class.core.php:259
+#: ../class.core.php:260
 msgid "New Term"
 msgstr "Neuer Eintrag"
 
-#: ../class.core.php:260
+#: ../class.core.php:261
 msgid "Edit Term"
 msgstr "Eintrag bearbeiten"
 
-#: ../class.core.php:261
+#: ../class.core.php:262
 msgid "View Term"
 msgstr "Eintrag ansehen"
 
-#: ../class.core.php:262
+#: ../class.core.php:263
 msgid "Search Terms"
 msgstr "Einträge durchsuchen"
 
-#: ../class.core.php:263
+#: ../class.core.php:264
 msgid "No Terms found"
 msgstr "Keine Einträge gefunden"
 
-#: ../class.core.php:264
+#: ../class.core.php:265
 msgid "No Terms found in Trash"
 msgstr "Keine Einträge im Papierkorb gefunden."
 
-#: ../class.core.php:285
+#: ../class.core.php:286
 #, php-format
 msgid "Term updated. (<a href=\"%s\">View Term</a>)"
 msgstr "Eintrag aktualisiert. (<a href=\"%s\">Eintrag ansehen</a>)"
 
-#: ../class.core.php:288
+#: ../class.core.php:289
 msgid "Term updated."
 msgstr "Eintrag aktualisiert."
 
-#: ../class.core.php:289
+#: ../class.core.php:290
 #, php-format
 msgid "Term restored to revision from %s"
 msgstr "Eintrag auf den Stand von %s zurückgesetzt"
 
-#: ../class.core.php:290
+#: ../class.core.php:291
 #, php-format
 msgid "Term published. (<a href=\"%s\">View Term</a>)"
 msgstr "Eintrag veröffentlicht. (<a href=\"%s\">Eintrag ansehen</a>)"
 
-#: ../class.core.php:291
+#: ../class.core.php:292
 msgid "Term saved."
 msgstr "Eintrag gespeichert."
 
-#: ../class.core.php:292
+#: ../class.core.php:293
 msgid "Term submitted."
 msgstr "Eintrag eingereicht."
 
-#: ../class.core.php:293
+#: ../class.core.php:294
 #, php-format
 msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 msgstr "Eintrag angelegt. (<a target=\"_blank\" href=\"%s\">Eintrag ansehen</a>)"
 
-#: ../class.core.php:294
+#: ../class.core.php:295
 #, php-format
 msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
 msgstr "Entwurf gespeichert. (<a target=\"_blank\" href=\"%s\">Vorschau</a>)"
 
-#: ../class.core.php:301
+#: ../class.core.php:302
 msgid "Encyclopedia Tags"
 msgstr "Enzyklopädie Schlagwörter"
 
-#: ../class.core.php:303
+#: ../class.core.php:304
 msgid "Tags"
 msgstr "Schlagworte"
 
-#: ../class.core.php:304
+#: ../class.core.php:305
 msgid "Tag"
 msgstr "Schlagwort"
 
-#: ../class.core.php:305
+#: ../class.core.php:306
 msgid "Search Tags"
 msgstr "Schlagworte durchsuchen"
 
-#: ../class.core.php:306
+#: ../class.core.php:307
 msgid "All Tags"
 msgstr "Alle Schlagworte"
 
-#: ../class.core.php:307
+#: ../class.core.php:308
 msgid "Edit Tag"
 msgstr "Schlagwort bearbeiten"
 
-#: ../class.core.php:308
+#: ../class.core.php:309
 msgid "Update Tag"
 msgstr "Schlagwort aktualisieren"
 
-#: ../class.core.php:309
+#: ../class.core.php:310
 msgid "Add New Tag"
 msgstr "Neues Schlagwort hinzufügen"
 
-#: ../class.core.php:310
+#: ../class.core.php:311
 msgid "New Tag"
 msgstr "Neues Schlagwort"
 
-#: ../class.core.php:318
+#: ../class.core.php:319
 #, php-format
 msgctxt "URL slug"
 msgid "%s-tag"
 msgstr "%s-schlagwort"
 
-#: ../class.core.php:339
+#: ../class.core.php:340
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "Das ist die URL des %s-Archives."
 
-#: ../class.core.php:343
+#: ../class.core.php:344
 msgid "Archive Feed"
 msgstr "Archiv Feed"
 
-#: ../class.core.php:346
+#: ../class.core.php:347
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "Das ist die URL zum RSS Feed des %s-Archives."
 
-#: ../class.core.php:749
+#: ../class.core.php:753
 msgid "Upgrade to Pro"
 msgstr "Upgrade auf Pro"
 
-#: ../class.core.php:751
+#: ../class.core.php:755
 #, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr "Nur in <a href=\"%s\" target=\"_blank\">Encyclopedia Pro</a> verfügbar."
 
-#: ../class.core.php:752
+#: ../class.core.php:756
+#, php-format
+msgid "This option is changeable in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
+msgstr "Diese Einstellung lässt sich nur in <a href=\"%s\" target=\"_blank\">Encyclopedia Pro</a> ändern."
+
+#: ../class.core.php:757
 #, php-format
 msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
 msgstr "Brauchen Sie eine spezielle Klassifizierung für Ihr Projekt? Kein Problem! <a href=\"%s\" target=\"_blank\">Fragen Sie einfach danach</a>."
 
-#: ../class.core.php:753
+#: ../class.core.php:758
 #, php-format
 msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
 msgstr "In der <a href=\"%s\" target=\"_blank\">Premium Version von Encyclopedia</a> können Sie unbegrenzt viele Einträge anlegen und viele weitere Funktionen nutzen."
 
-#: ../class.core.php:759
+#: ../class.core.php:764
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr "http://dennishoppe.de/wordpress-plugins/encyclopedia"
 
-#: ../class.core.php:790
+#: ../class.core.php:795
 msgid "&laquo; Back to your terms"
 msgstr "&laquo; Zurück zu den Einträgen"
 
@@ -366,7 +375,7 @@ msgid "This option effects all encyclopedia archive pages."
 msgstr "Diese Einstellung betrifft alle Enzyklopädie-Übersichtsseiten."
 
 #: ../options-page/box-archive-page.php:13
-#: ../options-page/box-single-page.php:23
+#: ../options-page/box-single-page.php:22
 msgid "Prefix filter"
 msgstr "Präfixfilter"
 
@@ -375,12 +384,12 @@ msgid "Display a prefix filter above the encyclopedia archive automatically or n
 msgstr "Zeige einen Präfixfilter über Enzyklopädie-Archiven an (oder nicht)."
 
 #: ../options-page/box-archive-page.php:24
-#: ../options-page/box-single-page.php:34
+#: ../options-page/box-single-page.php:33
 msgid "Prefix filter depth"
 msgstr "Präfixfiltertiefe"
 
 #: ../options-page/box-archive-page.php:27
-#: ../options-page/box-single-page.php:37
+#: ../options-page/box-single-page.php:36
 msgid "The depth of the prefix filter is usually the number of lines with prefixes which are shown."
 msgstr "Die Tiefe des Filters ist für gewöhnlich die Anzahl der Zeilen mit verfügbaren Präfixen, die angezeigt werden."
 
@@ -404,33 +413,33 @@ msgstr "Schlagwörter sind notwendig um Verwandtschaften zwischen Einträgen her
 msgid "Query terms directly"
 msgstr "Einträge direkt aufrufen"
 
-#: ../options-page/box-search.php:11
+#: ../options-page/box-search.php:10
 msgid "Enable this feature to redirect the user to the term if the search query matches a term title exactly."
 msgstr "Aktivieren Sie diese Funktion um den Benutzer auf den entsprechenden Eintrag weiterzuleiten wenn er nach dem exakten Titel sucht."
 
-#: ../options-page/box-search.php:17
+#: ../options-page/box-search.php:16
 msgid "Autocomplete min length"
 msgstr "Mindesteingabe bei Autovervollständigung"
 
-#: ../options-page/box-search.php:20
+#: ../options-page/box-search.php:19
 msgctxt "characters unit"
 msgid "characters"
 msgstr "Zeichen"
 
-#: ../options-page/box-search.php:23
+#: ../options-page/box-search.php:21
 msgid "The minimum number of characters a user must type before suggestions will be shown."
 msgstr "Die Mindestanzahl an eingegebenen Zeichen bevor Vorschläge angezeigt werden."
 
-#: ../options-page/box-search.php:29
+#: ../options-page/box-search.php:27
 msgid "Autocomplete delay"
 msgstr "Verzögerung bei Autovervollständigung"
 
-#: ../options-page/box-search.php:32
+#: ../options-page/box-search.php:30
 msgctxt "milliseconds time unit"
 msgid "ms"
 msgstr "ms"
 
-#: ../options-page/box-search.php:35
+#: ../options-page/box-search.php:32
 msgid "The delay in milliseconds between when a keystroke occurs and when suggestions will be shown."
 msgstr "Die Verzögerung in Millisekunden zwischen dem Drücken einer Taste und dem erscheinen der Vorschläge."
 
@@ -510,13 +519,17 @@ msgstr "keine verwandten Einträge anzeigen"
 msgid "Number of related terms"
 msgstr "Anzahl der verwandten Einträge"
 
-#: ../options-page/box-single-page.php:17
+#: ../options-page/box-single-page.php:16
 msgid "How many related terms should be shown for each term?"
 msgstr "Wie viele verwandte Einträge sollen pro Eintrag angezeigt werden?"
 
-#: ../options-page/box-single-page.php:29
+#: ../options-page/box-single-page.php:28
 msgid "Display the prefix filter above the encyclopedia term automatically or not."
 msgstr "Zeige einen Präfixfilter über Enzyklopädie-Einträgen an (oder nicht)."
+
+#: ../options-page/box-upgrade.php:1
+msgid "Want to unlock all settings and features? Upgrade to Encyclopedia Pro!"
+msgstr "Möchten Sie alle Funktionen und Einstellungen freischalten? Dann rüsten Sie doch auf die Pro-Version auf!"
 
 #: ../options-page/box-archive-link.php:2
 #, php-format
@@ -541,33 +554,37 @@ msgstr "Ganze Wörter"
 msgid "Link complete words only."
 msgstr "Nur ganze Wörter verlinken."
 
-#: ../options-page/box-cross-linking.php:31
+#: ../options-page/box-cross-linking.php:30
 msgid "First match only"
 msgstr "Erstes Vorkommen"
 
-#: ../options-page/box-cross-linking.php:35
+#: ../options-page/box-cross-linking.php:34
 msgid "Link the first match of each term only."
 msgstr "Verlinke nur das erste Vorkommen jedes Eintrags."
 
-#: ../options-page/box-cross-linking.php:42
+#: ../options-page/box-cross-linking.php:40
 msgid "Recursion"
 msgstr "Rekursion"
 
-#: ../options-page/box-cross-linking.php:46
+#: ../options-page/box-cross-linking.php:44
 msgid "Link the term in its own content."
 msgstr "Einträge in Ihrem eigenen Inhalt verlinken."
 
-#: ../options-page/box-cross-linking.php:53
+#: ../options-page/box-cross-linking.php:50
 msgid "Link title length"
 msgstr "Länge des Linktitels"
 
-#: ../options-page/box-cross-linking.php:56
+#: ../options-page/box-cross-linking.php:53
 msgid "words"
 msgstr "Wörter"
 
-#: ../options-page/box-cross-linking.php:59
+#: ../options-page/box-cross-linking.php:55
 msgid "The number of words of the linked term used as link title."
 msgstr "Anzahl der Wörter des verlinkten Eintrags, die als Linktitel verwendet werden sollen."
+
+#, fuzzy
+#~ msgid "Upgrade now!"
+#~ msgstr "Upgrade auf Pro"
 
 #~ msgid "Linked terms in contents"
 #~ msgstr "Verlinkte Einträge in Inhalten"
@@ -580,12 +597,6 @@ msgstr "Anzahl der Wörter des verlinkten Eintrags, die als Linktitel verwendet 
 #~ "types:"
 #~ msgstr ""
 #~ "Verlinke automatisch Enzyklopädie-Einträge in den folgenden Inhaltstypen:"
-
-#~ msgid ""
-#~ "Changeable in the <a href=\"%s\" target=\"_blank\">premium version</a> "
-#~ "only."
-#~ msgstr ""
-#~ "Nur in <a href=\"%s\" target=\"_blank\">Encyclopedia Pro</a> änderbar."
 
 #~ msgid ""
 #~ "Do you like the term management? Upgrade to the <a href=\"%s\" target="

@@ -2,10 +2,10 @@
 <tr>
   <th><label for="encyclopedia_categories"><?php Echo $this->t('Activate categories') ?></label></th>
   <td>
-		<select id="encyclopedia_categories" <?php Disabled(True) ?> >
-			<option><?php _e('Yes') ?></option>
+		<select id="encyclopedia_categories">
+			<option <?php Disabled(True) ?> ><?php _e('Yes') ?>*</option>
 			<option <?php Selected(True) ?> ><?php _e('No') ?></option>
-		</select> <span class="asterisk">*</span><br>
+		</select><br>
 		<small>
       <?php Echo $this->t('Categories can help you create an awesome knowledge base.') ?>
     </small>
