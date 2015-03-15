@@ -48,13 +48,23 @@ body.post-type-archive-encyclopedia.search-results div#page.hfeed.site div#main.
 /* Twenty Fourteen */
 body.post-type-archive-encyclopedia.search-results div#page.hfeed.site div#main.site-main section#primary.content-area div#content.site-content header.page-header
 { display: block }
-body.post-type-archive-encyclopedia div#page.hfeed.site div#main.site-main section#primary.content-area div#content.site-content div.encyclopedia-prefix-filters,
-body.tax-encyclopedia-category      div#page.hfeed.site div#main.site-main section#primary.content-area div#content.site-content div.encyclopedia-prefix-filters,
-body.tax-encyclopedia-tag           div#page.hfeed.site div#main.site-main section#primary.content-area div#content.site-content div.encyclopedia-prefix-filters,
-body.single-encyclopedia            div#page.hfeed.site div#main.site-main div#primary.content-area div#content.site-content div.encyclopedia-prefix-filters
-{ margin-top: -72px }
+@media screen and (min-width: 401px) {
+  body.post-type-archive-encyclopedia div#page.hfeed.site div#main.site-main section#primary.content-area div#content.site-content div.encyclopedia-prefix-filters,
+  body.tax-encyclopedia-category      div#page.hfeed.site div#main.site-main section#primary.content-area div#content.site-content div.encyclopedia-prefix-filters,
+  body.tax-encyclopedia-tag           div#page.hfeed.site div#main.site-main section#primary.content-area div#content.site-content div.encyclopedia-prefix-filters,
+  body.single-encyclopedia            div#page.hfeed.site div#main.site-main div#primary.content-area div#content.site-content div.encyclopedia-prefix-filters
+  { margin-top: -48px }
+}
+@media screen and (min-width: 846px) {
+  body.post-type-archive-encyclopedia div#page.hfeed.site div#main.site-main section#primary.content-area div#content.site-content div.encyclopedia-prefix-filters,
+  body.tax-encyclopedia-category      div#page.hfeed.site div#main.site-main section#primary.content-area div#content.site-content div.encyclopedia-prefix-filters,
+  body.tax-encyclopedia-tag           div#page.hfeed.site div#main.site-main section#primary.content-area div#content.site-content div.encyclopedia-prefix-filters,
+  body.single-encyclopedia            div#page.hfeed.site div#main.site-main div#primary.content-area div#content.site-content div.encyclopedia-prefix-filters
+  { margin-top: -72px }
+}
 body.post-type-archive-encyclopedia.search-results div#page.hfeed.site div#main.site-main section#primary.content-area div#content.site-content div.encyclopedia-prefix-filters
 { margin-top: auto }
+
 
 /* Twenty Fifteen */
 body.post-type-archive-encyclopedia div#page.hfeed.site div#content.site-content section#primary.content-area main#main.site-main header.page-header

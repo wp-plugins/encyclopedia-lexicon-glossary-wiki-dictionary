@@ -188,6 +188,10 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 == Changelog ==
 
+= 1.5.25 =
+* Added support for search template: search-encyclopedia.php
+* Fixed TwentyFourteen styles for prefix filter
+
 = 1.5.24 =
 * Added Portuguese translation translation file
 * Updated option page

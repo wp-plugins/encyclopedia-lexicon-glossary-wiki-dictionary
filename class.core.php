@@ -37,6 +37,7 @@ class wp_plugin_encyclopedia {
     Add_Filter('posts_orderby', Array($this, 'Filter_Posts_OrderBy'), 10, 2);
     Add_Filter('the_content', Array($this, 'Filter_Content'));
     Add_Filter('the_content', Array($this, 'Link_Terms'), 99);
+    Add_Filter('search_template', Array($this, 'Filter_Search_Template'));
     Add_Filter('nav_menu_meta_box_object', Array($this, 'Change_Taxonomy_Menu_Label'));
     Add_Filter('query_vars', Array($this, 'Register_Query_Vars'));
     Add_Filter('init', Array($this, 'Define_Rewrite_Rules'), 99);
@@ -365,8 +366,29 @@ class wp_plugin_encyclopedia {
 		return False;
 	}
 
+  function Is_Encyclopedia_Search($query){
+    If ($query->is_search){
+      # Check post type
+			If ($query->Get('post_type') == $this->post_type) return True;
+      
+      # Check taxonomies
+      $encyclopedia_taxonomies = Get_Object_Taxonomies($this->post_type);
+      If (!Empty($encyclopedia_taxonomies) && $query->Is_Tax($encyclopedia_taxonomies)) return True;
+    }
+    return False;
+  }
+  
+  function Filter_Search_Template($template){
+    Global $wp_query;
+
+    If ($this->Is_Encyclopedia_Search($wp_query) && $search_template = Locate_Template(SPrintF('search-%s.php', $this->post_type)))
+      return $search_template;
+    Else
+      return $template;
+  }
+
   function Filter_Query($query){
-		If ($this->Is_Encyclopedia_Archive($query) && !$query->Get('suppress_filters')){
+		If (!$query->Get('suppress_filters') && $this->Is_Encyclopedia_Archive($query) || $this->Is_Encyclopedia_Search($query)){
       # Order the terms in the backend by title, ASC.
       If (!$query->Get('order')) $query->Set('order', 'asc');
       If (!$query->Get('orderby')) $query->Set('orderby', 'title');
