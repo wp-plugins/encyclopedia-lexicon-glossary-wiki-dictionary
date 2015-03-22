@@ -271,15 +271,23 @@ class wp_plugin_encyclopedia {
       'menu_icon' => 'dashicons-welcome-learn-more',
       'has_archive' => True,
 			'map_meta_cap' => True,
-			'hierarchical' => True,
+			'hierarchical' => False,
       'rewrite' => Array(
         'slug' => $this->encyclopedia_type->slug,
         'with_front' => False
       ),
       'supports' => Array( 'title', 'editor', 'author', 'excerpt' ),
       'menu_position' => 20, # below Pages
-      #'register_meta_box_cb' => Array($this, 'Add_Meta_Boxes')
+      'register_meta_box_cb' => Array($this, 'Register_Post_Type_Meta_Boxes')
     ));
+  }
+  
+  function Register_Post_Type_Meta_Boxes(){
+    Add_Meta_Box('upgrade-to-pro', $this->t('Upgrade to Pro!'), Array($this, 'Print_Upgrade_Meta_Box'), $this->post_type, 'side');
+  }
+  
+  function Print_Upgrade_Meta_Box(){
+    Include DirName(__FILE__).'/options-page/box-upgrade.php';
   }
 
   function Updated_Messages($arr_message){
