@@ -8,7 +8,7 @@ ForEach (Get_Post_Types(Array('show_ui' => True),'objects') AS $type): ?>
   <td>
     <label>
       <input type="checkbox" <?php Disabled(True); Checked(True) ?> >
-      <?php PrintF($this->t('Link terms in %s'), $type->label) ?><span class="asterisk">*</span>
+      <?php PrintF($this->t('Link terms in %s'), $type->label) ?><?php Echo $this->Pro_Notice('unlock') ?>
     </label><br>
 
     <label><input type="checkbox" <?php Disabled(True) ?> > <?php _e('Open link in a new window/tab') ?></label>
@@ -21,7 +21,7 @@ ForEach (Get_Post_Types(Array('show_ui' => True),'objects') AS $type): ?>
   <td>
     <label>
       <input type="checkbox" <?php Disabled(True) ?> >
-      <?php Echo $this->t('Link complete words only.') ?><span class="asterisk">*</span>
+      <?php Echo $this->t('Link complete words only.') ?><?php Echo $this->Pro_Notice('unlock') ?>
     </label>
   </td>
 </tr>
@@ -31,7 +31,7 @@ ForEach (Get_Post_Types(Array('show_ui' => True),'objects') AS $type): ?>
   <td>
     <label>
       <input type="checkbox" <?php Disabled(True) ?> >
-      <?php Echo $this->t('Link the first match of each term only.') ?><span class="asterisk">*</span>
+      <?php Echo $this->t('Link the first match of each term only.') ?><?php Echo $this->Pro_Notice('unlock') ?>
     </label>
   </td>
 </tr>
@@ -41,7 +41,7 @@ ForEach (Get_Post_Types(Array('show_ui' => True),'objects') AS $type): ?>
   <td>
     <label>
       <input type="checkbox" <?php Disabled(True) ?> >
-      <?php Echo $this->t('Link the term in its own content.') ?><span class="asterisk">*</span>
+      <?php Echo $this->t('Link the term in its own content.') ?><?php Echo $this->Pro_Notice('unlock') ?>
     </label>
   </td>
 </tr>
@@ -50,14 +50,9 @@ ForEach (Get_Post_Types(Array('show_ui' => True),'objects') AS $type): ?>
 	<th><label for=""><?php Echo $this->t('Link title length') ?></label></th>
 	<td>
 		<input type="number" value="<?php Echo Esc_Attr($this->Get_Option('cross_link_title_length')) ?>" <?php Disabled(True) ?> >
-    <?php Echo $this->t('words') ?><span class="asterisk">*</span>
+    <?php Echo $this->t('words') ?><?php Echo $this->Pro_Notice('unlock') ?>
     <br>
 		<small><?php Echo $this->t('The number of words of the linked term used as link title.') ?></small>
 	</td>
 </tr>
 </table>
-
-<p>
-  <span class="asterisk">*</span>
-  <span class="pro-notice"><?php $this->Pro_Notice() ?></span>
-</p>

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-08 18:49+0100\n"
+"POT-Creation-Date: 2015-03-24 07:21+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Nasrulhaq Muiz <nasrulhaq81@gmail.com>\n"
@@ -18,210 +18,210 @@ msgstr ""
 "X-Poedit-Country: INDONESIA\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../class.core.php:132
+#: ../class.core.php:133
 msgid "Encyclopedia Options"
 msgstr "Opsi Ensiklopedia"
 
-#: ../class.core.php:133
+#: ../class.core.php:134
 msgid "Encyclopedia"
 msgstr "Ensiklopedia"
 
-#: ../class.core.php:144
+#: ../class.core.php:145
 msgid "Taxonomies"
 msgstr "Taksonomi"
 
-#: ../class.core.php:145
+#: ../class.core.php:146
 #, fuzzy
 msgid "Archive page"
 msgstr "Arsip Halaman"
 
-#: ../class.core.php:146
+#: ../class.core.php:147
 #, fuzzy
 msgid "Search"
 msgstr "Cari Label"
 
-#: ../class.core.php:147
+#: ../class.core.php:148
 #, fuzzy
 msgid "Single page"
 msgstr "Satu Halaman"
 
-#: ../class.core.php:148
+#: ../class.core.php:149
 msgid "Cross linking"
 msgstr ""
 
-#: ../class.core.php:149
-#: ../class.core.php:337
+#: ../class.core.php:150
+#: ../class.core.php:348
 msgid "Archive Url"
 msgstr "Arsip URL"
 
-#: ../class.core.php:150
-msgid "Upgrade to Pro!"
-msgstr ""
-
-#: ../class.core.php:249
+#: ../class.core.php:250
 msgid "Lexicon"
 msgstr "Kosa Kata"
 
-#: ../class.core.php:250
+#: ../class.core.php:251
 msgctxt "URL slug"
 msgid "lexicon"
 msgstr "kosakata"
 
-#: ../class.core.php:258
+#: ../class.core.php:259
 msgid "Term"
 msgstr "Istilah"
 
-#: ../class.core.php:259
+#: ../class.core.php:260
 msgid "Add Term"
 msgstr "Tambah Istilah"
 
-#: ../class.core.php:260
+#: ../class.core.php:261
 msgid "New Term"
 msgstr "Istilah Baru"
 
-#: ../class.core.php:261
+#: ../class.core.php:262
 msgid "Edit Term"
 msgstr "Atur Istilah"
 
-#: ../class.core.php:262
+#: ../class.core.php:263
 msgid "View Term"
 msgstr "Lihat Istilah"
 
-#: ../class.core.php:263
+#: ../class.core.php:264
 msgid "Search Terms"
 msgstr "Cari Istilah"
 
-#: ../class.core.php:264
+#: ../class.core.php:265
 msgid "No Terms found"
 msgstr "Tidak menemukan istilah"
 
-#: ../class.core.php:265
+#: ../class.core.php:266
 msgid "No Terms found in Trash"
 msgstr "Tidak menemukan istilah di tempat sampah"
 
-#: ../class.core.php:286
+#: ../class.core.php:297
 #, php-format
 msgid "Term updated. (<a href=\"%s\">View Term</a>)"
 msgstr "Istilah diperbarui. (<a href=\"%s\">Lihat Istilah</a>)"
 
-#: ../class.core.php:289
+#: ../class.core.php:300
 msgid "Term updated."
 msgstr "Istilah diperbarui"
 
-#: ../class.core.php:290
+#: ../class.core.php:301
 #, php-format
 msgid "Term restored to revision from %s"
 msgstr "Istilah direvisi kembali dari %s"
 
-#: ../class.core.php:291
+#: ../class.core.php:302
 #, php-format
 msgid "Term published. (<a href=\"%s\">View Term</a>)"
 msgstr "Istilah diterbitkan. (<a href=\"%s\">Lihat Istilah</a>)"
 
-#: ../class.core.php:292
+#: ../class.core.php:303
 msgid "Term saved."
 msgstr "Istilah disimpan"
 
-#: ../class.core.php:293
+#: ../class.core.php:304
 msgid "Term submitted."
 msgstr "Istilah didaftarkan"
 
-#: ../class.core.php:294
+#: ../class.core.php:305
 #, php-format
 msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 msgstr "Istilah dijadwalkan. (<a target=\"_blank\" href=\"%s\">Lihat Istilah</a>)"
 
-#: ../class.core.php:295
+#: ../class.core.php:306
 #, php-format
 msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
 msgstr "Draft diperbarui. (<a target=\"_blank\" href=\"%s\">Pratampil Istilah</a>)"
 
-#: ../class.core.php:302
+#: ../class.core.php:313
 msgid "Encyclopedia Tags"
 msgstr "Label Ensiklopedia"
 
-#: ../class.core.php:304
+#: ../class.core.php:315
 msgid "Tags"
 msgstr "Label"
 
-#: ../class.core.php:305
+#: ../class.core.php:316
 msgid "Tag"
 msgstr "Label"
 
-#: ../class.core.php:306
+#: ../class.core.php:317
 msgid "Search Tags"
 msgstr "Cari Label"
 
-#: ../class.core.php:307
+#: ../class.core.php:318
 msgid "All Tags"
 msgstr "Semua Label"
 
-#: ../class.core.php:308
+#: ../class.core.php:319
 msgid "Edit Tag"
 msgstr "Atur Label"
 
-#: ../class.core.php:309
+#: ../class.core.php:320
 msgid "Update Tag"
 msgstr "Perbarui Label"
 
-#: ../class.core.php:310
+#: ../class.core.php:321
 msgid "Add New Tag"
 msgstr "Tambah Label Baru"
 
-#: ../class.core.php:311
+#: ../class.core.php:322
 msgid "New Tag"
 msgstr "Label Baru"
 
-#: ../class.core.php:319
+#: ../class.core.php:330
 #, php-format
 msgctxt "URL slug"
 msgid "%s-tag"
 msgstr ""
 
-#: ../class.core.php:340
+#: ../class.core.php:351
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "URL ini untuk arsip %s."
 
-#: ../class.core.php:344
+#: ../class.core.php:355
 msgid "Archive Feed"
 msgstr "Arsip Umpan"
 
-#: ../class.core.php:347
+#: ../class.core.php:358
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "ini URL umpan pada arsip %s."
 
-#: ../class.core.php:753
+#: ../class.core.php:785
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: ../class.core.php:755
+#: ../class.core.php:787
 #, fuzzy, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr "Maaf, fitur ini hanya tersedia untuk <a href=\"%s\" target=\"_blank\">Plugin Ensiklopedia versi Pro</a>."
 
-#: ../class.core.php:756
+#: ../class.core.php:788
+msgid "Unlock this feature"
+msgstr ""
+
+#: ../class.core.php:789
 #, fuzzy, php-format
 msgid "This option is changeable in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr "Maaf, fitur ini hanya tersedia untuk <a href=\"%s\" target=\"_blank\">Plugin Ensiklopedia versi Pro</a>."
 
-#: ../class.core.php:757
+#: ../class.core.php:790
 #, php-format
-msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
+msgid "Do you need a special taxonomy for your project? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a> through our support section."
 msgstr ""
 
-#: ../class.core.php:758
+#: ../class.core.php:791
 #, php-format
 msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
 msgstr ""
 
-#: ../class.core.php:764
+#: ../class.core.php:797
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 
-#: ../class.core.php:795
+#: ../class.core.php:828
 msgid "&laquo; Back to your terms"
 msgstr "&laquo; Kembali pada istilah anda"
 
@@ -544,6 +544,10 @@ msgstr "Tampilkan filter istilah diatas arsip ensiklopedia secara otomatis atau 
 
 #: ../options-page/box-upgrade.php:1
 msgid "Want to unlock all settings and features? Upgrade to Encyclopedia Pro!"
+msgstr ""
+
+#: ../options-page/box-upgrade.php:7
+msgid "Upgrade to Pro!"
 msgstr ""
 
 #: ../options-page/box-archive-link.php:2

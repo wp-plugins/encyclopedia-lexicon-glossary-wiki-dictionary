@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia Lite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-08 18:50+0100\n"
+"POT-Creation-Date: 2015-03-24 07:21+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: \n"
@@ -16,208 +16,207 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../class.core.php:132
+#: ../class.core.php:133
 msgid "Encyclopedia Options"
 msgstr "Opções de Enciclopédia"
 
-#: ../class.core.php:133
+#: ../class.core.php:134
 msgid "Encyclopedia"
 msgstr "Enciclopédia"
 
-#: ../class.core.php:144
+#: ../class.core.php:145
 msgid "Taxonomies"
 msgstr "Taxonomias"
 
-#: ../class.core.php:145
+#: ../class.core.php:146
 msgid "Archive page"
 msgstr "Página de arquivamento"
 
-#: ../class.core.php:146
+#: ../class.core.php:147
 msgid "Search"
 msgstr "Busca"
 
-#: ../class.core.php:147
+#: ../class.core.php:148
 msgid "Single page"
 msgstr "Página única"
 
-#: ../class.core.php:148
+#: ../class.core.php:149
 msgid "Cross linking"
 msgstr "Enlaces cruzados"
 
-#: ../class.core.php:149
-#: ../class.core.php:337
+#: ../class.core.php:150
+#: ../class.core.php:348
 msgid "Archive Url"
 msgstr "URL de arquivamento"
 
-#: ../class.core.php:150
-#, fuzzy
-msgid "Upgrade to Pro!"
-msgstr "Atualizar para Pro"
-
-#: ../class.core.php:249
+#: ../class.core.php:250
 msgid "Lexicon"
 msgstr "Léxico"
 
-#: ../class.core.php:250
+#: ../class.core.php:251
 msgctxt "URL slug"
 msgid "lexicon"
 msgstr "lexico"
 
-#: ../class.core.php:258
+#: ../class.core.php:259
 msgid "Term"
 msgstr "Termo"
 
-#: ../class.core.php:259
+#: ../class.core.php:260
 msgid "Add Term"
 msgstr "Adicionar Termo"
 
-#: ../class.core.php:260
+#: ../class.core.php:261
 msgid "New Term"
 msgstr "Novo Termo"
 
-#: ../class.core.php:261
+#: ../class.core.php:262
 msgid "Edit Term"
 msgstr "Editar Termo"
 
-#: ../class.core.php:262
+#: ../class.core.php:263
 msgid "View Term"
 msgstr "Ver Termo"
 
-#: ../class.core.php:263
+#: ../class.core.php:264
 msgid "Search Terms"
 msgstr "Buscar Termos"
 
-#: ../class.core.php:264
+#: ../class.core.php:265
 msgid "No Terms found"
 msgstr "Sem Termos encontrados"
 
-#: ../class.core.php:265
+#: ../class.core.php:266
 msgid "No Terms found in Trash"
 msgstr "Sem Termos encontrados na Lixeira"
 
-#: ../class.core.php:286
+#: ../class.core.php:297
 #, php-format
 msgid "Term updated. (<a href=\"%s\">View Term</a>)"
 msgstr "Termo atualizado. (<a href=\"%s\">Ver Termo</a>)"
 
-#: ../class.core.php:289
+#: ../class.core.php:300
 msgid "Term updated."
 msgstr "Termo atualizado."
 
-#: ../class.core.php:290
+#: ../class.core.php:301
 #, php-format
 msgid "Term restored to revision from %s"
 msgstr "Termo restaurado para a revisão de %s"
 
-#: ../class.core.php:291
+#: ../class.core.php:302
 #, php-format
 msgid "Term published. (<a href=\"%s\">View Term</a>)"
 msgstr "Termo publicado. (<a href=\"%s\">Ver Termo</a>)"
 
-#: ../class.core.php:292
+#: ../class.core.php:303
 msgid "Term saved."
 msgstr "Termo salvo."
 
-#: ../class.core.php:293
+#: ../class.core.php:304
 msgid "Term submitted."
 msgstr "Termo enviado."
 
-#: ../class.core.php:294
+#: ../class.core.php:305
 #, php-format
 msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 msgstr "Termo agendado. (<a target=\"_blank\" href=\"%s\">Ver Termo</a>)"
 
-#: ../class.core.php:295
+#: ../class.core.php:306
 #, php-format
 msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
 msgstr "Rascunho atualizado. (<a target=\"_blank\" href=\"%s\">Prever Termo</a>)"
 
-#: ../class.core.php:302
+#: ../class.core.php:313
 msgid "Encyclopedia Tags"
 msgstr "Etiquetas enciclopédia"
 
-#: ../class.core.php:304
+#: ../class.core.php:315
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: ../class.core.php:305
+#: ../class.core.php:316
 msgid "Tag"
 msgstr "Etiqueta"
 
-#: ../class.core.php:306
+#: ../class.core.php:317
 msgid "Search Tags"
 msgstr "Buscar Etiquetas"
 
-#: ../class.core.php:307
+#: ../class.core.php:318
 msgid "All Tags"
 msgstr "Todas as Etiquetas"
 
-#: ../class.core.php:308
+#: ../class.core.php:319
 msgid "Edit Tag"
 msgstr "Editar Etiqueta"
 
-#: ../class.core.php:309
+#: ../class.core.php:320
 msgid "Update Tag"
 msgstr "Atualizar Etiqueta"
 
-#: ../class.core.php:310
+#: ../class.core.php:321
 msgid "Add New Tag"
 msgstr "Adicionar Nova Etiqueta"
 
-#: ../class.core.php:311
+#: ../class.core.php:322
 msgid "New Tag"
 msgstr "Nova Etiqueta"
 
-#: ../class.core.php:319
+#: ../class.core.php:330
 #, php-format
 msgctxt "URL slug"
 msgid "%s-tag"
 msgstr "%s-etiqueta"
 
-#: ../class.core.php:340
+#: ../class.core.php:351
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "Esta é a URL para o arquivamento deste %s."
 
-#: ../class.core.php:344
+#: ../class.core.php:355
 msgid "Archive Feed"
 msgstr "Alimentador de Arquivamento"
 
-#: ../class.core.php:347
+#: ../class.core.php:358
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "Esta é a URL para o alimentador do arquivamento deste %s."
 
-#: ../class.core.php:753
+#: ../class.core.php:785
 msgid "Upgrade to Pro"
 msgstr "Atualizar para Pro"
 
-#: ../class.core.php:755
+#: ../class.core.php:787
 #, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr "Disponível apenas na <a href=\"%s\" target=\"_blank\">versão premium</a>."
 
-#: ../class.core.php:756
+#: ../class.core.php:788
+msgid "Unlock this feature"
+msgstr ""
+
+#: ../class.core.php:789
 #, fuzzy, php-format
 msgid "This option is changeable in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr "Disponível apenas na <a href=\"%s\" target=\"_blank\">versão premium</a>."
 
-#: ../class.core.php:757
-#, php-format
-msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
+#: ../class.core.php:790
+#, fuzzy, php-format
+msgid "Do you need a special taxonomy for your project? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a> through our support section."
 msgstr "Você necessita uma taxonomia especial para seu website? Sem problemas! Apenas <a href=\"%s\" target=\"_blank\">entre em contato</a>."
 
-#: ../class.core.php:758
+#: ../class.core.php:791
 #, php-format
 msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
 msgstr "Na <a href=\"%s\" target=\"_blank\">versão premium de Enciclopédia</a> você levará vantagens de termos ilimitados e várias outras características."
 
-#: ../class.core.php:764
+#: ../class.core.php:797
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 
-#: ../class.core.php:795
+#: ../class.core.php:828
 msgid "&laquo; Back to your terms"
 msgstr "&laquo; Volte à seus termos"
 
@@ -531,6 +530,11 @@ msgstr "Mostrar o filtro de prefixo antes do termo da enciclopédia automaticame
 #: ../options-page/box-upgrade.php:1
 msgid "Want to unlock all settings and features? Upgrade to Encyclopedia Pro!"
 msgstr ""
+
+#: ../options-page/box-upgrade.php:7
+#, fuzzy
+msgid "Upgrade to Pro!"
+msgstr "Atualizar para Pro"
 
 #: ../options-page/box-archive-link.php:2
 #, php-format

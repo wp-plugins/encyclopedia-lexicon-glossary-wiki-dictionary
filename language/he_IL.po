@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-08 18:49+0100\n"
+"POT-Creation-Date: 2015-03-24 07:21+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Ahrale | Atar4U.com <contact@atar4u.com>\n"
@@ -18,210 +18,210 @@ msgstr ""
 "X-Poedit-Country: ISRAEL\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../class.core.php:132
+#: ../class.core.php:133
 msgid "Encyclopedia Options"
 msgstr "אפשרויות אנציקלופדיה"
 
-#: ../class.core.php:133
+#: ../class.core.php:134
 msgid "Encyclopedia"
 msgstr "אנציקלופדיה"
 
-#: ../class.core.php:144
+#: ../class.core.php:145
 msgid "Taxonomies"
 msgstr "טקסונומיות"
 
-#: ../class.core.php:145
+#: ../class.core.php:146
 #, fuzzy
 msgid "Archive page"
 msgstr "דף ארכיון"
 
-#: ../class.core.php:146
+#: ../class.core.php:147
 #, fuzzy
 msgid "Search"
 msgstr "דף חיפוש"
 
-#: ../class.core.php:147
+#: ../class.core.php:148
 #, fuzzy
 msgid "Single page"
 msgstr "דף יחיד"
 
-#: ../class.core.php:148
+#: ../class.core.php:149
 msgid "Cross linking"
 msgstr ""
 
-#: ../class.core.php:149
-#: ../class.core.php:337
+#: ../class.core.php:150
+#: ../class.core.php:348
 msgid "Archive Url"
 msgstr "כתובת ארכיון"
 
-#: ../class.core.php:150
-msgid "Upgrade to Pro!"
-msgstr ""
-
-#: ../class.core.php:249
+#: ../class.core.php:250
 msgid "Lexicon"
 msgstr "לכסיקון"
 
-#: ../class.core.php:250
+#: ../class.core.php:251
 msgctxt "URL slug"
 msgid "lexicon"
 msgstr "לכסיקון"
 
-#: ../class.core.php:258
+#: ../class.core.php:259
 msgid "Term"
 msgstr "ביטוי"
 
-#: ../class.core.php:259
+#: ../class.core.php:260
 msgid "Add Term"
 msgstr "הוספת ביטוי"
 
-#: ../class.core.php:260
+#: ../class.core.php:261
 msgid "New Term"
 msgstr "ביטוי חדש"
 
-#: ../class.core.php:261
+#: ../class.core.php:262
 msgid "Edit Term"
 msgstr "עריכת ביטוי"
 
-#: ../class.core.php:262
+#: ../class.core.php:263
 msgid "View Term"
 msgstr "הצג את הביטוי"
 
-#: ../class.core.php:263
+#: ../class.core.php:264
 msgid "Search Terms"
 msgstr "חיפוש ביטויים"
 
-#: ../class.core.php:264
+#: ../class.core.php:265
 msgid "No Terms found"
 msgstr "לא נמצאו ביטויים"
 
-#: ../class.core.php:265
+#: ../class.core.php:266
 msgid "No Terms found in Trash"
 msgstr "לא נמצאו ביטויים באשפה"
 
-#: ../class.core.php:286
+#: ../class.core.php:297
 #, php-format
 msgid "Term updated. (<a href=\"%s\">View Term</a>)"
 msgstr "הביטוי עודכן, (<a href=\"%s\">הצג</a>)"
 
-#: ../class.core.php:289
+#: ../class.core.php:300
 msgid "Term updated."
 msgstr "הביטוי הוצג"
 
-#: ../class.core.php:290
+#: ../class.core.php:301
 #, php-format
 msgid "Term restored to revision from %s"
 msgstr "הביטוי שוחזר לגרסה מ %s"
 
-#: ../class.core.php:291
+#: ../class.core.php:302
 #, php-format
 msgid "Term published. (<a href=\"%s\">View Term</a>)"
 msgstr "הביטוי פורסם. (<a href=\"%s\">הצג</a>)"
 
-#: ../class.core.php:292
+#: ../class.core.php:303
 msgid "Term saved."
 msgstr "הביטוי נשמר"
 
-#: ../class.core.php:293
+#: ../class.core.php:304
 msgid "Term submitted."
 msgstr "הביטוי נשלח."
 
-#: ../class.core.php:294
+#: ../class.core.php:305
 #, php-format
 msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 msgstr "הביטוי תוזמן. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 
-#: ../class.core.php:295
+#: ../class.core.php:306
 #, php-format
 msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
 msgstr "הטיוטה עודכנה. (<a target=\"_blank\" href=\"%s\">תצוגה מוקדמת</a>)"
 
-#: ../class.core.php:302
+#: ../class.core.php:313
 msgid "Encyclopedia Tags"
 msgstr "תגיות אנציקלופדיה"
 
-#: ../class.core.php:304
+#: ../class.core.php:315
 msgid "Tags"
 msgstr "תגיות"
 
-#: ../class.core.php:305
+#: ../class.core.php:316
 msgid "Tag"
 msgstr "תגית"
 
-#: ../class.core.php:306
+#: ../class.core.php:317
 msgid "Search Tags"
 msgstr "חיפוש תגיות"
 
-#: ../class.core.php:307
+#: ../class.core.php:318
 msgid "All Tags"
 msgstr "כל התגיות"
 
-#: ../class.core.php:308
+#: ../class.core.php:319
 msgid "Edit Tag"
 msgstr "עריכת תגית"
 
-#: ../class.core.php:309
+#: ../class.core.php:320
 msgid "Update Tag"
 msgstr "עדכון תגית"
 
-#: ../class.core.php:310
+#: ../class.core.php:321
 msgid "Add New Tag"
 msgstr "הוספת תגית"
 
-#: ../class.core.php:311
+#: ../class.core.php:322
 msgid "New Tag"
 msgstr "תגית חדשה"
 
-#: ../class.core.php:319
+#: ../class.core.php:330
 #, php-format
 msgctxt "URL slug"
 msgid "%s-tag"
 msgstr "%s-תגית"
 
-#: ../class.core.php:340
+#: ../class.core.php:351
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "זו כתובת ה URL לארכיון של %s זה."
 
-#: ../class.core.php:344
+#: ../class.core.php:355
 msgid "Archive Feed"
 msgstr "הזנת ארכיון"
 
-#: ../class.core.php:347
+#: ../class.core.php:358
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "זוהי כתובת ה URL של הארכיון של %s זה."
 
-#: ../class.core.php:753
+#: ../class.core.php:785
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: ../class.core.php:755
+#: ../class.core.php:787
 #, fuzzy, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr "מצטערים, תכונה זו זמינה רק ב <a href=\"%s\" target=\"_blank\">גרסה המקצועית של תוסף האנציקלופדיה</a>."
 
-#: ../class.core.php:756
+#: ../class.core.php:788
+msgid "Unlock this feature"
+msgstr ""
+
+#: ../class.core.php:789
 #, fuzzy, php-format
 msgid "This option is changeable in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr "מצטערים, תכונה זו זמינה רק ב <a href=\"%s\" target=\"_blank\">גרסה המקצועית של תוסף האנציקלופדיה</a>."
 
-#: ../class.core.php:757
+#: ../class.core.php:790
 #, php-format
-msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
+msgid "Do you need a special taxonomy for your project? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a> through our support section."
 msgstr ""
 
-#: ../class.core.php:758
+#: ../class.core.php:791
 #, php-format
 msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
 msgstr ""
 
-#: ../class.core.php:764
+#: ../class.core.php:797
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 
-#: ../class.core.php:795
+#: ../class.core.php:828
 msgid "&laquo; Back to your terms"
 msgstr "&raquo;חזרה לביטויים שלך"
 
@@ -548,6 +548,10 @@ msgstr "הצג אוטומטית מסנן ביטוי מעל לתוכן ביטוי
 
 #: ../options-page/box-upgrade.php:1
 msgid "Want to unlock all settings and features? Upgrade to Encyclopedia Pro!"
+msgstr ""
+
+#: ../options-page/box-upgrade.php:7
+msgid "Upgrade to Pro!"
 msgstr ""
 
 #: ../options-page/box-archive-link.php:2

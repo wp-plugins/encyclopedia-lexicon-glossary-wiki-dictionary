@@ -188,6 +188,9 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 == Changelog ==
 
+= 1.5.27 =
+* Rollback: Removed all banners to the pro version
+
 = 1.5.26 =
 * Changed the encyclopedia post type to non-hierarchally
 

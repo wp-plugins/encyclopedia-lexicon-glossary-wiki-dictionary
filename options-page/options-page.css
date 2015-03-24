@@ -12,9 +12,13 @@ input.short { width: 60px }
   .wrap .postbox-container.right { float: none; width: auto }
 }
 
+a.unlock { color: #BBB; font-size: 80%; text-decoration: none; display: inline-block }
+a.unlock .dashicons { font-size: 15px }
+
+
+/*
 .asterisk { font-weight: lighter; color: gray; font-size: 125% }
-
 img.premium-banner { max-width: 100%; border-radius: 3px; }
-
 .settings_page_wp_plugin_encyclopedia .button.button-block { display: block; text-transform: uppercase; font-weight: bold; text-align: center; }
 .settings_page_wp_plugin_encyclopedia .button.button-large { font-size: 125%; padding: 10px; height: auto }
+*/

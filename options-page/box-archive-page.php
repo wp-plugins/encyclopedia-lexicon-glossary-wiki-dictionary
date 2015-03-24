@@ -2,7 +2,7 @@
 <tr>
 	<th><label for="terms_per_page"><?php Echo $this->t('Terms per page') ?></label></th>
 	<td>
-    <input type="number" value="<?php Echo Get_Option('posts_per_page') ?>" class="short" readonly="readonly"><span class="asterisk">*</span><br>
+    <input type="number" value="<?php Echo Get_Option('posts_per_page') ?>" class="short" <?php Disabled(True) ?>><?php Echo $this->Pro_Notice('unlock') ?><br>
     <small>
       <?php Echo $this->t('This option effects all encyclopedia archive pages.') ?>
     </small>
@@ -29,8 +29,3 @@
 </tr>
 
 </table>
-
-<p>
-  <span class="asterisk">*</span>
-  <span class="pro-notice"><?php $this->Pro_Notice() ?></span>
-</p>

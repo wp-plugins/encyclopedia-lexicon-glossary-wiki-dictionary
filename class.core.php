@@ -148,7 +148,7 @@ class wp_plugin_encyclopedia {
     $this->Add_Option_Box($this->t('Single page'), DirName(__FILE__).'/options-page/box-single-page.php');
     $this->Add_Option_Box($this->t('Cross linking'), DirName(__FILE__).'/options-page/box-cross-linking.php');
     $this->Add_Option_Box($this->t('Archive Url'), DirName(__FILE__).'/options-page/box-archive-link.php', 'side');
-    $this->Add_Option_Box($this->t('Upgrade to Pro!'), DirName(__FILE__).'/options-page/box-upgrade.php', 'side');
+    #$this->Add_Option_Box($this->t('Upgrade to Pro!'), DirName(__FILE__).'/options-page/box-upgrade.php', 'side');
   }
 
   function Get_Options_Page_Url($parameters = Array()){
@@ -278,10 +278,11 @@ class wp_plugin_encyclopedia {
       ),
       'supports' => Array( 'title', 'editor', 'author', 'excerpt' ),
       'menu_position' => 20, # below Pages
-      'register_meta_box_cb' => Array($this, 'Register_Post_Type_Meta_Boxes')
+      #'register_meta_box_cb' => Array($this, 'Register_Post_Type_Meta_Boxes')
     ));
   }
   
+  /*
   function Register_Post_Type_Meta_Boxes(){
     Add_Meta_Box('upgrade-to-pro', $this->t('Upgrade to Pro!'), Array($this, 'Print_Upgrade_Meta_Box'), $this->post_type, 'side');
   }
@@ -289,6 +290,7 @@ class wp_plugin_encyclopedia {
   function Print_Upgrade_Meta_Box(){
     Include DirName(__FILE__).'/options-page/box-upgrade.php';
   }
+  */
 
   function Updated_Messages($arr_message){
     return Array_Merge ($arr_message, Array($this->post_type => Array(
@@ -783,8 +785,9 @@ class wp_plugin_encyclopedia {
       'upgrade' => $this->t('Upgrade to Pro'),
       'upgrade_url' => '%s',
       'feature' => $this->t('Available in the <a href="%s" target="_blank">premium version</a> only.'),
+      'unlock' => SPrintF('<a href="%%s" title="%s" class="unlock" target="_blank"><span class="dashicons dashicons-lock"></span></a>', $this->t('Unlock this feature')),
       'option' => $this->t('This option is changeable in the <a href="%s" target="_blank">premium version</a> only.'),
-      'custom_tax' => $this->t('Do you need a special taxonomy for your website? No problem! Just <a href="%s" target="_blank">get in touch</a>.'),
+      'custom_tax' => $this->t('Do you need a special taxonomy for your project? No problem! Just <a href="%s" target="_blank">get in touch</a> through our support section.'),
       'count_limit' => $this->t('In the <a href="%s" target="_blank">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features.'),
       #'changeable' => $this->t('Changeable in the <a href="%s" target="_blank">premium version</a> only.'),
       #'do_you_like' => $this->t('Do you like the term management? Upgrade to the <a href="%s" target="_blank">premium version of Encyclopedia</a>!')
