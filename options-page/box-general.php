@@ -2,7 +2,7 @@
 <tr>
 	<th><label for="encyclopedia_type"><?php Echo $this->t('Encyclopedia type') ?></label></th>
 	<td>
-		<select name="encyclopedia_type" id="encyclopedia_type" <?php Disabled(True) ?> >
+		<select name="encyclopedia_type" id="encyclopedia_type">
       <option value="" <?php Disabled(True) ?> ><?php Echo $this->t('Encyclopedia') ?></option>
       <option value="lexicon" <?php Selected(True) ?> ><?php Echo $this->t('Lexicon') ?></option>
       <option value="" <?php Disabled(True) ?> ><?php Echo $this->t('Wiki') ?></option>

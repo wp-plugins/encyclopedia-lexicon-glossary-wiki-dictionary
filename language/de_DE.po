@@ -415,7 +415,7 @@ msgstr "Einträge direkt aufrufen"
 
 #: ../options-page/box-search.php:10
 msgid "Enable this feature to redirect the user to the term if the search query matches a term title exactly."
-msgstr "Aktivieren Sie diese Funktion um den Benutzer auf den entsprechenden Eintrag weiterzuleiten wenn er nach dem exakten Titel sucht."
+msgstr "Aktivieren Sie diese Funktion um den Benutzer auf den entsprechenden Eintrag weiterzuleiten, wenn er nach dem exakten Titel sucht."
 
 #: ../options-page/box-search.php:16
 msgid "Autocomplete min length"
@@ -473,7 +473,7 @@ msgstr "Standard CSS verwenden"
 
 #: ../options-page/box-general.php:27
 msgid "Set this option to \"No\" if you want to use your own style for the encyclopedia."
-msgstr "Setzen Sie diese Einstellungen auf \"Nein\" wenn Sie Ihr eigenes CSS verwenden möchten."
+msgstr "Setzen Sie diese Einstellungen auf \"Nein\", wenn Sie Ihr eigenes CSS verwenden möchten."
 
 #: ../options-page/box-general.php:33
 msgid "Enable revisions"
