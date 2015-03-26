@@ -1,6 +1,6 @@
 ﻿=== Encyclopedia / Glossary / Wiki ===
 Contributors: dhoppe
-Tags: encyclopedia, lexicon, glossary, glossar, dictionary, knowledge base, wiki, wikipedia,				widget, Post, plugin, admin, posts, sidebar, comments, google, images, page, image, links
+Tags: encyclopedia, lexicon, lexikon, glossary, glossar, dictionary, knowledge base, wiki, wikipedia,				widget, Post, plugin, admin, posts, sidebar, comments, google, images, page, image, links
 Requires at least: 3.6
 Tested up to: 4.1.1
 Stable tag: trunk
