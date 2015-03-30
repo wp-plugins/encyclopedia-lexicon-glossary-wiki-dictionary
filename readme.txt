@@ -188,6 +188,9 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 == Changelog ==
 
+= 1.5.28 =
+* Fix: Cross linker removed JS sometimes when it was at the beginning of the content
+
 = 1.5.27 =
 * Rollback: Removed all banners to the pro version
 

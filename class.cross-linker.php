@@ -97,11 +97,17 @@ class Cross_Linker {
   function Get_Parser_Document(){
     If (!$this->DOM) return False;
     $resultHTML = $this->DOM->saveHTML();
+
+    $head_start = MB_StrPos($resultHTML, '<head>', 0, 'UTF-8') + 6;
+    $head_end = MB_StrPos($resultHTML, '</head>', $head_start, 'UTF-8');
+    $head = ($head_start > 6 && $head_end) ? MB_SubStr($resultHTML, $head_start, $head_end - $head_start) : '';
+
     $body_start = MB_StrPos($resultHTML, '<body>', 0, 'UTF-8') + 6;
     $body_end = MB_StrPos($resultHTML, '</body>', $body_start, 'UTF-8');
-    $resultBody = MB_SubStr($resultHTML, $body_start, $body_end - $body_start);
-    $resultBody = $this->UnCache_Strings($resultBody);
-    return $resultBody;
+    $body = ($body_start > 6 && $body_end) ? MB_SubStr($resultHTML, $body_start, $body_end - $body_start) : '';
+
+    $html = $this->UnCache_Strings($head . $body);
+    return $html;
   }
 
 }
