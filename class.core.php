@@ -37,6 +37,9 @@ class wp_plugin_encyclopedia {
     Add_Filter('posts_orderby', Array($this, 'Filter_Posts_OrderBy'), 10, 2);
     Add_Filter('the_content', Array($this, 'Filter_Content'));
     Add_Filter('the_content', Array($this, 'Link_Terms'), 99);
+    Add_Filter('bbp_get_forum_content', Array($this, 'Link_Terms'), 99);
+    Add_Filter('bbp_get_topic_content', Array($this, 'Link_Terms'), 99);
+    Add_Filter('bbp_get_reply_content', Array($this, 'Link_Terms'), 99);
     Add_Filter('search_template', Array($this, 'Filter_Search_Template'));
     Add_Filter('nav_menu_meta_box_object', Array($this, 'Change_Taxonomy_Menu_Label'));
     Add_Filter('query_vars', Array($this, 'Register_Query_Vars'));
@@ -485,8 +488,7 @@ class wp_plugin_encyclopedia {
     If (Empty($term->post_excerpt)){
       $more = Apply_Filters('encyclopedia_link_title_more', '&hellip;');
       $more = HTML_Entity_Decode($more, ENT_QUOTES, 'UTF-8');
-      $length = Apply_Filters('excerpt_length', $this->Get_Option('cross_link_title_length'));
-      $length = Apply_Filters('encyclopedia_link_title_length', $length);
+      $length = Apply_Filters('encyclopedia_link_title_length', $this->Get_Option('cross_link_title_length'));
       $title = Strip_Shortcodes($term->post_content);
       $title = WP_Strip_All_Tags($title);
       $title = HTML_Entity_Decode($title, ENT_QUOTES, 'UTF-8');

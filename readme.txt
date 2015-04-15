@@ -188,6 +188,10 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 == Changelog ==
 
+= 1.5.29 =
+* Added content filter for bbPress forums, topics and replys
+* Removed excerpt_length filter for cross link titles
+
 = 1.5.28 =
 * Fix: Cross linker removed JS sometimes when it was at the beginning of the content
 
