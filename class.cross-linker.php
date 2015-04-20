@@ -9,7 +9,7 @@ class Cross_Linker {
     $link_complete_words_only = False,
     $replace_phrases_once = False,
     $link_target = '_self',
-    $escape_tags = Array('script', 'code', 'pre'), # These tags will not be loaded inside the PHP DOMDocument object
+    $escape_tags = Array('script', 'style', 'code', 'pre'), # These tags will not be loaded inside the PHP DOMDocument object
     $cache_expression = '{CACHE:%s}',
     $data_cache = Array();
 
@@ -26,7 +26,7 @@ class Cross_Linker {
   function Escape_Tags($tags, $content){
     If (!Is_Array($tags)) return $content;
     ForEach ($tags As $tag){
-      $regex = SPrintF('%%(<%1$s\b[^>]*>)(.+)(</%1$s>)%%imsuU', $tag);
+      $regex = SPrintF('%%(<%1$s\b[^>]*>)(.*)(</%1$s>)%%imsuU', $tag);
       $content = PReg_Replace_Callback($regex, Array($this, 'Cache_Match'), $content);
     }
     return $content;

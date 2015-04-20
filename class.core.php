@@ -17,7 +17,7 @@ class wp_plugin_encyclopedia {
 
     # Load helper objects
     $this->i18n = New WordPress\Plugin\Encyclopedia\I18n();
-    $this->wpml = New WordPress\Plugin\Encyclopedia\WPML($this);
+    $this->wpml = New WordPress\Plugin\Encyclopedia\WPML($this->i18n, $this->post_type);
 
     # Option boxes
     $this->arr_option_box = Array( 'main' => Array(), 'side' => Array() );
@@ -26,10 +26,10 @@ class wp_plugin_encyclopedia {
     Register_Activation_Hook($plugin_file, Array($this, 'Plugin_Activation'));
     Add_Action('init', Array($this, 'Load_Encyclopedia_Type'));
     Add_Action('admin_menu', Array($this, 'Add_Options_Page'));
-    Add_Action('init', Array($this, 'Register_Post_Type'));
-    Add_Filter('post_updated_messages', Array($this, 'Updated_Messages'));
     Add_Action('init', Array($this, 'Register_Taxonomies'));
     Add_Action('init', Array($this, 'Add_Taxonomy_Archive_Urls'), 99);
+    Add_Action('init', Array($this, 'Register_Post_Type'));
+    Add_Filter('post_updated_messages', Array($this, 'Updated_Messages'));
     Add_Action('loop_start', Array($this, 'Start_Loop'));
     Add_Filter('pre_get_posts', Array($this, 'Filter_Query'));
     Add_Filter('posts_where', Array($this, 'Filter_Posts_Where'), 10, 2);
@@ -80,8 +80,8 @@ class wp_plugin_encyclopedia {
   function Plugin_Activation(){
     $this->i18n->Load_TextDomain();
     $this->Load_Encyclopedia_Type();
-    $this->Register_Post_Type();
     $this->Register_Taxonomies();
+    $this->Register_Post_Type();
     Flush_Rewrite_Rules();
   }
 
@@ -102,8 +102,8 @@ class wp_plugin_encyclopedia {
 
     # Add filter permalink structure for taxonomy archives
     ForEach (Get_Taxonomies(Null, 'objects') As $taxonomy){
-      $taxonomy_slug = $taxonomy->rewrite['slug'];
       If (!In_Array($this->post_type, $taxonomy->object_type)) Continue;
+      $taxonomy_slug = $taxonomy->rewrite['slug'];
       $this->rewrite_rules[SPrintF('%s/([^/]+)/filter:([^/]+)/?$', $taxonomy_slug)] = SPrintF('index.php?%s=$matches[1]&filter=$matches[2]', $taxonomy->name);
       $this->rewrite_rules[SPrintF('%s/([^/]+)/filter:([^/]+)/page/([0-9]{1,})/?$', $taxonomy_slug)] = SPrintF('index.php?%s=$matches[1]&filter=$matches[2]&paged=$matches[3]', $taxonomy->name);
     }
@@ -330,7 +330,7 @@ class wp_plugin_encyclopedia {
 				'query_var' => True,
 				'rewrite' => Array(
 					'with_front' => False,
-					'slug' => SPrintF($this->t('%s-tag', 'URL slug'), $this->encyclopedia_type->slug)
+					'slug' => SPrintF($this->t('%s/tag', 'URL slug'), $this->encyclopedia_type->slug)
 				),
 			));
     }

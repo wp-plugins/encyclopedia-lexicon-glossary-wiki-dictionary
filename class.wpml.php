@@ -4,10 +4,12 @@ Namespace WordPress\Plugin\Encyclopedia;
 class WPML {
   public
     $wpml_is_active = False, # Will become true if WPML is active
-    $code; # Pointer to the core object
+    $i18n, # Pointer to the i18n object
+    $post_type; # name of the translatable post type
 
-  public function __construct($core){
-    $this->core = $core;
+  public function __construct($i18n, $post_type){
+    $this->i18n = $i18n;
+    $this->post_type = $post_type;
 
     # Define filters
     Add_Action('widgets_init', Array($this, 'Find_WPML'));
@@ -21,7 +23,7 @@ class WPML {
 
   public function Filter_Gettext_with_Context($translation, $text, $context, $domain){
     # If you are using WPML the post type slug MUST NOT be translated! You can translate your slug in WPML
-    If ($this->wpml_is_active && $context == 'URL slug' && $domain == $this->core->i18n->Get_Text_Domain())
+    If ($this->wpml_is_active && $context == 'URL slug' && $domain == $this->i18n->Get_Text_Domain())
       return $text;
     Else
       return $translation;
@@ -32,7 +34,7 @@ class WPML {
       ForEach($arr_filter As $index => $filter){
         # Check if there are posts behind this filter in this language
         $query = New \WP_Query(Array(
-          'post_type' => $this->core->post_type,
+          'post_type' => $this->post_type,
           'post_title_like' => $filter . '%',
           'posts_per_page' => 1
         ));

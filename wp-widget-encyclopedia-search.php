@@ -70,7 +70,7 @@ class wp_widget_encyclopedia_search Extends WP_Widget {
     // Display Widget
     Echo $args['before_widget'];
     If (!Empty($widget_title)) Echo $args['before_title'] . $widget_title . $args['after_title'];
-    Echo $this->encyclopedia->Load_Template('encyclopedia-search-widget.php');
+    Echo $this->encyclopedia->Load_Template('searchform-encyclopedia.php');
     Echo $args['after_widget'];
   }
 
