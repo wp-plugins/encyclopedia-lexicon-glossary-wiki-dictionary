@@ -68,11 +68,15 @@
 	</td>
 </tr>
 
-</table>
+<tr>
+  <th><label for="enable_custom_fields"><?php Echo $this->t('Enable custom fields') ?></label></th>
+  <td>
+		<select name="enable_custom_fields" id="enable_custom_fields">
+			<option value="1" <?php Selected($this->Get_Option('enable_custom_fields')) ?> ><?php _e('Yes') ?></option>
+			<option value="0" <?php Selected(!$this->Get_Option('enable_custom_fields')) ?> ><?php _e('No') ?></option>
+		</select><br>
+		<small><?php Echo $this->t('Enables or disables the "Custom Fields" for the encyclopedia terms.') ?></small>
+	</td>
+</tr>
 
-<?php /*
-<p>
-  <span class="asterisk">*</span>
-  <span class="pro-notice"><?php $this->Pro_Notice() ?></span>
-</p>
-*/
+</table>

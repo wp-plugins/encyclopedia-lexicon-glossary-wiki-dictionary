@@ -51,6 +51,10 @@ class wp_plugin_encyclopedia {
     Add_Action('untrash_post', Array($this, 'User_Untrashes_Post'));
     Add_Action('admin_footer', Array($this, 'Print_Dashboard_JS'));
     Add_Action('admin_bar_menu', Array($this, 'Filter_Admin_Bar_Menu'), 999);
+    Add_Filter('get_the_categories', Array($this, 'Filter_Get_The_Categories'));
+    Add_Filter('the_category', Array($this, 'Filter_The_Category'), 10, 3);
+    Add_Filter('get_the_tags', Array($this, 'Filter_Get_The_Tags'));
+    Add_Filter('the_tags', Array($this, 'Filter_The_Tags'), 10, 5);
 
     # Register Widgets
     Add_Action('widgets_init', Array($this, 'Register_Widgets'));
@@ -244,7 +248,8 @@ class wp_plugin_encyclopedia {
       'prefix_filter_archive_depth' => 3,
       'prefix_filter_for_singulars' => True,
       'prefix_filter_singular_depth' => 3,
-      'cross_link_title_length' => Apply_Filters('excerpt_length', 55)
+      'cross_link_title_length' => Apply_Filters('excerpt_length', 55),
+      'enable_custom_fields' => False
     );
   }
 
@@ -279,22 +284,15 @@ class wp_plugin_encyclopedia {
         'slug' => $this->encyclopedia_type->slug,
         'with_front' => False
       ),
-      'supports' => Array( 'title', 'editor', 'author', 'excerpt' ),
-      'menu_position' => 20, # below Pages
-      #'register_meta_box_cb' => Array($this, 'Register_Post_Type_Meta_Boxes')
+      'supports' => Array('title', 'editor', 'author', 'excerpt'),
+      'menu_position' => 20
     ));
-  }
-  
-  /*
-  function Register_Post_Type_Meta_Boxes(){
-    Add_Meta_Box('upgrade-to-pro', $this->t('Upgrade to Pro!'), Array($this, 'Print_Upgrade_Meta_Box'), $this->post_type, 'side');
-  }
-  
-  function Print_Upgrade_Meta_Box(){
-    Include DirName(__FILE__).'/options-page/box-upgrade.php';
-  }
-  */
 
+    # Add optionally post type support
+    If ($this->Get_Option('enable_custom_fields'))
+      Add_Post_Type_Support($this->post_type, 'custom-fields');
+  }
+  
   function Updated_Messages($arr_message){
     return Array_Merge ($arr_message, Array($this->post_type => Array(
       1 => SPrintF ($this->t('Term updated. (<a href="%s">View Term</a>)'), Get_Permalink()),
@@ -855,6 +853,72 @@ class wp_plugin_encyclopedia {
 
   function Filter_Admin_Bar_Menu($admin_bar){
     If (!$this->Check_Term_Count()) $admin_bar->Remove_Node(SPrintF('new-%s', $this->post_type));
+  }
+
+  function Filter_Get_The_Categories($arr_categories){
+    Global $post;
+    
+    If (!Is_Admin()){
+      $is_encyclopedia_term = $post->post_type == $this->post_type;
+      $encyclopedia_uses_post_categories = Is_Object_in_Taxonomy($post->post_type, 'category');
+      
+      If ($is_encyclopedia_term && !$encyclopedia_uses_post_categories){
+        $arr_categories = False;
+      }
+    }
+    
+    return $arr_categories;
+  }
+
+  function Filter_The_Category($str_category_list, $separator = Null, $parents = Null){
+    Global $post;
+    
+    If (!Is_Admin()){
+      $is_encyclopedia_term = $post->post_type == $this->post_type;
+      $encyclopedia_uses_post_categories = Is_Object_in_Taxonomy($post->post_type, 'category');
+
+      If ($is_encyclopedia_term && !$encyclopedia_uses_post_categories){
+        $str_category_list = __('Uncategorized');
+      }
+    }
+    
+    return $str_category_list;
+  }
+  
+  function Filter_Get_The_Tags($arr_tags){
+    Global $post;
+    
+    If (!Is_Admin()){
+      $encyclopedia_taxonomy = 'encyclopedia-tag';
+      $taxonomy_exists = Taxonomy_Exists($encyclopedia_taxonomy);
+      $is_encyclopedia_term = $post->post_type == $this->post_type;
+      $encyclopedia_uses_post_tags = Is_Object_in_Taxonomy($post->post_type, 'post_tag');
+      $encyclopedia_uses_encyclopedia_tags = Is_Object_in_Taxonomy($post->post_type, $encyclopedia_taxonomy);
+      
+      If ($taxonomy_exists && $is_encyclopedia_term && !$encyclopedia_uses_post_tags && $encyclopedia_uses_encyclopedia_tags){
+        $arr_tags = Get_The_Terms($post->ID, $encyclopedia_taxonomy);
+      }
+    }
+    
+    return $arr_tags;
+  }
+
+  function Filter_The_Tags($tag_list, $before, $separator, $after, $post_id){
+    $post = Get_Post($post_id);
+
+    If (!Is_Admin()){
+      $encyclopedia_taxonomy = 'encyclopedia-tag';
+      $taxonomy_exists = Taxonomy_Exists($encyclopedia_taxonomy);
+      $is_encyclopedia_term = $post->post_type == $this->post_type;
+      $encyclopedia_uses_post_tags = Is_Object_in_Taxonomy($post->post_type, 'post_tag');
+      $encyclopedia_uses_encyclopedia_tags = Is_Object_in_Taxonomy($post->post_type, $encyclopedia_taxonomy);
+
+      If ($taxonomy_exists && $is_encyclopedia_term && !$encyclopedia_uses_post_tags && $encyclopedia_uses_encyclopedia_tags){
+        $tag_list = Get_The_Term_List($post_id, $encyclopedia_taxonomy, $before, $separator, $after);
+      }
+    }
+    
+    return $tag_list;
   }
 
 }

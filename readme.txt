@@ -188,6 +188,11 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 == Changelog ==
 
+= 1.5.31 =
+* Added support for template tags "the_category()"
+* Added support for template tags "the_tags()"
+* Added new option to enable custom fields
+
 = 1.5.30 =
 * Updated taxonomy link structure
 * Updated cross linker: will escape empty tags now
