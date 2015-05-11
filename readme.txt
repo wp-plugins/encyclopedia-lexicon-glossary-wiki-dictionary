@@ -188,6 +188,10 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 == Changelog ==
 
+= 1.5.32 =
+* Patched: Changed translation file loading hook
+* Added a warning if you have more than 20 entries
+
 = 1.5.31 =
 * Added support for template tags "the_category()"
 * Added support for template tags "the_tags()"

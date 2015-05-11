@@ -47,14 +47,14 @@ class wp_plugin_encyclopedia {
     Add_Filter('rewrite_rules_array', Array($this, 'Add_Rewrite_Rules'));
     Add_Action('wp_loaded', Array($this, 'Optionally_Flush_Rewrite_Rules'));
     Add_Action('wp_enqueue_scripts', Array($this, 'Enqueue_Encyclopedia_Scripts'));
-    Add_Action('admin_init', Array($this, 'User_Creates_New_Term'));
-    Add_Action('untrash_post', Array($this, 'User_Untrashes_Post'));
-    Add_Action('admin_footer', Array($this, 'Print_Dashboard_JS'));
-    Add_Action('admin_bar_menu', Array($this, 'Filter_Admin_Bar_Menu'), 999);
     Add_Filter('get_the_categories', Array($this, 'Filter_Get_The_Categories'));
     Add_Filter('the_category', Array($this, 'Filter_The_Category'), 10, 3);
     Add_Filter('get_the_tags', Array($this, 'Filter_Get_The_Tags'));
     Add_Filter('the_tags', Array($this, 'Filter_The_Tags'), 10, 5);
+    Add_Action('wp_insert_post_empty_content', Array($this, 'User_Updates_Post'), 10, 3);
+    Add_Action('admin_notices', Array($this, 'Term_Count_Notice'));
+    Add_Action('admin_footer', Array($this, 'Print_Dashboard_JS'));
+    Add_Action('admin_bar_menu', Array($this, 'Filter_Admin_Bar_Menu'), 999);
 
     # Register Widgets
     Add_Action('widgets_init', Array($this, 'Register_Widgets'));
@@ -502,75 +502,6 @@ class wp_plugin_encyclopedia {
     return $title;
   }
 
-  /*
-  function Link_Term_in_Content($content, $term){
-    Global $post;
-
-    # Prepare search term
-    $term_value = Trim($term->post_title);
-    $term_value = WPTexturize($term_value); # This is necessary because the content runs through this filter, too
-    $term_value = HTML_Entity_Decode($term_value, ENT_QUOTES, 'UTF-8');
-
-    $content = Trim($content);
-
-    # Check if the content and term are not empty
-    If (Empty($content) || Empty($term_value)) return $content;
-
-    # Get Term Title
-    If (Empty($term->post_excerpt)){
-      $link_title_more = Apply_Filters('encyclopedia_link_title_more', '&hellip;');
-      $link_title_more = HTML_Entity_Decode($link_title_more, ENT_QUOTES, 'UTF-8');
-
-      $link_title_length = Apply_Filters('excerpt_length', $this->Get_Option('auto_link_title_length'));
-      $link_title_length = Apply_Filters('encyclopedia_link_title_length', $link_title_length);
-
-      $link_title = Strip_Shortcodes($term->post_content);
-      $link_title = WP_Strip_All_Tags($link_title);
-      $link_title = HTML_Entity_Decode($link_title, ENT_QUOTES, 'UTF-8');
-      $link_title = WP_Trim_Words($link_title, $link_title_length, $link_title_more);
-    }
-    Else {
-      $link_title = WP_Strip_All_Tags($term->post_excerpt, True);
-      $link_title = HTML_Entity_Decode($link_title, ENT_QUOTES, 'UTF-8');
-    }
-
-    # Apply link title filter
-    $link_title = Apply_Filters('encyclopedia_term_link_title', $link_title, $term);
-
-    # Prepare search
-    $search = SPrintF('/(^|\W)(%s)/imsuU', PReg_Quote(HTMLSpecialChars($term_value), '/'));
-    $link = SPrintF('$1<a href="%1$s" title="%2$s" class="encyclopedia">$2</a>', Get_Permalink($term->ID), Esc_Attr(HTMLSpecialChars($link_title)));
-
-    # Load DOM
-    $encoded_content = MB_Convert_Encoding($content, 'HTML-ENTITIES', 'UTF-8');
-    $dom = new DOMDocument();
-    If (!@$dom->loadHTML($encoded_content)) return $content; # Here we could get a Warning if the $content is not valid HTML
-    $xpath = new DOMXPath($dom);
-
-    # Go through nodes and replace
-    $skip_elements = Apply_Filters('encyclopedia_auto_link_skip_elements', Array('a', 'script', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'button', 'textarea', 'style', 'pre', 'code', 'kbd', 'tt'));
-    $xpath_query = '//text()';
-    ForEach ($skip_elements As $skip_element) $xpath_query .= SPrintF('[not(ancestor::%s)]', $skip_element);
-    ForEach($xpath->Query($xpath_query) As $original_node){
-      $original_text = HTMLSpecialChars(HTML_Entity_Decode($original_node->wholeText, ENT_QUOTES, 'UTF-8'));
-      $new_text = @PReg_Replace($search, $link, $original_text);
-      If ($new_text != $original_text){
-        $new_node = $dom->createDocumentFragment();
-        If (@$new_node->appendXML($new_text)){ # If the $new_text is not valid XML this will break
-          $original_node->parentNode->replaceChild($new_node, $original_node);
-        }
-      }
-    }
-
-    $resultHTML = $dom->saveHTML();
-    $body_start = MB_StrPos($resultHTML, '<body>', 0, 'UTF-8') + 6;
-    $body_end = MB_StrPos($resultHTML, '</body>', $body_start, 'UTF-8');
-    $resultBody = MB_SubStr($resultHTML, $body_start, $body_end - $body_start);
-
-    return $resultBody;
-  }
-  */
-
   function Start_Loop($query){
     Static $loop_already_started;
     If ($loop_already_started) return;
@@ -780,81 +711,6 @@ class wp_plugin_encyclopedia {
     ));
 	}
 
-  function Pro_Notice($message = 'option', $output = True){
-    $arr_message = Array(
-      'upgrade' => $this->t('Upgrade to Pro'),
-      'upgrade_url' => '%s',
-      'feature' => $this->t('Available in the <a href="%s" target="_blank">premium version</a> only.'),
-      'unlock' => SPrintF('<a href="%%s" title="%s" class="unlock" target="_blank"><span class="dashicons dashicons-lock"></span></a>', $this->t('Unlock this feature')),
-      'option' => $this->t('This option is changeable in the <a href="%s" target="_blank">premium version</a> only.'),
-      'custom_tax' => $this->t('Do you need a special taxonomy for your project? No problem! Just <a href="%s" target="_blank">get in touch</a> through our support section.'),
-      'count_limit' => $this->t('In the <a href="%s" target="_blank">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features.'),
-      #'changeable' => $this->t('Changeable in the <a href="%s" target="_blank">premium version</a> only.'),
-      #'do_you_like' => $this->t('Do you like the term management? Upgrade to the <a href="%s" target="_blank">premium version of Encyclopedia</a>!')
-    );
-
-    If (IsSet($arr_message[$message])){
-      $message = SPrintF($arr_message[$message], $this->t('http://dennishoppe.de/en/wordpress-plugins/encyclopedia', 'Link to the authors website'));
-      If ($output) Echo $message;
-      Else return $message;
-    }
-    Else
-      return False;
-  }
-
-  function Count_Terms($limit = -1){
-    Static $count;
-    If ($count) return $count;
-    Else return $count = Count(Get_Posts(Array('post_type' => $this->post_type, 'post_status' => 'any', 'numberposts' => $limit)));
-  }
-
-  function Check_Term_Count(){
-    return $this->Count_Terms(12) < 12;
-  }
-
-  function User_Creates_New_Term(){
-    If ( BaseName($_SERVER['SCRIPT_NAME']) == 'post-new.php' && IsSet($_GET['post_type']) && $_GET['post_type'] == $this->post_type && !$this->Check_Term_Count() )
-      $this->Print_Term_Count_Limit();
-  }
-
-  function User_Untrashes_Post($post_id){
-    If (Get_Post_Type($post_id) == $this->post_type && !$this->Check_Term_Count()) $this->Print_Term_Count_Limit();
-  }
-
-  function Print_Term_Count_Limit(){
-    WP_Die(
-      SPrintF('<p>%s</p><p>%s</p>',
-        $this->Pro_Notice('count_limit', False),
-        SPrintF('<a href="%s" class="button">%s</a>', Admin_URL('edit.php?post_type=' . $this->post_type), $this->t('&laquo; Back to your terms'))
-      )
-    );
-  }
-
-  function Print_Dashboard_JS(){
-    If (!$this->Check_Term_Count()): ?>
-    <script type="text/javascript">
-    (function($){
-      $('a[href*="post-new.php?post_type=<?php Echo $this->post_type ?>"]')
-        .text('<?php $this->Pro_Notice('upgrade') ?>')
-        .attr({
-          'title': '<?php $this->Pro_Notice('upgrade') ?>',
-          'href': '<?php $this->Pro_Notice('upgrade_url') ?>',
-          'target': '_blank'
-        })
-        .css({
-          'color': 'green',
-          'font-weight': 'bold'
-        });
-    })(jQuery);
-    </script>
-
-    <?php EndIf;
-  }
-
-  function Filter_Admin_Bar_Menu($admin_bar){
-    If (!$this->Check_Term_Count()) $admin_bar->Remove_Node(SPrintF('new-%s', $this->post_type));
-  }
-
   function Filter_Get_The_Categories($arr_categories){
     Global $post;
     
@@ -919,6 +775,89 @@ class wp_plugin_encyclopedia {
     }
     
     return $tag_list;
+  }
+
+  function Pro_Notice($message = 'option', $output = True){
+    $arr_message = Array(
+      'upgrade' => $this->t('Upgrade to Pro'),
+      'upgrade_url' => '%s',
+      'feature' => $this->t('Available in the <a href="%s" target="_blank">premium version</a> only.'),
+      'unlock' => SPrintF('<a href="%%s" title="%s" class="unlock" target="_blank"><span class="dashicons dashicons-lock"></span></a>', $this->t('Unlock this feature')),
+      'option' => $this->t('This option is changeable in the <a href="%s" target="_blank">premium version</a> only.'),
+      'custom_tax' => $this->t('Do you need a special taxonomy for your project? No problem! Just <a href="%s" target="_blank">get in touch</a> through our support section.'),
+      'count_limit' => $this->t('In the <a href="%s" target="_blank">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features.'),
+      #'changeable' => $this->t('Changeable in the <a href="%s" target="_blank">premium version</a> only.'),
+      #'do_you_like' => $this->t('Do you like the term management? Upgrade to the <a href="%s" target="_blank">premium version of Encyclopedia</a>!')
+    );
+
+    If (IsSet($arr_message[$message])){
+      $message = SPrintF($arr_message[$message], $this->t('http://dennishoppe.de/en/wordpress-plugins/encyclopedia', 'Link to the authors website'));
+      If ($output) Echo $message;
+      Else return $message;
+    }
+    Else
+      return False;
+  }
+
+  function Count_Terms($limit = -1){
+    return Count(Get_Posts(Array('post_type' => $this->post_type, 'post_status' => 'any', 'numberposts' => $limit)));
+  }
+
+  function Check_Term_Count(){
+    return $this->Count_Terms(12) < 12;
+  }
+
+  function User_Updates_Post($maybe_empty, $post_data){
+    If ($post_data['post_type'] == $this->post_type){
+      $new_record = Empty($post_data['ID']);
+      $untrash = !$new_record && Get_Post_Status($post_data['ID']) == 'trash';
+      If (($new_record || $untrash) && !$this->Check_Term_Count()){
+        #WP_Die(SPrintF('<h1>%s</h1><pre>%s</pre>', __FUNCTION__, Print_R ($post_data, True)));
+        $this->Print_Term_Count_Limit();
+      }
+    }
+  }
+
+  function Print_Term_Count_Limit(){
+    WP_Die(
+      SPrintF('<p>%s</p><p>%s</p>',
+        $this->Pro_Notice('count_limit', False),
+        SPrintF('<a href="%s" class="button">%s</a>', Admin_URL('edit.php?post_type=' . $this->post_type), $this->t('&laquo; Back to your terms'))
+      )
+    );
+  }
+  
+  function Term_Count_Notice(){
+    If ($this->Count_Terms(20) >= 20): ?>
+    <div class="updated"><p>
+      <?php PrintF($this->t('Sorry, there are to many %s terms for Encyclopedia Lite. This could result in strange behavior of the plugin. Please delete some terms.'), $this->encyclopedia_type->label) ?>
+      <?php $this->Pro_Notice('count_limit') ?>
+    </p></div>
+    <?php EndIf;
+  }
+
+  function Print_Dashboard_JS(){
+    If (!$this->Check_Term_Count()): ?>
+    <script type="text/javascript">
+    (function($){
+      $('a[href*="post-new.php?post_type=<?php Echo $this->post_type ?>"]')
+        .text('<?php $this->Pro_Notice('upgrade') ?>')
+        .attr({
+          'title': '<?php $this->Pro_Notice('upgrade') ?>',
+          'href': '<?php $this->Pro_Notice('upgrade_url') ?>',
+          'target': '_blank'
+        })
+        .css({
+          'color': 'green',
+          'font-weight': 'bold'
+        });
+    })(jQuery);
+    </script>
+    <?php EndIf;
+  }
+
+  function Filter_Admin_Bar_Menu($admin_bar){
+    If (!$this->Check_Term_Count()) $admin_bar->Remove_Node(SPrintF('new-%s', $this->post_type));
   }
 
 }

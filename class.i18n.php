@@ -4,7 +4,7 @@ Namespace WordPress\Plugin\Encyclopedia;
 class I18n {
 
   public function __construct(){
-    Add_Action('widgets_init', Array($this, 'Load_TextDomain'));
+    Add_Action('init', Array($this, 'Load_TextDomain'), 1);
   }
 
   public function Load_TextDomain(){
