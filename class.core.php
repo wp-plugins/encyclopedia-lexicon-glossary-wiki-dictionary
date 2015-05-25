@@ -328,7 +328,7 @@ class wp_plugin_encyclopedia {
 				'query_var' => True,
 				'rewrite' => Array(
 					'with_front' => False,
-					'slug' => SPrintF($this->t('%s/tag', 'URL slug'), $this->encyclopedia_type->slug)
+					'slug' => LTrim(SPrintF($this->t('%s/tag', 'URL slug'), '/'), $this->encyclopedia_type->slug)
 				),
 			));
     }
