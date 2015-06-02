@@ -189,7 +189,7 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 == Changelog ==
 
 = 1.5.33 =
-* Patched: Trim slashes from permalink structure
+* Patched: Trim slashes (left) from permalink structure
 
 = 1.5.32 =
 * Patched: Changed translation file loading hook
