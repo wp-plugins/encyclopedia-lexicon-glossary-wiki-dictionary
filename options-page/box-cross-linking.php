@@ -8,10 +8,15 @@ ForEach (Get_Post_Types(Array('show_ui' => True),'objects') AS $type): ?>
   <td>
     <label>
       <input type="checkbox" <?php Disabled(True); Checked(True) ?> >
-      <?php PrintF($this->t('Link terms in %s'), $type->label) ?><?php Echo $this->Pro_Notice('unlock') ?>
+      <?php PrintF($this->t('Link terms in %s'), $type->label) ?>
+      <?php Echo $this->Pro_Notice('unlock') ?>
     </label><br>
 
-    <label><input type="checkbox" <?php Disabled(True) ?> > <?php _e('Open link in a new window/tab') ?></label>
+    <label>
+      <input type="checkbox" <?php Disabled(True) ?> >
+      <?php _e('Open link in a new window/tab') ?>
+      <?php Echo $this->Pro_Notice('unlock') ?>
+    </label>
   </td>
 </tr>
 <?php EndForEach ?>

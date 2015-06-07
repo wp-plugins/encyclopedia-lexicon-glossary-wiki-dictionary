@@ -3,13 +3,13 @@ class wp_widget_encyclopedia_taxonomy_cloud Extends WP_Widget {
   var $encyclopedia;
 
   function __construct(){
-    // Get Fancy Gallery
+    # Get Fancy Gallery
     If (IsSet($GLOBALS['wp_plugin_encyclopedia']) && Is_Object($GLOBALS['wp_plugin_encyclopedia']))
       $this->encyclopedia = $GLOBALS['wp_plugin_encyclopedia'];
     Else
       return False;
 
-    // Setup the Widget data
+    # Setup the Widget data
     parent::__construct (
       False,
       $this->t('Encyclopedia Taxonomy Cloud'),
@@ -17,12 +17,12 @@ class wp_widget_encyclopedia_taxonomy_cloud Extends WP_Widget {
     );
   }
 
-  function t ($text, $context = ''){
+  function t ($text, $context = Null){
     return $this->encyclopedia->t($text, $context);
   }
 
   function Default_Options(){
-    // Default settings
+    # Default settings
     return Array(
       'show_count' => False,
       'number'     => 0,
@@ -33,13 +33,8 @@ class wp_widget_encyclopedia_taxonomy_cloud Extends WP_Widget {
   }
 
   function Load_Options($options){
-    $options = (ARRAY) $options;
-
-    // Delete empty values
-    ForEach ($options AS $key => $value)
-      If (!$value) Unset($options[$key]);
-
-    // Load options
+    $options = Is_Array($options) ? $options : Array();
+    $options = Array_Filter($options);
     $this->arr_option = Array_Merge ($this->Default_Options(), $options);
   }
 
@@ -55,8 +50,8 @@ class wp_widget_encyclopedia_taxonomy_cloud Extends WP_Widget {
   }
 
   function Form ($settings){
-    // Load options
-    $this->load_options ($settings); Unset ($settings);
+    # Load options
+    $this->load_options ($settings);
     ?>
     <p>
       <label for="<?php Echo $this->Get_Field_Id('title') ?>"><?php Echo $this->t('Title:') ?></label>
@@ -107,13 +102,13 @@ class wp_widget_encyclopedia_taxonomy_cloud Extends WP_Widget {
   }
 
   function Widget ($args, $settings){
-    // Load options
+    # Load options
     $this->load_options ($settings);
 
-    // Check if the Taxonomy is alive
+    # Check if the Taxonomy is alive
     If (!Taxonomy_Exists($this->Get_Option('taxonomy'))) return False;
 
-    // Display Widget
+    # Display Widget
     Echo $args['before_widget'];
 
     Echo $args['before_title'] . Apply_Filters('widget_title', $this->get_option('title'), $settings, $this->id_base) . $args['after_title'];
@@ -135,4 +130,4 @@ class wp_widget_encyclopedia_taxonomy_cloud Extends WP_Widget {
     return $new_settings;
   }
 
-} /* End of Class */
+}

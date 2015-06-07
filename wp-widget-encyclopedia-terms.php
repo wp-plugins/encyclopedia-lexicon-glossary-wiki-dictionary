@@ -8,7 +8,7 @@ class wp_widget_encyclopedia_terms Extends WP_Widget {
     Else
       return False;
 
-    // Setup the Widget data
+    # Setup the Widget data
     parent::__construct (
       False,
       $this->t('Encyclopedia Terms'),
@@ -16,12 +16,12 @@ class wp_widget_encyclopedia_terms Extends WP_Widget {
     );
   }
 
-  function t ($text, $context = ''){
+  function t ($text, $context = Null){
     return $this->encyclopedia->t($text, $context);
   }
 
   function Default_Options(){
-    // Default settings
+    # Default settings
     return Array(
       'number'  => Null,
       'orderby' => 'title',
@@ -30,13 +30,8 @@ class wp_widget_encyclopedia_terms Extends WP_Widget {
   }
 
   function Load_Options($options){
-    $options = (ARRAY) $options;
-
-    // Delete empty values
-    ForEach ($options AS $key => $value)
-      If (!$value) Unset($options[$key]);
-
-    // Load options
+    $options = Is_Array($options) ? $options : Array();
+    $options = Array_Filter($options);
     $this->arr_option = Array_Merge ($this->Default_Options(), $options);
   }
 
@@ -52,8 +47,8 @@ class wp_widget_encyclopedia_terms Extends WP_Widget {
   }
 
   function Form ($settings){
-    // Load options
-    $this->load_options ($settings); Unset ($settings);
+    # Load options
+    $this->load_options ($settings);
     ?>
 
     <p>
@@ -88,10 +83,10 @@ class wp_widget_encyclopedia_terms Extends WP_Widget {
   }
 
   function Widget ($args, $settings){
-    // Load options
+    # Load options
     $this->load_options ($settings);
 
-    // Load the Query
+    # Load the Query
     $term_query = New WP_Query(Array(
       'post_type' => $this->encyclopedia->post_type,
       'orderby' => $this->get_option('orderby'),
@@ -102,13 +97,13 @@ class wp_widget_encyclopedia_terms Extends WP_Widget {
     ));
     If (!$term_query->have_posts()) return;
 
-    // Display Widget
+    # Display Widget
     Echo $args['before_widget'];
     Echo $args['before_title'] . Apply_Filters('widget_title', $this->get_option('title'), $settings, $this->id_base) . $args['after_title'];
     Echo $this->encyclopedia->Load_Template('encyclopedia-terms-widget.php', Array('term_query' => $term_query));
     Echo $args['after_widget'];
 
-    // Reset Post data
+    # Reset Post data
     WP_Reset_Postdata();
   }
 
@@ -116,4 +111,4 @@ class wp_widget_encyclopedia_terms Extends WP_Widget {
     return $new_settings;
   }
 
-} /* End of Class */
+}

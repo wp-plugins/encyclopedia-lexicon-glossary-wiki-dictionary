@@ -8,7 +8,7 @@ class wp_widget_encyclopedia_related_terms Extends WP_Widget {
     Else
       return False;
 
-    // Setup the Widget data
+    # Setup the Widget data
     parent::__construct (
       False,
       $this->t('Encyclopedia Related Terms'),
@@ -16,7 +16,7 @@ class wp_widget_encyclopedia_related_terms Extends WP_Widget {
     );
   }
 
-  function t ($text, $context = ''){
+  function t ($text, $context = Null){
     return $this->encyclopedia->t($text, $context);
   }
 
@@ -29,13 +29,8 @@ class wp_widget_encyclopedia_related_terms Extends WP_Widget {
   }
 
   function Load_Options($options){
-    $options = (ARRAY) $options;
-
-    # Delete empty values
-    ForEach ($options AS $key => $value)
-      If (!$value) Unset($options[$key]);
-
-    # Load options
+    $options = Is_Array($options) ? $options : Array();
+    $options = Array_Filter($options);
     $this->arr_option = Array_Merge ($this->Default_Options(), $options);
   }
 
@@ -52,7 +47,7 @@ class wp_widget_encyclopedia_related_terms Extends WP_Widget {
 
   function Form ($settings){
     # Load options
-    $this->load_options ($settings); Unset ($settings);
+    $this->load_options ($settings);
     ?>
 
     <p>

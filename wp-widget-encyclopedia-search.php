@@ -8,7 +8,7 @@ class wp_widget_encyclopedia_search Extends WP_Widget {
     Else
       return False;
 
-    // Setup the Widget data
+    # Setup the Widget data
     parent::__construct (
       False,
       $this->t('Encyclopedia Search'),
@@ -16,25 +16,20 @@ class wp_widget_encyclopedia_search Extends WP_Widget {
     );
   }
 
-  function t ($text, $context = ''){
+  function t ($text, $context = Null){
     return $this->encyclopedia->t($text, $context);
   }
 
   function Default_Options(){
-    // Default settings
+    # Default settings
     return Array(
       'title'  => ''
     );
   }
 
   function Load_Options($options){
-    $options = (ARRAY) $options;
-
-    // Delete empty values
-    ForEach ($options AS $key => $value)
-      If (!$value) Unset($options[$key]);
-
-    // Load options
+    $options = Is_Array($options) ? $options : Array();
+    $options = Array_Filter($options);
     $this->arr_option = Array_Merge ($this->Default_Options(), $options);
   }
 
@@ -50,8 +45,8 @@ class wp_widget_encyclopedia_search Extends WP_Widget {
   }
 
   function Form ($settings){
-    // Load options
-    $this->Load_Options ($settings); Unset ($settings);
+    # Load options
+    $this->Load_Options ($settings);
     ?>
 
     <p>
@@ -63,11 +58,11 @@ class wp_widget_encyclopedia_search Extends WP_Widget {
   }
 
   function Widget ($args, $settings){
-    // Load options
+    # Load options
     $this->Load_Options ($settings);
     $widget_title = Apply_Filters('widget_title', $this->Get_Option('title'), $settings, $this->id_base);
 
-    // Display Widget
+    # Display Widget
     Echo $args['before_widget'];
     If (!Empty($widget_title)) Echo $args['before_title'] . $widget_title . $args['after_title'];
     Echo $this->encyclopedia->Load_Template('searchform-encyclopedia.php');
@@ -78,4 +73,4 @@ class wp_widget_encyclopedia_search Extends WP_Widget {
     return $new_settings;
   }
 
-} /* End of Class */
+}
