@@ -1,14 +1,14 @@
 <?php
+Namespace WordPress\Plugin\Encyclopedia;
 
 # Load Plugin Kernel
-class wp_plugin_encyclopedia {
+class Core {
   public
     $base_url, # url to the plugin directory
     $arr_taxonomies, # All buildIn Taxonomies - also the inactive ones.
     $post_type = 'encyclopedia', # Name of the post type
     $encyclopedia_type, # An object with the properties of current encyclopedia type
     $rewrite_rules = Array(), # Array with the new additional rewrite rules
-    $i18n, # Pointer to the translation helper object
     $wpml; # Pointer to the WPML helper object
 
   function __construct($plugin_file){
@@ -16,8 +16,8 @@ class wp_plugin_encyclopedia {
     $this->Load_Base_Url();
 
     # Load helper objects
-    $this->i18n = New WordPress\Plugin\Encyclopedia\I18n();
-    $this->wpml = New WordPress\Plugin\Encyclopedia\WPML($this->i18n, $this->post_type);
+    I18n::Load_TextDomain();
+    $this->wpml = New WPML($this->post_type);
 
     # Option boxes
     $this->arr_option_box = Array( 'main' => Array(), 'side' => Array() );
@@ -63,7 +63,7 @@ class wp_plugin_encyclopedia {
     Add_Shortcode('encyclopedia_related_terms', Array($this, 'Shortcode_Related_Terms'));
 
     # Add to GLOBALs
-    $GLOBALS[__CLASS__] = $this;
+    $GLOBALS['wp_plugin_encyclopedia'] = $GLOBALS[__CLASS__] = $this;
   }
 
   function Load_Base_Url(){
@@ -77,12 +77,12 @@ class wp_plugin_encyclopedia {
     $this->base_url = Str_Replace("\\", '/', $this->base_url); # Windows Workaround
   }
 
-  function t ($text, $context = Null){
-    return $this->i18n->t($text, $context);
+  function t($text, $context = Null){
+    return I18n::t($text, $context);
   }
 
   function Plugin_Activation(){
-    $this->i18n->Load_TextDomain();
+    I18n::Load_TextDomain();
     $this->Load_Encyclopedia_Type();
     $this->Register_Taxonomies();
     $this->Register_Post_Type();
@@ -137,8 +137,8 @@ class wp_plugin_encyclopedia {
 
   function Add_Options_Page(){
     $handle = Add_Options_Page (
-      $this->t('Encyclopedia Options'),
-      $this->t('Encyclopedia'),
+      I18n::t('Encyclopedia Options'),
+      I18n::t('Encyclopedia'),
       'manage_options',
       __CLASS__,
       Array($this, 'Print_Options_Page')
@@ -149,13 +149,13 @@ class wp_plugin_encyclopedia {
 
     # Add option boxes
     $this->Add_Option_Box(__('General'), DirName(__FILE__).'/options-page/box-general.php');
-    $this->Add_Option_Box($this->t('Taxonomies'), DirName(__FILE__).'/options-page/box-taxonomies.php');
-    $this->Add_Option_Box($this->t('Archive page'), DirName(__FILE__).'/options-page/box-archive-page.php');
-    $this->Add_Option_Box($this->t('Search'), DirName(__FILE__).'/options-page/box-search.php');
-    $this->Add_Option_Box($this->t('Single page'), DirName(__FILE__).'/options-page/box-single-page.php');
-    $this->Add_Option_Box($this->t('Cross linking'), DirName(__FILE__).'/options-page/box-cross-linking.php');
-    $this->Add_Option_Box($this->t('Archive Url'), DirName(__FILE__).'/options-page/box-archive-link.php', 'side');
-    #$this->Add_Option_Box($this->t('Upgrade to Pro!'), DirName(__FILE__).'/options-page/box-upgrade.php', 'side');
+    $this->Add_Option_Box(I18n::t('Taxonomies'), DirName(__FILE__).'/options-page/box-taxonomies.php');
+    $this->Add_Option_Box(I18n::t('Archive page'), DirName(__FILE__).'/options-page/box-archive-page.php');
+    $this->Add_Option_Box(I18n::t('Search'), DirName(__FILE__).'/options-page/box-search.php');
+    $this->Add_Option_Box(I18n::t('Single page'), DirName(__FILE__).'/options-page/box-single-page.php');
+    $this->Add_Option_Box(I18n::t('Cross linking'), DirName(__FILE__).'/options-page/box-cross-linking.php');
+    $this->Add_Option_Box(I18n::t('Archive Url'), DirName(__FILE__).'/options-page/box-archive-link.php', 'side');
+    #$this->Add_Option_Box(I18n::t('Upgrade to Pro!'), DirName(__FILE__).'/options-page/box-upgrade.php', 'side');
   }
 
   function Get_Options_Page_Url($parameters = Array()){
@@ -255,8 +255,8 @@ class wp_plugin_encyclopedia {
 
   function Load_Encyclopedia_Type(){
 		$this->encyclopedia_type = (Object) Array(
-      'label' => $this->t('Lexicon'),
-      'slug' => $this->t('lexicon', 'URL slug')
+      'label' => I18n::t('Lexicon'),
+      'slug' => I18n::t('lexicon', 'URL slug')
     );
 	}
 
@@ -264,14 +264,14 @@ class wp_plugin_encyclopedia {
     Register_Post_Type ($this->post_type, Array(
       'labels' => Array(
         'name' => $this->encyclopedia_type->label,
-        'singular_name' => $this->t('Term'),
-        'add_new' => $this->t('Add Term'),
-        'add_new_item' => $this->t('New Term'),
-        'edit_item' => $this->t('Edit Term'),
-        'view_item' => $this->t('View Term'),
-        'search_items' => $this->t('Search Terms'),
-        'not_found' =>  $this->t('No Terms found'),
-        'not_found_in_trash' => $this->t('No Terms found in Trash'),
+        'singular_name' => I18n::t('Term'),
+        'add_new' => I18n::t('Add Term'),
+        'add_new_item' => I18n::t('New Term'),
+        'edit_item' => I18n::t('Edit Term'),
+        'view_item' => I18n::t('View Term'),
+        'search_items' => I18n::t('Search Terms'),
+        'not_found' =>  I18n::t('No Terms found'),
+        'not_found_in_trash' => I18n::t('No Terms found in Trash'),
         'parent_item_colon' => ''
         ),
       'public' => True,
@@ -295,32 +295,32 @@ class wp_plugin_encyclopedia {
   
   function Updated_Messages($arr_message){
     return Array_Merge ($arr_message, Array($this->post_type => Array(
-      1 => SPrintF ($this->t('Term updated. (<a href="%s">View Term</a>)'), Get_Permalink()),
+      1 => SPrintF (I18n::t('Term updated. (<a href="%s">View Term</a>)'), Get_Permalink()),
       2 => __('Custom field updated.'),
       3 => __('Custom field deleted.'),
-      4 => $this->t('Term updated.'),
-      5 => IsSet($_GET['revision']) ? SPrintF($this->t('Term restored to revision from %s'), WP_Post_Revision_Title( (Int) $_GET['revision'], False ) ) : False,
-      6 => SPrintF($this->t('Term published. (<a href="%s">View Term</a>)'), Get_Permalink()),
-      7 => $this->t('Term saved.'),
-      8 => $this->t('Term submitted.'),
-      9 => SPrintF($this->t('Term scheduled. (<a target="_blank" href="%s">View Term</a>)'), Get_Permalink()),
-      10 => SPrintF($this->t('Draft updated. (<a target="_blank" href="%s">Preview Term</a>)'), Add_Query_Arg('preview', 'true', Get_Permalink()))
+      4 => I18n::t('Term updated.'),
+      5 => IsSet($_GET['revision']) ? SPrintF(I18n::t('Term restored to revision from %s'), WP_Post_Revision_Title( (Int) $_GET['revision'], False ) ) : False,
+      6 => SPrintF(I18n::t('Term published. (<a href="%s">View Term</a>)'), Get_Permalink()),
+      7 => I18n::t('Term saved.'),
+      8 => I18n::t('Term submitted.'),
+      9 => SPrintF(I18n::t('Term scheduled. (<a target="_blank" href="%s">View Term</a>)'), Get_Permalink()),
+      10 => SPrintF(I18n::t('Draft updated. (<a target="_blank" href="%s">Preview Term</a>)'), Add_Query_Arg('preview', 'true', Get_Permalink()))
     )));
   }
 
   function Register_Taxonomies(){
     If($this->Get_Option('encyclopedia_tags')){
 			Register_Taxonomy('encyclopedia-tag', $this->post_type, Array(
-				'label' => $this->t('Encyclopedia Tags'),
+				'label' => I18n::t('Encyclopedia Tags'),
 				'labels' => Array(
-					'name' => $this->t('Tags'),
-					'singular_name' => $this->t('Tag'),
-					'search_items' =>  $this->t('Search Tags'),
-					'all_items' => $this->t('All Tags'),
-					'edit_item' => $this->t('Edit Tag'),
-					'update_item' => $this->t('Update Tag'),
-					'add_new_item' => $this->t('Add New Tag'),
-					'new_item_name' => $this->t('New Tag')
+					'name' => I18n::t('Tags'),
+					'singular_name' => I18n::t('Tag'),
+					'search_items' =>  I18n::t('Search Tags'),
+					'all_items' => I18n::t('All Tags'),
+					'edit_item' => I18n::t('Edit Tag'),
+					'update_item' => I18n::t('Update Tag'),
+					'add_new_item' => I18n::t('Add New Tag'),
+					'new_item_name' => I18n::t('New Tag')
 				),
         'show_admin_column' => True,
 				'hierarchical' => False,
@@ -328,7 +328,7 @@ class wp_plugin_encyclopedia {
 				'query_var' => True,
 				'rewrite' => Array(
 					'with_front' => False,
-					'slug' => LTrim(SPrintF($this->t('%s/tag', 'URL slug'), $this->encyclopedia_type->slug), '/')
+					'slug' => LTrim(SPrintF(I18n::t('%s/tag', 'URL slug'), $this->encyclopedia_type->slug), '/')
 				),
 			));
     }
@@ -346,17 +346,17 @@ class wp_plugin_encyclopedia {
     $archive_feed = get_term_feed_link($tag->term_id, $taxonomy->name);
     ?>
     <tr class="form-field">
-      <th scope="row" valign="top"><?php Echo $this->t('Archive Url') ?></th>
+      <th scope="row" valign="top"><?php Echo I18n::t('Archive Url') ?></th>
       <td>
         <code><a href="<?php Echo $archive_url ?>" target="_blank"><?php Echo $archive_url ?></a></code><br>
-        <span class="description"><?php PrintF($this->t('This is the URL to the archive of this %s.'), $taxonomy->labels->singular_name) ?></span>
+        <span class="description"><?php PrintF(I18n::t('This is the URL to the archive of this %s.'), $taxonomy->labels->singular_name) ?></span>
       </td>
     </tr>
     <tr class="form-field">
-      <th scope="row" valign="top"><?php Echo $this->t('Archive Feed') ?></th>
+      <th scope="row" valign="top"><?php Echo I18n::t('Archive Feed') ?></th>
       <td>
         <code><a href="<?php Echo $archive_feed ?>" target="_blank"><?php Echo $archive_feed ?></a></code><br>
-        <span class="description"><?php PrintF($this->t('This is the URL to the feed of the archive of this %s.'), $taxonomy->labels->singular_name) ?></span>
+        <span class="description"><?php PrintF(I18n::t('This is the URL to the feed of the archive of this %s.'), $taxonomy->labels->singular_name) ?></span>
       </td>
     </tr>
     <?php
@@ -458,7 +458,7 @@ class wp_plugin_encyclopedia {
     If (In_Array('get_the_excerpt', $wp_current_filter)) return $content;
 
     # Build the Query
-    $terms_query = New WP_Query(Array(
+    $terms_query = New \WP_Query(Array(
       'nopaging' => True,
       'post_type' => $this->post_type,
       'post__not_in' => Array($post->ID),
@@ -468,7 +468,7 @@ class wp_plugin_encyclopedia {
     ));
 
     # Start Cross Linker
-    $cross_linker = New WordPress\Plugin\Encyclopedia\Cross_Linker;
+    $cross_linker = New Cross_Linker;
     $cross_linker->Set_Skip_Elements(Apply_Filters('encyclopedia_cross_linking_skip_elements', Array('a', 'script', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'button', 'textarea', 'style', 'pre', 'code', 'kbd', 'tt')));
     If (!$cross_linker->Load_Content($content)) return $content;
 
@@ -686,7 +686,7 @@ class wp_plugin_encyclopedia {
               LIMIT  0, {$arguments->number}";
 
     # Put it in a WP_Query
-    $query = New WP_Query();
+    $query = New \WP_Query();
     $query->posts = $wpdb->Get_Results($stmt);
     $query->post_count = Count($query->posts);
     $query->Rewind_Posts();
@@ -779,19 +779,19 @@ class wp_plugin_encyclopedia {
 
   function Pro_Notice($message = 'option', $output = True){
     $arr_message = Array(
-      'upgrade' => $this->t('Upgrade to Pro'),
+      'upgrade' => I18n::t('Upgrade to Pro'),
       'upgrade_url' => '%s',
-      'feature' => $this->t('Available in the <a href="%s" target="_blank">premium version</a> only.'),
-      'unlock' => SPrintF('<a href="%%s" title="%s" class="unlock" target="_blank"><span class="dashicons dashicons-lock"></span></a>', $this->t('Unlock this feature')),
-      'option' => $this->t('This option is changeable in the <a href="%s" target="_blank">premium version</a> only.'),
-      'custom_tax' => $this->t('Do you need a special taxonomy for your project? No problem! Just <a href="%s" target="_blank">get in touch</a> through our support section.'),
-      'count_limit' => $this->t('In the <a href="%s" target="_blank">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features.'),
-      #'changeable' => $this->t('Changeable in the <a href="%s" target="_blank">premium version</a> only.'),
-      #'do_you_like' => $this->t('Do you like the term management? Upgrade to the <a href="%s" target="_blank">premium version of Encyclopedia</a>!')
+      'feature' => I18n::t('Available in the <a href="%s" target="_blank">premium version</a> only.'),
+      'unlock' => SPrintF('<a href="%%s" title="%s" class="unlock" target="_blank"><span class="dashicons dashicons-lock"></span></a>', I18n::t('Unlock this feature')),
+      'option' => I18n::t('This option is changeable in the <a href="%s" target="_blank">premium version</a> only.'),
+      'custom_tax' => I18n::t('Do you need a special taxonomy for your project? No problem! Just <a href="%s" target="_blank">get in touch</a> through our support section.'),
+      'count_limit' => I18n::t('In the <a href="%s" target="_blank">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features.'),
+      #'changeable' => I18n::t('Changeable in the <a href="%s" target="_blank">premium version</a> only.'),
+      #'do_you_like' => I18n::t('Do you like the term management? Upgrade to the <a href="%s" target="_blank">premium version of Encyclopedia</a>!')
     );
 
     If (IsSet($arr_message[$message])){
-      $message = SPrintF($arr_message[$message], $this->t('http://dennishoppe.de/en/wordpress-plugins/encyclopedia', 'Link to the authors website'));
+      $message = SPrintF($arr_message[$message], I18n::t('http://dennishoppe.de/en/wordpress-plugins/encyclopedia', 'Link to the authors website'));
       If ($output) Echo $message;
       Else return $message;
     }
@@ -822,7 +822,7 @@ class wp_plugin_encyclopedia {
     WP_Die(
       SPrintF('<p>%s</p><p>%s</p>',
         $this->Pro_Notice('count_limit', False),
-        SPrintF('<a href="%s" class="button">%s</a>', Admin_URL('edit.php?post_type=' . $this->post_type), $this->t('&laquo; Back to your terms'))
+        SPrintF('<a href="%s" class="button">%s</a>', Admin_URL('edit.php?post_type=' . $this->post_type), I18n::t('&laquo; Back to your terms'))
       )
     );
   }
@@ -830,7 +830,7 @@ class wp_plugin_encyclopedia {
   function Term_Count_Notice(){
     If ($this->Count_Terms(20) >= 20): ?>
     <div class="updated"><p>
-      <?php PrintF($this->t('Sorry, there are to many %s terms for Encyclopedia Lite. This could result in strange behavior of the plugin. Please delete some terms.'), $this->encyclopedia_type->label) ?>
+      <?php PrintF(I18n::t('Sorry, there are to many %s terms for Encyclopedia Lite. This could result in strange behavior of the plugin. Please delete some terms.'), $this->encyclopedia_type->label) ?>
       <?php $this->Pro_Notice('count_limit') ?>
     </p></div>
     <?php EndIf;

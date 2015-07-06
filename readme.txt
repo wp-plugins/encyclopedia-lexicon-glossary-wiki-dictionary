@@ -188,6 +188,9 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 == Changelog ==
 
+= 1.5.35 =
+* Converted the i18n class to static 
+
 = 1.5.34 =
 * Cleaned up the widgets code
 

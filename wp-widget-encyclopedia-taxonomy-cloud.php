@@ -1,4 +1,6 @@
 <?php
+Use WordPress\Plugin\Encyclopedia\I18n;
+
 class wp_widget_encyclopedia_taxonomy_cloud Extends WP_Widget {
   var $encyclopedia;
 
@@ -18,7 +20,7 @@ class wp_widget_encyclopedia_taxonomy_cloud Extends WP_Widget {
   }
 
   function t ($text, $context = Null){
-    return $this->encyclopedia->t($text, $context);
+    return I18n::t($text, $context);
   }
 
   function Default_Options(){
