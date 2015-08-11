@@ -102,7 +102,7 @@ Please use the support forum on WordPress.org only for this free lite version of
 * Este plugin está disponible en español. ([Fátima Da Silva](http://www.fcdsbtraducciones.com/))
 * Dette istikket er omsett til nynorsk. ([Erik Bolstad](http://www.erikbolstad.no/))
 * Este plugin está disponível em português. (Mauro Mascarenhas)
-
+* Deze plugin is beschikbaar in het Nederlands. ([Erik-Jan Kuipers](http://www.kuipers.pl/))
 
 = Translate this plugin =
 If you have translated this plugin in your language or updated the language file please feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plugin is available in %YOUR_LANGUAGE_NAME%." So I can add it to the plugin and a link to your website to this page.
@@ -187,6 +187,11 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 
 == Changelog ==
+
+= 1.5.36 =
+* Added Dutch translation by [Erik-Jan Kuipers](http://www.kuipers.pl/)
+* Fixed prefix filter WPML bug
+* Added a new "no-cross-linking" class to prevent cross linking
 
 = 1.5.35 =
 * Converted the i18n class to static 

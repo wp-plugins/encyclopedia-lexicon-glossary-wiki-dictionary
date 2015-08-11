@@ -1,0 +1,603 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Encyclopedia Lite\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-28 16:20+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
+"Language-Team: Erik-Jan Kuipers <erik@kuipers.pl>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: t;t:2c,1\n"
+"X-Generator: Poedit 1.7.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class.core.php:140
+msgid "Encyclopedia Options"
+msgstr "Instellingen &rsaquo; Encyclopedie"
+
+#: ../class.core.php:141
+msgid "Encyclopedia"
+msgstr "Encyclopedie"
+
+#: ../class.core.php:152
+msgid "Taxonomies"
+msgstr "Classificaties"
+
+#: ../class.core.php:153
+msgid "Archive page"
+msgstr "Overzichtspagina"
+
+#: ../class.core.php:154
+msgid "Search"
+msgstr "Zoeken"
+
+#: ../class.core.php:155
+msgid "Single page"
+msgstr "Enkele pagina"
+
+#: ../class.core.php:156
+msgid "Cross linking"
+msgstr "Kruiskoppelingen"
+
+#: ../class.core.php:157
+#: ../class.core.php:349
+msgid "Archive Url"
+msgstr "Archief url"
+
+#: ../class.core.php:258
+msgid "Lexicon"
+msgstr "Lexicon"
+
+#: ../class.core.php:259
+msgctxt "URL slug"
+msgid "lexicon"
+msgstr "lexicon"
+
+#: ../class.core.php:267
+msgid "Term"
+msgstr "Term"
+
+#: ../class.core.php:268
+msgid "Add Term"
+msgstr "Term toevoegen"
+
+#: ../class.core.php:269
+msgid "New Term"
+msgstr "Nieuwe term"
+
+#: ../class.core.php:270
+msgid "Edit Term"
+msgstr "Term bewerken"
+
+#: ../class.core.php:271
+msgid "View Term"
+msgstr "Term weergeven"
+
+#: ../class.core.php:272
+msgid "Search Terms"
+msgstr "Termen doorzoeken"
+
+#: ../class.core.php:273
+msgid "No Terms found"
+msgstr "Geen termen gevonden"
+
+#: ../class.core.php:274
+msgid "No Terms found in Trash"
+msgstr "Geen termen gevonden in de prullenbak"
+
+#: ../class.core.php:298
+#, php-format
+msgid "Term updated. (<a href=\"%s\">View Term</a>)"
+msgstr "Term bijgewerkt. (<a href=\"%s\">Term weergeven</a>)"
+
+#: ../class.core.php:301
+msgid "Term updated."
+msgstr "Term bijgewerkt."
+
+#: ../class.core.php:302
+#, php-format
+msgid "Term restored to revision from %s"
+msgstr "Term teruggezet naar de wijziging van %s"
+
+#: ../class.core.php:303
+#, php-format
+msgid "Term published. (<a href=\"%s\">View Term</a>)"
+msgstr "Term gepubliceerd. (<a href=\"%s\">Term weergeven</a>)"
+
+#: ../class.core.php:304
+msgid "Term saved."
+msgstr "Term opgeslagen."
+
+#: ../class.core.php:305
+msgid "Term submitted."
+msgstr "Term ingediend."
+
+#: ../class.core.php:306
+#, php-format
+msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
+msgstr "Term aangemaakt. (<a target=\"_blank\" href=\"%s\">Term weergeven</a>)"
+
+#: ../class.core.php:307
+#, php-format
+msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
+msgstr "Concept bijgewerkt. (<a target=\"_blank\" href=\"%s\">Term weergeven</a>)"
+
+#: ../class.core.php:314
+msgid "Encyclopedia Tags"
+msgstr "Encyclopedie trefwoorden"
+
+#: ../class.core.php:316
+msgid "Tags"
+msgstr "Trefwoorden"
+
+#: ../class.core.php:317
+msgid "Tag"
+msgstr "Trefwoord"
+
+#: ../class.core.php:318
+msgid "Search Tags"
+msgstr "Trefwoorden doorzoeken"
+
+#: ../class.core.php:319
+msgid "All Tags"
+msgstr "Alle trefwoorden"
+
+#: ../class.core.php:320
+msgid "Edit Tag"
+msgstr "Trefwoord bewerken"
+
+#: ../class.core.php:321
+msgid "Update Tag"
+msgstr "Trefwoord bijwerken"
+
+#: ../class.core.php:322
+msgid "Add New Tag"
+msgstr "Nieuw trefwoord toevoegen"
+
+#: ../class.core.php:323
+msgid "New Tag"
+msgstr "Nieuw trefwoord"
+
+#: ../class.core.php:331
+#, php-format
+msgctxt "URL slug"
+msgid "%s/tag"
+msgstr "%s/trefwoord"
+
+#: ../class.core.php:352
+#, php-format
+msgid "This is the URL to the archive of this %s."
+msgstr "Dit is de URL van het %s-archief."
+
+#: ../class.core.php:356
+msgid "Archive Feed"
+msgstr "Archief feed"
+
+#: ../class.core.php:359
+#, php-format
+msgid "This is the URL to the feed of the archive of this %s."
+msgstr "Dit is de URL naar de feed van het %s-archief."
+
+#: ../class.core.php:782
+msgid "Upgrade to Pro"
+msgstr "Naar Pro upgraden"
+
+#: ../class.core.php:784
+#, php-format
+msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
+msgstr "Alleen in de <a href=\"%s\" target=\"_blank\">premium-versie</a> beschikbaar."
+
+#: ../class.core.php:785
+msgid "Unlock this feature"
+msgstr "Deze functie ontgrendelen"
+
+#: ../class.core.php:786
+#, php-format
+msgid "This option is changeable in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
+msgstr "Deze instelling kan alleen in de <a href=\"%s\" target=\"_blank\">premie-versie</a> gewijzigd worden."
+
+#: ../class.core.php:787
+#, php-format
+msgid "Do you need a special taxonomy for your project? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a> through our support section."
+msgstr "Hebt u een speciale classificatie nodig voor uw project? Geen probleem! Neem gewoon <a href=\"%s\" target=\"_blank\">contact op</a>met onze supportafdeling."
+
+#: ../class.core.php:788
+#, php-format
+msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
+msgstr "In de <a href=\"%s\" target=\"_blank\">premium-versie van Encyclopedia</a> kunt u een onbegrensd aantal termen aanmaken van veel meer functies gebruikmaken."
+
+#: ../class.core.php:794
+msgctxt "Link to the authors website"
+msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
+msgstr "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
+
+#: ../class.core.php:825
+msgid "&laquo; Back to your terms"
+msgstr "&laquo; Terug naar uw termen"
+
+#: ../class.core.php:833
+#, php-format
+msgid "Sorry, there are to many %s terms for Encyclopedia Lite. This could result in strange behavior of the plugin. Please delete some terms."
+msgstr "Sorry, er zijn te veel %s-termen voor Encyclopedia Lite. Dit kan leiden tot vreemd gedrag van de plugin. Verwijder enkele termen."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:17
+msgid "Encyclopedia Taxonomy Cloud"
+msgstr "Encyclopedie-Classificaties Cloud"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:18
+msgid "Displays your Encyclopedia taxonomies as cloud."
+msgstr "Toont uw Encyclopedie-Classificeringen als cloud."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:59
+#: ../wp-widget-encyclopedia-search.php:55
+#: ../wp-widget-encyclopedia-terms.php:57
+#: ../wp-widget-encyclopedia-taxonomies.php:58
+msgid "Title:"
+msgstr "Titel:"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:61
+#: ../wp-widget-encyclopedia-terms.php:59
+#: ../wp-widget-encyclopedia-related-terms.php:58
+#: ../wp-widget-encyclopedia-taxonomies.php:60
+msgid "Leave blank to use the widget default title."
+msgstr "Laat leeg om de standaard widgettitel te gebruiken."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:65
+#: ../wp-widget-encyclopedia-taxonomies.php:64
+msgid "Taxonomy"
+msgstr "Classficatie"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:71
+#: ../wp-widget-encyclopedia-taxonomies.php:70
+msgid "Please choose the Taxonomy the widget should display."
+msgstr "Kies de Classificatie die de widget moet weergeven."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:75
+#: ../wp-widget-encyclopedia-taxonomies.php:74
+msgid "Number"
+msgstr "Aantal"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:77
+msgid "Leave blank (or \"0\") to show all."
+msgstr "Laat leeg (of \"0\") om alles weer te geven."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:83
+msgid "Taxonomy IDs, separated by commas."
+msgstr "Classificatie-ID's, gescheiden door komma's."
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:87
+#: ../wp-widget-encyclopedia-terms.php:63
+#: ../wp-widget-encyclopedia-taxonomies.php:91
+msgid "Order by"
+msgstr "Sorteren volgens"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:90
+#: ../wp-widget-encyclopedia-taxonomies.php:94
+msgid "Term Count"
+msgstr "Aantal termen"
+
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:95
+#: ../wp-widget-encyclopedia-terms.php:77
+#: ../wp-widget-encyclopedia-taxonomies.php:101
+msgid "Order"
+msgstr "Sorteren"
+
+#: ../wp-widget-encyclopedia-search.php:16
+msgid "Encyclopedia Search"
+msgstr "Encyclopedie - Zoeken"
+
+#: ../wp-widget-encyclopedia-search.php:17
+msgid "Displays the encyclopedia search field."
+msgstr "Toont een zoekveld voor de bijdragen in de encyclopedie."
+
+#: ../wp-widget-encyclopedia-terms.php:16
+msgid "Encyclopedia Terms"
+msgstr "Encyclopedie - Termen"
+
+#: ../wp-widget-encyclopedia-terms.php:17
+msgid "Displays your encyclopedia terms as list."
+msgstr "Toont uw encyclopedie-termen als lijst."
+
+#: ../wp-widget-encyclopedia-terms.php:67
+msgid "Author"
+msgstr "Auteur"
+
+#: ../wp-widget-encyclopedia-terms.php:68
+msgid "Date"
+msgstr "Datum"
+
+#: ../wp-widget-encyclopedia-terms.php:69
+msgid "Last modification"
+msgstr "Laatste wijziging"
+
+#: ../wp-widget-encyclopedia-terms.php:70
+msgid "Random"
+msgstr "Willekeurig"
+
+#: ../wp-widget-encyclopedia-terms.php:71
+msgid "Comment Count"
+msgstr "Aantal reacties"
+
+#: ../wp-widget-encyclopedia-terms.php:72
+msgid "Menu Order"
+msgstr "Sorteervolgorde"
+
+#: ../wp-widget-encyclopedia-related-terms.php:16
+msgid "Encyclopedia Related Terms"
+msgstr "Verwante Encyclopedie-termen"
+
+#: ../wp-widget-encyclopedia-related-terms.php:17
+msgid "Displays encyclopedia terms which are related to the current one as list."
+msgstr "Toont een lijst met aan elkaar verwante termen uit de encyclopedie."
+
+#: ../wp-widget-encyclopedia-related-terms.php:62
+msgid "Number:"
+msgstr "Aantal:"
+
+#: ../wp-widget-encyclopedia-related-terms.php:64
+msgid "The number of related terms you want to show."
+msgstr "Aantal met elkaar verwante termen die u wilt weergeven."
+
+#: ../wp-widget-encyclopedia-taxonomies.php:16
+msgid "Encyclopedia Taxonomies"
+msgstr "Encyclopedie-Classificaties"
+
+#: ../wp-widget-encyclopedia-taxonomies.php:17
+msgid "Displays your encyclopedia taxonomies like Categories, Tags, etc."
+msgstr "Toont uw encyclopedie-classificaties zoals categorieën, trefwoorden, enz."
+
+#: ../wp-widget-encyclopedia-taxonomies.php:76
+msgid "Leave blank to show all."
+msgstr "Laat leeg om alles weer te geven."
+
+#: ../wp-widget-encyclopedia-taxonomies.php:82
+msgid "Term IDs, separated by commas."
+msgstr "Term-ID´s, gescheiden door komma´s."
+
+#: ../wp-widget-encyclopedia-taxonomies.php:87
+msgid "Show term counts."
+msgstr "Aantal termen tonen."
+
+#: ../wp-widget-encyclopedia-taxonomies.php:96
+msgid "Slug"
+msgstr "Slug"
+
+#: ../templates/encyclopedia-related-terms.php:2
+msgid "Related entries"
+msgstr "Verwante termen"
+
+#: ../options-page/box-archive-page.php:3
+msgid "Terms per page"
+msgstr "Termen per pagina"
+
+#: ../options-page/box-archive-page.php:7
+msgid "This option effects all encyclopedia archive pages."
+msgstr "Deze instelling betreft alle overzichtspagina´s van de encyclopedie."
+
+#: ../options-page/box-archive-page.php:13
+#: ../options-page/box-single-page.php:22
+msgid "Prefix filter"
+msgstr "Prefix-filter"
+
+#: ../options-page/box-archive-page.php:19
+msgid "Display a prefix filter above the encyclopedia archive automatically or not."
+msgstr "Toont een prefix-filter boven het encyclopedie-archief automatisch of niet."
+
+#: ../options-page/box-archive-page.php:24
+#: ../options-page/box-single-page.php:33
+msgid "Prefix filter depth"
+msgstr "Prefix-filterdiepte"
+
+#: ../options-page/box-archive-page.php:27
+#: ../options-page/box-single-page.php:36
+msgid "The depth of the prefix filter is usually the number of lines with prefixes which are shown."
+msgstr "De diepte van het prefix-filter is normaliter het aantal regels met prefixen die weergegeven worden."
+
+#: ../options-page/box-taxonomies.php:3
+msgid "Activate categories"
+msgstr "Categorieën activeren"
+
+#: ../options-page/box-taxonomies.php:10
+msgid "Categories can help you create an awesome knowledge base."
+msgstr "Categorieën kunnen van pas komen om een indrukwekkende kennisdatabase aan te maken."
+
+#: ../options-page/box-taxonomies.php:16
+msgid "Activate tags"
+msgstr "Trefwoorden activeren"
+
+#: ../options-page/box-taxonomies.php:23
+msgid "Tags are necessary if you want to display relevant entries automatically."
+msgstr "Trefwoorden zijn nodig om verwantschappen tussen termen automatisch te kunnen tonen."
+
+#: ../options-page/box-search.php:3
+msgid "Query terms directly"
+msgstr "Termen direct oproepen."
+
+#: ../options-page/box-search.php:10
+msgid "Enable this feature to redirect the user to the term if the search query matches a term title exactly."
+msgstr "Schakel deze functie in om de gebruiker naar de betreffende term verder te leiden als hij naar een exacte titel zoekt."
+
+#: ../options-page/box-search.php:16
+msgid "Autocomplete min length"
+msgstr "Minimale lengte bij automatisch aanvullen"
+
+#: ../options-page/box-search.php:19
+msgctxt "characters unit"
+msgid "characters"
+msgstr "tekens"
+
+#: ../options-page/box-search.php:21
+msgid "The minimum number of characters a user must type before suggestions will be shown."
+msgstr "Het minimum aantal tekens dat een gebruiker in moet typen, voordat er suggesties getoond worden."
+
+#: ../options-page/box-search.php:27
+msgid "Autocomplete delay"
+msgstr "Vertraging bij het automatisch aanvullen"
+
+#: ../options-page/box-search.php:30
+msgctxt "milliseconds time unit"
+msgid "ms"
+msgstr "ms"
+
+#: ../options-page/box-search.php:32
+msgid "The delay in milliseconds between when a keystroke occurs and when suggestions will be shown."
+msgstr "De vertraging in milliseconden tussen een toetsaanslag en het verschijnen van suggesties."
+
+#: ../options-page/box-general.php:3
+msgid "Encyclopedia type"
+msgstr "Encyclopedie-type"
+
+#: ../options-page/box-general.php:8
+msgid "Wiki"
+msgstr "Wiki"
+
+#: ../options-page/box-general.php:9
+msgid "Knowledge Base"
+msgstr "Kennisdatabase"
+
+#: ../options-page/box-general.php:10
+msgid "Glossary"
+msgstr "Woordenlijst"
+
+#: ../options-page/box-general.php:11
+msgid "Dictionary"
+msgstr "Woordenboek"
+
+#: ../options-page/box-general.php:14
+msgid "Please choose the type of your encyclopedia. This option does not change the behavior of the plugin. It's just for the labels and captions in the backend."
+msgstr "Maak een keuze uit het type encyclopedie. Deze functie verandert niets aan het gedrag van de plugin. Het is alleen van invloed op de labels in het backend."
+
+#: ../options-page/box-general.php:20
+msgid "Use default style"
+msgstr "Standaard CSS gebruiken"
+
+#: ../options-page/box-general.php:27
+msgid "Set this option to \"No\" if you want to use your own style for the encyclopedia."
+msgstr "Zet deze instelling op \"Nee\", als u uw eigen CSS wilt gebruiken."
+
+#: ../options-page/box-general.php:33
+msgid "Enable revisions"
+msgstr "Wijzigingen inschakelen"
+
+#: ../options-page/box-general.php:40
+msgid "Enables or disables revisions for the encyclopedia terms."
+msgstr "Schakelt het wijzigen van encyclopedie-termen in of uit."
+
+#: ../options-page/box-general.php:46
+msgid "Enable comments"
+msgstr "Opmerkingen inschakelen"
+
+#: ../options-page/box-general.php:53
+msgid "Enables or disables comments and trackbacks for the encyclopedia terms."
+msgstr "Schakelt het maken van opmerkingen over encyclopedie-termen in of uit."
+
+#: ../options-page/box-general.php:59
+msgid "Enable thumbnails"
+msgstr "Miniaturen inschakelen"
+
+#: ../options-page/box-general.php:66
+msgid "Enables or disables the \"Featured Image\" for the encyclopedia terms."
+msgstr "Schakelt de mogelijkheid een miniatuur te verbinden aan encyclopedie-termen in of uit."
+
+#: ../options-page/box-general.php:72
+msgid "Enable custom fields"
+msgstr "Aangepaste velden inschakelen"
+
+#: ../options-page/box-general.php:78
+msgid "Enables or disables the \"Custom Fields\" for the encyclopedia terms."
+msgstr "Schakelt \"Aangepaste velden\" voor encyclopedie-termen in of uit."
+
+#: ../options-page/box-single-page.php:3
+msgid "Display related entries"
+msgstr "Toon verwante termen"
+
+#: ../options-page/box-single-page.php:5
+msgid "below the encyclopedia entry"
+msgstr "onder encyclopedie-term"
+
+#: ../options-page/box-single-page.php:6
+msgid "above the encyclopedia entry"
+msgstr "boven de encyclopedie-term"
+
+#: ../options-page/box-single-page.php:7
+msgid "do not show related terms"
+msgstr "toon geen verwante termen"
+
+#: ../options-page/box-single-page.php:12
+msgid "Number of related terms"
+msgstr "Aantal verwante termen"
+
+#: ../options-page/box-single-page.php:16
+msgid "How many related terms should be shown for each term?"
+msgstr "Hoeveel verwante termen moeten per term getoond worden?"
+
+#: ../options-page/box-single-page.php:28
+msgid "Display the prefix filter above the encyclopedia term automatically or not."
+msgstr "Toon het prefix-filter boven het encyclopedie-archief automatisch of niet."
+
+#: ../options-page/box-upgrade.php:1
+msgid "Want to unlock all settings and features? Upgrade to Encyclopedia Pro!"
+msgstr "Wil je alle functies en instellingen ontgrendelen? Upgrade naar Encyclopedia Pro!"
+
+#: ../options-page/box-upgrade.php:7
+msgid "Upgrade to Pro!"
+msgstr "Naar Pro upgraden!"
+
+#: ../options-page/box-archive-link.php:2
+#, php-format
+msgid "The archive link for your encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+msgstr "De archieflink voor uw encyclopedie is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+
+#: ../options-page/box-archive-link.php:5
+#, php-format
+msgid "The archive feed for your encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+msgstr "De archief feed voor uw encyclopedie is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+
+#: ../options-page/box-cross-linking.php:11
+#, php-format
+msgid "Link terms in %s"
+msgstr "%s van automatische kruiskoppelingen voorzien"
+
+#: ../options-page/box-cross-linking.php:25
+msgid "Complete words"
+msgstr "Volledige woorden"
+
+#: ../options-page/box-cross-linking.php:29
+msgid "Link complete words only."
+msgstr "Alleen volledige woorden koppelen."
+
+#: ../options-page/box-cross-linking.php:35
+msgid "First match only"
+msgstr "Alleen de eerste overeenkomst"
+
+#: ../options-page/box-cross-linking.php:39
+msgid "Link the first match of each term only."
+msgstr "Alleen de eerste overeenkomst van elke term koppelen."
+
+#: ../options-page/box-cross-linking.php:45
+msgid "Recursion"
+msgstr "Recursie"
+
+#: ../options-page/box-cross-linking.php:49
+msgid "Link the term in its own content."
+msgstr "De term aan zijn eigen inhoud koppelen."
+
+#: ../options-page/box-cross-linking.php:55
+msgid "Link title length"
+msgstr "Lengte van de linktitel"
+
+#: ../options-page/box-cross-linking.php:58
+msgid "words"
+msgstr "woorden"
+
+#: ../options-page/box-cross-linking.php:60
+msgid "The number of words of the linked term used as link title."
+msgstr "Het aantal woorden van de gekoppelde term die als linktitel gebruikt moeten worden."
+

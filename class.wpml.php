@@ -12,7 +12,7 @@ class WPML {
     # Define filters
     Add_Action('widgets_init', Array($this, 'Find_WPML'));
     Add_Filter('gettext_with_context', Array($this, 'Filter_Gettext_with_Context'), 1, 4);
-    Add_Filter('encyclopedia_available_filters', Array($this, 'Filter_Available_Filters'));
+    Add_Filter('encyclopedia_available_prefix_filters', Array($this, 'Filter_Available_Filters'));
   }
 
   public function Find_WPML(){

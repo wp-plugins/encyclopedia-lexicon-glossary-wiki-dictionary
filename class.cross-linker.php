@@ -79,7 +79,7 @@ class Cross_Linker {
     $link = SPrintF('$1<a href="%1$s" target="%2$s" title="%3$s" class="encyclopedia">$2</a>$3', $url, $this->link_target, Esc_Attr(HTMLSpecialChars($title)));
 
     # Go through nodes and replace
-    $xpath_query = '//text()';
+    $xpath_query = '//text()[not(ancestor::*[contains(@class,"no-cross-linking")])]';
     ForEach ($this->skip_elements As $skip_element) $xpath_query .= SPrintF('[not(ancestor::%s)]', $skip_element);
     ForEach($this->XPath->Query($xpath_query) As $original_node){
       $original_text = HTMLSpecialChars(HTML_Entity_Decode($original_node->wholeText, ENT_QUOTES, 'UTF-8'));
