@@ -2,7 +2,7 @@
 Contributors: dhoppe
 Tags: encyclopedia, lexicon, lexikon, glossary, glossar, dictionary, knowledge base, wiki, wikipedia,				widget, Post, plugin, admin, posts, sidebar, comments, google, images, page, image, links
 Requires at least: 3.6
-Tested up to: 4.2.4
+Tested up to: 4.3
 Stable tag: trunk
 Donate link: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
 License: GPLv2
@@ -187,6 +187,9 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 
 == Changelog ==
+
+= 1.5.37 =
+* Added: Translations Deutsch und Deutsch (Sie)
 
 = 1.5.36 =
 * Added Dutch translation by [Erik-Jan Kuipers](http://www.kuipers.pl/)

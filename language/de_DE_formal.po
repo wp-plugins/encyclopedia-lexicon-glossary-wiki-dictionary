@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Encyclopedia Lite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-11 09:10+0100\n"
+"POT-Creation-Date: 2015-08-25 15:19+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Dennis Hoppe <Mail@DennisHoppe.de>\n"
@@ -16,354 +16,354 @@ msgstr ""
 "X-Poedit-KeywordsList: t;t:2c,1\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../class.core.php:141
+#: ../class.core.php:140
 msgid "Encyclopedia Options"
 msgstr "Einstellungen &rsaquo; Enzyklopädie"
 
-#: ../class.core.php:142
+#: ../class.core.php:141
 msgid "Encyclopedia"
 msgstr "Enzyklopädie"
 
-#: ../class.core.php:153
+#: ../class.core.php:152
 msgid "Taxonomies"
 msgstr "Klassifizierungen"
 
-#: ../class.core.php:154
+#: ../class.core.php:153
 msgid "Archive page"
 msgstr "Übersichtsseite"
 
-#: ../class.core.php:155
+#: ../class.core.php:154
 msgid "Search"
 msgstr "Suche"
 
-#: ../class.core.php:156
+#: ../class.core.php:155
 msgid "Single page"
 msgstr "Einzelansicht"
 
-#: ../class.core.php:157
+#: ../class.core.php:156
 msgid "Cross linking"
 msgstr "Querverknüpfungen"
 
-#: ../class.core.php:158
-#: ../class.core.php:350
+#: ../class.core.php:157
+#: ../class.core.php:349
 msgid "Archive Url"
 msgstr "Archiv Url"
 
-#: ../class.core.php:259
+#: ../class.core.php:258
 msgid "Lexicon"
 msgstr "Lexikon"
 
-#: ../class.core.php:260
+#: ../class.core.php:259
 msgctxt "URL slug"
 msgid "lexicon"
 msgstr "lexikon"
 
-#: ../class.core.php:268
+#: ../class.core.php:267
 msgid "Term"
 msgstr "Eintrag"
 
-#: ../class.core.php:269
+#: ../class.core.php:268
 msgid "Add Term"
 msgstr "Eintrag hinzufügen"
 
-#: ../class.core.php:270
+#: ../class.core.php:269
 msgid "New Term"
 msgstr "Neuer Eintrag"
 
-#: ../class.core.php:271
+#: ../class.core.php:270
 msgid "Edit Term"
 msgstr "Eintrag bearbeiten"
 
-#: ../class.core.php:272
+#: ../class.core.php:271
 msgid "View Term"
 msgstr "Eintrag ansehen"
 
-#: ../class.core.php:273
+#: ../class.core.php:272
 msgid "Search Terms"
 msgstr "Einträge durchsuchen"
 
-#: ../class.core.php:274
+#: ../class.core.php:273
 msgid "No Terms found"
 msgstr "Keine Einträge gefunden"
 
-#: ../class.core.php:275
+#: ../class.core.php:274
 msgid "No Terms found in Trash"
 msgstr "Keine Einträge im Papierkorb gefunden."
 
-#: ../class.core.php:299
+#: ../class.core.php:298
 #, php-format
 msgid "Term updated. (<a href=\"%s\">View Term</a>)"
 msgstr "Eintrag aktualisiert. (<a href=\"%s\">Eintrag ansehen</a>)"
 
-#: ../class.core.php:302
+#: ../class.core.php:301
 msgid "Term updated."
 msgstr "Eintrag aktualisiert."
 
-#: ../class.core.php:303
+#: ../class.core.php:302
 #, php-format
 msgid "Term restored to revision from %s"
 msgstr "Eintrag auf den Stand von %s zurückgesetzt"
 
-#: ../class.core.php:304
+#: ../class.core.php:303
 #, php-format
 msgid "Term published. (<a href=\"%s\">View Term</a>)"
 msgstr "Eintrag veröffentlicht. (<a href=\"%s\">Eintrag ansehen</a>)"
 
-#: ../class.core.php:305
+#: ../class.core.php:304
 msgid "Term saved."
 msgstr "Eintrag gespeichert."
 
-#: ../class.core.php:306
+#: ../class.core.php:305
 msgid "Term submitted."
 msgstr "Eintrag eingereicht."
 
-#: ../class.core.php:307
+#: ../class.core.php:306
 #, php-format
 msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
 msgstr "Eintrag angelegt. (<a target=\"_blank\" href=\"%s\">Eintrag ansehen</a>)"
 
-#: ../class.core.php:308
+#: ../class.core.php:307
 #, php-format
 msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
 msgstr "Entwurf gespeichert. (<a target=\"_blank\" href=\"%s\">Vorschau</a>)"
 
-#: ../class.core.php:315
+#: ../class.core.php:314
 msgid "Encyclopedia Tags"
 msgstr "Enzyklopädie Schlagwörter"
 
-#: ../class.core.php:317
+#: ../class.core.php:316
 msgid "Tags"
 msgstr "Schlagworte"
 
-#: ../class.core.php:318
+#: ../class.core.php:317
 msgid "Tag"
 msgstr "Schlagwort"
 
-#: ../class.core.php:319
+#: ../class.core.php:318
 msgid "Search Tags"
 msgstr "Schlagworte durchsuchen"
 
-#: ../class.core.php:320
+#: ../class.core.php:319
 msgid "All Tags"
 msgstr "Alle Schlagworte"
 
-#: ../class.core.php:321
+#: ../class.core.php:320
 msgid "Edit Tag"
 msgstr "Schlagwort bearbeiten"
 
-#: ../class.core.php:322
+#: ../class.core.php:321
 msgid "Update Tag"
 msgstr "Schlagwort aktualisieren"
 
-#: ../class.core.php:323
+#: ../class.core.php:322
 msgid "Add New Tag"
 msgstr "Neues Schlagwort hinzufügen"
 
-#: ../class.core.php:324
+#: ../class.core.php:323
 msgid "New Tag"
 msgstr "Neues Schlagwort"
 
-#: ../class.core.php:332
+#: ../class.core.php:331
 #, php-format
 msgctxt "URL slug"
 msgid "%s/tag"
 msgstr "%s/schlagwort"
 
-#: ../class.core.php:353
+#: ../class.core.php:352
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "Das ist die URL des %s-Archives."
 
-#: ../class.core.php:357
+#: ../class.core.php:356
 msgid "Archive Feed"
 msgstr "Archiv Feed"
 
-#: ../class.core.php:360
+#: ../class.core.php:359
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "Das ist die URL zum RSS Feed des %s-Archives."
 
-#: ../class.core.php:852
+#: ../class.core.php:782
 msgid "Upgrade to Pro"
 msgstr "Upgrade auf Pro"
 
-#: ../class.core.php:854
+#: ../class.core.php:784
 #, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr "Nur in <a href=\"%s\" target=\"_blank\">Encyclopedia Pro</a> verfügbar."
 
-#: ../class.core.php:855
+#: ../class.core.php:785
 msgid "Unlock this feature"
 msgstr "Diese Funktion freischalten"
 
-#: ../class.core.php:856
+#: ../class.core.php:786
 #, php-format
 msgid "This option is changeable in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
 msgstr "Diese Einstellung lässt sich nur in <a href=\"%s\" target=\"_blank\">Encyclopedia Pro</a> ändern."
 
-#: ../class.core.php:857
+#: ../class.core.php:787
 #, php-format
 msgid "Do you need a special taxonomy for your project? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a> through our support section."
-msgstr "Brauchst du eine spezielle Klassifizierung für dein Projekt? Kein Problem! <a href=\"%s\" target=\"_blank\">Frag einfach danach</a> in unserem Support-Bereich."
+msgstr "Brauchen Sie eine spezielle Klassifizierung für Ihr Projekt? Kein Problem! <a href=\"%s\" target=\"_blank\">Fragen Sie einfach danach</a> in unserem Support-Bereich."
 
-#: ../class.core.php:858
+#: ../class.core.php:788
 #, php-format
 msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
-msgstr "In der <a href=\"%s\" target=\"_blank\">Premium Version von Encyclopedia</a> kannst du unbegrenzt viele Einträge anlegen und viele weitere Funktionen nutzen."
+msgstr "In der <a href=\"%s\" target=\"_blank\">Premium Version von Encyclopedia</a> können Sie unbegrenzt viele Einträge anlegen und viele weitere Funktionen nutzen."
 
-#: ../class.core.php:864
+#: ../class.core.php:794
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
 msgstr "http://dennishoppe.de/wordpress-plugins/encyclopedia"
 
-#: ../class.core.php:895
+#: ../class.core.php:825
 msgid "&laquo; Back to your terms"
 msgstr "&laquo; Zurück zu den Einträgen"
 
-#: ../class.core.php:903
+#: ../class.core.php:833
 #, php-format
 msgid "Sorry, there are to many %s terms for Encyclopedia Lite. This could result in strange behavior of the plugin. Please delete some terms."
-msgstr "Entschuldigung, du hast zu viele %s-Einträge für Encyclopedia Lite, was teilweise zu ungewöhnlichem Plugin-Verhalten führt. Bitte lösche ein paar Einträge."
+msgstr "Entschuldigung, Sie haben zu viele %s-Einträge für Encyclopedia Lite, was teilweise zu ungewöhnlichem Plugin-Verhalten führt. Bitte löschen Sie ein paar Einträge."
 
-#: ../wp-widget-encyclopedia-taxonomy-cloud.php:15
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:17
 msgid "Encyclopedia Taxonomy Cloud"
 msgstr "Enzyklopädie-Klassifizierungen (Wolke)"
 
-#: ../wp-widget-encyclopedia-taxonomy-cloud.php:16
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:18
 msgid "Displays your Encyclopedia taxonomies as cloud."
-msgstr "Zeigt die Enzyklopädieklassifizierungen als  \"Wortwolke\" an."
+msgstr "Zeigt Ihre Enzyklopädieklassifizierungen als  \"Wortwolke\" an."
 
-#: ../wp-widget-encyclopedia-taxonomy-cloud.php:62
-#: ../wp-widget-encyclopedia-search.php:58
-#: ../wp-widget-encyclopedia-terms.php:60
-#: ../wp-widget-encyclopedia-taxonomies.php:61
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:59
+#: ../wp-widget-encyclopedia-search.php:55
+#: ../wp-widget-encyclopedia-terms.php:57
+#: ../wp-widget-encyclopedia-taxonomies.php:58
 msgid "Title:"
 msgstr "Titel:"
 
-#: ../wp-widget-encyclopedia-taxonomy-cloud.php:64
-#: ../wp-widget-encyclopedia-terms.php:62
-#: ../wp-widget-encyclopedia-related-terms.php:61
-#: ../wp-widget-encyclopedia-taxonomies.php:63
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:61
+#: ../wp-widget-encyclopedia-terms.php:59
+#: ../wp-widget-encyclopedia-related-terms.php:58
+#: ../wp-widget-encyclopedia-taxonomies.php:60
 msgid "Leave blank to use the widget default title."
 msgstr "Leer lassen um Standardtitel zu verwenden."
 
-#: ../wp-widget-encyclopedia-taxonomy-cloud.php:68
-#: ../wp-widget-encyclopedia-taxonomies.php:67
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:65
+#: ../wp-widget-encyclopedia-taxonomies.php:64
 msgid "Taxonomy"
 msgstr "Klassifizierung"
 
-#: ../wp-widget-encyclopedia-taxonomy-cloud.php:74
-#: ../wp-widget-encyclopedia-taxonomies.php:73
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:71
+#: ../wp-widget-encyclopedia-taxonomies.php:70
 msgid "Please choose the Taxonomy the widget should display."
-msgstr "Bitte wähle die Klassifizierung aus, die das Widget anzeigen soll."
+msgstr "Bitte wählen Sie die Klassifizierung aus, die das Widget anzeigen soll."
 
-#: ../wp-widget-encyclopedia-taxonomy-cloud.php:78
-#: ../wp-widget-encyclopedia-taxonomies.php:77
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:75
+#: ../wp-widget-encyclopedia-taxonomies.php:74
 msgid "Number"
 msgstr "Anzahl"
 
-#: ../wp-widget-encyclopedia-taxonomy-cloud.php:80
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:77
 msgid "Leave blank (or \"0\") to show all."
 msgstr "Leer lassen (oder \"0\") um alles anzuzeigen."
 
-#: ../wp-widget-encyclopedia-taxonomy-cloud.php:86
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:83
 msgid "Taxonomy IDs, separated by commas."
 msgstr "Klassifizierungs-IDs, durch Komma getrennt."
 
-#: ../wp-widget-encyclopedia-taxonomy-cloud.php:90
-#: ../wp-widget-encyclopedia-terms.php:66
-#: ../wp-widget-encyclopedia-taxonomies.php:94
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:87
+#: ../wp-widget-encyclopedia-terms.php:63
+#: ../wp-widget-encyclopedia-taxonomies.php:91
 msgid "Order by"
 msgstr "Sortieren nach"
 
-#: ../wp-widget-encyclopedia-taxonomy-cloud.php:93
-#: ../wp-widget-encyclopedia-taxonomies.php:97
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:90
+#: ../wp-widget-encyclopedia-taxonomies.php:94
 msgid "Term Count"
 msgstr "Anzahl der Einträge"
 
-#: ../wp-widget-encyclopedia-taxonomy-cloud.php:98
-#: ../wp-widget-encyclopedia-terms.php:80
-#: ../wp-widget-encyclopedia-taxonomies.php:104
+#: ../wp-widget-encyclopedia-taxonomy-cloud.php:95
+#: ../wp-widget-encyclopedia-terms.php:77
+#: ../wp-widget-encyclopedia-taxonomies.php:101
 msgid "Order"
 msgstr "Reihenfolge"
 
-#: ../wp-widget-encyclopedia-search.php:14
+#: ../wp-widget-encyclopedia-search.php:16
 msgid "Encyclopedia Search"
 msgstr "Enzyklopädie-Suche"
 
-#: ../wp-widget-encyclopedia-search.php:15
+#: ../wp-widget-encyclopedia-search.php:17
 msgid "Displays the encyclopedia search field."
 msgstr "Zeigt ein Suchfeld für Enzyklopädiebeiträge an."
 
-#: ../wp-widget-encyclopedia-terms.php:14
+#: ../wp-widget-encyclopedia-terms.php:16
 msgid "Encyclopedia Terms"
 msgstr "Enzyklopädie-Einträge"
 
-#: ../wp-widget-encyclopedia-terms.php:15
+#: ../wp-widget-encyclopedia-terms.php:17
 msgid "Displays your encyclopedia terms as list."
 msgstr "Zeigt die Liste der veröffentlichten Enzyklopädiebeiträge an."
 
-#: ../wp-widget-encyclopedia-terms.php:70
+#: ../wp-widget-encyclopedia-terms.php:67
 msgid "Author"
 msgstr "Autor"
 
-#: ../wp-widget-encyclopedia-terms.php:71
+#: ../wp-widget-encyclopedia-terms.php:68
 msgid "Date"
 msgstr "Zeitraum"
 
-#: ../wp-widget-encyclopedia-terms.php:72
+#: ../wp-widget-encyclopedia-terms.php:69
 msgid "Last modification"
 msgstr "Aktualisierungszeit"
 
-#: ../wp-widget-encyclopedia-terms.php:73
+#: ../wp-widget-encyclopedia-terms.php:70
 msgid "Random"
 msgstr "Zufall"
 
-#: ../wp-widget-encyclopedia-terms.php:74
+#: ../wp-widget-encyclopedia-terms.php:71
 msgid "Comment Count"
 msgstr "Kommentaranzahl"
 
-#: ../wp-widget-encyclopedia-terms.php:75
+#: ../wp-widget-encyclopedia-terms.php:72
 msgid "Menu Order"
 msgstr "Reihenfolge"
 
-#: ../wp-widget-encyclopedia-related-terms.php:14
+#: ../wp-widget-encyclopedia-related-terms.php:16
 msgid "Encyclopedia Related Terms"
 msgstr "Verwandte Enzyklopädie-Einträge"
 
-#: ../wp-widget-encyclopedia-related-terms.php:15
+#: ../wp-widget-encyclopedia-related-terms.php:17
 msgid "Displays encyclopedia terms which are related to the current one as list."
 msgstr "Zeigt eine Liste mit verwandten Einträgen aus der Enzyklopädie an."
 
-#: ../wp-widget-encyclopedia-related-terms.php:65
+#: ../wp-widget-encyclopedia-related-terms.php:62
 msgid "Number:"
 msgstr "Anzahl:"
 
-#: ../wp-widget-encyclopedia-related-terms.php:67
+#: ../wp-widget-encyclopedia-related-terms.php:64
 msgid "The number of related terms you want to show."
 msgstr "Anzahl der anzuzeigenden verwandten Einträge."
 
-#: ../wp-widget-encyclopedia-taxonomies.php:14
+#: ../wp-widget-encyclopedia-taxonomies.php:16
 msgid "Encyclopedia Taxonomies"
 msgstr "Enzyklopädie-Klassifizierungen"
 
-#: ../wp-widget-encyclopedia-taxonomies.php:15
+#: ../wp-widget-encyclopedia-taxonomies.php:17
 msgid "Displays your encyclopedia taxonomies like Categories, Tags, etc."
 msgstr "Zeigt Enzyklopädieklassifizierungen wie Kategorien, Schlagworte, etc. an."
 
-#: ../wp-widget-encyclopedia-taxonomies.php:79
+#: ../wp-widget-encyclopedia-taxonomies.php:76
 msgid "Leave blank to show all."
 msgstr "Leer lassen um alle anzuzeigen."
 
-#: ../wp-widget-encyclopedia-taxonomies.php:85
+#: ../wp-widget-encyclopedia-taxonomies.php:82
 msgid "Term IDs, separated by commas."
 msgstr "Klassifizierungs-IDs, durch Komma getrennt."
 
-#: ../wp-widget-encyclopedia-taxonomies.php:90
+#: ../wp-widget-encyclopedia-taxonomies.php:87
 msgid "Show term counts."
 msgstr "Anzahl der Einträge anzeigen."
 
-#: ../wp-widget-encyclopedia-taxonomies.php:99
+#: ../wp-widget-encyclopedia-taxonomies.php:96
 msgid "Slug"
 msgstr "Slug"
 
@@ -420,7 +420,7 @@ msgstr "Einträge direkt aufrufen"
 
 #: ../options-page/box-search.php:10
 msgid "Enable this feature to redirect the user to the term if the search query matches a term title exactly."
-msgstr "Aktiviere diese Funktion um den Benutzer auf den entsprechenden Eintrag weiterzuleiten, wenn er nach dem exakten Titel sucht."
+msgstr "Aktivieren Sie diese Funktion um den Benutzer auf den entsprechenden Eintrag weiterzuleiten, wenn er nach dem exakten Titel sucht."
 
 #: ../options-page/box-search.php:16
 msgid "Autocomplete min length"
@@ -470,7 +470,7 @@ msgstr "Wörterbuch"
 
 #: ../options-page/box-general.php:14
 msgid "Please choose the type of your encyclopedia. This option does not change the behavior of the plugin. It's just for the labels and captions in the backend."
-msgstr "Bitte wähle den Typ der Enzyklopädie aus. Diese Option ändert nichts am Verhalten des Plugins, es beeinflusst lediglich die Beschriftungen im Dashboard."
+msgstr "Bitte wählen Sie den Typ Ihrer Enzyklopädie aus. Diese Option ändert nichts am Verhalten des Plugins, es beeinflusst lediglich die Beschriftungen im Backend."
 
 #: ../options-page/box-general.php:20
 msgid "Use default style"
@@ -478,7 +478,7 @@ msgstr "Standard CSS verwenden"
 
 #: ../options-page/box-general.php:27
 msgid "Set this option to \"No\" if you want to use your own style for the encyclopedia."
-msgstr "Setze diese Einstellungen auf \"Nein\", wenn du dein eigenes CSS verwenden möchtest."
+msgstr "Setzen Sie diese Einstellungen auf \"Nein\", wenn Sie Ihr eigenes CSS verwenden möchten."
 
 #: ../options-page/box-general.php:33
 msgid "Enable revisions"
@@ -542,7 +542,7 @@ msgstr "Zeige einen Präfixfilter über Enzyklopädie-Einträgen an (oder nicht)
 
 #: ../options-page/box-upgrade.php:1
 msgid "Want to unlock all settings and features? Upgrade to Encyclopedia Pro!"
-msgstr "Möchtest du alle Funktionen und Einstellungen freischalten? Dann rüste doch auf die Pro-Version auf!"
+msgstr "Möchten Sie alle Funktionen und Einstellungen freischalten? Dann rüsten Sie doch auf die Pro-Version auf!"
 
 #: ../options-page/box-upgrade.php:7
 msgid "Upgrade to Pro!"
@@ -551,51 +551,51 @@ msgstr "Aufrüsten auf Pro!"
 #: ../options-page/box-archive-link.php:2
 #, php-format
 msgid "The archive link for your encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
-msgstr "Der Archiv-Link für deine Enzyklopädie lautet: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+msgstr "Der Archiv-Link für Ihre Enzyklopädie lautet: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
 
 #: ../options-page/box-archive-link.php:5
 #, php-format
 msgid "The archive feed for your encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
-msgstr "Der Archiv-Link zum RSS Feed deiner Enzyklopädie lautet:<a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+msgstr "Der Archiv-Link zum RSS Feed Ihrer Enzyklopädie lautet:<a href=\"%1$s\" target=\"_blank\">%1$s</a>"
 
 #: ../options-page/box-cross-linking.php:11
 #, php-format
 msgid "Link terms in %s"
 msgstr " %s mit automatischen Querverlinkungen versehen"
 
-#: ../options-page/box-cross-linking.php:20
+#: ../options-page/box-cross-linking.php:25
 msgid "Complete words"
 msgstr "Ganze Wörter"
 
-#: ../options-page/box-cross-linking.php:24
+#: ../options-page/box-cross-linking.php:29
 msgid "Link complete words only."
 msgstr "Nur ganze Wörter verlinken."
 
-#: ../options-page/box-cross-linking.php:30
+#: ../options-page/box-cross-linking.php:35
 msgid "First match only"
 msgstr "Erstes Vorkommen"
 
-#: ../options-page/box-cross-linking.php:34
+#: ../options-page/box-cross-linking.php:39
 msgid "Link the first match of each term only."
 msgstr "Verlinke nur das erste Vorkommen jedes Eintrags."
 
-#: ../options-page/box-cross-linking.php:40
+#: ../options-page/box-cross-linking.php:45
 msgid "Recursion"
 msgstr "Rekursion"
 
-#: ../options-page/box-cross-linking.php:44
+#: ../options-page/box-cross-linking.php:49
 msgid "Link the term in its own content."
 msgstr "Einträge in ihrem eigenen Inhalt verlinken."
 
-#: ../options-page/box-cross-linking.php:50
+#: ../options-page/box-cross-linking.php:55
 msgid "Link title length"
 msgstr "Länge des Linktitels"
 
-#: ../options-page/box-cross-linking.php:53
+#: ../options-page/box-cross-linking.php:58
 msgid "words"
 msgstr "Wörter"
 
-#: ../options-page/box-cross-linking.php:55
+#: ../options-page/box-cross-linking.php:60
 msgid "The number of words of the linked term used as link title."
 msgstr "Anzahl der Wörter des verlinkten Eintrags, die als Linktitel verwendet werden sollen."
 
