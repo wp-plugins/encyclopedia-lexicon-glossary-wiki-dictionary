@@ -1,0 +1,726 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Encyclopedia\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-09 10:29+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: t;t:2c,1\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../templates/encyclopedia-related-terms.php:3
+msgid "Related entries"
+msgstr "İlişkili girdiler"
+
+#: ../classes/class.encyclopedia-type.php:25
+msgid "Lexicon"
+msgstr "Lügat"
+
+#: ../classes/class.encyclopedia-type.php:26
+msgctxt "URL slug"
+msgid "lexicon"
+msgstr "sozlukce"
+
+#: ../classes/class.post-type.php:16
+msgid "Term"
+msgstr "Terim"
+
+#: ../classes/class.post-type.php:17
+msgid "Add Term"
+msgstr "Terim Ekle"
+
+#: ../classes/class.post-type.php:18
+msgid "New Term"
+msgstr "Yeni Terim"
+
+#: ../classes/class.post-type.php:19
+msgid "Edit Term"
+msgstr "Terimi Düzenle"
+
+#: ../classes/class.post-type.php:20
+msgid "View Term"
+msgstr "Terimi Gör"
+
+#: ../classes/class.post-type.php:21
+msgid "Search Terms"
+msgstr "Terim Ara"
+
+#: ../classes/class.post-type.php:22
+msgid "No Terms found"
+msgstr "Terim Bulunamadı"
+
+#: ../classes/class.post-type.php:23
+msgid "No Terms found in Trash"
+msgstr "Çöp Kutusunda Terim Bulunamadı"
+
+#: ../classes/class.post-type.php:52
+#, php-format
+msgid "Term updated. (<a href=\"%s\">View Term</a>)"
+msgstr "Terim güncellendi. (<a href=\"%s\">Terime Bak</a>)"
+
+#: ../classes/class.post-type.php:55
+msgid "Term updated."
+msgstr "Terim güncellendi."
+
+#: ../classes/class.post-type.php:56
+#, php-format
+msgid "Term restored to revision from %s"
+msgstr "Terim %s tarafından yapılan düzeltiye döndürüldü."
+
+#: ../classes/class.post-type.php:57
+#, php-format
+msgid "Term published. (<a href=\"%s\">View Term</a>)"
+msgstr "Terim yayımlandı. (<a href=\"%s\">Terimi Gör</a>)"
+
+#: ../classes/class.post-type.php:58
+msgid "Term saved."
+msgstr "Terim kaydedildi."
+
+#: ../classes/class.post-type.php:59
+msgid "Term submitted."
+msgstr "Terim eklendi."
+
+#: ../classes/class.post-type.php:60
+#, php-format
+msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
+msgstr "Terim takvime eklendi. (<a target=\"_blank\" href=\"%s\">Terimi Gör</a>)"
+
+#: ../classes/class.post-type.php:61
+#, php-format
+msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
+msgstr "Taslak güncellendi. (<a target=\"_blank\" href=\"%s\">Terimi Önizle</a>)"
+
+#: ../classes/class.options.php:17
+msgid "Encyclopedia Options"
+msgstr "Ansiklopedi Ayarları"
+
+#: ../classes/class.options.php:18
+msgid "Encyclopedia"
+msgstr "Ansiklopedi"
+
+#: ../classes/class.options.php:29
+msgid "Taxonomies"
+msgstr "Taksonomiler"
+
+#: ../classes/class.options.php:30
+#, fuzzy
+msgid "Archive page"
+msgstr "Arşiv Sayfası"
+
+#: ../classes/class.options.php:31
+#, fuzzy
+msgid "Search"
+msgstr "Etiketlerde Ara"
+
+#: ../classes/class.options.php:32
+#, fuzzy
+msgid "Single page"
+msgstr "Tekil Sayfa"
+
+#: ../classes/class.options.php:33
+msgid "Cross linking"
+msgstr ""
+
+#: ../classes/class.options.php:34
+#: ../classes/class.taxonomies.php:57
+msgid "Archive Url"
+msgstr "Arşiv Bağlantısı"
+
+#: ../classes/class.taxonomies.php:14
+#, fuzzy
+msgid "Encyclopedia Tags"
+msgstr "Ansiklopedi Terimleri"
+
+#: ../classes/class.taxonomies.php:16
+#, fuzzy
+msgid "Tags"
+msgstr "Tüm Etiketler"
+
+#: ../classes/class.taxonomies.php:17
+msgid "Tag"
+msgstr "Etiket"
+
+#: ../classes/class.taxonomies.php:18
+msgid "Search Tags"
+msgstr "Etiketlerde Ara"
+
+#: ../classes/class.taxonomies.php:19
+msgid "All Tags"
+msgstr "Tüm Etiketler"
+
+#: ../classes/class.taxonomies.php:20
+msgid "Edit Tag"
+msgstr "Etiketi Düzenle"
+
+#: ../classes/class.taxonomies.php:21
+msgid "Update Tag"
+msgstr "Etiketi Güncelle"
+
+#: ../classes/class.taxonomies.php:22
+msgid "Add New Tag"
+msgstr "Yeni Etiket Ekle"
+
+#: ../classes/class.taxonomies.php:23
+msgid "New Tag"
+msgstr "Yeni Etiket"
+
+#: ../classes/class.taxonomies.php:31
+#, php-format
+msgctxt "URL slug"
+msgid "%s/tag"
+msgstr ""
+
+#: ../classes/class.taxonomies.php:60
+#, php-format
+msgid "This is the URL to the archive of this %s."
+msgstr "Bu %s arşivine ait bağlantı adresidir."
+
+#: ../classes/class.taxonomies.php:64
+msgid "Archive Feed"
+msgstr "Arşiv Geri-Beslemesi"
+
+#: ../classes/class.taxonomies.php:67
+#, php-format
+msgid "This is the URL to the feed of the archive of this %s."
+msgstr "Bu %s arşivine ait geri-besleme bağlantı adresidir."
+
+#: ../classes/class.mocking-bird.php:14
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: ../classes/class.mocking-bird.php:16
+#, php-format
+msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
+msgstr ""
+
+#: ../classes/class.mocking-bird.php:17
+msgid "Unlock this feature"
+msgstr ""
+
+#: ../classes/class.mocking-bird.php:18
+#, php-format
+msgid "This option is changeable in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
+msgstr ""
+
+#: ../classes/class.mocking-bird.php:19
+#, php-format
+msgid "Do you need a special taxonomy for your project? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a> through our support section."
+msgstr ""
+
+#: ../classes/class.mocking-bird.php:20
+#, php-format
+msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
+msgstr ""
+
+#: ../classes/class.mocking-bird.php:26
+msgctxt "Link to the authors website"
+msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
+msgstr ""
+
+#: ../classes/class.mocking-bird.php:57
+msgid "&laquo; Back to your terms"
+msgstr ""
+
+#: ../classes/class.mocking-bird.php:65
+#, php-format
+msgid "Sorry, there are to many %s terms for Encyclopedia Lite. This could result in strange behavior of the plugin. Please delete some terms."
+msgstr ""
+
+#: ../options-page/box-archive-page.php:4
+#, fuzzy
+msgid "Terms per page"
+msgstr "Sayfa başına düşen terim:"
+
+#: ../options-page/box-archive-page.php:8
+msgid "This option effects all encyclopedia archive pages."
+msgstr "Bu seçenek, bütün ansiklopedi arşiv sayfalarını etkiler."
+
+#: ../options-page/box-archive-page.php:14
+#, fuzzy
+msgid "Prefix filter"
+msgstr "Terimi filtrele"
+
+#: ../options-page/box-archive-page.php:20
+#, fuzzy
+msgid "Display a prefix filter above the encyclopedia archive automatically or not."
+msgstr "Ansiklopedi arşiv sayfasının üstünde, otomatik olarak terim filtresi gösterir."
+
+#: ../options-page/box-archive-page.php:25
+#, fuzzy
+msgid "Prefix filter depth"
+msgstr "Terimi filtrele"
+
+#: ../options-page/box-archive-page.php:28
+msgid "The depth of the prefix filter is usually the number of lines with prefixes which are shown."
+msgstr ""
+
+#: ../options-page/box-taxonomies.php:4
+msgid "Activate categories"
+msgstr "Kategorileri etkinleştir"
+
+#: ../options-page/box-taxonomies.php:11
+msgid "Categories can help you create an awesome knowledge base."
+msgstr "Kategoriler, muhteşem bilgi kaynağı oluşturmaya yardımcı olurlar."
+
+#: ../options-page/box-taxonomies.php:17
+msgid "Activate tags"
+msgstr "Etiketleri etkinleştir"
+
+#: ../options-page/box-taxonomies.php:24
+msgid "Tags are necessary if you want to display relevant entries automatically."
+msgstr "Etiketler, ilişkili terimleri göstermek için gereklidir."
+
+#: ../options-page/box-search.php:4
+msgid "Query terms directly"
+msgstr ""
+
+#: ../options-page/box-search.php:11
+msgid "Enable this feature to redirect the user to the term if the search query matches a term title exactly."
+msgstr ""
+
+#: ../options-page/box-search.php:17
+msgid "Autocomplete min length"
+msgstr ""
+
+#: ../options-page/box-search.php:20
+msgctxt "characters unit"
+msgid "characters"
+msgstr ""
+
+#: ../options-page/box-search.php:22
+msgid "The minimum number of characters a user must type before suggestions will be shown."
+msgstr ""
+
+#: ../options-page/box-search.php:28
+msgid "Autocomplete delay"
+msgstr ""
+
+#: ../options-page/box-search.php:31
+msgctxt "milliseconds time unit"
+msgid "ms"
+msgstr ""
+
+#: ../options-page/box-search.php:33
+msgid "The delay in milliseconds between when a keystroke occurs and when suggestions will be shown."
+msgstr ""
+
+#: ../options-page/box-general.php:4
+#, fuzzy
+msgid "Encyclopedia type"
+msgstr "Ansiklopedi türü:"
+
+#: ../options-page/box-general.php:9
+msgid "Wiki"
+msgstr ""
+
+#: ../options-page/box-general.php:10
+msgid "Knowledge Base"
+msgstr ""
+
+#: ../options-page/box-general.php:11
+msgid "Glossary"
+msgstr "Sözlükçe"
+
+#: ../options-page/box-general.php:12
+msgid "Dictionary"
+msgstr "Sözlük"
+
+#: ../options-page/box-general.php:15
+msgid "Please choose the type of your encyclopedia. This option does not change the behavior of the plugin. It's just for the labels and captions in the backend."
+msgstr "Lütfen ansiklopedi türünüzü seçin. Bu seçenek, eklentinin davranışını değiştirmez fakat arkaplandaki başlık ve etiketlerin işleyişini değiştirir."
+
+#: ../options-page/box-general.php:21
+msgid "Use default style"
+msgstr "Varsayılan biçemi kullan"
+
+#: ../options-page/box-general.php:28
+msgid "Set this option to \"No\" if you want to use your own style for the encyclopedia."
+msgstr "Kendi biçeminizi kullanmak istiyorsanız \"Hayır\" seçeneğini işaretleyiniz."
+
+#: ../options-page/box-general.php:34
+msgid "Enable revisions"
+msgstr ""
+
+#: ../options-page/box-general.php:41
+msgid "Enables or disables revisions for the encyclopedia terms."
+msgstr ""
+
+#: ../options-page/box-general.php:47
+msgid "Enable comments"
+msgstr ""
+
+#: ../options-page/box-general.php:54
+msgid "Enables or disables comments and trackbacks for the encyclopedia terms."
+msgstr ""
+
+#: ../options-page/box-general.php:60
+msgid "Enable thumbnails"
+msgstr ""
+
+#: ../options-page/box-general.php:67
+msgid "Enables or disables the \"Featured Image\" for the encyclopedia terms."
+msgstr ""
+
+#: ../options-page/box-general.php:73
+msgid "Enable custom fields"
+msgstr ""
+
+#: ../options-page/box-general.php:79
+msgid "Enables or disables the \"Custom Fields\" for the encyclopedia terms."
+msgstr ""
+
+#: ../options-page/box-single-page.php:4
+#, fuzzy
+msgid "Display related entries"
+msgstr "İlişkili terimleri göster"
+
+#: ../options-page/box-single-page.php:6
+msgid "below the encyclopedia entry"
+msgstr "ansiklopedi girdisinin altında"
+
+#: ../options-page/box-single-page.php:7
+msgid "above the encyclopedia entry"
+msgstr "ansiklopedi girdisinin üstünde"
+
+#: ../options-page/box-single-page.php:8
+msgid "do not show related terms"
+msgstr "ilişkili terimleri gösterme"
+
+#: ../options-page/box-single-page.php:13
+msgid "Number of related terms"
+msgstr "İlişkili terim sayısı"
+
+#: ../options-page/box-single-page.php:17
+msgid "How many related terms should be shown for each term?"
+msgstr "Terim başına, kaç adet ilişkili terim gösterilsin istiyorsunuz?"
+
+#: ../options-page/box-single-page.php:29
+#, fuzzy
+msgid "Display the prefix filter above the encyclopedia term automatically or not."
+msgstr "Ansiklopedi arşiv sayfasının üstünde, otomatik olarak terim filtresi gösterir."
+
+#: ../options-page/box-upgrade.php:2
+msgid "Want to unlock all settings and features? Upgrade to Encyclopedia Pro!"
+msgstr ""
+
+#: ../options-page/box-upgrade.php:8
+msgid "Upgrade to Pro!"
+msgstr ""
+
+#: ../options-page/box-archive-link.php:3
+#, fuzzy, php-format
+msgid "The Archive link for your Encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+msgstr "Ansiklopedi Arşiv Sayfanız: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+
+#: ../options-page/box-archive-link.php:6
+#, fuzzy, php-format
+msgid "The Archive Feed for your Encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+msgstr "Ansiklopedi Arşiv Sayfası Geri-Besleme Adresi: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+
+#: ../options-page/box-cross-linking.php:12
+#, fuzzy, php-format
+msgid "Link terms in %s"
+msgstr "İçerikteki Bağlantılı Terimler"
+
+#: ../options-page/box-cross-linking.php:26
+msgid "Complete words"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:30
+msgid "Link complete words only."
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:36
+msgid "First match only"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:40
+msgid "Link the first match of each term only."
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:46
+msgid "Recursion"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:50
+#, fuzzy
+msgid "Link the term in its own content."
+msgstr "İçerikteki Bağlantılı Terimler"
+
+#: ../options-page/box-cross-linking.php:56
+msgid "Link title length"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:59
+msgid "words"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:61
+#, fuzzy
+msgid "The number of words of the linked term used as link title."
+msgstr "Göstermek istediğiniz ilişkili terim sayısı."
+
+#: ../widgets/widget.search.php:8
+msgid "Encyclopedia Search"
+msgstr ""
+
+#: ../widgets/widget.search.php:9
+msgid "Displays the encyclopedia search field."
+msgstr ""
+
+#: ../widgets/widget.search.php:54
+#: ../widgets/widget.taxonomy-cloud.php:57
+#: ../widgets/widget.taxonomies.php:57
+#: ../widgets/widget.related-terms.php:56
+#: ../widgets/widget.terms.php:55
+#, fuzzy
+msgid "Title"
+msgstr "Başlık"
+
+#: ../widgets/widget.search.php:56
+#: ../widgets/widget.taxonomy-cloud.php:59
+#: ../widgets/widget.taxonomies.php:59
+#: ../widgets/widget.related-terms.php:58
+#: ../widgets/widget.terms.php:57
+msgid "Leave blank to use the widget default title."
+msgstr "Bileşenin varsayılan başlığı kullanmasını istiyorsanız, boş bırakınız."
+
+#: ../widgets/widget.taxonomy-cloud.php:8
+msgid "Encyclopedia Taxonomy Cloud"
+msgstr "Ansiklopedi Taksonomi Bulutu"
+
+#: ../widgets/widget.taxonomy-cloud.php:9
+msgid "Displays your Encyclopedia taxonomies as cloud."
+msgstr "Ansiklopediyi taksonomi bulutu şeklinde gösterir."
+
+#: ../widgets/widget.taxonomy-cloud.php:63
+#: ../widgets/widget.taxonomies.php:63
+msgid "Taxonomy"
+msgstr "Taksonomi"
+
+#: ../widgets/widget.taxonomy-cloud.php:69
+#: ../widgets/widget.taxonomies.php:69
+msgid "Please choose the Taxonomy the widget should display."
+msgstr "Lütfen bileşenin göstermesini istediğiniz Taksonomiyi seçin."
+
+#: ../widgets/widget.taxonomy-cloud.php:73
+#: ../widgets/widget.taxonomies.php:73
+#: ../widgets/widget.related-terms.php:62
+msgid "Number"
+msgstr "Sayı"
+
+#: ../widgets/widget.taxonomy-cloud.php:75
+msgid "Leave blank (or \"0\") to show all."
+msgstr "Boş bırakın (ya da \"0\") yazarak hepsini gösterin."
+
+#: ../widgets/widget.taxonomy-cloud.php:81
+msgid "Taxonomy IDs, separated by commas."
+msgstr "Taksonomi adları, virgüllerle ayrılmıştır."
+
+#: ../widgets/widget.taxonomy-cloud.php:85
+#: ../widgets/widget.taxonomies.php:90
+#: ../widgets/widget.terms.php:61
+msgid "Order by"
+msgstr "Sıralama Şekli"
+
+#: ../widgets/widget.taxonomy-cloud.php:88
+#: ../widgets/widget.taxonomies.php:93
+msgid "Term Count"
+msgstr "Terim Sayısı"
+
+#: ../widgets/widget.taxonomy-cloud.php:93
+#: ../widgets/widget.taxonomies.php:100
+#: ../widgets/widget.terms.php:75
+msgid "Order"
+msgstr "Sırala"
+
+#: ../widgets/widget.taxonomies.php:8
+msgid "Encyclopedia Taxonomies"
+msgstr "Ansiklopedi Taksonomileri"
+
+#: ../widgets/widget.taxonomies.php:9
+msgid "Displays your encyclopedia taxonomies like Categories, Tags, etc."
+msgstr "Ansiklopedi taksonomilerini, Kategoriler, Etiketler vb. şeklinde gösterir."
+
+#: ../widgets/widget.taxonomies.php:75
+msgid "Leave blank to show all."
+msgstr "Hepsini göstermek için boş bırakın."
+
+#: ../widgets/widget.taxonomies.php:81
+msgid "Term IDs, separated by commas."
+msgstr "Terim adları, virgüllerle ayrılmıştır. "
+
+#: ../widgets/widget.taxonomies.php:86
+msgid "Show term counts."
+msgstr ""
+
+#: ../widgets/widget.taxonomies.php:95
+msgid "Slug"
+msgstr "Slug"
+
+#: ../widgets/widget.related-terms.php:9
+msgid "Encyclopedia Related Terms"
+msgstr "Ansiklopedi İlişkili Terimler"
+
+#: ../widgets/widget.related-terms.php:10
+msgid "Displays encyclopedia terms which are related to the current one as list."
+msgstr "İlişkili ansiklopedi terimlerini, liste şeklinde gösterir."
+
+#: ../widgets/widget.related-terms.php:64
+msgid "The number of related terms you want to show."
+msgstr "Göstermek istediğiniz ilişkili terim sayısı."
+
+#: ../widgets/widget.terms.php:8
+msgid "Encyclopedia Terms"
+msgstr "Ansiklopedi Terimleri"
+
+#: ../widgets/widget.terms.php:9
+msgid "Displays your encyclopedia terms as list."
+msgstr "Ansiklopedi terimlerinizi liste şeklinde gösterin."
+
+#: ../widgets/widget.terms.php:65
+msgid "Author"
+msgstr "Yazan"
+
+#: ../widgets/widget.terms.php:66
+msgid "Date"
+msgstr "Tarih"
+
+#: ../widgets/widget.terms.php:67
+msgid "Last modification"
+msgstr "Son değişiklik"
+
+#: ../widgets/widget.terms.php:68
+msgid "Random"
+msgstr "Rastgele"
+
+#: ../widgets/widget.terms.php:69
+msgid "Comment Count"
+msgstr "Yorum Sayısı"
+
+#: ../widgets/widget.terms.php:70
+msgid "Menu Order"
+msgstr "Menü Sıralaması"
+
+#, fuzzy
+#~ msgid "Number:"
+#~ msgstr "Sayı"
+
+#, fuzzy
+#~ msgid "Linked terms in contents"
+#~ msgstr "İçerikteki Bağlantılı Terimler"
+
+#, fuzzy
+#~ msgid "Search options"
+#~ msgstr "Kategorilerde Ara"
+
+#, fuzzy
+#~ msgid "Search page"
+#~ msgstr "Etiketlerde Ara"
+
+#~ msgid ""
+#~ "Enable automatically linked encyclopedia terms for the following content "
+#~ "types:"
+#~ msgstr ""
+#~ "Bağlantılı ansiklopedi terimlerini, otomatik olarak, sıralanan içerik "
+#~ "türleri için etkinleştirin:"
+
+#~ msgid "Updates"
+#~ msgstr "Güncellemeler"
+
+#~ msgid "Category"
+#~ msgstr "Kategori"
+
+#~ msgid "All Categories"
+#~ msgstr "Tüm Kategoriler"
+
+#~ msgid "Parent Category"
+#~ msgstr "Üst Kategori"
+
+#~ msgid "Parent Category:"
+#~ msgstr "Üst Kategori:"
+
+#~ msgid "Edit Category"
+#~ msgstr "Kategoriyi Düzenle"
+
+#~ msgid "Update Category"
+#~ msgstr "Kategoriyi Güncelle"
+
+#~ msgid "Add New Category"
+#~ msgstr "Yeni Kategori Ekle"
+
+#~ msgid "New Category"
+#~ msgstr "Yeni Kategori"
+
+#, fuzzy
+#~ msgctxt "URL slug"
+
+#~ msgid "%s-category"
+#~ msgstr "Kategori"
+#~ msgctxt "URL slug"
+
+#~ msgid "encyclopedia"
+#~ msgstr "aksiklopedi"
+#~ msgctxt "URL slug"
+
+#~ msgid "glossary"
+#~ msgstr "lugat"
+#~ msgctxt "URL slug"
+
+#~ msgid "dictionary"
+#~ msgstr "sozluk"
+
+#~ msgid "Update notification"
+#~ msgstr "Güncelleme uyarısı"
+
+#~ msgid "Disable Update notification."
+#~ msgstr "Güncelleme uyarısını kapatın."
+
+#~ msgid "Your update subscription account"
+#~ msgstr "Güncelleme hesabı"
+
+#~ msgid "Edit and create (own) Terms"
+#~ msgstr "(Size ait) terim oluşturun ya da terimi düzenleyin"
+
+#~ msgid "Edit others Terms"
+#~ msgstr "Diğer terimleri düzenleyin"
+
+#~ msgid "Edit (own) private Terms"
+#~ msgstr "(Size ait) özel terimleri düzenleyin"
+
+#~ msgid "Edit (own) published Terms"
+#~ msgstr "(Size ait) yayımlanmış terimleri düzenleyin"
+
+#~ msgid "Delete (own) Terms"
+#~ msgstr "(Size ait) terimleri silin"
+
+#~ msgid "Delete (own) private Terms"
+#~ msgstr "(Size ait) özel terimleri silin"
+
+#~ msgid "Delete (own) published Terms"
+#~ msgstr "(Size ait) yayımlanmış terimleri silin"
+
+#~ msgid "Delete others Terms"
+#~ msgstr "Diğerlerine ait terimleri silin"
+
+#~ msgid "Publish Terms"
+#~ msgstr "Terimleri Yayımlayın"
+
+#~ msgid "View (others) private Terms"
+#~ msgstr "(Diğerlerine ait) özel terimleri görüntüleyin"
+
+#~ msgid "Manage Categories"
+#~ msgstr "Kategorileri Yönet"
+
+#~ msgid "Manage Tags"
+#~ msgstr "Etiketleri Yönet"
+
+#~ msgid "Capabilities"
+#~ msgstr "Yetenekler"

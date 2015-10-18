@@ -2,7 +2,7 @@
 Contributors: dhoppe
 Tags: encyclopedia, lexicon, lexikon, glossary, glossar, dictionary, knowledge base, wiki, wikipedia,				widget, Post, plugin, admin, posts, sidebar, comments, google, images, page, image, links
 Requires at least: 3.6
-Tested up to: 4.3
+Tested up to: 4.3.1
 Stable tag: trunk
 Donate link: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
 License: GPLv2
@@ -117,7 +117,7 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 
 
 = Real life examples =
-* [OMOXX](http://www.omoxx.com/glossar/)
+* [EUROPARC Junior Ranger](http://www.junior-ranger.de/lexikon/)
 * [Connect45+](http://www.connect45plus.de/glossar/)
 * [Website as Service](http://website-as-service.de/glossar)
 * [Forêts Anciennes](http://www.foretsanciennes.fr/encyclopedia/)
@@ -125,6 +125,7 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 * [ManagementEntscheidungen.com](http://managemententscheidungen.com/glossar/)
 * [BetterHealthKare](http://betterhealthkare.com/dictionary/)
 * [KFZ.net](http://www.kfz.net/lexikon/)
+* [OMOXX](http://www.omoxx.com/glossar/)
 
 
 = Limitations of the lite version =
@@ -187,6 +188,17 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 
 == Changelog ==
+
+= 1.6.1 =
+* Added new filter: encyclopedia_link_terms_in_post
+* renamed function isEncyclopediaArchive
+* renamed function isEncyclopediaSearch
+
+= 1.6 =
+* Moved the classes and widgets to separated folders
+* Fixed: WPML incompatibility
+* Refactored all componentents in abstract classes
+* Fixed widget translations and empty titles
 
 = 1.5.37 =
 * Added: Translations Deutsch und Deutsch (Sie)

@@ -1,5 +1,5 @@
 <ul>
-<?php While ($term_query->have_posts()): $term_query->the_post(); ?>
-<li><a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><?php the_title() ?></a></li>
-<?php EndWhile ?>
+  <?php While ($term_query->Have_Posts()): $term_query->The_Post(); ?>
+  <li><a href="<?php The_Permalink() ?>" title="<?php The_Title_Attribute() ?>"><?php The_Title() ?></a></li>
+  <?php EndWhile ?>
 </ul>

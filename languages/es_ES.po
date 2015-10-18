@@ -1,0 +1,653 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Encyclopedia\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-09 10:30+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
+"Language-Team: Fátima Da Silva <admin@fcdsbtraducciones.com>\n"
+"Language: Español\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: t;t:2c,1\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../templates/encyclopedia-related-terms.php:3
+msgid "Related entries"
+msgstr "Entradas relacionadas"
+
+#: ../classes/class.encyclopedia-type.php:25
+msgid "Lexicon"
+msgstr "Lexicón"
+
+#: ../classes/class.encyclopedia-type.php:26
+msgctxt "URL slug"
+msgid "lexicon"
+msgstr "lexicón"
+
+#: ../classes/class.post-type.php:16
+msgid "Term"
+msgstr "Término"
+
+#: ../classes/class.post-type.php:17
+msgid "Add Term"
+msgstr "Agregar término"
+
+#: ../classes/class.post-type.php:18
+msgid "New Term"
+msgstr "Término nuevo"
+
+#: ../classes/class.post-type.php:19
+msgid "Edit Term"
+msgstr "Editar término"
+
+#: ../classes/class.post-type.php:20
+msgid "View Term"
+msgstr "Ver término"
+
+#: ../classes/class.post-type.php:21
+msgid "Search Terms"
+msgstr "Buscar términos"
+
+#: ../classes/class.post-type.php:22
+msgid "No Terms found"
+msgstr "No se ha encontrado ningún término."
+
+#: ../classes/class.post-type.php:23
+msgid "No Terms found in Trash"
+msgstr "No se ha encontrado ningún término en la papelera."
+
+#: ../classes/class.post-type.php:52
+#, php-format
+msgid "Term updated. (<a href=\"%s\">View Term</a>)"
+msgstr "Término actualizado. (<a href=\"%s\">Ver término </a>)"
+
+#: ../classes/class.post-type.php:55
+msgid "Term updated."
+msgstr "Término actualizado."
+
+#: ../classes/class.post-type.php:56
+#, php-format
+msgid "Term restored to revision from %s"
+msgstr "Desde %s se ha recuperado el término para revisarlo. "
+
+#: ../classes/class.post-type.php:57
+#, php-format
+msgid "Term published. (<a href=\"%s\">View Term</a>)"
+msgstr "Término publicado. (<a href=\"%s\">Ver término</a>)"
+
+#: ../classes/class.post-type.php:58
+msgid "Term saved."
+msgstr "Término guardado."
+
+#: ../classes/class.post-type.php:59
+msgid "Term submitted."
+msgstr "Término enviado."
+
+#: ../classes/class.post-type.php:60
+#, php-format
+msgid "Term scheduled. (<a target=\"_blank\" href=\"%s\">View Term</a>)"
+msgstr "Término programado. (<a target=\"_blank\" href=\"%s\">Ver término</a>)"
+
+#: ../classes/class.post-type.php:61
+#, php-format
+msgid "Draft updated. (<a target=\"_blank\" href=\"%s\">Preview Term</a>)"
+msgstr "Borrador actualizado. (<a target=\"_blank\" href=\"%s\">Término anterior </a>)"
+
+#: ../classes/class.options.php:17
+msgid "Encyclopedia Options"
+msgstr "Opciones de Encyclopedia"
+
+#: ../classes/class.options.php:18
+msgid "Encyclopedia"
+msgstr "Encyclopedia"
+
+#: ../classes/class.options.php:29
+msgid "Taxonomies"
+msgstr "Taxonomías"
+
+#: ../classes/class.options.php:30
+#, fuzzy
+msgid "Archive page"
+msgstr "Página de archivos"
+
+#: ../classes/class.options.php:31
+#, fuzzy
+msgid "Search"
+msgstr "Buscar etiquetas"
+
+#: ../classes/class.options.php:32
+#, fuzzy
+msgid "Single page"
+msgstr "Página única"
+
+#: ../classes/class.options.php:33
+msgid "Cross linking"
+msgstr ""
+
+#: ../classes/class.options.php:34
+#: ../classes/class.taxonomies.php:57
+msgid "Archive Url"
+msgstr "Url del archivo"
+
+#: ../classes/class.taxonomies.php:14
+msgid "Encyclopedia Tags"
+msgstr "Etiquetas de Encyclopedia"
+
+#: ../classes/class.taxonomies.php:16
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: ../classes/class.taxonomies.php:17
+msgid "Tag"
+msgstr "Etiqueta"
+
+#: ../classes/class.taxonomies.php:18
+msgid "Search Tags"
+msgstr "Buscar etiquetas"
+
+#: ../classes/class.taxonomies.php:19
+msgid "All Tags"
+msgstr "Todas las etiquetas"
+
+#: ../classes/class.taxonomies.php:20
+msgid "Edit Tag"
+msgstr "Editar etiqueta"
+
+#: ../classes/class.taxonomies.php:21
+msgid "Update Tag"
+msgstr "Actualizar etiqueta"
+
+#: ../classes/class.taxonomies.php:22
+msgid "Add New Tag"
+msgstr "Añadir una nueva etiqueta"
+
+#: ../classes/class.taxonomies.php:23
+msgid "New Tag"
+msgstr "Nueva etiqueta"
+
+#: ../classes/class.taxonomies.php:31
+#, php-format
+msgctxt "URL slug"
+msgid "%s/tag"
+msgstr "%s/tag"
+
+#: ../classes/class.taxonomies.php:60
+#, php-format
+msgid "This is the URL to the archive of this %s."
+msgstr "Este es el URL correspondiente al archivo de este %s."
+
+#: ../classes/class.taxonomies.php:64
+msgid "Archive Feed"
+msgstr "Archivo de comentarios"
+
+#: ../classes/class.taxonomies.php:67
+#, php-format
+msgid "This is the URL to the feed of the archive of this %s."
+msgstr "Este es el URL correspondiente al comentario del archivo de este %s."
+
+#: ../classes/class.mocking-bird.php:14
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: ../classes/class.mocking-bird.php:16
+#, fuzzy, php-format
+msgid "Available in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
+msgstr "Lo sentimos mucho, esta función está disponible únicamente en la <a href=\"%s\" target=\"_blank\">Versión Pro de Encyclopedia </a>."
+
+#: ../classes/class.mocking-bird.php:17
+msgid "Unlock this feature"
+msgstr ""
+
+#: ../classes/class.mocking-bird.php:18
+#, fuzzy, php-format
+msgid "This option is changeable in the <a href=\"%s\" target=\"_blank\">premium version</a> only."
+msgstr "Lo sentimos mucho, esta función está disponible únicamente en la <a href=\"%s\" target=\"_blank\">Versión Pro de Encyclopedia </a>."
+
+#: ../classes/class.mocking-bird.php:19
+#, php-format
+msgid "Do you need a special taxonomy for your project? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a> through our support section."
+msgstr ""
+
+#: ../classes/class.mocking-bird.php:20
+#, php-format
+msgid "In the <a href=\"%s\" target=\"_blank\">premium version of Encyclopedia</a> you will take advantage of unlimited terms and many more features."
+msgstr ""
+
+#: ../classes/class.mocking-bird.php:26
+msgctxt "Link to the authors website"
+msgid "http://dennishoppe.de/en/wordpress-plugins/encyclopedia"
+msgstr ""
+
+#: ../classes/class.mocking-bird.php:57
+msgid "&laquo; Back to your terms"
+msgstr "&laquo; Regresar a sus términos"
+
+#: ../classes/class.mocking-bird.php:65
+#, php-format
+msgid "Sorry, there are to many %s terms for Encyclopedia Lite. This could result in strange behavior of the plugin. Please delete some terms."
+msgstr ""
+
+#: ../options-page/box-archive-page.php:4
+#, fuzzy
+msgid "Terms per page"
+msgstr "Término por página:"
+
+#: ../options-page/box-archive-page.php:8
+msgid "This option effects all encyclopedia archive pages."
+msgstr "Esta opción modifica todas las páginas del archivo de Encyclopedia."
+
+#: ../options-page/box-archive-page.php:14
+#, fuzzy
+msgid "Prefix filter"
+msgstr "Filtro del término"
+
+#: ../options-page/box-archive-page.php:20
+#, fuzzy
+msgid "Display a prefix filter above the encyclopedia archive automatically or not."
+msgstr "Muestra de forma automática o no el filtro del término encima del archivo de Encyclopedia."
+
+#: ../options-page/box-archive-page.php:25
+#, fuzzy
+msgid "Prefix filter depth"
+msgstr "Filtro del término"
+
+#: ../options-page/box-archive-page.php:28
+msgid "The depth of the prefix filter is usually the number of lines with prefixes which are shown."
+msgstr ""
+
+#: ../options-page/box-taxonomies.php:4
+msgid "Activate categories"
+msgstr "Activar categorías"
+
+#: ../options-page/box-taxonomies.php:11
+msgid "Categories can help you create an awesome knowledge base."
+msgstr "Las categorías pueden ayudar a crear una base de conocimientos impresionante."
+
+#: ../options-page/box-taxonomies.php:17
+msgid "Activate tags"
+msgstr "Activar etiquetas"
+
+#: ../options-page/box-taxonomies.php:24
+msgid "Tags are necessary if you want to display relevant entries automatically."
+msgstr "Las etiquetas son necesarias si se desean mostrar las entradas relevantes de forma automática."
+
+#: ../options-page/box-search.php:4
+msgid "Query terms directly"
+msgstr "Consultar directamente el término"
+
+#: ../options-page/box-search.php:11
+msgid "Enable this feature to redirect the user to the term if the search query matches a term title exactly."
+msgstr "Esta función permite redireccionar al usuario al término, en caso de que la consulta coincida exactamente con el título de un término."
+
+#: ../options-page/box-search.php:17
+#, fuzzy
+msgid "Autocomplete min length"
+msgstr "Longitud mínima para autocompletar"
+
+#: ../options-page/box-search.php:20
+#, fuzzy
+msgctxt "characters unit"
+msgid "characters"
+msgstr "Caracteres"
+
+#: ../options-page/box-search.php:22
+msgid "The minimum number of characters a user must type before suggestions will be shown."
+msgstr "El número mínimo de caracteres que un usuario deberá teclear, antes de que se muestren las sugerencias."
+
+#: ../options-page/box-search.php:28
+#, fuzzy
+msgid "Autocomplete delay"
+msgstr "Retraso para autocompletar"
+
+#: ../options-page/box-search.php:31
+msgctxt "milliseconds time unit"
+msgid "ms"
+msgstr "ms"
+
+#: ../options-page/box-search.php:33
+msgid "The delay in milliseconds between when a keystroke occurs and when suggestions will be shown."
+msgstr "El retraso en milisegundos se presenta entre la pulsación de una tecla y la aparición de la sugerencia."
+
+#: ../options-page/box-general.php:4
+#, fuzzy
+msgid "Encyclopedia type"
+msgstr "Tipo de Encyclopedia:"
+
+#: ../options-page/box-general.php:9
+msgid "Wiki"
+msgstr ""
+
+#: ../options-page/box-general.php:10
+msgid "Knowledge Base"
+msgstr ""
+
+#: ../options-page/box-general.php:11
+msgid "Glossary"
+msgstr "Glosario"
+
+#: ../options-page/box-general.php:12
+msgid "Dictionary"
+msgstr "Diccionario"
+
+#: ../options-page/box-general.php:15
+msgid "Please choose the type of your encyclopedia. This option does not change the behavior of the plugin. It's just for the labels and captions in the backend."
+msgstr "Seleccione el tipo de Encyclopedia. Esta opción no cambiará el comportamiento del plugin. Se utiliza únicamente para las etiquetas y los títulos al final."
+
+#: ../options-page/box-general.php:21
+msgid "Use default style"
+msgstr "Utilizar el estilo por defecto."
+
+#: ../options-page/box-general.php:28
+msgid "Set this option to \"No\" if you want to use your own style for the encyclopedia."
+msgstr "Establecer esta opción en \"No\" si desea usar su propio estilo para la enciclopedia."
+
+#: ../options-page/box-general.php:34
+msgid "Enable revisions"
+msgstr ""
+
+#: ../options-page/box-general.php:41
+msgid "Enables or disables revisions for the encyclopedia terms."
+msgstr ""
+
+#: ../options-page/box-general.php:47
+msgid "Enable comments"
+msgstr ""
+
+#: ../options-page/box-general.php:54
+msgid "Enables or disables comments and trackbacks for the encyclopedia terms."
+msgstr ""
+
+#: ../options-page/box-general.php:60
+msgid "Enable thumbnails"
+msgstr ""
+
+#: ../options-page/box-general.php:67
+msgid "Enables or disables the \"Featured Image\" for the encyclopedia terms."
+msgstr ""
+
+#: ../options-page/box-general.php:73
+msgid "Enable custom fields"
+msgstr ""
+
+#: ../options-page/box-general.php:79
+msgid "Enables or disables the \"Custom Fields\" for the encyclopedia terms."
+msgstr ""
+
+#: ../options-page/box-single-page.php:4
+msgid "Display related entries"
+msgstr "Mostrar las entradas relacionadas."
+
+#: ../options-page/box-single-page.php:6
+msgid "below the encyclopedia entry"
+msgstr "debajo de la entrada de Encyclopedia "
+
+#: ../options-page/box-single-page.php:7
+msgid "above the encyclopedia entry"
+msgstr "encima de la entrada de Encyclopedia"
+
+#: ../options-page/box-single-page.php:8
+msgid "do not show related terms"
+msgstr "No mostrar términos relacionados"
+
+#: ../options-page/box-single-page.php:13
+msgid "Number of related terms"
+msgstr "Número de términos relacionados"
+
+#: ../options-page/box-single-page.php:17
+msgid "How many related terms should be shown for each term?"
+msgstr "¿Cuántos términos relacionados se deberán mostrar para cada término?"
+
+#: ../options-page/box-single-page.php:29
+#, fuzzy
+msgid "Display the prefix filter above the encyclopedia term automatically or not."
+msgstr "Muestra de forma automática o no el filtro del término encima del archivo de Encyclopedia."
+
+#: ../options-page/box-upgrade.php:2
+msgid "Want to unlock all settings and features? Upgrade to Encyclopedia Pro!"
+msgstr ""
+
+#: ../options-page/box-upgrade.php:8
+msgid "Upgrade to Pro!"
+msgstr ""
+
+#: ../options-page/box-archive-link.php:3
+#, fuzzy, php-format
+msgid "The Archive link for your Encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+msgstr "El enlace del archivo para su Encyclopedia es: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+
+#: ../options-page/box-archive-link.php:6
+#, fuzzy, php-format
+msgid "The Archive Feed for your Encyclopedia is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+msgstr "El archivo de comentarios para su Encyclopedia es: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+
+#: ../options-page/box-cross-linking.php:12
+#, fuzzy, php-format
+msgid "Link terms in %s"
+msgstr "Términos enlazados en los contenidos"
+
+#: ../options-page/box-cross-linking.php:26
+msgid "Complete words"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:30
+msgid "Link complete words only."
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:36
+msgid "First match only"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:40
+msgid "Link the first match of each term only."
+msgstr "Enlazar únicamente la primera coincidencia de cada término."
+
+#: ../options-page/box-cross-linking.php:46
+msgid "Recursion"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:50
+#, fuzzy
+msgid "Link the term in its own content."
+msgstr "Términos enlazados en los contenidos"
+
+#: ../options-page/box-cross-linking.php:56
+msgid "Link title length"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:59
+msgid "words"
+msgstr ""
+
+#: ../options-page/box-cross-linking.php:61
+#, fuzzy
+msgid "The number of words of the linked term used as link title."
+msgstr "El número de términos relacionados que desea mostrar."
+
+#: ../widgets/widget.search.php:8
+msgid "Encyclopedia Search"
+msgstr "Busqueda en Encyclopedia"
+
+#: ../widgets/widget.search.php:9
+msgid "Displays the encyclopedia search field."
+msgstr "Muestra el campo de búsqueda de Encyclopedia."
+
+#: ../widgets/widget.search.php:54
+#: ../widgets/widget.taxonomy-cloud.php:57
+#: ../widgets/widget.taxonomies.php:57
+#: ../widgets/widget.related-terms.php:56
+#: ../widgets/widget.terms.php:55
+#, fuzzy
+msgid "Title"
+msgstr "Título:"
+
+#: ../widgets/widget.search.php:56
+#: ../widgets/widget.taxonomy-cloud.php:59
+#: ../widgets/widget.taxonomies.php:59
+#: ../widgets/widget.related-terms.php:58
+#: ../widgets/widget.terms.php:57
+msgid "Leave blank to use the widget default title."
+msgstr "Deje un espacio en blanco para usar el título por defecto del widget."
+
+#: ../widgets/widget.taxonomy-cloud.php:8
+msgid "Encyclopedia Taxonomy Cloud"
+msgstr "Nube taxonómica de Encyclopedia"
+
+#: ../widgets/widget.taxonomy-cloud.php:9
+msgid "Displays your Encyclopedia taxonomies as cloud."
+msgstr "Mostrar sus taxonomías de Encyclopedia en forma de nube."
+
+#: ../widgets/widget.taxonomy-cloud.php:63
+#: ../widgets/widget.taxonomies.php:63
+msgid "Taxonomy"
+msgstr "Taxonomía"
+
+#: ../widgets/widget.taxonomy-cloud.php:69
+#: ../widgets/widget.taxonomies.php:69
+msgid "Please choose the Taxonomy the widget should display."
+msgstr "Seleccione la taxonomía que el widget debería mostrar."
+
+#: ../widgets/widget.taxonomy-cloud.php:73
+#: ../widgets/widget.taxonomies.php:73
+#: ../widgets/widget.related-terms.php:62
+msgid "Number"
+msgstr "Número"
+
+#: ../widgets/widget.taxonomy-cloud.php:75
+msgid "Leave blank (or \"0\") to show all."
+msgstr "Deje en blanco (or \"0\") para mostrarlos todos."
+
+#: ../widgets/widget.taxonomy-cloud.php:81
+msgid "Taxonomy IDs, separated by commas."
+msgstr "ID de las taxonomías, separadas por comas."
+
+#: ../widgets/widget.taxonomy-cloud.php:85
+#: ../widgets/widget.taxonomies.php:90
+#: ../widgets/widget.terms.php:61
+msgid "Order by"
+msgstr "Ordenado por"
+
+#: ../widgets/widget.taxonomy-cloud.php:88
+#: ../widgets/widget.taxonomies.php:93
+msgid "Term Count"
+msgstr "Total de términos"
+
+#: ../widgets/widget.taxonomy-cloud.php:93
+#: ../widgets/widget.taxonomies.php:100
+#: ../widgets/widget.terms.php:75
+msgid "Order"
+msgstr "Orden"
+
+#: ../widgets/widget.taxonomies.php:8
+msgid "Encyclopedia Taxonomies"
+msgstr "Taxonomías de Encyclopedia"
+
+#: ../widgets/widget.taxonomies.php:9
+msgid "Displays your encyclopedia taxonomies like Categories, Tags, etc."
+msgstr "Muestra las taxonomías de Encyclopedia en forma de categorías, etiquetas, etc."
+
+#: ../widgets/widget.taxonomies.php:75
+msgid "Leave blank to show all."
+msgstr "Dejar en blanco para mostrar todos los términos."
+
+#: ../widgets/widget.taxonomies.php:81
+msgid "Term IDs, separated by commas."
+msgstr "ID de los términos, separadas por comas."
+
+#: ../widgets/widget.taxonomies.php:86
+msgid "Show term counts."
+msgstr ""
+
+#: ../widgets/widget.taxonomies.php:95
+msgid "Slug"
+msgstr "Indicación"
+
+#: ../widgets/widget.related-terms.php:9
+msgid "Encyclopedia Related Terms"
+msgstr "Términos relacionados en Encyclopedia"
+
+#: ../widgets/widget.related-terms.php:10
+msgid "Displays encyclopedia terms which are related to the current one as list."
+msgstr "Muestra los términos que aparecen en Encylopedia que están relacionados con el que aparece actualmente en la lista."
+
+#: ../widgets/widget.related-terms.php:64
+msgid "The number of related terms you want to show."
+msgstr "El número de términos relacionados que desea mostrar."
+
+#: ../widgets/widget.terms.php:8
+msgid "Encyclopedia Terms"
+msgstr "Términos de Encyclopedia"
+
+#: ../widgets/widget.terms.php:9
+msgid "Displays your encyclopedia terms as list."
+msgstr "Muestra los términos de Encyclopedia en forma de lista."
+
+#: ../widgets/widget.terms.php:65
+msgid "Author"
+msgstr "Autor"
+
+#: ../widgets/widget.terms.php:66
+msgid "Date"
+msgstr "Fecha"
+
+#: ../widgets/widget.terms.php:67
+msgid "Last modification"
+msgstr "Última modificación"
+
+#: ../widgets/widget.terms.php:68
+msgid "Random"
+msgstr "Aleatorio"
+
+#: ../widgets/widget.terms.php:69
+msgid "Comment Count"
+msgstr "Conteo de comentarios"
+
+#: ../widgets/widget.terms.php:70
+msgid "Menu Order"
+msgstr "Orden del menú"
+
+#~ msgid "Number:"
+#~ msgstr "Número:"
+
+#, fuzzy
+#~ msgid "Linked terms in contents"
+#~ msgstr "Términos enlazados en los contenidos"
+
+#, fuzzy
+#~ msgid "Search options"
+#~ msgstr "Página de búsqueda"
+
+#~ msgid ""
+#~ "Enable automatically linked encyclopedia terms for the following content "
+#~ "types:"
+#~ msgstr ""
+#~ "Activar automáticamente los términos enlazados en Encyclopedia para los "
+#~ "siguientes tipos de contenido:"
+
+#, fuzzy
+#~ msgid ""
+#~ "Do you like the term management? Upgrade to the <a href=\"%s\" target="
+#~ "\"_blank\">premium version of Encyclopedia</a>!"
+#~ msgstr ""
+#~ "Lo sentimos mucho, esta función está disponible únicamente en la <a href="
+#~ "\"%s\" target=\"_blank\">Versión Pro de Encyclopedia </a>."
+
+#~ msgid "Sorry!"
+#~ msgstr "¡Lo sentimos mucho!"
+
+#~ msgid "In the Lite Version you can create five terms only."
+#~ msgstr "En la versión Lite, usted sólo puede crear cinco términos."
+
+#~ msgid ""
+#~ "Why not switching to <a href=\"http://dennishoppe.de/en/wordpress-plugins/"
+#~ "encyclopedia\" target=\"_blank\">Encyclopedia Pro</a>? :)"
+#~ msgstr ""
+#~ "¡Por qué no se cambia a <a href=\"http://dennishoppe.de/en/wordpress-"
+#~ "plugins/encyclopedia\" target=\"_blank\">Encyclopedia Pro</a>? :)!"
+
+#~ msgid "Please notice:"
+#~ msgstr "Tome en cuenta lo siguiente:"

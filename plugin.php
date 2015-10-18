@@ -1,43 +1,38 @@
 <?php
+
 /*
 Plugin Name: Encyclopedia Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
 Description: Encyclopedia enables you to create your own encyclopedia, lexicon, glossary, wiki or dictionary.
-Version: 1.5.37
+Version: 1.6.1
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
+Text Domain: encyclopedia
+Domain Path: /languages
 */
 
-If (Version_Compare(PHP_VERSION, '5.3.0', '<')){
+Include DirName(__FILE__).'/classes/fallback.mb-string.php';
+Include DirName(__FILE__).'/classes/class.ajax-requests.php';
+Include DirName(__FILE__).'/classes/class.core.php';
+Include DirName(__FILE__).'/classes/class.cross-linker.php';
+Include DirName(__FILE__).'/classes/class.encyclopedia-type.php';
+Include DirName(__FILE__).'/classes/class.i18n.php';
+Include DirName(__FILE__).'/classes/class.mocking-bird.php';
+Include DirName(__FILE__).'/classes/class.options.php';
+Include DirName(__FILE__).'/classes/class.permalinks.php';
+Include DirName(__FILE__).'/classes/class.post-type.php';
+Include DirName(__FILE__).'/classes/class.prefix-filter.php';
+Include DirName(__FILE__).'/classes/class.shortcodes.php';
+Include DirName(__FILE__).'/classes/class.taxonomies.php';
+Include DirName(__FILE__).'/classes/class.taxonomy-fallbacks.php';
+Include DirName(__FILE__).'/classes/class.template.php';
+Include DirName(__FILE__).'/classes/class.wp-query-extensions.php';
+Include DirName(__FILE__).'/classes/class.wpml.php';
 
-  # Add PHP Version warning to the dashboard
-  Add_Action('admin_notices', 'Encyclopedia_PHP53_Version_Warning');
-  function Encyclopedia_PHP53_Version_Warning(){ ?>
-    <div class="error">
-      <p><?php PrintF('<strong>%1$s:</strong> You need at least <strong>PHP 5.3</strong> or higher to use %1$s. You are using PHP %2$s. Please ask your hoster for an upgrade.', 'Encyclopedia', PHP_VERSION) ?></p>
-    </div><?php
-  }
+Include DirName(__FILE__).'/widgets/widget.related-terms.php';
+Include DirName(__FILE__).'/widgets/widget.search.php';
+Include DirName(__FILE__).'/widgets/widget.taxonomies.php';
+Include DirName(__FILE__).'/widgets/widget.taxonomy-cloud.php';
+Include DirName(__FILE__).'/widgets/widget.terms.php';
 
-}
-Else {
-
-  # Load helper classes
-  Include DirName(__FILE__).'/fallback.mb-string.php';
-  Include DirName(__FILE__).'/class.cross-linker.php';
-  Include DirName(__FILE__).'/class.i18n.php';
-  Include DirName(__FILE__).'/class.wpml.php';
-
-  # Load Widgets
-  Include DirName(__FILE__).'/wp-widget-encyclopedia-related-terms.php';
-  Include DirName(__FILE__).'/wp-widget-encyclopedia-search.php';
-  Include DirName(__FILE__).'/wp-widget-encyclopedia-taxonomies.php';
-  Include DirName(__FILE__).'/wp-widget-encyclopedia-taxonomy-cloud.php';
-  Include DirName(__FILE__).'/wp-widget-encyclopedia-terms.php';
-
-  # Load Core
-  Include DirName(__FILE__).'/class.core.php';
-
-  # Inititalize Plugin: Would cause a synthax error in PHP < 5.3
-  Eval('New WordPress\Plugin\Encyclopedia\Core(__FILE__);');
-
-}
+WordPress\Plugin\Encyclopedia\Core::Init(__FILE__);
