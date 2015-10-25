@@ -2,12 +2,13 @@
 
 abstract class I18n {
   private static
-    $textdomain = False;
+    $textdomain = __NAMESPACE__,
+    $textdomain_loaded = False;
 
   static function loadTextDomain(){
-    self::$textdomain = __NAMESPACE__;
     $locale = Apply_Filters('plugin_locale', Get_Locale(), self::$textdomain);
     Load_TextDomain (self::$textdomain, SPrintF('%s/languages/%s.mo', Core::$plugin_folder, $locale));
+    self::$textdomain_loaded = True;
   }
 
   static function getTextDomain(){
@@ -16,7 +17,7 @@ abstract class I18n {
 
   static function t ($text, $context = Null){
     # Load text domain
-    If (!self::$textdomain) self::loadTextDomain();
+    If (!self::$textdomain_loaded) self::loadTextDomain();
     
     # Translates the string $text with context $context
     If (Empty($context))

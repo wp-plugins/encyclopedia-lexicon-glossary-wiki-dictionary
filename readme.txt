@@ -189,6 +189,9 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 == Changelog ==
 
+= 1.6.2 =
+* Updated I18n class
+
 = 1.6.1 =
 * Added new filter: encyclopedia_link_terms_in_post
 * renamed function isEncyclopediaArchive
