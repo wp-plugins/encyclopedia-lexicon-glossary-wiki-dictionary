@@ -125,7 +125,7 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 * [ManagementEntscheidungen.com](http://managemententscheidungen.com/glossar/)
 * [BetterHealthKare](http://betterhealthkare.com/dictionary/)
 * [KFZ.net](http://www.kfz.net/lexikon/)
-* [OMOXX](http://www.omoxx.com/glossar/)
+* [Wartenberg & Co](http://www.wartenberg.at/lexikon/)
 
 
 = Limitations of the lite version =
