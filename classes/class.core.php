@@ -89,7 +89,7 @@ abstract class Core {
     
     # Start Cross Linker
     $cross_linker = New Cross_Linker();
-    $cross_linker->setSkipElements(Apply_Filters('encyclopedia_cross_linking_skip_elements', Array('a', 'script', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'button', 'textarea', 'style', 'pre', 'code', 'kbd', 'tt')));
+    $cross_linker->setSkipElements(Apply_Filters('encyclopedia_cross_linking_skip_elements', Array('a', 'script', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'button', 'textarea', 'select', 'style', 'pre', 'code', 'kbd', 'tt')));
     If (!$cross_linker->loadContent($content)) return $content;
 
     # Build the Query
