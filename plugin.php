@@ -4,7 +4,7 @@
 Plugin Name: Encyclopedia Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/encyclopedia
 Description: Encyclopedia enables you to create your own encyclopedia, lexicon, glossary, wiki or dictionary.
-Version: 1.6.3
+Version: 1.6.4
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 Text Domain: encyclopedia
@@ -12,7 +12,6 @@ Domain Path: /languages
 */
 
 Include DirName(__FILE__).'/classes/fallback.mb-string.php';
-Include DirName(__FILE__).'/classes/class.ajax-requests.php';
 Include DirName(__FILE__).'/classes/class.core.php';
 Include DirName(__FILE__).'/classes/class.cross-linker.php';
 Include DirName(__FILE__).'/classes/class.encyclopedia-type.php';

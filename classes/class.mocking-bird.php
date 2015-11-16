@@ -3,10 +3,10 @@
 abstract class Mocking_Bird {
   
   static function Init(){
-    Add_Action('wp_insert_post_empty_content', Array(__CLASS__, 'User_Updates_Post'), 10, 3);
-    Add_Action('admin_notices', Array(__CLASS__, 'Term_Count_Notice'));
-    Add_Action('admin_footer', Array(__CLASS__, 'Print_Dashboard_JS'));
-    Add_Action('admin_bar_menu', Array(__CLASS__, 'Filter_Admin_Bar_Menu'), 999);
+    Add_Action('wp_insert_post_empty_content', Array(__CLASS__, 'checkCreatedPost'), 10, 3);
+    Add_Action('admin_notices', Array(__CLASS__, 'printTermCountNotice'));
+    Add_Action('admin_footer', Array(__CLASS__, 'printDashboardJavaScript'));
+    Add_Action('admin_bar_menu', Array(__CLASS__, 'removeAdminBarAddButton'), 999);
   }
 
   static function Pro_Notice($message = 'option', $output = True){
@@ -31,26 +31,26 @@ abstract class Mocking_Bird {
       return False;
   }
 
-  static function Count_Terms($limit = -1){
+  static function getNumberOfTerms($limit = -1){
     return Count(Get_Posts(Array('post_type' => Post_Type::$post_type_name, 'post_status' => 'any', 'numberposts' => $limit)));
   }
 
-  static function Check_Term_Count(){
-    return self::Count_Terms(12) < 12;
+  static function checkTermCount(){
+    return self::getNumberOfTerms(12) < 12;
   }
 
-  static function User_Updates_Post($maybe_empty, $post_data){
+  static function checkCreatedPost($maybe_empty, $post_data){
     If ($post_data['post_type'] == Post_Type::$post_type_name){
       $new_record = Empty($post_data['ID']);
       $untrash = !$new_record && Get_Post_Status($post_data['ID']) == 'trash';
-      If (($new_record || $untrash) && !self::Check_Term_Count()){
+      If (($new_record || $untrash) && !self::checkTermCount()){
         #WP_Die(SPrintF('<h1>%s</h1><pre>%s</pre>', __FUNCTION__, Print_R ($post_data, True)));
-        self::Print_Term_Count_Limit();
+        self::printTermCountLimit();
       }
     }
   }
 
-  static function Print_Term_Count_Limit(){
+  static function printTermCountLimit(){
     WP_Die(
       SPrintF('<p>%s</p><p>%s</p>',
         self::Pro_Notice('count_limit', False),
@@ -59,8 +59,8 @@ abstract class Mocking_Bird {
     );
   }
   
-  static function Term_Count_Notice(){
-    If (self::Count_Terms(20) >= 20): ?>
+  static function printTermCountNotice(){
+    If (self::getNumberOfTerms(20) >= 20): ?>
     <div class="updated"><p>
       <?php PrintF(I18n::t('Sorry, there are to many %s terms for Encyclopedia Lite. This could result in strange behavior of the plugin. Please delete some terms.'), Encyclopedia_Type::$type->label) ?>
       <?php self::Pro_Notice('count_limit') ?>
@@ -68,8 +68,8 @@ abstract class Mocking_Bird {
     <?php EndIf;
   }
 
-  static function Print_Dashboard_JS(){
-    If (!self::Check_Term_Count()): ?>
+  static function printDashboardJavaScript(){
+    If (!self::checkTermCount()): ?>
     <script type="text/javascript">
     (function($){
       $('a[href*="post-new.php?post_type=<?php Echo Post_Type::$post_type_name ?>"]')
@@ -83,13 +83,13 @@ abstract class Mocking_Bird {
           'color': '#7ad03a',
           'font-weight': 'bold'
         });
-    })(jQuery);
+    }(jQuery));
     </script>
     <?php EndIf;
   }
 
-  static function Filter_Admin_Bar_Menu($admin_bar){
-    If (!self::Check_Term_Count()) $admin_bar->Remove_Node(SPrintF('new-%s', Post_Type::$post_type_name));
+  static function removeAdminBarAddButton($admin_bar){
+    If (!self::checkTermCount()) $admin_bar->Remove_Node(SPrintF('new-%s', Post_Type::$post_type_name));
   }
 
 }

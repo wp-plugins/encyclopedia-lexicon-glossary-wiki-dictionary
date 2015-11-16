@@ -189,6 +189,10 @@ If you update from 1.5.11 or lower to 1.5.12 or higher, please do not affright t
 
 == Changelog ==
 
+= 1.6.4 =
+* Removed empty ajax-requests class
+* pushed the nomenclature for method names
+
 = 1.6.3 =
 * Added "select" to the skip-elements of the cross linker
 
